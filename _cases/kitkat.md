@@ -1,6 +1,9 @@
 ---
 title: kitkat
-tnimg: "/img/kit-kat-case.jpg"
+tnimg: https://res.cloudinary.com/media4e7/image/upload/v1559937392/kit-kat-case.jpg
 video: ''
+img:
+- https://res.cloudinary.com/media4e7/image/upload/v1559937392/kit-kat-case.jpg
+layout: ''
 
 ---
