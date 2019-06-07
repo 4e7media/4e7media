@@ -1,0 +1,56 @@
+#footer,
+.push {
+  height: 300px;
+  
+}
+#footer{
+  display: flex;
+  flex-direction: column;
+  h2{
+    font-size: 30px;
+    margin: 10px 0;
+  }
+  p{
+    font-size: 14px;
+    line-height: 1.65;
+    margin: 5px 0;
+  }
+  a{
+    font-size: 14px;
+  }
+  .first_row{
+    display: flex;
+    flex-direction: row;
+    width:70vw;
+    padding: 40px 15vw;
+    background-color: #c2bcbd;
+    .touch{
+      width: 30%;
+    }
+    .links{
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      a{
+        width: 100%;
+      }
+    }
+  }
+  .second_row{
+    display: flex;
+    flex-direction: row;
+    width:70vw;
+    padding: 20px 15vw;
+    background-color: #dcb6a5;
+    p{
+      width: 33.333%;
+      margin-top: 8px;
+    }
+    div{
+      width: 33.333%;
+      margin-top: 8px;
+      
+    }
+  }
+
+}

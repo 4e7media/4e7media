@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  {% include head.html %}
+  <body>
+    {% include navigation.html %}
+    <div class="detail-wrapper">
+      <div class="title-box">
+        <h3>{{ page.title }}</h3>
+        <a href="../index.html"><i class="fas fa-times"></i></a>
+      </div>
+      
+      {% for pic in page.img %}
+        <img src="{{pic}}">
+      {% endfor %}
+    <div class="push"></div>
+    </div>
+    {% include footer.html %}
+  </body>
+</html>

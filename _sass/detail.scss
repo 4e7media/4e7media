@@ -1,0 +1,24 @@
+.detail-wrapper{
+    width:60vw;
+    margin: 0 auto;
+    min-height: 100vh;
+    margin-bottom: -300px;
+    .title-box{
+        border-bottom: 5px solid black;
+        display: flex;
+        height: 50px;
+        margin-bottom: 30px;
+        i{
+            font-size: 36px;
+        }
+        h3{
+        text-transform: uppercase;
+        width: 90%;
+        font-size: 36px;
+        margin: 0;
+        }
+    }
+    img{
+        height: 20vw;
+    }
+}
