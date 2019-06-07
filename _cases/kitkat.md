@@ -11,6 +11,7 @@ img:
 - "/v1559936948/Bildschirmfoto%20von%202019-03-18%2010-25-24.png"
 - "/v1559937392/kit-kat-case.jpg"
 - "/v1559934865/samples/animals/kitten-playing.gif"
-layout: ''
+layout: 'default'
 
 ---
+fgfgh
