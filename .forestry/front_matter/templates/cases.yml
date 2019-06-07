@@ -29,8 +29,8 @@ fields:
   label: layout
   default: detail
 pages:
-- _cases/kitkat.md
-- _work/humanic.md
-- _work/palmolive.md
-- _work/colgate.md
 - _work/tedx-vienna.md
+- _work/colgate.md
+- _work/palmolive.md
+- _work/humanic.md
+- _cases/kitkat.md
