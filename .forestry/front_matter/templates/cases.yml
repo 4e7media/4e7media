@@ -1,0 +1,36 @@
+---
+label: cases
+hide_body: false
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: title
+- name: tnimg
+  type: file
+  config:
+    maxSize: 250
+  label: thumbnails
+- name: img
+  type: image_gallery
+  config: {}
+  label: images
+- name: video
+  type: text
+  config:
+    required: false
+  label: video
+- name: layout
+  type: text
+  config:
+    required: false
+  hidden: true
+  label: layout
+  default: detail
+pages:
+- _cases/kitkat.md
+- _work/humanic.md
+- _work/palmolive.md
+- _work/colgate.md
+- _work/tedx-vienna.md
