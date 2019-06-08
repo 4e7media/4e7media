@@ -6,6 +6,20 @@ nav{
     padding:10px 15vw;
     z-index: 1;
     color: white;
+    button{
+        color: white;
+        position: fixed;
+        top: 3vw;
+        right: 3vw;
+        background: none;
+        border: none;
+        .fas{
+           text-shadow: 3px 6px #272634;
+           z-index: 3;
+           font-size: 35px;
+        } 
+    }
+    
     .social-icons{
         width: 25%;
         z-index: 1;
@@ -25,44 +39,44 @@ nav{
         font-size: 20px;
         font-weight: bold;
     }
-}
-.menu-open{
-    animation: menuopen 0.3s ease-out forwards;
-}
-
-.brg-menu:nth-cild(4){
-            animation-delay: 0.6s
-        }
-.brg-menu{
-    width: 0;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    right: 0;
-    background: rgba(60, 60, 60, 0.9);
-    display:flex;
-    flex-direction: column;
-    text-align: center;
+    .menu-open{
+        animation: menuopen 0.3s ease-out forwards;
+    }
     
-    .closeslide{
-        animation: closeslide 0.2s ease-in forwards;
-        animation-delay: 0.3s
-    }
-    i{
-        color: white;
+    .brg-menu:nth-cild(4){
+                animation-delay: 0.6s
+            }
+    #brg-menu{
+        width: 0;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background: rgba(60, 60, 60, 0.9);
+        display:flex;
+        flex-direction: column;
+        text-align: center;
         
-        font-size: 20px;
-        opacity: 0;
+        .closeslide{
+            animation: closeslide 0.2s ease-in forwards;
+            animation-delay: 0.3s
+        }
+        i{
+            color: white;
+            
+            font-size: 20px;
+            opacity: 0;
+        }
+        .textslide{
+            animation: slidetext 0.2s ease-in forwards;
+            animation-delay: 0.5s
+            
+        }
+        a{
+            color: white;
+            margin-top: 50px;
+            opacity: 0;
+            font-size: 20px;
+        } 
     }
-    .textslide{
-        animation: slidetext 0.2s ease-in forwards;
-        animation-delay: 0.5s
-        
-    }
-    a{
-        color: white;
-        margin-top: 50px;
-        opacity: 0;
-        font-size: 20px;
-    } 
 }

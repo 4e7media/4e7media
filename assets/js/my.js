@@ -1,11 +1,8 @@
-var wrap = $("#home");
-
-wrap.on("scroll", function(e) {
-    
-  if (this.scrollTop > 147) {
-    $("#").addClass("fix-search");
-  } else {
-    wrap.removeClass("fix-search");
-  }
-  
+$("#bgm-btn").click(function() {
+  $("#brg-menu").addClass("menu-open");
 });
+
+  function menuswitch() {
+    var element = document.getElementById("#brg-menu");
+    element.classList.add("menu-open");
+  }

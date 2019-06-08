@@ -1,4 +1,5 @@
 <nav>
+    
     <div class="social-icons">
         <img src="../img/icons/facebook-icon.png">
         <img src="../img/icons/instagram-icon.png">
@@ -10,5 +11,19 @@
         <a>WORK</a>
         <a>ABOUT</a>
     </div>
-    <i class="fas fa-bars"></i>
+    <button id="bgm-btn" onclick="menuswitch()">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="brg-menu menu-open">
+            <i class="fas fa-times"></i>
+            <a class="textslide">WHAT WE DO</a>
+            <a class="textslide">CASES</a>
+            <a class="textslide">WORK</a>
+            <a class="textslide">ABOUT</a>
+    </div>
+    <script>function menuswitch() {
+            var element = document.getElementById("brg-menu");
+            element.classList.add("menu-open");
+          }
+    </script>
 </nav> 
