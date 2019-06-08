@@ -12,7 +12,6 @@ sections:
 - type: document
   path: _data/press.yml
   label: press
-  match: "**/*"
 - type: jekyll-pages
   label: Pages
   create: all
