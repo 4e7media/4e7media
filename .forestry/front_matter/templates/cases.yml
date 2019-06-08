@@ -21,7 +21,7 @@ fields:
   config:
     required: false
   label: video
-- name: layout
+- name: detail
   type: text
   config:
     required: false
