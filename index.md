@@ -28,7 +28,7 @@ title: home
     <div class="cases_cont">
       <img src="../img/cases/cases.png">
       {% for post in site.cases %}
-      <a href="{{ post.url }}" style="background-image: url('{{ post.tnimg }}');">
+      <a href="{{ post.url }}" style="background-image: url('{{site.cloud_host}}{{ post.tnimg }}');">
         <p>{{ post.title}}</p>
       </a>
      {% endfor %}
@@ -38,7 +38,7 @@ title: home
   <img src="../img/work/4e7_work.png">
     <div class="work-cont">
     {% for post in site.work %}
-      <a href="{{ post.url }}" style="background-image: url('{{ post.tnimg }}');">
+      <a href="{{ post.url }}" style="background-image: url('{{site.cloud_host}}{{ post.tnimg }}');">
       <p>{{ post.title}}</p>
       </a>
      {% endfor %}

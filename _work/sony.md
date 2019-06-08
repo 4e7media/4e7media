@@ -1,5 +1,5 @@
 ---
-detail: detail
+layout: detail
 title: sony
 tnimg: "/v1559982123/1-thumbnail-sony.jpg"
 img:
