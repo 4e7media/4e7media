@@ -7,7 +7,6 @@ sections:
 - type: document
   path: "-/data/press.yml"
   label: Press
-  match: "**/*"
 - type: jekyll-pages
   label: Pages
   create: all
