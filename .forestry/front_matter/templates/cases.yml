@@ -29,8 +29,4 @@ fields:
   label: layout
   default: detail
 pages:
-- _work/tedx-vienna.md
-- _work/colgate.md
-- _work/palmolive.md
-- _work/humanic.md
-- _cases/kitkat.md
+- _work/sony.md
