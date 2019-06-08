@@ -8,12 +8,37 @@
         <h3>{{ page.title }}</h3>
         <a href="../index.html"><i class="fas fa-times"></i></a>
       </div>
+      <div id="gallery">
+        {% for pic in page.img %}
+        <a href="{{site.cloud_host}}{{pic}}">
+          <img src="{{site.cloud_host}}/h_150,c_fill/{{pic}}"> 
+        </a>
+        {% endfor %}
+      </div>
       
-      {% for pic in page.img %}
-        <img src="{{site.cloud_host}}/h_150,c_fill/{{pic}}">
-      {% endfor %}
+      <div class="arrow-box">
+        <i class="fas fa-chevron-left"></i>
+        <i class="fas fa-chevron-right"></i>
+      </div>
     <div class="push"></div>
     </div>
+    <script>
+          // applying photobox on a `gallery` element which has lots of thumbnails links.
+          // Passing options object as well:
+          //-----------------------------------------------
+          $('#gallery').photobox('a',{ time:0 });
+      
+          // using a callback and a fancier selector
+          //----------------------------------------------
+          $('#gallery').photobox('li > a.family',{ time:0 }, callback);
+          function callback(){
+             console.log('image has been loaded');
+          }
+            
+          // re-initialize the photbox DOM (does what Document ready does)
+          //-----------------------------------------------
+          $('#gallery').photobox('prepareDOM');
+      </script>
     {% include footer.html %}
   </body>
 </html>

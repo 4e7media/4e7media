@@ -1,8 +1,21 @@
 .detail-wrapper{
     width:60vw;
     margin: 0 auto;
-    min-height: 100vh;
-    margin-bottom: -300px;
+    .arrow-box{
+        display: flex;
+        justify-content: space-between;
+        font-size: 35px;
+        margin-bottom: 5vh;
+    }
+    .img-box{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 15vh 0;
+        width: 60vw;
+        img{
+            margin: 0 10px 10px 0;  
+        }
+    }
     .title-box{
         border-bottom: 5px solid black;
         display: flex;
