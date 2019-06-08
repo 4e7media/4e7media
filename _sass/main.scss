@@ -63,6 +63,11 @@ html, body {
 }
 #cases{
   background-color: #7a9fa7;
+  img{
+      width: 50%;
+      height: auto;
+      margin: 10vh 25%;
+    }
   .cases_cont{
     width: 60vw;
     padding: 30px 20vw;
@@ -73,11 +78,7 @@ html, body {
     padding-bottom: 14vh;
     z-index: 2;
     color: transparent;
-    img{
-      width: 50%;
-      height: auto;
-      margin: 10vh 25%;
-    }
+    
     a{
       width: 33.333%;
       height: auto;
@@ -122,6 +123,9 @@ html, body {
     max-height: 60vw;
     overflow: hidden;
     z-index: 2;
+    div:nth-child(even){
+      background-color: rgb(228, 214 ,187);
+    }
     /*:hover{
       animation: bg-switch-ye 1s forwards;
     }
@@ -141,25 +145,24 @@ html, body {
       overflow: hidden;
       color: #a39a9b;
       text-align: center;
+      
       img{
         height: auto;
         width: 100%;
         margin: 0;
       }
+      div:nth-of-type(even){
+          background-color: rgb(228, 214 ,187);
+        }
       .hover-cont{
-        padding-top: 40%;
-        padding-bottom: 40%;
+        padding-top: 50%;
+        padding-bottom: 50%;
         margin-bottom: -104%;
         background-color: #bfd0d4;
         opacity: 0;
+        
         &:hover{
           animation: hovereffekt 0.4s ease-out forwards;
-        }
-        p{
-          text-align: center;
-          width: 100%;
-          margin: 0;
-          
         }
       }
     }
@@ -186,7 +189,7 @@ html, body {
   }
 }
 .about_us{
-  width: 70vw;
+  width: 60vw;
   z-index: 2;
   margin: 0 auto;
   display: flex;

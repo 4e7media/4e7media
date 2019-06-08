@@ -26,24 +26,43 @@ nav{
         font-weight: bold;
     }
 }
+.menu-open{
+    animation: menuopen 0.3s ease-out forwards;
+}
+
+.brg-menu:nth-cild(4){
+            animation-delay: 0.6s
+        }
 .brg-menu{
-    width: 20vw;
-    padding: 0 40vw;
+    width: 0;
     height: 100vh;
     position: fixed;
+    top: 0;
+    right: 0;
     background: rgba(60, 60, 60, 0.7);
-    display:none;
+    display:flex;
     flex-direction: column;
     text-align: center;
+    
+    .closeslide{
+        animation: closeslide 0.2s ease-in forwards;
+        animation-delay: 0.3s
+    }
     i{
         color: white;
-        margin-top: 10vw;
+        
         font-size: 20px;
+        opacity: 0;
+    }
+    .textslide{
+        animation: slidetext 0.2s ease-in forwards;
+        animation-delay: 0.5s
+        
     }
     a{
         color: white;
         margin-top: 50px;
-        opacity: 1;
+        opacity: 0;
         font-size: 20px;
     } 
 }

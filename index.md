@@ -13,20 +13,20 @@ title: home
     <img class="logo" src="../img/icons/logo-4e7-media.png" title="The logo of 4e7media GmbH.">
   </div>
   <div id="campaigns">
-    <img src="../img/camp/camp.png">
+    <img src="../img/camp.png">
   </div>
-  <div id="eye" style="background-image: url('../img/eye/eye-text.png');"></div>
+  <div id="eye" style="background-image: url('https://res.cloudinary.com/media4e7/image/upload/v1559997739/eye-text_lzacgy.png');"></div>
   <div id="features">
   <div class="feat_cont">
-    <div style="background-image: url('../img/wwdo/thumbnails/advertising.jpg');"></div>
-    <div style="background-image: url('../img/wwdo/thumbnails/branded-entertainment.jpg');"></div>
-    <div style="background-image: url('../img/wwdo/thumbnails/branded-publishing.jpg');"></div>
-    <div style="background-image: url('../img/wwdo/thumbnails/social-media-m-anagement.jpg');"></div>
+    <div style="background-image: url('https://res.cloudinary.com/media4e7/image/upload/v1559997739/advertising_z1cedf.jpg');"></div>
+    <div style="background-image: url('https://res.cloudinary.com/media4e7/image/upload/v1559997738/branded-entertainment_xdxrnf.jpg');"></div>
+    <div style="background-image: url('https://res.cloudinary.com/media4e7/image/upload/v1559997738/branded-publishing_wob1m5.jpg');"></div>
+    <div style="background-image: url('https://res.cloudinary.com/media4e7/image/upload/v1559997739/social-media-m-anagement_i9bafc.jpg');"></div>
   </div>
   </div>
   <div id="cases">
+  <img src="../img//cases.jpg">
     <div class="cases_cont">
-      <img src="../img/cases/cases.png">
       {% for post in site.cases %}
       <a href="{{ post.url }}" style="background-image: url('{{site.cloud_host}}{{ post.tnimg }}');">
         <p>{{ post.title}}</p>
@@ -35,12 +35,12 @@ title: home
     </div>
   </div>
   <div id="work">
-  <img src="../img/work/4e7_work.png">
+  <img src="../img//4e7_work.png">
     <div class="work-cont">
     {% for post in site.work %}
       <a href="{{ post.url }}" style="background-image: url('{{site.cloud_host}}{{ post.tnimg }}');">
         <div class="hover-cont">
-          <h3>{{ post.title}}</h3>
+          {{ post.title}}
         </div>
       </a>
      {% endfor %}
@@ -48,17 +48,17 @@ title: home
     <button type="button" class="work_more">MORE WORK</button>
   </div>
   <div id="platforms">
-    <img src="../img/plattforms/platforms.png">
-    <div style="background-image: url('../img/plattforms/thumbnails/trendsylvania-platform.jpg');"></div>
-    <div style="background-image: url('../img/plattforms/thumbnails/thumbnail-artforum4e7-2.jpg');"></div>
-    <div style="background-image: url('../img/plattforms/thumbnails/travel-guides-tips-platform.jpg');"></div>
-    <div style="background-image: url('../img/plattforms/thumbnails/Notorious-patform.jpg');"></div>
+    <img src="../img/platforms.png">
+    <div style="background-image: url('https://res.cloudinary.com/media4e7/image/upload/v1559997984/trendsylvania-platform_eua0xs.jpg');"></div>
+    <div style="background-image: url('https://res.cloudinary.com/media4e7/image/upload/v1559997984/thumbnail-artforum4e7-2_m17zt8.jpg');"></div>
+    <div style="background-image: url('https://res.cloudinary.com/media4e7/image/upload/v1559997984/travel-guides-tips-platform_p1uqkn.jpg');"></div>
+    <div style="background-image: url('https://res.cloudinary.com/media4e7/image/upload/v1559997984/Notorious-patform_bxv0uj.jpg');"></div>
   </div>
   <div id="alex" class="about_us">
-    <img src="../img/about/about_us.png" class="main">
-    <img src="../img/about/about_alex.jpg">
+    <img src="../img/about_us.png" class="main">
+    <img src="https://res.cloudinary.com/media4e7/image/upload/v1559998299/about_alex_frsevq.jpg">
     <div class="about_text">
-      <img src="../img/about/alex.png">
+      <img src="../img/alex.png">
       <p>Partner-General Manager at Cayenne (Germany,
 Austria, Spain, Netherlands, Czech Republic),
 handling accounts such as Nintendo, Guess, Canon,
@@ -79,7 +79,7 @@ these days.</p>
   </div>
   <div id="selma" class="about_us">
     <div class="about_text">
-      <img src="../img/about/selma.png">
+      <img src="../img/selma.png">
       <p>Owner, Editor in Chief - Notorious Mag, Trendsylvania.
 Partner-Creative Director, TBWA Latin America,
 handling accounts such as Apple, Absolut, Chivas, Beiersdorf (Nivea), Nissan. Creative Director at
@@ -97,7 +97,7 @@ In the four year period she was in charge, the SaÌƒo
 Paulo Fashion Week jumped from 7th to 5th position worldwide.
 Awards: Cannes, New York Festivals, London International Awards, Clio.</p>
     </div>
-    <img src="../img/about/about_selma.jpg">
+    <img src="https://res.cloudinary.com/media4e7/image/upload/v1559998299/about_selma_e4vlvm.jpg">
   </div>
   <div id="press">
   {% for img in site.img.press %}
