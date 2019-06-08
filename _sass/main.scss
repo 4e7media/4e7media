@@ -84,9 +84,8 @@ html, body {
       text-decoration-line: none;
       color: transparent;
       background-size: cover;
-      padding-bottom: 33.333%;
       text-transform: uppercase;
-      height: 0;
+      height: 100%;
       p{
         text-align: center;
         margin-bottom: -50%;
@@ -120,7 +119,7 @@ html, body {
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
-    height: 60vw;
+    max-height: 60vw;
     overflow: hidden;
     z-index: 2;
     /*:hover{
@@ -135,16 +134,33 @@ html, body {
     a{
       width: 33.333%;
       text-decoration-line: none;
-      color: transparent;
       background-size: cover;
-      padding-bottom: 33.333%;
-      display: flex;
+      display: inline-block;
       text-transform: uppercase;
-      p{
-        text-align: center;
-        margin-bottom: -50%;
+      padding-bottom: 33.333%;
+      overflow: hidden;
+      color: #a39a9b;
+      text-align: center;
+      img{
+        height: auto;
         width: 100%;
-        margin-top: 45%;
+        margin: 0;
+      }
+      .hover-cont{
+        padding-top: 40%;
+        padding-bottom: 40%;
+        margin-bottom: -104%;
+        background-color: #bfd0d4;
+        opacity: 0;
+        &:hover{
+          animation: hovereffekt 0.4s ease-out forwards;
+        }
+        p{
+          text-align: center;
+          width: 100%;
+          margin: 0;
+          
+        }
       }
     }
   }

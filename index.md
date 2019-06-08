@@ -39,7 +39,9 @@ title: home
     <div class="work-cont">
     {% for post in site.work %}
       <a href="{{ post.url }}" style="background-image: url('{{site.cloud_host}}{{ post.tnimg }}');">
-      <p>{{ post.title}}</p>
+        <div class="hover-cont">
+          <h3>{{ post.title}}</h3>
+        </div>
       </a>
      {% endfor %}
     </div>
