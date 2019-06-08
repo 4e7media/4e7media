@@ -2,7 +2,7 @@
 label: data
 hide_body: true
 fields:
-- name: press
-  type: tag_list
-  default: []
-  label: press
+- name: url
+  type: image_gallery
+  config: {}
+  label: img
