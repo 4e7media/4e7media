@@ -29,4 +29,5 @@ fields:
   label: layout
   default: detail
 pages:
+- _work/ray-ban.md
 - _work/sony.md
