@@ -17,12 +17,13 @@ html, body {
   margin-bottom: -300px;
 }
 #landingpage{
-  width: 100vw;
+  width: auto;
   height: 100vh;
+  margin: 0 auto;
   margin-top: -70px;
   top: 0;
-  margin-bottom: 360px;
   z-index:2;
+  overflow: hidden;
   video{
     width: 100%;
     z-index:0;
@@ -30,7 +31,7 @@ html, body {
 }
 #campaigns{
   width: 100vw;
-  height: 100vh;
+  height: auto;
   z-index: 2;
   img{
     margin:0 auto;
@@ -204,4 +205,9 @@ html, body {
   .about_text{
     max-width: 40%;
   }
+}
+#press{
+  width: 60vw;
+  padding: 10vh 20vw;
+  
 }

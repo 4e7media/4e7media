@@ -1,0 +1,10 @@
+<div id="cases">
+    <img src="../img//cases.jpg">
+    <div class="cases_cont">
+      {% for post in site.cases %}
+        <a href="{{ post.url }}" style="background-image: url('{{site.cloud_host}}{{ post.tnimg }}');">
+          <p>{{ post.title}}</p>
+        </a>
+      {% endfor %}
+    </div>
+</div>

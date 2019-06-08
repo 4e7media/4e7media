@@ -1,0 +1,13 @@
+<div id="work">
+    <img src="../img//4e7_work.png">
+    <div class="work-cont">
+      {% for post in site.work %}
+        <a href="{{ post.url }}" style="background-image: url('{{site.cloud_host}}{{ post.tnimg }}');">
+          <div class="hover-cont">
+            {{ post.title}}
+          </div>
+        </a>
+       {% endfor %}
+    </div>
+    <button type="button" class="work_more">MORE WORK</button>
+</div>
