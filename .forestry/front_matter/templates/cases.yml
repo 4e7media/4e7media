@@ -29,6 +29,7 @@ fields:
   label: layout
   default: detail
 pages:
+- _work/lidl.md
 - _work/4e7.md
 - _work/ray-ban.md
 - _work/sony.md
