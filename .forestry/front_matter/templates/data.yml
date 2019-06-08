@@ -1,4 +1,8 @@
 ---
 label: data
 hide_body: true
-fields: []
+fields:
+- name: press
+  type: tag_list
+  default: []
+  label: press
