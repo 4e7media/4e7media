@@ -8,7 +8,7 @@ sections:
   path: _data
   label: data
   create: all
-  match: yml
+  match: "/*"
 - type: document
   path: _data/press.yml
   label: press
