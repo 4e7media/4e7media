@@ -1,0 +1,20 @@
+---
+url:
+- "/v1560005993/wirtschaftsblatt-4e7.png"
+- "/v1560005993/selma-762x1024.jpg"
+- "/v1560005994/lugner-krone.png"
+- "/v1560005994/lugner.png"
+- "/v1560005993/4e7press13.png"
+- "/v1560005993/4e7press12.png"
+- "/v1560005993/4e7press11.png"
+- "/v1560005993/4e7press10.jpg"
+- "/v1560005993/4e7press9.jpg"
+- "/v1560005992/4e7press8.png"
+- "/v1560005990/4e7press7.jpg"
+- "/v1560005989/4e7press6.jpg"
+- "/v1560005990/4e7press5.jpg"
+- "/v1560005992/4e7press4.png"
+- "/v1560005993/4e7press2.png"
+- "/v1560005993/4e7press1.png"
+
+---

@@ -6,3 +6,5 @@ fields:
   type: image_gallery
   config: {}
   label: img
+pages:
+- _data/press.md
