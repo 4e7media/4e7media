@@ -29,6 +29,7 @@ fields:
   label: layout
   default: detail
 pages:
+- _plattforms/trendsylvania.md
 - _work/humanic.md
 - _work/lidl.md
 - _work/4e7.md
