@@ -5,6 +5,13 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
+  path: _plattforms
+  label: Plattforms
+  create: all
+  match: "**/*"
+  templates:
+  - cases
+- type: directory
   path: _data
   label: data
   create: all
