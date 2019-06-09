@@ -1,0 +1,56 @@
+@media screen and (max-width:1050px){
+    #landingpage video {
+        width: auto;
+        height: 100vh;
+    }
+    .social-icons,.site_links{
+       display: none;
+    }
+    #features .feat_cont div{
+        width: 100%;
+        padding-top: 60%;
+        overflow-x: hidden;
+            .hover-cont {
+                padding: 21vh 5%;
+                width: 90%;
+                margin-top: -70vw;
+                font-size: 25px;
+                height: 25vh;
+            }
+    }
+    #alex{
+        top: 10vh;
+        padding: 0 20vw;
+    }
+    #about-title {
+            margin: 3vh 20vw;
+            width: 60vw;
+        }
+    #selma{
+        flex-direction: column-reverse;
+    }
+    .about_us{
+        img{
+            width: 100%;
+            height: auto;
+        }
+        
+        
+        .about_text{
+            font-size: 20px;
+            max-width: 100%
+        }
+    }
+}
+@media screen and(max-width: 400px){
+    #features .feat_cont div{
+        img{
+            margin: 0 5%;
+            margin-top: 7vh;
+        }
+        .hover-cont {
+            font-size: 30px;
+            padding: 0 5%;
+        }
+    }
+}

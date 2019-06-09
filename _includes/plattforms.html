@@ -1,9 +1,9 @@
 <div id="plattforms">
     <img src="../img/platforms.png">
     <div class="plattform-box">
-            {% for post in site.work %}
+            {% for post in site.plattforms %}
             <a href="{{ post.url }}" style="background-image: url('{{site.cloud_host}}{{ post.tnimg }}');">
-              <div class="hover-cont" id="hover">
+              <div class="hover-cont">
                 {{ post.title}}
               </div>
             </a>

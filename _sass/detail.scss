@@ -10,11 +10,15 @@
     #gallery{
         display: flex;
         flex-wrap: wrap;
-        margin: 15vh 0;
+        min-height: 70vh;
         width: 60vw;
+        align-content: center;
         img{
             margin: 0 10px 10px 0;  
         }
+    }
+    a{
+        color: black;
     }
     .title-box{
         border-bottom: 5px solid black;
