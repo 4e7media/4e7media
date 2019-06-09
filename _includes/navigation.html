@@ -6,24 +6,19 @@
         <img src="../img/icons/youtube-icon.png">
     </div>
     <div class="site_links">
-        <a>WHAT WE DO</a>
-        <a>CASES</a>
-        <a>WORK</a>
-        <a>ABOUT</a>
+        <a href="#features">WHAT WE DO</a>
+        <a href="#cases">CASES</a>
+        <a href="#work">WORK</a>
+        <a href="#alex">ABOUT</a>
     </div>
-    <button id="bgm-btn" onclick="menuswitch()">
+    <button id="bgm-btn">
       <i class="fas fa-bars"></i>
     </button>
-    <div class="brg-menu menu-open">
-            <i class="fas fa-times"></i>
-            <a class="textslide">WHAT WE DO</a>
-            <a class="textslide">CASES</a>
-            <a class="textslide">WORK</a>
-            <a class="textslide">ABOUT</a>
+    <div id="brg-menu" class="">
+            <i class="fas fa-times bgm-close"></i>
+            <a class="bgm-txt">WHAT WE DO</a>
+            <a class="bgm-txt">CASES</a>
+            <a class="bgm-txt">WORK</a>
+            <a class="bgm-txt">ABOUT</a>
     </div>
-    <script>function menuswitch() {
-            var element = document.getElementById("brg-menu");
-            element.classList.add("menu-open");
-          }
-    </script>
 </nav> 
