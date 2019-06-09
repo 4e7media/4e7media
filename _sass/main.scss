@@ -1,6 +1,6 @@
-.current {
-    color: green;
-  } 
+.click-tr{
+  pointer-events: none;
+}
 html{
   min-height: 100vh;
   overflow-x: hidden;
@@ -195,15 +195,30 @@ body {
     }
   }
 }
+#about-ph{
+  height: 85vh;
+  background: transparent;
+}
+#alex{
+  position: fixed;
+  top: 20vh;
+  z-index: -1;
+}
+#about-title{
+  margin: 5vh 20vw;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+}
 .about_us{
   width: 60vw;
   z-index: 2;
-  margin: 0 auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 10vh;
+  padding: 5vh 20vw;
+  background: white;
   .main{
     margin: 10vh 25%;
     width:50%;
@@ -215,5 +230,5 @@ body {
 #press{
   width: 60vw;
   padding: 10vh 20vw;
-  
+  background: white;
 }
