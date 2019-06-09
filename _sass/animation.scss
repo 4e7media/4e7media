@@ -12,8 +12,8 @@
     to{opacity: 1; margin-right: 0;}
 }
 @keyframes closeslide{
-    from{opacity: 0; margin-top: 10vw}
-    to{opacity: 1; margin-top: 15vw;}
+    from{opacity: 0; margin-top: 5vh}
+    to{opacity: 1; margin-top: 10vh;}
 }
 @keyframes menuclose{
     0% {width:20vw; height:100vh; padding: 0 40vw; background: rgba(0, 0, 0, 0.9);}
@@ -23,4 +23,8 @@
 @keyframes bgmshow{
     from{opacity: 0; top: -3vw; right: -3vw;}
     to{opacity: 1; top: 3vw; right: 3vw;}
+}
+@keyframes socialslide{
+    from{opacity: 0; margin-top: 15vh;}
+    to{opacity: 1; margin-right: 10vh;}
 }
