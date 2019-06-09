@@ -29,6 +29,7 @@ fields:
   label: layout
   default: detail
 pages:
+- _plattforms/travel-guides-tips.md
 - _plattforms/artformum-4e7.md
 - _plattforms/trendsylvania.md
 - _work/humanic.md
