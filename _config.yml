@@ -50,3 +50,6 @@ collections:
   cases:
     output: true
     permalink: /cases/:name
+  plattforms:
+    output: true
+    permalink: /plattforms/:name
