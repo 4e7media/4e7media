@@ -35,6 +35,8 @@ sections:
   label: Work
   create: all
   match: "**/*"
+  templates:
+  - cases
 upload_dir: ''
 public_path: ''
 front_matter_path: https://res.cloudinary.com/media4e7/image/upload
