@@ -29,6 +29,7 @@ fields:
   label: layout
   default: detail
 pages:
+- _cases/kit-kat.md
 - _cases/kems.md
 - _cases/colgate.md
 - _cases/augarten.md
