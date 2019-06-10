@@ -29,6 +29,7 @@ fields:
   label: layout
   default: detail
 pages:
+- _work/cuba-crisps.md
 - _work/lacoste.md
 - _work/palmers.md
 - _work/öbb.md
