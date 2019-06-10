@@ -7,7 +7,10 @@ $('document').ready(function(){
       $(".bgm-txt").addClass("textslide");
       $(".wrapper").addClass("click-tr");
       $(".social-icons").addClass("social-slide");
+      $("#bgm-btn").removeClass("show");
     });
+    $("#alex").hide()
+    $("#about-title").hide()
     $(".textslide").click(function(){
       $("#brg-menu").addClass("menu-close");
       $(".fas").removeClass("closeslide");
@@ -20,6 +23,7 @@ $('document').ready(function(){
       $(".bgm-txt").removeClass("textslide");
       $(".wrapper").removeClass("click-tr");
       $(".social-icons").removeClass("social-slide");
+      $("#bgm-btn").addClass("show");
     });
     $(".more").click(function(){
       $(".work-cont").height("auto")
@@ -40,17 +44,34 @@ $('document').ready(function(){
       var $win = $(window);
       var winH = $win.height();   // Get the window height.
   
-      $win.on("scroll", function () {
+      $w.on("scroll", function () {
           if ($(this).scrollTop() > winH ) {
               $nav.addClass("show");
           } else {
               $nav.removeClass("show");
           }
       }).on("resize", function(){ // If the user resizes the window
-         winH = $(this).height(); // you'll need the new height value
+         wH = $(this).height(); // you'll need the new height value
       });
   
   });
+  jQuery(function($) {
+
+    var $v = $('.about-fixed');
+    var $w = $(window);
+    var wH = $w.height();   // Get the window height.
+
+    $w.on("scroll", function () {
+        if ($(this).scrollTop() > wH*4) {
+            $v.show();
+        } else {
+            $v.hide();
+        }
+    }).on("resize", function(){ // If the user resizes the window
+       wH = $(this).height(); // you'll need the new height value
+    });
+
+});
     
     function menuswitch() {
       var element = document.getElementById("#brg-menu");

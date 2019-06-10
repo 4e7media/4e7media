@@ -72,7 +72,7 @@ body {
       width: 50vw;
       background-size: cover;
       background-repeat: no-repeat;
-      padding-top: 40%;
+      height: 30vw;
       overflow: hidden;
       
       img{
@@ -80,14 +80,13 @@ body {
         margin: 0 5%;
       }
       .hover-cont{
-        padding: 14% 5%;
-        margin-top: -80%;
+        padding: 3vw 5%;
         background-color: rgba(122, 159, 167, 1);
         opacity: 0;
         width: 90%;
         font-size: 35px;
         color: white;
-        height: 50vh;
+        height: 24vw;
         
         &:hover{
           animation: hovereffekt 0.4s ease-out forwards;
@@ -112,7 +111,7 @@ body {
       height: auto;
       margin: 5vh 25%;
     }
-  .cases_cont{
+  .tn-cont{
     width: 60vw;
     padding: 30px 20vw;
     display:flex;
@@ -135,7 +134,7 @@ body {
   }
 }
 .img-cont{
-      width: 33.333%;
+      width: 20vw;
       text-decoration-line: none;
       background-size: cover;
       display: inline-block;
@@ -151,9 +150,9 @@ body {
       }
       
       .hover-cont{
-        padding-top: 50%;
-        padding-bottom: 50%;
-        margin-bottom: -104%;
+        padding: 5vw;
+        width: 15vw;
+        height: 15vw;
         background-color: #bfd0d4;
         opacity: 0;
         &:hover{
@@ -167,10 +166,12 @@ body {
     background: none;
     border: none;
     font-family: Rubik;
-    font-size: 24px;
+    font-size: 35px;
     color: white;
-    width: 10vw;
-    margin: 5vh 45vw;
+    width: 20vw;
+    margin: 5vh 40vw;
+    font-weight: 500;
+    text-align: center;
   }
   .less{
     display: none;
@@ -180,7 +181,7 @@ body {
       height: auto;
       margin: 5vh 25%;
     }
-  .work-cont{
+  .tn-cont{
     width: 60vw;
     padding: 0 20vw;
     display:flex;
