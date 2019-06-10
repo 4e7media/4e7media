@@ -29,6 +29,7 @@ fields:
   label: layout
   default: detail
 pages:
+- _work/palmolive.md
 - _work/unicredit.md
 - _cases/trendsylvania.md
 - _cases/sony.md
