@@ -21,6 +21,19 @@ $('document').ready(function(){
       $(".wrapper").removeClass("click-tr");
       $(".social-icons").removeClass("social-slide");
     });
+    $(".more").click(function(){
+      $(".work-cont").height("auto")
+      $(".more").hide()
+      $(".less").show()
+    });
+    $(".less").click(function(){
+      $(".work-cont").height("60vw")
+      $(".less").hide()
+      $(".more").show()
+      $('html, body').animate({
+        scrollTop: $("#work").offset().top
+      }, 100)
+    });
     jQuery(function($) {
 
       var $nav = $('#bgm-btn');

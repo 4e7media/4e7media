@@ -172,6 +172,9 @@ body {
     width: 10vw;
     margin: 5vh 45vw;
   }
+  .less{
+    display: none;
+  }
   img{
       width: 50%;
       height: auto;
@@ -183,7 +186,7 @@ body {
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
-    max-height: 60vw;
+    height: 60vw;
     overflow: hidden;
     z-index: 2;
     :nth-child(even) .hover-cont{
