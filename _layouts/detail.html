@@ -2,7 +2,6 @@
 <html>
   {% include head.html %}
   <body>
-    {% include navigation.html %}
     <div class="detail-wrapper">
       <div class="title-box">
         <h3>{{ page.title }}</h3>
@@ -16,16 +15,16 @@
         {% endfor %}
       </div>
       
+  
       <div class="arrow-box">
-          <div class="PageNavigation">
-              {% if page.previous.url %}
-                <a class="prev" href="{{page.previous.url}}"><i class="fas fa-chevron-left"></i></a>
-              {% endif %}
-              {% if page.next.url %}
-                <a class="next" href="{{page.next.url}}"><i class="fas fa-chevron-right"></i></a>
-              {% endif %}
-            </div>
-      </div>
+          {% if page.previous.url %}
+            <a class="prev" href="{{page.previous.url}}"><i class="fas fa-chevron-left"></i></a>
+          {% endif %}
+          {% if page.next.url %}
+            <a class="next" href="{{page.next.url}}"><i class="fas fa-chevron-right"></i></a>
+          {% endif %}
+      </div> 
+
     <div class="push"></div>
     </div>
     <script>

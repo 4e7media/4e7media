@@ -28,7 +28,7 @@
         flex-wrap: wrap;
         min-height: 70vh;
         width: 60vw;
-        align-content: center;
+        align-items: center;
         img{
             margin: 0 10px 10px 0;  
         }
@@ -41,14 +41,20 @@
         display: flex;
         height: 50px;
         margin-bottom: 30px;
+        margin-top: 50px;
         i{
             font-size: 36px;
         }
         h3{
         text-transform: uppercase;
-        width: 90%;
+        width: 95%;
         font-size: 36px;
         margin: 0;
+        }
+        a{
+            position: absolute;
+            top: 5vh;
+            right: 20vw;
         }
     }
 }

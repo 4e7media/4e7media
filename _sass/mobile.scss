@@ -60,10 +60,23 @@
             font-weight: 500;
         }
     }
-
+    .social_footer .social-icon img {
+        width: 45px;
+    }
+    .detail-wrapper{
+        width: 90vw;
+        h3{
+            height: auto;
+        }
+        #gallery{
+        width:90vw;
+        justify-content: space-around;
+        }
+    }
+    
     .detail-wrapper {
         .title-box h3 {
-            font-size: 14px;
+            font-size: 22px;
         }
     }
 
