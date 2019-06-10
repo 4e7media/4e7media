@@ -110,30 +110,49 @@ body {
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
-    
     padding-bottom: 14vh;
     z-index: 2;
     color: transparent;
-    
-    a{
-      width: 33.333%;
-      height: auto;
-      text-decoration-line: none;
-      color: transparent;
-      background-size: cover;
-      text-transform: uppercase;
-      height: 100%;
-      p{
-        text-align: center;
-        margin-bottom: -50%;
+    :nth-child(even) .hover-cont{
+      background-color: rgb(228, 214 ,187)!important;
+    }
+    p{
+      text-align: center;
+      margin-bottom: -50%;
         
-        :hover{
-          animation: bg-switch 0.5s forwards;
-        }
+      :hover{
+        animation: bg-switch 0.5s forwards;
       }
     }
   }
 }
+.img-cont{
+      width: 33.333%;
+      text-decoration-line: none;
+      background-size: cover;
+      display: inline-block;
+      text-transform: uppercase;
+      padding-bottom: 33.333%;
+      overflow: hidden;
+      color: #a39a9b;
+      text-align: center;
+      img{
+        height: auto;
+        width: 100%;
+        margin: 0;
+      }
+      
+      .hover-cont{
+        padding-top: 50%;
+        padding-bottom: 50%;
+        margin-bottom: -104%;
+        background-color: #bfd0d4;
+        opacity: 0;
+        &:hover{
+          animation: hovereffekt 0.4s ease-out forwards;
+        }
+      }
+    }
 #work{
   background-color: #a2999c;
   button{
@@ -171,33 +190,7 @@ body {
       }
     }*/
     
-    a{
-      width: 33.333%;
-      text-decoration-line: none;
-      background-size: cover;
-      display: inline-block;
-      text-transform: uppercase;
-      padding-bottom: 33.333%;
-      overflow: hidden;
-      color: #a39a9b;
-      text-align: center;
-      img{
-        height: auto;
-        width: 100%;
-        margin: 0;
-      }
-      
-      .hover-cont{
-        padding-top: 50%;
-        padding-bottom: 50%;
-        margin-bottom: -104%;
-        background-color: #bfd0d4;
-        opacity: 0;
-        &:hover{
-          animation: hovereffekt 0.4s ease-out forwards;
-        }
-      }
-    }
+    
   }
 }
 #plattforms{

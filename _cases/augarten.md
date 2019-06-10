@@ -1,5 +1,5 @@
 ---
-layout: detail
+layout: cases
 title: augarten
 tnimg: "/v1560164506/augarten-case.jpg"
 img: []

@@ -1,6 +1,22 @@
-.detail-wrapper{
+.detail-wrapper, .cases-wrapper{
     width:60vw;
     margin: 0 auto;
+    .embed-container {
+        position: relative; 
+        padding-bottom: 56.25%; /* ratio 16x9 */
+        height: 0; 
+        overflow: hidden; 
+        width: 60vw;
+        height: auto;
+        iframe {
+
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+          }
+      }
     .arrow-box{
         display: flex;
         justify-content: space-between;

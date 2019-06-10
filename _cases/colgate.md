@@ -1,5 +1,5 @@
 ---
-layout: detail
+layout: cases
 title: colgate
 tnimg: "/v1560164563/colgate-case.jpg"
 img: []

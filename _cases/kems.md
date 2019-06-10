@@ -1,5 +1,5 @@
 ---
-layout: detail
+layout: cases
 title: kems
 tnimg: "/v1560164597/Kems-case.jpg"
 img: []
