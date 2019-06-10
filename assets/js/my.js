@@ -44,14 +44,14 @@ $('document').ready(function(){
       var $win = $(window);
       var winH = $win.height();   // Get the window height.
   
-      $w.on("scroll", function () {
+      $win.on("scroll", function () {
           if ($(this).scrollTop() > winH ) {
               $nav.addClass("show");
           } else {
               $nav.removeClass("show");
           }
       }).on("resize", function(){ // If the user resizes the window
-         wH = $(this).height(); // you'll need the new height value
+         winH = $(this).height(); // you'll need the new height value
       });
   
   });

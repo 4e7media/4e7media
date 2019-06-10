@@ -1,112 +1,213 @@
-@media screen and (max-width:400px){
-    body {
-        
-        h3{
-          font-size: 14px;
-        }
-        a{
-          font-size: 14px;
-          font-weight: 500;
-        }
-      }
-      .detail-wrapper{
-          .title-box h3{
-              font-size: 14px!important;
-          }
-      }
-    nav{
-        .social-icons, .site_links{
-            display: none!important;
-        }
-        button{
-            top:3vw;
-            right: 3vw;
-        }
-    }
-    #landingpage{
-        .logo{
-            left: 40vw;
-            width: 20vw;
-        }
-    }
-    #features .feat_cont div{
-        img{
-            margin: 0 5%;
-            margin-top: 3vh;
-        }
-        .hover-cont {
-            font-size: 30px;
-            padding: 0 5%!important;
-            font-size: 12px;
-        }
-    }
-    #work, #cases{
-        .tn-cont{
-           height: 180vw;
-           a{
-               width: 100%;
-               height: 60vw;
-               margin-top: 0;
-           }
-        }
-    }
-    .about_us{
-        img{
-            height: 100%!important;
-        }
-        .about_text{
-            img{
-                height: 5%!important;
-            }
-        }
-    }
-    #plattforms{
-        img{
-            height: 10px;
-        }
-    }
-}
-
-@media(max-width:1050px){
+@media(max-width:1050px) {
     #landingpage video {
         width: auto;
         height: 100vh;
     }
-    .social-icons,.site_links{
-       display: none!important;
+
+    .social-icons,
+    .site_links {
+        display: none !important;
     }
-    #features .feat_cont div{
+
+    #features .feat_cont div {
         width: 100%;
         height: 60vw;
         overflow-x: hidden;
-            .hover-cont {
-                padding: 4vh 5%;
-                width: 90%;
-                font-size: 25px;
-                height: 60vw;
-            }
+
+        .hover-cont {
+            padding: 4vh 5%;
+            width: 90%;
+            font-size: 25px;
+            height: 60vw;
+        }
     }
-    #alex{
+
+    #alex {
         top: 10vh;
         padding: 0 20vw;
     }
+
     #about-title {
-            margin: 3vh 20vw;
-            width: 60vw;
-        }
-    #selma{
+        margin: 3vh 20vw;
+        width: 60vw;
+    }
+
+    #selma {
         flex-direction: column-reverse;
     }
-    .about_us{
-        img{
+
+    .about_us {
+        img {
             width: 100%;
             height: auto;
         }
-        
-        
-        .about_text{
+
+
+        .about_text {
             font-size: 20px;
             max-width: 100%
         }
     }
 }
+@media screen and (max-width:400px) {
+    body {
+        h3 {
+            font-size: 14px;
+        }
+
+        a {
+            font-size: 14px;
+            font-weight: 500;
+        }
+    }
+
+    .detail-wrapper {
+        .title-box h3 {
+            font-size: 14px !important;
+        }
+    }
+
+    nav {
+
+        .social-icons,
+        .site_links {
+            display: none !important;
+        }
+
+        button {
+            top: 3vw;
+            right: 3vw;
+        }
+    }
+
+    #landingpage {
+        .logo {
+            left: 40vw;
+            width: 20vw;
+        }
+    }
+
+    #features .feat_cont div {
+        img {
+            margin: 0 5%;
+            margin-top: 3vh;
+        }
+
+        .hover-cont {
+            font-size: 30px;
+            padding: 0 5%;
+            font-size: 12px;
+        }
+    }
+
+    .img-cont {
+        width: 90vw;
+        height: 90vw;
+        margin: 0 5vw;
+    }
+
+    #work,
+    #cases {
+        img {
+            width: 90vw;
+            margin: 5vh 5vw;
+        }
+
+        .tn-cont {
+            height: 270vw;
+            overflow: hidden;
+            padding: 0;
+            width: 100vw;
+
+        }
+    }
+    #about-title{
+        width: 90vw;
+        padding: 0 5vw;
+        margin: 0;
+        margin-top: 3vh;
+    }
+    .about_us {
+        width: 90vw;
+        padding: 0 5vw;
+        img {
+            height: 100%;
+        }
+
+        .about_text {
+            img {
+                height: 22vw!important;
+            }
+        }
+    }
+    #plattforms {
+        img {
+            width: 90vw;
+            height: 6vw;
+        }
+
+        .plattform-box {
+            width: 90vw;
+            a {
+                width: 90vw;
+                height: 90vw;
+                padding: 0;
+                .hover-cont{
+                    width: 90vw;
+                    height: 90vw;
+                }
+            }
+        }
+    }
+    #alex{
+        padding: 0 5vw!important;
+        img{
+            height: 40vh;
+        }
+    }
+    #selma{
+        img{
+            height: 40vh;
+        }
+    }
+    #press{
+        width: 90vw;
+        display: flex;
+        padding: 10vh 5vw;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        img{
+            margin-bottom: 1vh;
+            margin-right: 1vh;
+        } 
+    }
+    #footer{
+        height: 500px;
+        .first_row{
+            padding: 10px 5vw;
+            flex-wrap: wrap;
+            width: 90vw;
+            .touch{
+                width: 100%,
+            }
+            .links{
+                width: 100%;
+            }
+        }
+        .second_row{
+          flex-wrap: wrap-reverse;
+          width:90vw;
+          padding: 10px 5vw;
+          
+          p{
+              width: 100%;
+          }
+          div{
+              width: 100%;
+              justify-content: space-around;
+          }
+        }
+    }
+}
+
+

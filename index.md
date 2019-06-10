@@ -16,7 +16,10 @@ title: home
   <div id="press">
     <img src="">
   {% for img in site.data.press.url %}
-    <img src="{{site.cloud_host}}h_150,c_fill/{{img}}">
+    <img srcset=
+           "{{site.cloud_host}}h_130,c_fill/{{img}} 500w"
+    src="{{site.cloud_host}}h_150,c_fill/{{img}}"
+    >
   {% endfor %}
   </div>
 </div>
