@@ -29,6 +29,7 @@ fields:
   label: layout
   default: detail
 pages:
+- _work/spfw.md
 - _work/beba.md
 - _work/cuba-crisps.md
 - _work/lacoste.md
