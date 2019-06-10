@@ -62,7 +62,15 @@ $('document').ready(function(){
       }, 100)
       console.log(window.screen.width)
     });
-    
+    var domain = "https://" + window.location.hostname;
+
+    function close_view(){
+      if(document.referrer == domain + "/index.html"){
+        history.back();
+      }else{
+        location.href= domain + "/index.html";
+      }
+    }
     jQuery(function($) {
 
       var $nav = $('#bgm-btn');

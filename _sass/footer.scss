@@ -37,9 +37,7 @@
         width: 100%;
       }
     }
-    .social_footer a .img{
-       width: 45px;
-    }
+    
   }
   .second_row{
     display: flex;
@@ -48,6 +46,10 @@
     padding: 20px 20vw;
     background-color: #dcb6a5;
     color: #ffff;
+    .social_footer a img{
+       width: 45px;
+       margin: 0;
+    }
     p{
       width: 40%;
       margin-top: 8px;
