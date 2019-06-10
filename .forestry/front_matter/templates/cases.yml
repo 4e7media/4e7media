@@ -29,6 +29,7 @@ fields:
   label: layout
   default: detail
 pages:
+- _work/colgate.md
 - _work/mam.md
 - _work/tedx-vienna.md
 - _work/palmolive.md
