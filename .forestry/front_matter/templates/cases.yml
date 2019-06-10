@@ -29,6 +29,7 @@ fields:
   label: layout
   default: detail
 pages:
+- _cases/sony.md
 - _cases/lidl.md
 - _cases/humanic.md
 - _cases/schöller.md
