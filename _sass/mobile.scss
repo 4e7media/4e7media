@@ -1,4 +1,4 @@
-@media screen and (max-width:1050px){
+@media screen and (max-width:1050px) and(min-width: 401px){
     #landingpage video {
         width: auto;
         height: 100vh;
@@ -50,7 +50,7 @@
         }
         .hover-cont {
             font-size: 30px;
-            padding: 0 5%;
+            padding: 0 5%!important;
         }
     }
 }

@@ -14,6 +14,7 @@ title: home
   {% include plattforms.html %}
   {% include aboutus.html %}
   <div id="press">
+    <img src="">
   {% for img in site.data.press.url %}
     <img src="{{site.cloud_host}}h_150,c_fill/{{img}}">
   {% endfor %}
