@@ -17,7 +17,7 @@ $('document').ready(function(){
       $(".bgm-txt").removeClass("textslide");
       console.log("hallo")
     });
-    $(".bgm-close").click(function(){
+    $(".close-trigger").click(function(){
       $("#brg-menu").addClass("menu-close");
       $(".fas").removeClass("closeslide");
       $(".bgm-txt").removeClass("textslide");
