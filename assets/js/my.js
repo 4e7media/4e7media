@@ -70,7 +70,7 @@ $('document').ready(function(){
       }else{
         location.href= domain + "/index.html";
       }
-    }
+    };
     jQuery(function($) {
 
       var $nav = $('#bgm-btn');
