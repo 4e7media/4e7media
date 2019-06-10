@@ -29,6 +29,7 @@ fields:
   label: layout
   default: detail
 pages:
+- _cases/humanic.md
 - _cases/schöller.md
 - _cases/kit-kat.md
 - _cases/kems.md
