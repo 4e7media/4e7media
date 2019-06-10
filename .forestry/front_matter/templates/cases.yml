@@ -29,6 +29,7 @@ fields:
   label: layout
   default: detail
 pages:
+- _work/dalutex.md
 - _work/advertising-age.md
 - _work/submarino.md
 - _work/casa-de-criadores.md
