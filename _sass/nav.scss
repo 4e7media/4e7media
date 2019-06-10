@@ -45,6 +45,7 @@ nav{
         margin-top: 35px;
         font-size: 20px;
         font-weight: bold;
+        margin-left: 17vw;
     }
     .menu-close{
         animation: menuclose 0.3s ease-out forwards!important;
@@ -65,6 +66,7 @@ nav{
         display:flex;
         flex-direction: column;
         text-align: center;
+        z-index: 99;
         .bgm-txt{
             opacity: 0;
         }

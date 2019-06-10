@@ -33,6 +33,14 @@ body {
     width: 100%;
     z-index:0;
   }
+  .logo{
+    z-index: 99;
+    opacity: 1;
+    position: absolute;
+    top: 40vh;
+    left: 45vw;
+    width: 10vw;
+  }
 }
 #campaigns{
   width: 100vw;

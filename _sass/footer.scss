@@ -23,11 +23,11 @@
   .first_row{
     display: flex;
     flex-direction: row;
-    width:70vw;
-    padding: 40px 15vw;
+    width:60vw;
+    padding: 40px 20vw;
     background-color: #c2bcbd;
     .touch{
-      width: 30%;
+      width: 40%;
     }
     .links{
       width: 30%;
@@ -41,17 +41,19 @@
   .second_row{
     display: flex;
     flex-direction: row;
-    width:70vw;
-    padding: 20px 15vw;
+    width:60vw;
+    padding: 20px 20vw;
     background-color: #dcb6a5;
+    color: #ffff;
     p{
-      width: 33.333%;
+      width: 40%;
       margin-top: 8px;
     }
     div{
-      width: 33.333%;
+      width: 25%;
       margin-top: 8px;
-      
+      display: flex;
+      justify-content: space-between
     }
   }
 
