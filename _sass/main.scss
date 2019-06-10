@@ -150,9 +150,9 @@ body {
       }
       
       .hover-cont{
-        padding: 5vw;
-        width: 15vw;
-        height: 15vw;
+        padding:9vw 5vw;
+        width: 10vw;
+        height: 2vw;
         background-color: #bfd0d4;
         opacity: 0;
         &:hover{
@@ -230,8 +230,8 @@ body {
       background-color: rgb(228, 214 ,187)!important;
     }
     a{
-      width: 50%;
-      padding-top: 50%;
+      width: 30vw;
+      height: 30vw;
       background-size: cover;
       text-align: center;
       text-decoration-line: none;
@@ -241,9 +241,9 @@ body {
       text-transform: uppercase;
       color: #a39a9b;
       .hover-cont{
-        padding-top: 49%;
-        padding-bottom: 47%;
-        margin-top: -100%;
+        width: 20vw;
+        height: 2vw;
+        padding: 14vw 5vw;
         background-color: #bfd0d4;
         background-color: #bfd0d4;
         opacity: 0;
