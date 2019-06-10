@@ -29,6 +29,7 @@ fields:
   label: layout
   default: detail
 pages:
+- _work/nestlé.md
 - _work/chemie-verbände.md
 - _work/novomatic.md
 - _work/rakuten.md
