@@ -29,6 +29,7 @@ fields:
   label: layout
   default: detail
 pages:
+- _work/palmers.md
 - _work/öbb.md
 - _work/colgate.md
 - _work/mam.md
