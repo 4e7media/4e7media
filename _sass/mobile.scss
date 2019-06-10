@@ -1,4 +1,34 @@
+@media screen and (max-width:400px){
+    body{
+        background-color: aqua;
+    }
+    #features .feat_cont div{
+        img{
+            margin: 0 5%;
+            margin-top: 3vh;
+        }
+        .hover-cont {
+            font-size: 30px;
+            padding: 0 5%!important;
+            font-size: 12px;
+        }
+    }
+    #work, #cases{
+        .tn-cont{
+           height: 180vw;
+           a{
+               width: 100%;
+               height: 60vw;
+               margin-top: 0;
+           }
+        }
+    }
+}
+
 @media(max-width:1050px){
+    body{
+        background-color: #cccccc;
+    }
     #landingpage video {
         width: auto;
         height: 100vh;
@@ -42,6 +72,9 @@
     }
 }
 @media (max-width:400px){
+    body{
+        background-color: aqua;
+    }
     #features .feat_cont div{
         img{
             margin: 0 5%;

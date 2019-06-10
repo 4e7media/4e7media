@@ -106,6 +106,7 @@ body {
 }
 #cases{
   background-color: #7a9fa7;
+  padding-bottom: 5vh;
   img{
       width: 50%;
       height: auto;
@@ -113,13 +114,13 @@ body {
     }
   .tn-cont{
     width: 60vw;
-    padding: 30px 20vw;
+    padding: 0 20vw;
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-bottom: 14vh;
     z-index: 2;
     color: transparent;
+    overflow: hidden;
     :nth-child(even) .hover-cont{
       background-color: rgb(228, 214 ,187)!important;
     }
@@ -139,7 +140,6 @@ body {
       background-size: cover;
       display: inline-block;
       text-transform: uppercase;
-      padding-bottom: 33.333%;
       overflow: hidden;
       color: #a39a9b;
       text-align: center;
@@ -162,6 +162,7 @@ body {
     }
 #work{
   background-color: #a2999c;
+  padding-bottom: 5vh;
   button{
     background: none;
     border: none;
