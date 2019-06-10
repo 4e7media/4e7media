@@ -12,7 +12,7 @@
             <a href="../index.html"><i class="fas fa-times"></i></a>
         </div>
         <div class="embed-container">
-            <iframe width="560" height="315" src="{{page.video}}?&autoplay=1"></iframe>
+            <iframe width="560" height="315" src="{{page.video| replace: "watch?v=", "embed/" }}?&autoplay=1"></iframe>
         </div>
         <div class="arrow-box">
             <i class="fas fa-chevron-left"></i>
