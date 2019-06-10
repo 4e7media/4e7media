@@ -31,13 +31,38 @@ $('document').ready(function(){
       $(".less").show()
     });
     $(".less").click(function(){
-      $(".work-cont").height("60vw")
+      if (window.screen.width >400) {
+        $(".work-cont").height("60vw")
+      }
+      else{
+        $(".work-cont").height("360vw")
+      }
       $(".less").hide()
       $(".more").show()
       $('html, body').animate({
         scrollTop: $("#work").offset().top
       }, 100)
     });
+    $(".case-more").click(function(){
+      $(".cases-cont").height("auto")
+      $(".case-more").hide()
+      $(".case-less").show()
+    });
+    $(".case-less").click(function(){
+      if (window.screen.width >400) {
+        $(".cases-cont").height("60vw")
+      }
+      else{
+        $(".cases-cont").height("360vw")
+      }
+      $(".case-less").hide()
+      $(".case-more").show()
+      $('html, body').animate({
+        scrollTop: $("#cases").offset().top
+      }, 100)
+      console.log(window.screen.width)
+    });
+    
     jQuery(function($) {
 
       var $nav = $('#bgm-btn');

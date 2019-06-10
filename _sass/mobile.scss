@@ -6,7 +6,7 @@
 
     .social-icons,
     .site_links {
-        display: none !important;
+        display: none;
     }
 
     #features .feat_cont div {
@@ -63,7 +63,7 @@
 
     .detail-wrapper {
         .title-box h3 {
-            font-size: 14px !important;
+            font-size: 14px;
         }
     }
 
@@ -71,12 +71,25 @@
 
         .social-icons,
         .site_links {
-            display: none !important;
+            display: none;
         }
 
         button {
             top: 3vw;
             right: 3vw;
+        }
+        #brg-menu{
+            a{
+                margin-top: 25px;
+                font-size: 20px;
+            }
+            .social-icons{
+                display: inline;
+                opacity: 0;
+                img{
+                    width: 20%;
+                }
+            }
         }
     }
 
@@ -108,6 +121,12 @@
 
     #work,
     #cases {
+        button{
+                width: 40vw;
+                margin: 5vh 30vw;
+                margin-bottom: 0;
+                font-size: 20px
+            }
         img {
             width: 90vw;
             margin: 5vh 5vw;
@@ -118,7 +137,7 @@
             overflow: hidden;
             padding: 0;
             width: 100vw;
-
+            
         }
     }
     #about-title{
