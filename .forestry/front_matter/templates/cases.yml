@@ -29,6 +29,7 @@ fields:
   label: layout
   default: detail
 pages:
+- _work/arnette.md
 - _work/fast-fruit.md
 - _work/dalutex.md
 - _work/advertising-age.md
