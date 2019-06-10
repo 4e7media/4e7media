@@ -29,6 +29,7 @@ fields:
   label: layout
   default: detail
 pages:
+- _work/fast-fruit.md
 - _work/dalutex.md
 - _work/advertising-age.md
 - _work/submarino.md
