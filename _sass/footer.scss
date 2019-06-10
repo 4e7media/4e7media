@@ -46,17 +46,19 @@
     padding: 20px 20vw;
     background-color: #dcb6a5;
     color: #ffff;
-    .social_footer a img{
-       width: 45px;
+    .social_footer{
+      margin: 5px 4vw;
+       a img{
+       width: 30px;
        margin: 0;
-    }
+    }}
     p{
       width: 40%;
       margin-top: 8px;
     }
     div{
       width: 25%;
-      margin-top: 8px;
+      margin-top: 12px;
       display: flex;
       justify-content: space-between
     }

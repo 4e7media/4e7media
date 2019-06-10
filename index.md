@@ -9,14 +9,18 @@ title: home
   {% include landingpage.html %}
   {% include campaingns-eye.html %}
   {% include features.html %}
-  {% include cases.html %}
+  {% include casesindex.html %}
   {% include work.html %}
   {% include plattforms.html %}
   {% include aboutus.html %}
   <div id="press">
-    <img src="">
-  {% for img in site.data.press.url %}
-    <img src="{{site.cloud_host}}h_180,c_fill/{{img}}">
-  {% endfor %}
+    <img class="press-title" src="../img/press.png">
+    <div class="press-box">
+    {% for img in site.data.press.url %}
+      <img src="{{site.cloud_host}}h_180,c_fill/{{img}}">
+    {% endfor %}
+    </div>
+    <button type="button" class="press-more">MORE PRESS</button>
+    <button type="button" class="press-less">CLOSE</button>
   </div>
 </div>

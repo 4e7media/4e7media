@@ -8,8 +8,6 @@ $('document').ready(function () {
     $(".social-icons").addClass("social-slide");
     $("#bgm-btn").removeClass("show");
   });
-  $("#alex").hide()
-  $("#about-title").hide()
   $(".textslide").click(function () {
     $("#brg-menu").addClass("menu-close");
     $(".fas").removeClass("closeslide");
@@ -59,7 +57,20 @@ $('document').ready(function () {
     }, 100)
     console.log(window.screen.width)
   });
-
+  $(".press-more").click(function () {
+    $(".press-box").height("auto")
+    $(".press-more").hide()
+    $(".press-less").show()
+  });
+  $(".press-less").click(function () {
+    $(".press-box").height("30vw")
+    $(".press-less").hide()
+    $(".press-more").show()
+    $('html, body').animate({
+      scrollTop: $("#press").offset().top
+    }, 100)
+    console.log(window.screen.width)
+  });
 
   var $nav = $('#bgm-btn');
   var $win = $(window);
@@ -88,7 +99,7 @@ $('document').ready(function () {
   }).on("resize", function () { // If the user resizes the window
     wH = $(this).height(); // you'll need the new height value
   });
-
+$('.about-fixed').show()
 });
 
 var domain = "https://" + window.location.hostname;

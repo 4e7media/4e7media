@@ -134,9 +134,13 @@
 
     #work,
     #cases {
+        padding-bottom: 5vh;
+        .case-more{
+            display: inline-block;
+        }
         button{
-                width: 40vw;
-                margin: 5vh 30vw;
+                width: 60vw;
+                margin: 5vh 20vw;
                 margin-bottom: 0;
                 font-size: 20px
             }
@@ -207,7 +211,29 @@
         display: flex;
         padding: 10vh 5vw;
         flex-wrap: wrap;
-        justify-content: space-around;
+        .press-title{
+            width: 90vw;
+            margin: 0;
+            height: 35px;
+        }
+        button{
+            width: 40vw;
+            margin: 5vh 30vw;
+            margin-bottom: 0;
+            font-size: 20px;
+            color: black;
+        }
+        .press-more{
+            display: inline-block;
+            color: black;
+        }
+        .press-box{
+            display: flex;
+            height: 30vw; 
+            overflow: hidden; 
+            justify-content: space-around;  
+            flex-wrap: wrap;          
+        }
         img{
             margin-bottom: 1vh;
             margin-right: 1vh;
@@ -215,11 +241,12 @@
         } 
     }
     #footer{
-        height: 500px;
+        height: 430px;
         .first_row{
             padding: 10px 5vw;
             flex-wrap: wrap;
             width: 90vw;
+            text-align: center;
             .touch{
                 width: 100%,
             }
