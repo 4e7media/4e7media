@@ -87,6 +87,19 @@
             font-weight: 500;
         }
     }
+    .cases-wrapper{
+        width: 90vw;
+        .title-box{
+            width: 90vw;
+            a{
+                top: 7vh;
+                right: 5vw;
+            }
+        }
+        .embed-container{
+            width: 90vw;
+        }
+    }
     .social_footer .social-icon img {
         width: 45px;
     }
@@ -100,10 +113,18 @@
         justify-content: space-around;
         }
     }
-    
+    .push{
+        height: 430px;
+    }
     .detail-wrapper {
-        .title-box h3 {
-            font-size: 22px;
+        .title-box {
+            a{
+                top: 6vh;
+                right: 5vw;
+            }
+            h3 {
+                font-size: 22px;
+            }
         }
     }
 

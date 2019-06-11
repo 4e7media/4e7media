@@ -13,8 +13,12 @@
             <iframe width="560" height="315" src="{{page.video| replace: "watch?v=", "embed/" }}?&autoplay=1"></iframe>
         </div>
         <div class="arrow-box">
-            <i class="fas fa-chevron-left"></i>
-            <i class="fas fa-chevron-right"></i>
+            {% if page.previous.url %}
+              <a class="prev" href="{{page.previous.url}}"><i class="fas fa-chevron-left"></i></a>
+            {% endif %}
+            {% if page.next.url %}
+              <a class="next" href="{{page.next.url}}"><i class="fas fa-chevron-right"></i></a>
+            {% endif %}
         </div>
     <div class="push"></div>
     </div>

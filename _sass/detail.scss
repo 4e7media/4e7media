@@ -1,6 +1,7 @@
 .detail-wrapper, .cases-wrapper{
     width:60vw;
     margin: 0 auto;
+    margin-bottom: -300px;
     .embed-container {
         position: relative; 
         padding-bottom: 56.25%; /* ratio 16x9 */
@@ -26,7 +27,7 @@
     #gallery{
         display: flex;
         flex-wrap: wrap;
-        min-height: 70vh;
+        min-height: 40vh;
         width: 60vw;
         align-items: center;
         img{
