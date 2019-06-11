@@ -219,6 +219,12 @@
             overflow: hidden;
             padding: 0;
             width: 100vw;
+            .img-cont .hover-cont{
+                width: 100%;
+                &:hover{
+                    animation: mobilehovereffekt 0.4s ease-out forwards;
+                }
+            }
             
         }
     }
