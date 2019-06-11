@@ -75,6 +75,19 @@
             max-width: 100%
         }
     }
+    #press{
+        button{
+            width: 60vw;
+            margin: 5vh 0;
+        }
+        .press-box{
+            height: 20vw;
+            overflow: hidden;
+        }
+        .press-more{
+            display: inline-block;
+        }    
+    }
 }
 @media screen and (max-width:450px) {
     body {
@@ -114,7 +127,7 @@
         }
     }
     .push{
-        height: 430px;
+        height: 300px;
     }
     .detail-wrapper {
         .title-box {
@@ -271,8 +284,8 @@
             margin-bottom: 5vh;
         }
         button{
-            width: 40vw;
-            margin: 5vh 30vw;
+            width: 60vw;
+            margin: 5vh 20vw;
             margin-bottom: 0;
             font-size: 20px;
             color: black;
