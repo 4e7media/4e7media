@@ -20,10 +20,17 @@ nav{
         right: -3vw;
         background: none;
         border: none;
+        &:focus{
+            outline: none;
+         }
         .fas{
            text-shadow: 3px 6px #272634;
            z-index: 3;
            font-size: 35px;
+           &:focus{
+               outline: none;
+            }
+           
         } 
     }
     

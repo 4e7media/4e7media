@@ -1,12 +1,27 @@
 @media(max-width:1050px) {
-    #landingpage video {
-        width: auto;
-        height: 100vh;
+    nav{
+        .site-links{
+            display: none;
+        }
+        #bgm-btn{
+            top:3vw;
+            right: 3vw;
+        }
+    }
+    #landingpage{
+        .logo{
+            left: 40vw;
+            width: 20vw;
+        } 
+        video {
+            width: auto;
+            height: 100vh;
+        }   
     }
 
     .social-icons,
     .site_links {
-        display: none;
+        display: none!important;
     }
 
     #features .feat_cont div {
@@ -21,7 +36,16 @@
             height: 60vw;
         }
     }
-
+    #work{
+        button{
+            font-size: 25px;
+        }
+    }
+    #plattforms{
+        img{
+            height: 2vh;
+        }
+    }
     #alex {
         top: 10vh;
         padding: 0 20vw;
@@ -35,7 +59,7 @@
     #selma {
         flex-direction: column-reverse;
     }
-
+    
     .about_us {
         img {
             width: 100%;
@@ -171,6 +195,7 @@
         }
 
         .about_text {
+            font-size: 14px;
             img {
                 height: 22vw!important;
             }
@@ -215,6 +240,7 @@
             width: 90vw;
             margin: 0;
             height: 35px;
+            margin-bottom: 5vh;
         }
         button{
             width: 40vw;

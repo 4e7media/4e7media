@@ -106,6 +106,7 @@ body {
 }
 #cases{
   background-color: #7a9fa7;
+  padding-bottom: 5vh;
   button{
     background: none;
     border: none;
@@ -116,6 +117,9 @@ body {
     margin: 5vh 40vw;
     font-weight: 500;
     text-align: center;
+    &:focus{
+      outline: none;
+   }
   }
   .case-less, .case-more{
     display: none;
@@ -186,6 +190,9 @@ body {
     margin: 5vh 40vw;
     font-weight: 500;
     text-align: center;
+    &:focus{
+      outline: none;
+   }
   }
   .less{
     display: none;
@@ -306,6 +313,7 @@ body {
   .press-title{
     width: 50vw;
     margin: 0 5%;
+    margin-bottom: 5vh;
   }
   .press-more,.press-less{
     display: none;
@@ -320,5 +328,8 @@ body {
     margin: 5vh 40vw;
     font-weight: 500;
     text-align: center;
+    &:focus{
+      outline: none;
+   }
   }
 }
