@@ -1,11 +1,17 @@
 @media(max-width:1050px) {
     nav{
-        .site-links{
-            display: none;
-        }
         #bgm-btn{
             top:3vw;
             right: 3vw;
+        }
+        .social-icons,.site_links {
+        display: none;
+        }
+        .social-icons{
+            justify-content: space-around;
+            img{
+                width: 70%;
+            }
         }
     }
     #landingpage{
@@ -19,10 +25,7 @@
         }   
     }
 
-    .social-icons,
-    .site_links {
-        display: none!important;
-    }
+    
 
     #features .feat_cont div {
         width: 100%;
@@ -73,7 +76,7 @@
         }
     }
 }
-@media screen and (max-width:400px) {
+@media screen and (max-width:450px) {
     body {
         h3 {
             font-size: 14px;

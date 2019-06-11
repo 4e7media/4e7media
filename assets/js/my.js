@@ -28,7 +28,7 @@ $('document').ready(function () {
     $(".less").show()
   });
   $(".less").click(function () {
-    if (window.screen.width > 400) {
+    if (window.screen.width > 450) {
       $(".work-cont").height("60vw")
     } else {
       $(".work-cont").height("360vw")
@@ -45,7 +45,7 @@ $('document').ready(function () {
     $(".case-less").show()
   });
   $(".case-less").click(function () {
-    if (window.screen.width > 400) {
+    if (window.screen.width > 450) {
       $(".cases-cont").height("60vw")
     } else {
       $(".cases-cont").height("360vw")
