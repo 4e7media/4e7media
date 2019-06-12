@@ -114,12 +114,12 @@
     }
     #mobile-eye{
         display: block;
-        height: 120vh;
+        height: 100vh;
         max-width: 400px;
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
     }
     .cases-wrapper{
         width: 90vw;
