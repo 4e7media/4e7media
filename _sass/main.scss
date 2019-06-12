@@ -1,6 +1,7 @@
 .click-tr{
   pointer-events: none;
 }
+
 html{
   min-height: 100vh;
   overflow-x: hidden;
@@ -299,6 +300,9 @@ body {
   position: fixed;
   top: 20vh;
   z-index: -1;
+  .mobile-alex{
+    display: none;
+  }
 }
 #about-title{
   margin: 5vh 20vw;
@@ -359,4 +363,7 @@ body {
       outline: none;
    }
   }
+}
+.mobile{
+  display: none!important;
 }

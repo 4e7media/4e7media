@@ -14,7 +14,8 @@ title: 4e7
   {% include plattforms.html %}
   {% include aboutus.html %}
   <div id="press">
-    <img class="press-title" src="../img/press.png">
+    <img class="desktop press-title" src="../img/press.png">
+    <img class="mobile press-title" src="https://res.cloudinary.com/media4e7/image/upload/v1560353453/press_eqjnrc.svg">
     <div class="press-box">
     {% for img in site.data.press.url %}
       <img src="{{site.cloud_host}}h_180,c_fill/{{img}}">

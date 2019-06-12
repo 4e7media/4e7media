@@ -1,5 +1,6 @@
 <div id="cases">
-    <img src="../img//cases.jpg">
+    <img class="desktop" src="../img//cases.jpg">
+    <img class="mobile" src="https://res.cloudinary.com/media4e7/image/upload/v1560353453/cases_tqtegn.svg">
     <div class="tn-cont cases-cont">
       {% for post in site.cases %}
         <a class="img-cont" href="{{ post.url }}" style="background-image: url('{{site.cloud_host}}{{ post.tnimg }}');">
