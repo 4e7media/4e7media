@@ -47,6 +47,9 @@ body {
   width: 100vw;
   height: auto;
   z-index: 2;
+  .mobile-camp{
+    display: none;
+  }
   img{
     margin:0 auto;
     width: 100%;
@@ -60,6 +63,8 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}#mobile-eye{
+  display: none;
 }
 #features{
   .feat_cont{
@@ -68,7 +73,17 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     z-index: 2;
-    
+    button{
+      background: none; 
+      border: none;
+      outline: none; 
+      position: absolute;
+      left: 2vw;
+      color: white;
+      i{
+        font-size: 25px;
+      }
+    }
     div{
       width: 50vw;
       background-size: cover;

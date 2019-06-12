@@ -100,6 +100,27 @@
             font-weight: 500;
         }
     }
+    #campaigns{
+        img{
+            display: none;
+        }
+        .mobile-camp{
+        display: block;
+        }
+    }
+    
+    #eye{
+        display: none;
+    }
+    #mobile-eye{
+        display: block;
+        height: 120vh;
+        max-width: 400px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
     .cases-wrapper{
         width: 90vw;
         .title-box{
@@ -148,9 +169,13 @@
             display: none;
         }
 
-        button {
+        #bgm-btn {
             top: 3vw;
-            right: 42vw;
+            left: 46vw;
+            i{
+                text-shadow: -3px -8px 9px rgba(122, 159, 167, 1);
+                font-size: 30px;
+            }
         }
         #brg-menu{
             a{
