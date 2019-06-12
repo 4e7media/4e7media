@@ -74,15 +74,7 @@ body {
     flex-wrap: wrap;
     z-index: 2;
     button{
-      background: none; 
-      border: none;
-      outline: none; 
-      position: absolute;
-      left: 2vw;
-      color: white;
-      i{
-        font-size: 25px;
-      }
+      display: none;
     }
     div{
       width: 50vw;

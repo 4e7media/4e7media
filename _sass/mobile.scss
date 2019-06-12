@@ -202,7 +202,17 @@
             width: 20vw;
         }
     }
-
+    #features button{
+        background: none; 
+        border: none;
+        outline: none; 
+        position: absolute;
+        left: 2vw;
+        color: white;
+        i{
+          font-size: 25px;
+        }
+      }
     #features .feat_cont div {
         img {
             margin: 0 5%;
