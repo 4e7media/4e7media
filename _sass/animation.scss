@@ -18,6 +18,11 @@
     50%{opacity: 0.5; padding: 1.5vw 5%; height: 12vw;}
     100%{opacity:1; padding: 3vw 5%; height: 24vw;}
 }
+@keyframes mobilefeathovereffekt{
+    0%{opacity: 0; padding: 0 5%; height: 0;}
+    50%{opacity: 0.5; padding: 1.5vw 5%; height: 45vw;}
+    100%{opacity:1; padding: 3vw 5%; height: 90vw;}
+}
 @keyframes menuopen{
     0% {width:0; height:0; padding: 0; background: rgba(0, 0, 0, 0);}
     50%{width: 25vw; height:50vh; padding-right: 25vw; background: rgba(0, 0, 0, 0.5);}
