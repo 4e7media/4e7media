@@ -163,17 +163,19 @@
     }
 
     nav {
-
+        .show{
+            animation: none;
+        }
         .social-icons,
         .site_links {
             display: none;
         }
 
         #bgm-btn {
-            top: 3vw;
+            top: 8vw;
             left: 46vw;
             i{
-                text-shadow: -3px -8px 9px rgba(122, 159, 167, 1);
+                text-shadow: 0px -1px 4px rgb(184, 209, 214);
                 font-size: 30px;
             }
         }
@@ -239,6 +241,7 @@
     #work,
     #cases {
         padding-bottom: 5vh;
+        margin-top: -1px;
         .case-more{
             display: inline-block;
         }
@@ -246,11 +249,11 @@
                 width: 60vw;
                 margin: 5vh 20vw;
                 margin-bottom: 0;
-                font-size: 20px
+                font-size: 18px;
             }
         img {
             width: 90vw;
-            margin: 5vh 5vw;
+            margin: 11vh 5vw 5vh 5vw
         }
 
         .tn-cont {
@@ -287,14 +290,19 @@
             }
         }
     }
-    #plattforms {
+    #plattforms { 
+        padding: 0;
+        padding-bottom: 5vh;
         img {
             width: 90vw;
             height: 6vw;
+            margin: 11vh 5vw 5vh 5vw;
+           
         }
 
         .plattform-box {
             width: 90vw;
+            
             a {
                 width: 90vw;
                 height: 90vw;
@@ -305,6 +313,9 @@
                 }
             }
         }
+    }
+    #about-ph{
+        height: 110vh;
     }
     #alex{
         padding: 0 5vw!important;
