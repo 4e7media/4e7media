@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: default
-title: 4e7
+title: 4e7 Media
 ---
 <div id="home">
   {% include landingpage.html %}
