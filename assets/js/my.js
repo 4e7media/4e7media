@@ -6,6 +6,7 @@ $('document').ready(function() {
         $(".grey").removeClass("sideslide");
         $(".yellow").removeClass("sideslide");
         $(".rosa").removeClass("sideslide");
+        $(".featclose").hide()
         $(".o-one").show();
         $(".one").hide();
     });
@@ -15,6 +16,7 @@ $('document').ready(function() {
         $(".green").removeClass("sideslide");
         $(".yellow").removeClass("sideslide");
         $(".rosa").removeClass("sideslide");
+        $(".featclose").hide()
         $(".o-two").show();
         $(".two").hide();
     });
@@ -23,6 +25,7 @@ $('document').ready(function() {
         $(".green").removeClass("sideslide");
         $(".grey").removeClass("sideslide");
         $(".rosa").removeClass("sideslide");
+        $(".featclose").hide()
         $(".o-tree").show();
         $(".tree").hide();
     });
@@ -31,29 +34,15 @@ $('document').ready(function() {
         $(".green").removeClass("sideslide");
         $(".grey").removeClass("sideslide");
         $(".yellow").removeClass("sideslide");
+        $(".featclose").hide()
         $(".o-four").show();
         $(".four").hide();
     });
     //what we do mobile close the slide
-    $(".o-one").click(function() {
-        $(".green").removeClass("sideslide");
-        $(".one").show();
-        $(".o-one").hide();
-    });
-    $(".o-two").click(function() {
-        $(".grey").removeClass("sideslide");
-        $(".two").show();
-        $(".o-two").hide();
-    });
-    $(".o-tree").click(function() {
-        $(".yellow").removeClass("sideslide");
-        $(".tree").show();
-        $(".o-tree").hide();
-    });
-    $(".o-four").click(function() {
-        $(".rosa").removeClass("sideslide");
-        $(".four").show();
-        $(".o-four").hide();
+    $(".featclose").click(function() {
+        $(".sideslide").removeClass("sideslide");
+        $(".fa-angle-double-right").show();
+        $(".featclose").hide();
     });
     //open the menu
     $("#bgm-btn").click(function() {
