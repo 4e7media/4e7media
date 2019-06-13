@@ -93,6 +93,7 @@
         }
     }
     #campaigns {
+        margin-bottom: 100vh;
         img {
             display: none;
         }
@@ -103,14 +104,25 @@
     #eye {
         display: none;
     }
+    .fixed-p {
+        position: fixed;
+        width: 89vw;
+        background-size: contain;
+        top: 35vw;
+        height: 18%;
+        margin: 0 6vw;
+        z-index: -2;
+    }
     #mobile-eye {
         display: block;
-        height: 100vh;
-        max-width: 400px;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
+        position: fixed;
+        width: 90vw;
+        height: 30vw;
         background-size: contain;
+        background-repeat: no-repeat;
+        top: 10px;
+        margin: 0 5vw;
+        z-index: -2;
     }
     .cases-wrapper {
         width: 90vw;
@@ -269,13 +281,11 @@
         padding: 0 5vw;
         margin: 0;
         margin-top: 3vh;
+        z-index: -3;
     }
     .about_us {
         width: 90vw;
         padding: 0 5vw;
-        img {
-            height: 100%;
-        }
         .about_text {
             font-size: 12px;
             p {
@@ -416,7 +426,6 @@
         display: block!important;
     }
     .mobileab {
-        display: block!important;
         position: fixed;
         top: 2.5vh;
         left: 7.5vw;

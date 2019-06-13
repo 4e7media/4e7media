@@ -9,6 +9,7 @@ $('document').ready(function() {
         $(".o-one").show();
         $(".one").hide();
     });
+    $(".about-fixed").hide()
     $(".two").click(function() {
         $(".grey").addClass("sideslide");
         $(".green").removeClass("sideslide");
@@ -159,13 +160,14 @@ $('document').ready(function() {
     $w.on("scroll", function() {
         if ($(this).scrollTop() > wH * 4) {
             $v.show();
+            $("#mobile-eye").hide()
         } else {
             $v.hide();
+            $("#mobile-eye").show()
         }
     }).on("resize", function() { // If the user resizes the window
         wH = $(this).height(); // you'll need the new height value
     });
-    $('.about-fixed').show()
 });
 //backbutton from the detail screen
 var domain = "https://" + window.location.hostname;
