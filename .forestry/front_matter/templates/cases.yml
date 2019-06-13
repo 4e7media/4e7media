@@ -47,6 +47,7 @@ fields:
     labelField: 
   label: video+video thumbnails
 pages:
+- _work/new.md
 - _work/nestlé.md
 - _work/chemie-verbände.md
 - _work/novomatic.md
