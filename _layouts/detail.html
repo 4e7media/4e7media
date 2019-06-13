@@ -14,11 +14,19 @@
                 <img src="{{site.cloud_host}}/h_150,c_fill/{{pic}}">
             </a>
             {% endfor %} {% for vid in page.vid %}
-            <a width="320" height="300" href="{{vid.video}}" rel="video">
+            <a class="desktop" href="{{vid.video}}" rel="video">
                 <img src="{{site.cloud_host}}/h_150,c_fill/{{vid.vtn}}">
             </a>
             {% endfor %}
+
         </div>
+        {% for vid in page.vid %}
+        <a class="mobile" target="_blank" href="{{vid.video}}">
+            <img src="{{site.cloud_host}}/h_150,c_fill/{{vid.vtn}}">
+        </a>
+        {% endfor %}
+
+        <p></p>
 
 
         <div class="arrow-box">
