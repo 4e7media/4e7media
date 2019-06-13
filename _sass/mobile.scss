@@ -277,7 +277,7 @@
             height: 100%;
         }
         .about_text {
-            font-size: 14px;
+            font-size: 12px;
             p {
                 margin: 0;
             }
@@ -312,6 +312,12 @@
         height: 110vh;
     }
     #alex {
+        .mobile-alex {
+            display: block;
+        }
+        .des-alex {
+            display: none!important;
+        }
         padding: 0 5vw!important;
         img {
             width: 90vw;
