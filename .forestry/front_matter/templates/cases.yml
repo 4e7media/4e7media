@@ -28,6 +28,24 @@ fields:
   hidden: false
   label: layout
   default: detail
+- name: vid
+  type: field_group_list
+  fields:
+  - name: vtn
+    type: file
+    config:
+      maxSize: 250
+    label: Videothumbnail
+  - name: video
+    type: text
+    config:
+      required: false
+    label: Videolink
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: video+video thumbnails
 pages:
 - _work/nestlé.md
 - _work/chemie-verbände.md
