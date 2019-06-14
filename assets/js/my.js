@@ -150,9 +150,11 @@ $('document').ready(function() {
         if ($(this).scrollTop() > wH * 4) {
             $v.show();
             $("#mobile-eye").hide()
+            $("#landingpage").hide()
         } else {
             $v.hide();
             $("#mobile-eye").show()
+            $("#landingpage").show()
         }
     }).on("resize", function() { // If the user resizes the window
         wH = $(this).height(); // you'll need the new height value

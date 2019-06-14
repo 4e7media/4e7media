@@ -26,14 +26,14 @@ body {
 }
 
 #landingpage {
-    width: auto;
-    height: 100vh;
+    width: 100vw;
     margin: 0 auto;
-    margin-top: -70px;
     top: 0;
     z-index: 2;
     overflow: hidden;
     background-color: white;
+    position: fixed;
+    z-index: -99;
     video {
         width: 100%;
         z-index: 0;
@@ -52,6 +52,8 @@ body {
     width: 100vw;
     height: auto;
     z-index: 2;
+    margin-top: 100vh;
+    margin-bottom: -4px;
     .mobile-camp {
         display: none;
     }
