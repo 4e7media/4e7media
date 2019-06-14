@@ -427,6 +427,8 @@
         top: 2.5vh;
         left: 7.5vw;
         z-index: -2;
+        display: block;
+        opacity: 1;
     }
     .video-stream,
     .html5-main-video {

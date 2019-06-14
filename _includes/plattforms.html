@@ -1,13 +1,13 @@
 <div id="plattforms">
-    <img class="desktop" src="../img/platforms.png">
+    <img class="desktop" src="../img/platforms.svg">
     <img class="mobile" src="https://res.cloudinary.com/media4e7/image/upload/v1560353453/platforms_jsnqut.svg">
     <div class="plattform-box">
-            {% for post in site.plattforms %}
-            <a href="{{ post.url }}" style="background-image: url('{{site.cloud_host}}{{ post.tnimg }}');">
-              <div class="hover-cont">
+        {% for post in site.plattforms %}
+        <a href="{{ post.url }}" style="background-image: url('{{site.cloud_host}}{{ post.tnimg }}');">
+            <div class="hover-cont">
                 {{ post.title}}
-              </div>
-            </a>
-           {% endfor %}
+            </div>
+        </a>
+        {% endfor %}
     </div>
 </div>
