@@ -10,5 +10,5 @@ img:
 - "/v1559982131/1-sony-silent-party-2-1000.jpg"
 - "/v1559982131/1-sony-silent-party-1-1000.jpg"
 video: ''
-
+date: 2010-1-1
 ---

@@ -7,5 +7,5 @@ img:
 - "/v1560169085/2-colgate-ad2-1000.jpg"
 - "/v1560169084/1-colgate-ad1-1000.jpg"
 video: ''
-
+date: 2010-1-7
 ---

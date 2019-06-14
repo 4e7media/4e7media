@@ -8,5 +8,5 @@ img:
 - "/v1559982968/3-lidl-ein-gutes-stuesk-heimat-1000.jpg"
 - "/v1559982968/2-lidl-leitner-familie-facebook-1000.jpg"
 video: ''
-
+date: 2010-1-5
 ---

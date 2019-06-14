@@ -23,5 +23,5 @@ img:
 - "/v1559983012/humanic-city-colours-2-1000.jpg"
 - "/v1559983012/humanic-city-colours-1-1000.jpg"
 video: ''
-
+date: 2010-1-3
 ---
