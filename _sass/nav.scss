@@ -1,123 +1,129 @@
-nav{
+nav {
     display: flex;
     flex-direction: row;
     height: 50px;
     width: 70vw;
-    padding:10px 15vw;
-    z-index: 1;
+    padding: 10px 15vw;
     color: white;
-    .show{
-        animation: bgmshow 0.6s ease-out forwards;
-    }
-    a{
+    position: fixed;
+    top: 3vh;
+    z-index: -98;
+    a {
         color: white;
         text-decoration-line: none;
     }
-    button{
-        color: white;
-        position: fixed;
-        top: -3vw;
-        right: -3vw;
-        background: none;
-        border: none;
-        z-index: 99;
-        &:focus{
-            outline: none;
-         }
-        .fas{
-           text-shadow: 3px 6px #272634;
-           z-index: 3;
-           font-size: 35px;
-           &:focus{
-               outline: none;
-            }
-           
-        } 
-    }
-    
-    .social-icons{
+    .social-icons {
         width: 25%;
-        z-index: 1;
-        img{
+        z-index: -98;
+        img {
             width: 35px;
             height: auto;
             margin: 30px 5%;
         }
     }
-    .site_links{
+    .site_links {
         width: 50%;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        z-index: 1;
+        z-index: -98;
         margin-top: 35px;
         font-size: 20px;
         font-weight: bold;
         margin-left: 17vw;
     }
-    .menu-close{
-        animation: menuclose 0.3s ease-out forwards!important;
+     :nth-cild(4) {
+        animation-delay: 0.6s
     }
-    .menu-open{
-        animation: menuopen 0.3s ease-out forwards;
+     :nth-child(2) {
+        animation-delay: 0.6s
     }
-            :nth-cild(4){
-                animation-delay: 0.6s
-            }
-    #brg-menu{
-        width: 0;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        right: 0;
-        background: rgba(0, 0, 0, 0.9);
-        display:flex;
-        flex-direction: column;
-        text-align: center;
-        z-index: 99;
-        .bgm-txt{
-            opacity: 0;
-        }
-        .social-icons{
-            display: flex;
-            opacity: 0;
-            width: 40%;
-            margin: 0 30%;
-            margin-top: 5vh;
-            justify-content: space-around;
-            .social-icon img{
-                width: 50%;
-            }
-        }
-        :nth-child(2) {
-            animation-delay: 0.6s
-        }
-        .closeslide{
-            animation: closeslide 0.2s ease-in forwards;
-            animation-delay: 0.3s
-        }
-        i{
-            color: white;
-            margin-bottom: 10vh;
-            font-size: 35px;
-            opacity: 0;
-        }
-        .textslide{
-            animation: slidetext 0.2s ease-in forwards;
-            animation-delay: 0.5s
-            
-        }
-        .social-slide {
-                animation: socialslide 0.2s ease-in 0.6s forwards!important;
-            }
-        a{
-            color: white;
-            margin-top: 50px;
-            font-size: 35px;
-            :nth-of-type(2) {
-                animation-delay: 0.6s!important
-            }
-            
-        } 
+}
+
+#bgm-btn {
+    color: white;
+    position: fixed;
+    top: -3vw;
+    right: -3vw;
+    background: none;
+    border: none;
+    z-index: 99;
+    &:focus {
+        outline: none;
     }
+    .fas {
+        text-shadow: 3px 6px #272634;
+        z-index: 3;
+        font-size: 35px;
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.show {
+    animation: bgmshow 0.6s ease-out forwards;
+}
+
+#brg-menu {
+    width: 0;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    z-index: 99;
+    a {
+        text-decoration-line: none;
+        color: white;
+        margin-top: 50px;
+        font-size: 35px;
+    }
+    .bgm-txt {
+        opacity: 0;
+    }
+    .social-icons {
+        display: flex;
+        opacity: 0;
+        width: 40%;
+        margin: 0 30%;
+        margin-top: 10vh;
+        justify-content: space-around;
+        .social-icon img {
+            width: 50%;
+        }
+    }
+}
+
+.closeslide {
+    animation: closeslide 0.2s ease-in forwards;
+    animation-delay: 0.3s
+}
+
+.textslide {
+    animation: slidetext 0.2s ease-in forwards;
+    animation-delay: 0.5s
+}
+
+.social-slide {
+    animation: socialslide 0.2s ease-in 0.6s forwards!important;
+}
+
+.fa-times {
+    color: white;
+    margin-top: 15vh;
+    margin-bottom: 10vh;
+    font-size: 35px;
+    opacity: 0;
+}
+
+.menu-close {
+    animation: menuclose 0.3s ease-out forwards!important;
+}
+
+.menu-open {
+    animation: menuopen 0.3s ease-out forwards;
 }

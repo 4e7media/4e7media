@@ -184,6 +184,7 @@ body {
     text-align: center;
     flex-direction: column-reverse;
     height: 20vw;
+    margin: 0;
     &:hover .hover-cont {
         animation: hovereffekt 0.2s ease-out forwards;
     }

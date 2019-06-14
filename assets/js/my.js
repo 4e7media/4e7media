@@ -159,6 +159,9 @@ $('document').ready(function() {
     }).on("resize", function() { // If the user resizes the window
         wH = $(this).height(); // you'll need the new height value
     });
+    var achor = $('#plattforms').offsetTop;
+    var fixed = $('#selma');
+    console.log(achor);
 });
 //backbutton from the detail screen
 var domain = "https://" + window.location.hostname;
