@@ -9,13 +9,13 @@
             <a href="../index/#work"><i class="fas fa-times"></i></a>
         </div>
         <div id="gallery">
-            {% for pic in page.img %}
-            <a href="{{site.cloud_host}}{{pic}}">
-                <img src="{{site.cloud_host}}/h_150,c_fill/{{pic}}">
-            </a>
-            {% endfor %} {% for vid in page.vid %}
+            {% for vid in page.vid %}
             <a class="desktop" href="{{vid.video}}" rel="video">
                 <img src="{{vid.vtn}}">
+            </a>
+            {% endfor %} {% for pic in page.img %}
+            <a href="{{site.cloud_host}}{{pic}}">
+                <img src="{{site.cloud_host}}/h_150,c_fill/{{pic}}">
             </a>
             {% endfor %}
 
