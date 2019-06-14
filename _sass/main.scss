@@ -312,10 +312,11 @@ body {
 }
 
 #about-title {
-    margin: 5vh 20vw;
+    margin: 5vh 25vw;
     position: fixed;
     z-index: -1;
     top: 0;
+    width: 50vw;
 }
 
 .mobileab {
@@ -349,8 +350,8 @@ body {
     padding: 10vh 20vw;
     background: white;
     .press-title {
-        width: 50vw;
-        margin: 0 5%;
+        width: 30vw;
+        margin: 0 15vw;
         margin-bottom: 5vh;
     }
     .press-box {

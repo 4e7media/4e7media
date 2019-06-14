@@ -49,11 +49,17 @@
         padding: 20px 20vw;
         background-color: #dcb6a5;
         color: #ffff;
+        a {
+            color: white;
+        }
         .social_footer {
             margin: 5px 4vw;
-            a img {
-                width: 30px;
-                margin: 0;
+            a {
+                color: white;
+                img {
+                    width: 30px;
+                    margin: 0;
+                }
             }
         }
         p {
