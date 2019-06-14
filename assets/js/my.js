@@ -136,9 +136,11 @@ $('document').ready(function() {
         if ($(this).scrollTop() > winH) {
             $nav.addClass("show");
             $("#landingpage").hide()
+            $("#mobile-eye").show()
         } else {
             $nav.removeClass("show");
             $("#landingpage").show();
+            $("#mobile-eye").hide()
         }
     }).on("resize", function() { // If the user resizes the window
         winH = $(this).height(); // you'll need the new height value
