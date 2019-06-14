@@ -47,6 +47,7 @@ fields:
     labelField: 
   label: video+video thumbnails
 pages:
+- _work/advertising-age.md
 - _work/nestlé.md
 - _work/chemie-verbände.md
 - _work/novomatic.md
@@ -55,7 +56,6 @@ pages:
 - _work/arnette.md
 - _work/fast-fruit.md
 - _work/dalutex.md
-- _work/advertising-age.md
 - _work/submarino.md
 - _work/casa-de-criadores.md
 - _work/spfw.md
