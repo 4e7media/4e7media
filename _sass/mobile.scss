@@ -189,10 +189,10 @@
             }
         }
     }
+    .show {
+        animation: none;
+    }
     nav {
-        .show {
-            animation: none;
-        }
         .social-icons,
         .site_links {
             display: none;
