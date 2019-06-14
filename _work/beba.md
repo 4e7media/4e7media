@@ -8,6 +8,8 @@ img:
 video: ''
 date: '2010-1-10'
 vid:
+- video: https://www.youtube.com/embed/QkO0iNg6rdQ
+  vtn: http://i3.ytimg.com/vi/QkO0iNg6rdQ/maxresdefault.jpg
 - video: https://www.youtube.com/embed/8RhdKsmweoA
   vtn: http://i3.ytimg.com/vi/8RhdKsmweoA/maxresdefault.jpg
 - video: https://www.youtube.com/embed/inGpXGT1w-M
