@@ -7,6 +7,8 @@ img:
 - "/v1560169296/4-beba-facebook_posts-1000.jpg"
 video: ''
 date: '2010-1-10'
-vid: []
+vid:
+- video: https://www.youtube.com/embed/inGpXGT1w-M
+  vtn: http://i3.ytimg.com/vi/inGpXGT1w-M/hqdefault.jpg
 
 ---

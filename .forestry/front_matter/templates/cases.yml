@@ -31,16 +31,16 @@ fields:
 - name: vid
   type: field_group_list
   fields:
-  - name: vtn
-    type: file
-    config:
-      maxSize: 250
-    label: Videothumbnail
   - name: video
     type: text
     config:
       required: false
     label: Videolink
+  - name: vtn
+    type: text
+    config:
+      required: false
+    label: Videothumbnail
   config:
     min: 
     max: 
