@@ -21,7 +21,7 @@ title: 4e7 Media
       <img src="{{site.cloud_host}}h_180,c_fill/{{img}}">
     {% endfor %}
     </div>
-    <button type="button" class="press-more">MORE PRESS</button>
-    <button type="button" class="press-less">CLOSE</button>
+    <button type="button" class="press-more">More</button>
+    <button type="button" class="press-less">Close</button>
   </div>
 </div>
