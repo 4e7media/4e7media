@@ -11,6 +11,6 @@ vid:
 - video: https://www.youtube.com/embed/8RhdKsmweoA
   vtn: http://i3.ytimg.com/vi/8RhdKsmweoA/maxresdefault.jpg
 - video: https://www.youtube.com/embed/inGpXGT1w-M
-  vtn: http://i3.ytimg.com/vi/inGpXGT1w-M/hqdefault.jpg
+  vtn: http://i3.ytimg.com/vi/inGpXGT1w-M/maxresdefault.jpg
 
 ---
