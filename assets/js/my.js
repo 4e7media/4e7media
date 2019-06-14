@@ -135,8 +135,10 @@ $('document').ready(function() {
     $win.on("scroll", function() {
         if ($(this).scrollTop() > winH) {
             $nav.addClass("show");
+            $("#landingpage").hide()
         } else {
             $nav.removeClass("show");
+            $("#landingpage").show();
         }
     }).on("resize", function() { // If the user resizes the window
         winH = $(this).height(); // you'll need the new height value
@@ -150,18 +152,23 @@ $('document').ready(function() {
         if ($(this).scrollTop() > wH * 4) {
             $v.show();
             $("#mobile-eye").hide()
-            $("#landingpage").hide()
         } else {
             $v.hide();
             $("#mobile-eye").show()
-            $("#landingpage").show()
         }
     }).on("resize", function() { // If the user resizes the window
         wH = $(this).height(); // you'll need the new height value
     });
-    var achor = $('#plattforms').offsetTop;
+    var achor = $('#about-ph').offset();
     var fixed = $('#selma');
-    console.log(achor);
+    console.log(achor.top);
+    $(window).on("scroll", function() {
+        if ($(this).scrollTop() > achor.top) {
+            $("#selma").css("position: fixed")
+        } else {
+            $("#selma").css("position: static")
+        }
+    });
 });
 //backbutton from the detail screen
 var domain = "https://" + window.location.hostname;
