@@ -5,7 +5,7 @@ tnimg: "/v1560524667/novomatic.png"
 img:
 - "/v1560171048/Nerdcore-Watch-This-Sexy-Guy-Pwning-Call-of-Duty-200.jpg"
 video: ''
-date: '2010-1-11'
+date: '2010-1-6'
 vid:
 - video: https://www.youtube.com/embed/N1keWCle0GQ
   vtn: http://i3.ytimg.com/vi/N1keWCle0GQ/hqdefault.jpg
