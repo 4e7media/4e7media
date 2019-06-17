@@ -7,6 +7,8 @@ img:
 video: ''
 date: '2010-1-11'
 vid:
+- video: https://www.youtube.com/embed/N1keWCle0GQ
+  vtn: http://i3.ytimg.com/vi/N1keWCle0GQ/hqdefault.jpg
 - video: https://www.youtube.com/embed/FQTc1bEUZVE
   vtn: http://i3.ytimg.com/vi/FQTc1bEUZVE/maxresdefault.jpg
 - video: https://www.youtube.com/embed/VzanDy0Jn0U
