@@ -145,10 +145,18 @@ $('document').ready(function() {
     }).on("resize", function() { // If the user resizes the window
         winH = $(this).height(); // you'll need the new height value
     });
+    //grid size
+    $.each($(".gridimg"), function(k, v) {
+        console.log("Key: " + k + ", Value: " + v);
+    });
+    $.each($(".gridimg"), function(k, v) {
+        if ($(this).width() > 250) { $(this).parent().addClass("lol"); }
+    });
     // variablen for the about parallax
     var $v = $('.about-fixed');
     var $w = $(window);
     var wH = $w.height(); // Get the window height.
+    $.cloudinary.config({ cloud_name: 'media4e7', secure: true });
     // shows the about cont after scrolling 4 screens to prevent seeing the about in the loading time
     $w.on("scroll", function() {
         if ($(this).scrollTop() > wH * 4) {
@@ -163,9 +171,9 @@ $('document').ready(function() {
     });
     var achor = $('#about-ph').offset();
     var fixed = $('#selma');
-    console.log(achor.top);
+    console.log(achor.Top);
     $(window).on("scroll", function() {
-        if ($(this).scrollTop() > achor.top) {
+        if ($(this).scrollTop() > achor.Top) {
             $("#selma").css("position: fixed")
         } else {
             $("#selma").css("position: static")

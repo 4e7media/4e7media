@@ -14,8 +14,8 @@
                 <img src="{{vid.vtn}}">
             </a>
             {% endfor %} {% for pic in page.img %}
-            <a href="{{site.cloud_host}}{{pic}}">
-                <img src="{{site.cloud_host}}/h_150,c_fill/{{pic}}">
+            <a class="gridlink" href="{{site.cloud_host}}{{pic}}">
+                <img class="gridimg" src="{{site.cloud_host}}if_w_gt_h,c_fill,h_250,w_310/if_h_gt_w,c_fill,w_150,h_250/{{pic}}">
             </a>
             {% endfor %}
 

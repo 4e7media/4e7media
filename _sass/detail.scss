@@ -27,19 +27,25 @@
         margin-top: 5vh;
     }
     #gallery {
-        display: flex;
+        display: grid;
         flex-wrap: wrap;
         min-height: 40vh;
         width: 60vw;
         align-items: center;
         justify-content: center;
+        grid-template-columns: repeat(7, 150px);
+        grid-gap: 10px;
+        grid-auto-rows: 250px;
+        .lol {
+            grid-column: auto/span 2;
+        }
         .iframe-cont {
             width: 100vw;
             padding-bottom: 51%;
         }
         img {
             margin: 0 10px 10px 0;
-            height: 150px;
+            height: 250px;
             width: auto;
         }
     }
