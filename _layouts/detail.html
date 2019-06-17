@@ -15,7 +15,7 @@
             </a>
             {% endfor %} {% for pic in page.img %}
             <a class="gridlink" href="{{site.cloud_host}}{{pic}}">
-                <img class="gridimg" src="{{site.cloud_host}}if_w_gt_h,c_fill,h_250,w_310/if_h_gt_w,c_fill,w_150,h_250/{{pic}}">
+                <img class="gridimg" src="{{site.cloud_host}}if_w_gt_h,c_fill,h_250,w_310/if_h_gt_w,c_fill,w_150,h_250/if_h_eq_w,c_fill,w_150,h_250{{pic}}">
             </a>
             {% endfor %}
 

@@ -36,6 +36,7 @@
         grid-template-columns: repeat(8, 150px);
         grid-gap: 10px;
         grid-auto-rows: 250px;
+        grid-auto-flow: dense;
         .big {
             grid-column: auto/span 2;
         }
