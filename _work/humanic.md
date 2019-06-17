@@ -23,5 +23,21 @@ img:
 - "/v1559983012/humanic-city-colours-2-1000.jpg"
 - "/v1559983012/humanic-city-colours-1-1000.jpg"
 video: ''
-date: 2010-1-3
+date: '2010-1-3'
+vid:
+- video: https://www.youtube.com/embed/zJ4PrrnXX_g
+  vtn: http://i3.ytimg.com/vi/zJ4PrrnXX_g/maxresdefault.jpg
+- video: https://www.youtube.com/embed/nbVHUzfnnTY
+  vtn: http://i3.ytimg.com/vi/nbVHUzfnnTY/maxresdefault.jpg
+- video: https://www.youtube.com/embed/p_vKrTu3L2A
+  vtn: http://i3.ytimg.com/vi/p_vKrTu3L2A/maxresdefault.jpg
+- video: https://www.youtube.com/embed/Fv6LjmPd64A
+  vtn: http://i3.ytimg.com/vi/Fv6LjmPd64A/maxresdefault.jpg
+- video: https://www.youtube.com/embed/LQXK1V4GQKk
+  vtn: http://i3.ytimg.com/vi/LQXK1V4GQKk/maxresdefault.jpg
+- video: https://www.youtube.com/embed/6D9ObSy-qck
+  vtn: http://i3.ytimg.com/vi/6D9ObSy-qck/maxresdefault.jpg
+- video: https://www.youtube.com/embed/Ys_TnDvtkS0
+  vtn: http://i3.ytimg.com/vi/Ys_TnDvtkS0/maxresdefault.jpg
+
 ---
