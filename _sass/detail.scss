@@ -26,8 +26,17 @@
         margin-bottom: 5vh;
         margin-top: 5vh;
     }
-    #gallery {
+    .grid {
         display: grid;
+    }
+    .flex {
+        display: flex;
+        justify-content: center;
+        img {
+            margin-right: 10px;
+        }
+    }
+    #gallery {
         flex-wrap: wrap;
         min-height: 40vh;
         width: 60vw;
