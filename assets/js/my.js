@@ -150,7 +150,7 @@ $('document').ready(function() {
         console.log("Key: " + k + ", Value: " + v);
     });
     $.each($(".gridimg"), function(k, v) {
-        if ($(this).width() > 250) { $(this).parent().addClass("lol"); }
+        if ($(this).width() > 250) { $(this).parent().addClass("big"); }
     });
     // variablen for the about parallax
     var $v = $('.about-fixed');
