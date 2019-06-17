@@ -47,8 +47,8 @@ fields:
     labelField: 
   label: video+video thumbnails
 pages:
-- _work/mam.md
 - _work/colgate.md
+- _work/mam.md
 - _work/advertising-age.md
 - _work/nestlé.md
 - _work/chemie-verbände.md
