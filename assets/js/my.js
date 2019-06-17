@@ -168,7 +168,6 @@ $('document').ready(function() {
         } else {
             $v.hide();
             $("#mobile-eye").show()
-            $('#eye').show();
         }
     }).on("resize", function() { // If the user resizes the window
         wH = $(this).height(); // you'll need the new height value
