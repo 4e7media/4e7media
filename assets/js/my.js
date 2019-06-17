@@ -137,10 +137,12 @@ $('document').ready(function() {
             $nav.addClass("show");
             $("#landingpage").hide()
             $("#mobile-eye").show()
+            $('#eye').show();
         } else {
             $nav.removeClass("show");
             $("#landingpage").show();
-            $("#mobile-eye").hide()
+            $("#mobile-eye").hide();
+            $('#eye').hide();
         }
     }).on("resize", function() { // If the user resizes the window
         winH = $(this).height(); // you'll need the new height value
@@ -162,9 +164,11 @@ $('document').ready(function() {
         if ($(this).scrollTop() > wH * 4) {
             $v.show();
             $("#mobile-eye").hide()
+            $('#eye').hide();
         } else {
             $v.hide();
             $("#mobile-eye").show()
+            $('#eye').show();
         }
     }).on("resize", function() { // If the user resizes the window
         wH = $(this).height(); // you'll need the new height value
