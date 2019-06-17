@@ -47,6 +47,7 @@ fields:
     labelField: 
   label: video+video thumbnails
 pages:
+- _work/colgate.md
 - _work/advertising-age.md
 - _work/nestlé.md
 - _work/chemie-verbände.md
@@ -64,7 +65,6 @@ pages:
 - _work/lacoste.md
 - _work/palmers.md
 - _work/öbb.md
-- _work/colgate.md
 - _work/mam.md
 - _work/tedx-vienna.md
 - _work/palmolive.md
