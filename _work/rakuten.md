@@ -5,6 +5,10 @@ tnimg: "/v1560171012/24-thumbnail-rakuten.jpg"
 img: []
 video: ''
 vid:
+- video: https://www.youtube.com/embed/aKHqsKeLT1A
+  vtn: http://i3.ytimg.com/vi/aKHqsKeLT1A/maxresdefault.jpg
+- video: https://www.youtube.com/embed/UTgWGih3Sks
+  vtn: http://i3.ytimg.com/vi/UTgWGih3Sks/maxresdefault.jpg
 - video: https://www.youtube.com/embed/ILdAqI5b0-k
   vtn: http://i3.ytimg.com/vi/ILdAqI5b0-k/maxresdefault.jpg
 - video: https://www.youtube.com/embed/lTP--hjwE7g
