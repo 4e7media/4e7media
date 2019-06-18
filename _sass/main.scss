@@ -70,17 +70,19 @@ body {
     z-index: -1;
     position: fixed;
     top: 2vh;
-    left: 20vw;
+    left: 25vw;
+    width: 50vw;
     img {
-        width: 30vw;
+        width: 25vw;
     }
     .eye-text {
-        width: 40vw;
-        margin-left: -10vw;
-        margin-bottom: 2vh;
+        width: 35vw;
+        position: absolute;
+        top: 20vh;
+        left: 14vw;
     }
     p {
-        width: 60vw;
+        width: 50vw;
         font-size: 30px;
     }
 }
