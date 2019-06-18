@@ -162,15 +162,14 @@ $('document').ready(function() {
     var $v = $('.about-fixed');
     var $w = $(window);
     var wH = $w.height(); // Get the window height.
-    $.cloudinary.config({ cloud_name: 'media4e7', secure: true });
     // shows the about cont after scrolling 4 screens to prevent seeing the about in the loading time
     $w.on("scroll", function() {
         if ($(this).scrollTop() > wH * 4) {
-            $v.show();
+            $('.about-fixed').show();
             $("#mobile-eye").hide()
             $('#eye').hide();
         } else {
-            $v.hide();
+            $('.about-fixed').hide();
             $("#mobile-eye").show()
         }
     }).on("resize", function() { // If the user resizes the window

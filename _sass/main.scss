@@ -336,11 +336,15 @@ body {
     position: fixed;
     top: 20vh;
     z-index: -1;
+    height: 90vh;
     .mobile-alex {
         display: none;
     }
 }
-
+img.des-alex {
+    width: 50%;
+    height: 50%;
+}
 #about-title {
     margin: 5vh 25vw;
     position: fixed;
