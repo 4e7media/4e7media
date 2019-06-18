@@ -47,6 +47,7 @@ fields:
     labelField: 
   label: video+video thumbnails
 pages:
+- _work/youtube.md
 - _plattforms/artformum-4e7.md
 - _plattforms/trendsylvania.md
 - _work/colgate.md
