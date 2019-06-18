@@ -1,5 +1,9 @@
 //wait for the document to be complity loaded
 $('document').ready(function() {
+    $.each($(".gridimg"), function(k, v) {
+        if ($(this).width() > 200) { $(this).parent().addClass("big"); }
+    });
+
     //what we do mobile right Slide open
     $(".one").click(function() {
         $(".green").addClass("sideslide");
@@ -152,7 +156,7 @@ $('document').ready(function() {
         console.log("Key: " + k + ", Value: " + v);
     });
     $.each($(".gridimg"), function(k, v) {
-        if ($(this).width() > 250) { $(this).parent().addClass("big"); }
+        if ($(this).width() > 200) { $(this).parent().addClass("big"); }
     });
     // variablen for the about parallax
     var $v = $('.about-fixed');
