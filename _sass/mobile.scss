@@ -148,6 +148,17 @@
         #gallery {
             width: 90vw;
             justify-content: space-around;
+            grid-template-columns: repeat(2, 100px);
+            .big {
+                co img {
+                    width: 200px;
+                    height: 170px;
+                }
+            }
+            img {
+                width: 100px;
+                height: 170px;
+            }
         }
     }
     .push {
