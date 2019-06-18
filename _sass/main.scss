@@ -367,6 +367,10 @@ img.des-alex {
     justify-content: space-between;
     padding: 5vh 20vw;
     background: white;
+    img{
+        width: 50%;
+        height: 40%;
+    }
     .main {
         margin: 10vh 25%;
         width: 50%;
@@ -375,6 +379,7 @@ img.des-alex {
         max-width: 40%;
         img {
             width: 100%;
+            height: auto;
         }
     }
 }
