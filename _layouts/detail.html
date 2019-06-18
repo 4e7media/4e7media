@@ -8,7 +8,9 @@
             <h3>{{ page.title }}</h3>
             <a href="../index/#work"><i class="fas fa-times"></i></a>
         </div>
-        {% assign img_count = page.img.size | plus:page.vid.size %} {% if img_count>= 4 %}
+        {% for video in page.video %}
+        <div class="iframe-cont">
+            <iframe src="{{video}}"></iframe></div>{% endfor %} {% assign img_count = page.img.size | plus:page.vid.size %} {% if img_count>= 4 %}
         <div id="gallery" class="grid">
             {% for vid in page.vid %}
             <a class="desktop yt-tn" href="{{vid.video}}" rel="video">
@@ -20,8 +22,7 @@
             </a>
             {% endfor %}
         </div>
-        {% else %}
-        <div id="gallery" class="flex">
+        {% elsif img_count > 0 and img_count <=3 %}<div id="gallery" class="flex">
             {% for vid in page.vid %}
             <a class="desktop yt-tn" href="{{vid.video}}" rel="video">
                 <img src="{{vid.vtn}}">
@@ -31,22 +32,22 @@
                 <img class="gridimg" src="{{site.cloud_host}}if_w_gt_h,c_fill,h_250,w_310/if_h_gt_w,c_fill,w_150,h_250/if_h_eq_w,c_fill,w_150,h_250{{pic}}">
             </a>
             {% endfor %}
-        </div> {% endif %} {% for vid in page.vid %}
-        <a class="mobile" target="_blank" href="{{vid.video}}">
-            <img src="{{vid.vtn}}">
-        </a>
-        {% endfor %}
+    </div> {% endif %} {% for vid in page.vid %}
+    <a class="mobile" target="_blank" href="{{vid.video}}">
+        <img src="{{vid.vtn}}">
+    </a>
+    {% endfor %}
 
-        <p></p>
+    <p></p>
 
 
-        <div class="arrow-box">
-            {% if page.previous.url %}
-            <a class="prev" href="{{page.previous.url}}"><i class="fas fa-chevron-left"></i></a> {% endif %} {% if page.next.url %}
-            <a class="next" href="{{page.next.url}}"><i class="fas fa-chevron-right"></i></a> {% endif %}
-        </div>
+    <div class="arrow-box">
+        {% if page.previous.url %}
+        <a class="prev" href="{{page.previous.url}}"><i class="fas fa-chevron-left"></i></a> {% endif %} {% if page.next.url %}
+        <a class="next" href="{{page.next.url}}"><i class="fas fa-chevron-right"></i></a> {% endif %}
+    </div>
 
-        <div class="push"></div>
+    <div class="push"></div>
     </div>
     <script>
         // applying photobox on a `gallery` element which has lots of thumbnails links.
