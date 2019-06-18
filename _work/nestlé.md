@@ -14,5 +14,4 @@ vid:
   vtn: http://i3.ytimg.com/vi/AmNr_x6akcg/maxresdefault.jpg
 - video: https://www.youtube.com/embed/85Rn5WWuh5s
   vtn: http://i3.ytimg.com/vi/85Rn5WWuh5s/maxresdefault.jpg
-
 ---
