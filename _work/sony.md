@@ -5,7 +5,7 @@ tnimg: "/v1559982123/1-thumbnail-sony.jpg"
 img:
 - "/v1559982131/1-sony-silent-party-1-1000.jpg"
 video: ''
-date: '2010-1-1'
+date: '2010-1-2'
 vid:
 - video: https://www.youtube.com/embed/bs1ry1352Ys
   vtn: http://i3.ytimg.com/vi/bs1ry1352Ys/maxresdefault.jpg

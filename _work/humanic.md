@@ -34,7 +34,7 @@ img:
 - "/v1559983013/humanic--urban-poetry-4-1000.jpg"
 - "/v1560760007/18557053_1636947876346053_4429451046041932614_n.jpg"
 video: ''
-date: '2010-1-3'
+date: '2010-1-4'
 vid:
 - video: https://www.youtube.com/embed/Ys_TnDvtkS0
   vtn: http://i3.ytimg.com/vi/Ys_TnDvtkS0/maxresdefault.jpg
