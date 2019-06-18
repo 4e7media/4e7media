@@ -47,6 +47,7 @@ fields:
     labelField: 
   label: video+video thumbnails
 pages:
+- _plattforms/trendsylvania.md
 - _work/colgate.md
 - _work/mam.md
 - _work/advertising-age.md
@@ -81,7 +82,6 @@ pages:
 - _plattforms/notorious.md
 - _plattforms/travel-guides-tips.md
 - _plattforms/artformum-4e7.md
-- _plattforms/trendsylvania.md
 - _work/humanic.md
 - _work/lidl.md
 - _work/4e7.md
