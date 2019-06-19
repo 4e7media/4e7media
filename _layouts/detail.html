@@ -8,7 +8,12 @@
             <h3>{{ page.title }}</h3>
             <a href="../index/#work"><i class="fas fa-times"></i></a>
         </div>
-        {% for video in page.video %}
+        {% for vid in page.vid %}
+        <a class="mobile yt-tn" target="_blank" href="{{vid.video}}">
+            <img src="{{vid.vtn}}">
+            <img class="play" src="https://res.cloudinary.com/media4e7/image/upload/v1560939922/play-button_yy3um4.svg">
+        </a>
+        {% endfor %} {% for video in page.video %}
         <div class="iframe-cont">
             <iframe src="{{video}}"></iframe></div>{% endfor %} {% assign img_count = page.img.size | plus:page.vid.size %} {% if img_count>= 4 %}
         <div id="gallery" class="grid">
@@ -35,11 +40,7 @@
                 <img class="gridimg" src="{{site.cloud_host}}if_w_gt_h,c_fill,h_250,w_310/if_h_gt_w,c_fill,w_150,h_250/if_h_eq_w,c_fill,w_150,h_250{{pic}}">
             </a>
             {% endfor %}
-    </div> {% endif %} {% for vid in page.vid %}
-    <a class="mobile" target="_blank" href="{{vid.video}}">
-        <img src="{{vid.vtn}}">
-    </a>
-    {% endfor %}
+    </div> {% endif %}
 
     <p></p>
 

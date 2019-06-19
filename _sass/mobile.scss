@@ -151,29 +151,36 @@
     }
     .detail-wrapper {
         width: 90vw;
+        .play {
+            top: -170px;
+            left: 80px;
+            width: 50%!important;
+        }
         h3 {
             height: auto;
         }
-        #gallery {
-            width: 90vw;
-            justify-content: space-around;
-            grid-template-columns: repeat(2, 100px);
-            .big {
-                img {
-                    width: 200px;
-                    height: 170px;
-                }
-            }
+        .yt-tn {
+            height: 170px;
             img {
-                width: 100px;
                 height: 170px;
             }
+        }
+        #gallery {
+            width: 90vw;
+            grid-template-columns: repeat(2, 150px);
         }
     }
     .push {
         height: 300px;
     }
     .detail-wrapper {
+        .yt-tn {
+            width: 310px;
+            margin: 5px auto;
+            img {
+                width: 100%;
+            }
+        }
         .title-box {
             a {
                 top: 6vh;

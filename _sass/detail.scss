@@ -49,6 +49,15 @@
             border: 0;
         }
     }
+    .yt-tn {
+        height: 170px;
+    }
+    .play {
+        z-index: 99;
+        position: relative;
+        top: -250px;
+        opacity: 0.7;
+    }
     #gallery {
         flex-wrap: wrap;
         min-height: 40vh;
@@ -59,12 +68,6 @@
         grid-gap: 10px;
         grid-auto-rows: 250px;
         grid-auto-flow: dense;
-        .play {
-            z-index: 99;
-            position: relative;
-            top: -250px;
-            opacity: 0.7;
-        }
         .big {
             grid-column: auto/ span 2;
         }
