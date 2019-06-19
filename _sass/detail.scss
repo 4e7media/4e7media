@@ -59,11 +59,17 @@
         grid-gap: 10px;
         grid-auto-rows: 250px;
         grid-auto-flow: dense;
+        .play {
+            z-index: 99;
+            position: relative;
+            top: -250px;
+        }
         .big {
             grid-column: auto/ span 2;
         }
         .yt-tn {
             grid-column: auto/ span 2;
+            height: 250px;
             img {
                 width: 310px;
                 height: 250px;
