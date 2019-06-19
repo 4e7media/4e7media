@@ -355,11 +355,6 @@ body {
     }
 }
 
-img.des-alex {
-    width: 50%;
-    height: 50%;
-}
-
 #about-title {
     margin: 5vh 25vw;
     position: fixed;
@@ -384,11 +379,10 @@ img.des-alex {
     background: white;
     img {
         width: 50%;
-        height: 40%;
     }
-    .main {
-        margin: 10vh 25%;
+    .main-img {
         width: 50%;
+        height: 600px;
     }
     .about_text {
         max-width: 40%;
@@ -403,17 +397,24 @@ img.des-alex {
     width: 60vw;
     padding: 10vh 20vw;
     background: white;
+    display: flex;
+    flex-direction: column;
     .big {
         grid-column: auto/ span 2;
     }
     #press-gal {
         display: grid;
         grid-template-columns: repeat(8, 120px);
+        grid-auto-rows: 180px;
         grid-gap: 10px;
+        grid-auto-flow: dense;
+        margin: 0 auto;
+        height: 180px;
+        overflow: hidden;
     }
     .press-title {
         width: 30vw;
-        margin: 0 15vw;
+        margin: 0 20vw;
         margin-bottom: 5vh;
     }
     .press-box {
@@ -441,6 +442,12 @@ img.des-alex {
             outline: none;
         }
     }
+}
+
+#impressum {
+    width: 70vw;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .mobile {

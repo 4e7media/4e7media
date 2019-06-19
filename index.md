@@ -16,14 +16,12 @@ title: 4e7 Media
   <div id="press">
     <img class="desktop press-title" src="../img/press-title.svg">
     <img class="mobile press-title" src="https://res.cloudinary.com/media4e7/image/upload/v1560353453/press_eqjnrc.svg">
-    <div class="press-box"> 
     <div id="press-gal">
     {% for img in site.data.press.url %}
       <a href="{{site.cloud_host}}{{img}}">
         <img class="press-img" src="{{site.cloud_host}}if_w_gt_h,c_fill,h_180,w_250/if_h_gt_w,c_fill,w_120,h_180/if_h_eq_w,c_fill,w_120,h_180{{img}}">
       </a>
     {% endfor %}
-    </div>
     </div>
     <button type="button" class="press-more">More</button>
     <button type="button" class="press-less">Close</button>

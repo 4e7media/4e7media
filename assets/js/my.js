@@ -129,13 +129,13 @@ $('document').ready(function() {
     });
     //opens press more
     $(".press-more").click(function() {
-        $(".press-box").height("auto")
+        $("#press-gal").height("auto")
         $(".press-more").hide()
         $(".press-less").show()
     });
     // closes press more
     $(".press-less").click(function() {
-        $(".press-box").height("30vw")
+        $("#press-gal").height("180px")
         $(".press-less").hide()
         $(".press-more").show()
             //scroll to press top
@@ -167,11 +167,15 @@ $('document').ready(function() {
     $.each($(".gridimg"), function(k, v) {
         console.log("Key: " + k + ", Value: " + v);
     });
-    $.each($(".gridimg"), function(k, v) {
-        if ($(this).width() > 200) { $(this).parent().addClass("big"); }
+    $(window).on("load", function() {
+        $.each($(".gridimg"), function(k, v) {
+            if ($(this).width() > 200) { $(this).parent().addClass("big"); }
+        });
     });
-    $.each($(".press-img"), function(k, v) {
-        if ($(this).width() > 200) { $(this).parent().addClass("big"); }
+    $(window).on("load", function() {
+        $.each($(".press-img"), function(k, v) {
+            if ($(this).width() > 200) { $(this).parent().addClass("big"); }
+        });
     });
     // variablen for the about parallax
     var $v = $('.about-fixed');

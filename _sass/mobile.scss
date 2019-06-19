@@ -58,6 +58,10 @@
         flex-direction: column-reverse;
     }
     .about_us {
+        .main-img {
+            height: 350px;
+            width: 100%;
+        }
         img {
             width: 100%;
             height: auto;
@@ -68,6 +72,11 @@
         }
     }
     #press {
+        width: 70vw;
+        padding: 10vh 15vw;
+        #press-gal {
+            grid-template-columns: repeat(4, 120px)
+        }
         button {
             width: 60vw;
             margin: 5vh 0;
@@ -102,7 +111,7 @@
         }
     }
     #eye {
-        display: none;
+        display: none!important;
     }
     .fixed-p {
         position: fixed;
@@ -150,7 +159,7 @@
             justify-content: space-around;
             grid-template-columns: repeat(2, 100px);
             .big {
-                co img {
+                img {
                     width: 200px;
                     height: 170px;
                 }
@@ -181,6 +190,7 @@
     #bgm-btn {
         top: 8vw;
         left: 46vw;
+        color: #ffff!important;
         i {
             text-shadow: 0px -1px 4px rgb(184, 209, 214);
             font-size: 30px;
@@ -297,6 +307,9 @@
     .about_us {
         width: 90vw;
         padding: 0 5vw;
+        .main-img {
+            height: 300px;
+        }
         .about_text {
             font-size: 12px;
             p {
@@ -350,13 +363,17 @@
         }
     }
     #press {
-        width: 90vw;
+        width: 100vw;
         display: flex;
-        padding: 10vh 5vw;
+        padding: 0;
         flex-wrap: wrap;
+        margin-top: -1px;
+        #press-gal {
+            grid-template-columns: repeat(2, 120px)
+        }
         .press-title {
             width: 90vw;
-            margin: 0;
+            margin: 0 auto;
             height: 35px;
             margin-bottom: 5vh;
         }
@@ -381,7 +398,6 @@
         img {
             margin-bottom: 1vh;
             margin-right: 1vh;
-            height: 120px;
         }
     }
     #footer {
@@ -453,5 +469,8 @@
         color: white;
         margin-bottom: 40vw!important;
         font-size: 25px;
+    }
+    #impressum {
+        width: 90vw;
     }
 }
