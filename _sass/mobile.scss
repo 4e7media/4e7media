@@ -15,6 +15,9 @@
             }
         }
     }
+    .detail-wrapper #gallery {
+        grid-template-columns: repeat(4, 150px)
+    }
     #landingpage {
         .logo {
             left: 40vw;
