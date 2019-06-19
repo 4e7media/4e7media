@@ -517,6 +517,11 @@
     .mobile {
         display: block!important;
     }
+    .eye-links {
+        display: flex!important;
+        width: 90vw;
+        margin: 0 5vw;
+    }
     .mobileab {
         position: fixed;
         top: 2.5vh;
