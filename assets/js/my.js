@@ -26,7 +26,6 @@ $('document').ready(function() {
         $(".o-one").show();
         $(".one").hide();
     });
-    $(".about-fixed").hide()
     $(".two").click(function() {
         $(".grey").addClass("sideslide");
         $(".green").removeClass("sideslide");
@@ -185,7 +184,7 @@ $('document').ready(function() {
     var wH = $w.height(); // Get the window height.
     // shows the about cont after scrolling 4 screens to prevent seeing the about in the loading time
     $w.on("scroll", function() {
-        if ($(this).scrollTop() > wH * 4) {
+        if ($(this).scrollTop() > wH * 6) {
             $('.about-fixed').show();
             $("#mobile-eye").hide()
             $('#eye').hide();
