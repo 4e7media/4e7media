@@ -3,6 +3,18 @@ $('document').ready(function() {
     $.each($(".gridimg"), function(k, v) {
         if ($(this).width() > 200) { $(this).parent().addClass("big"); }
     });
+    var $wb = $(window).height()
+    $(window).on("scroll", function() {
+        if ($(this).scrollTop() > $wb * 2 && $(this).scrollTop() < $wb * 3) {
+            $("#bgm-btn").css("color", "#2c2c26")
+        } else if ($(this).scrollTop() > $wb * 8.5 && $(this).scrollTop() < $wb * 11) {
+            $("#bgm-btn").css("color", "#2c2c26")
+        } else {
+            $('#bgm-btn').css("color", "#FFFFFF")
+        }
+    }).on("resize", function() { // If the user resizes the window
+        wb = $(this).height(); // you'll need the new height value
+    });
 
     //what we do mobile right Slide open
     $(".one").click(function() {
@@ -158,6 +170,9 @@ $('document').ready(function() {
     $.each($(".gridimg"), function(k, v) {
         if ($(this).width() > 200) { $(this).parent().addClass("big"); }
     });
+    $.each($(".press-img"), function(k, v) {
+        if ($(this).width() > 200) { $(this).parent().addClass("big"); }
+    });
     // variablen for the about parallax
     var $v = $('.about-fixed');
     var $w = $(window);
@@ -175,16 +190,16 @@ $('document').ready(function() {
     }).on("resize", function() { // If the user resizes the window
         wH = $(this).height(); // you'll need the new height value
     });
-    var achor = $('#about-ph').offset();
+    /*var achor = $('#about-ph').offset();
     var fixed = $('#selma');
-    console.log(achor.Top);
+    console.log(achor.top + $(window).height());
     $(window).on("scroll", function() {
-        if ($(this).scrollTop() > achor.Top) {
-            $("#selma").css("position: fixed")
+        if ($(this).scrollTop() > $(window).height() * 9.5) {
+            $("#selma").css("position", "fixed")
         } else {
-            $("#selma").css("position: static")
+            $("#selma").css("position", "static")
         }
-    });
+    });*/
 });
 //backbutton from the detail screen
 var domain = "https://" + window.location.hostname;

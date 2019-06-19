@@ -30,8 +30,8 @@ nav {
         z-index: -98;
         margin-top: 35px;
         font-weight: bold;
-        a{
-         font-size: 1.5vw;   
+        a {
+            font-size: 1.5vw;
         }
     }
      :nth-cild(4) {
@@ -54,7 +54,6 @@ nav {
         outline: none;
     }
     .fas {
-        text-shadow: 3px 6px #272634;
         z-index: 3;
         font-size: 35px;
         &:focus {

@@ -403,6 +403,14 @@ img.des-alex {
     width: 60vw;
     padding: 10vh 20vw;
     background: white;
+    .big {
+        grid-column: auto/ span 2;
+    }
+    #press-gal {
+        display: grid;
+        grid-template-columns: repeat(8, 120px);
+        grid-gap: 10px;
+    }
     .press-title {
         width: 30vw;
         margin: 0 15vw;
