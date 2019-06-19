@@ -3,6 +3,8 @@ layout: detail
 title: notorious
 tnimg: "/v1560106507/Notorious-patformJPG.jpg"
 img:
+- "/v1560957856/Notorious-desktop-mockup.jpg"
+- "/v1560957857/Notorious-handy-mockup.jpg"
 - "/v1560845624/Screenshot%202019-06-17%20at%2016.50.44.png"
 - "/v1560954615/Screenshot%202019-06-18%20at%2019.22.15.png"
 - "/v1560954616/Screenshot%202019-06-18%20at%2019.21.43.png"
