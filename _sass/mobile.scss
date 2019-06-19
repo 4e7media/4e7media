@@ -15,6 +15,41 @@
             }
         }
     }
+    .mobile-camp {
+        display: block!important;
+    }
+    .camp-img {
+        display: none!important;
+    }
+    #eye {
+        display: none!important;
+    }
+    .mobile {
+        display: block!important;
+    }
+    .desktop {
+        display: none!important;
+    }
+    .fixed-p {
+        position: fixed;
+        width: 50vw;
+        background-size: contain;
+        top: 40vh;
+        height: 18%;
+        margin: 0 25vw;
+        z-index: -120;
+    }
+    #mobile-eye {
+        display: block;
+        position: fixed;
+        width: 50vw;
+        height: 30vw;
+        background-size: contain;
+        background-repeat: no-repeat;
+        top: 10vh;
+        margin: 0 25vw;
+        z-index: -120;
+    }
     .detail-wrapper #gallery {
         grid-template-columns: repeat(4, 150px)
     }
