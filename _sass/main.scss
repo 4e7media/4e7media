@@ -346,6 +346,7 @@ body {
 }
 
 #alex {
+    display: none;
     position: fixed;
     top: 20vh;
     z-index: -1;
@@ -361,6 +362,7 @@ body {
     z-index: -1;
     top: 0;
     width: 50vw;
+    display: none;
 }
 
 .mobileab {
