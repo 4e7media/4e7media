@@ -185,11 +185,11 @@ $('document').ready(function() {
     // shows the about cont after scrolling 4 screens to prevent seeing the about in the loading time
     $w.on("scroll", function() {
         if ($(this).scrollTop() > wH * 6) {
-            $('.about-fixed').show();
+            $('.about-fixed').css("display", "flex");
             $("#mobile-eye").hide()
             $('#eye').hide();
         } else {
-            $('.about-fixed').hide();
+            $('.about-fixed').css("display", "none");
             $("#mobile-eye").show()
         }
     }).on("resize", function() { // If the user resizes the window
