@@ -154,11 +154,13 @@ $('document').ready(function() {
             $("#landingpage").hide()
             $("#mobile-eye").show()
             $('#eye').show();
+            $('eye-links').show();
         } else {
             $nav.removeClass("show");
             $("#landingpage").show();
             $("#mobile-eye").hide();
             $('#eye').hide();
+            $('eye-links').hide();
         }
     }).on("resize", function() { // If the user resizes the window
         winH = $(this).height(); // you'll need the new height value
