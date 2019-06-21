@@ -428,6 +428,9 @@
             width: 90vw;
         }
     }
+    .main-img {
+        height: auto!important;
+    }
     #selma {
         img {
             width: 90vw;
@@ -532,7 +535,7 @@
         position: fixed;
         top: 2.5vh;
         left: 7.5vw;
-        z-index: -2;
+        z-index: -100;
         display: block;
         opacity: 1;
     }
