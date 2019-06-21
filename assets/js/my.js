@@ -1,15 +1,16 @@
 //wait for the document to be complity loaded
-$(window).on("load", function() {
-    $.each($(".gridimg"), function(k, v) {
-        if ($(this).width() > 200) { $(this).parent().addClass("big"); }
-    });
-});
-$(window).on("load", function() {
-    $.each($(".press-img"), function(k, v) {
-        if ($(this).width() > 200) { $(this).parent().addClass("big"); }
-    });
-});
 $('document').ready(function() {
+    $(window).on("load", function() {
+        $.each($(".gridimg"), function(k, v) {
+            if ($(this).width() > 200) { $(this).parent().addClass("big"); }
+        });
+    });
+    $(window).on("load", function() {
+        $.each($(".press-img"), function(k, v) {
+            if ($(this).width() > 200) { $(this).parent().addClass("big"); }
+        });
+    });
+
     var $wb = $(window).height()
     var $first = $('#features').offset()
     var $second = $('#about-ph').offset()
@@ -200,17 +201,22 @@ $('document').ready(function() {
     }).on("resize", function() { // If the user resizes the window
         wH = $(this).height(); // you'll need the new height value
     });
-    /*var $achor = $('#about-ph').offset();
-    var $fixed = $('#selma');
-    var $isPositionFixed = ($fixed.css('position') == 'fixed');
-    console.log(achor.top + $(window).height());
-    $(window).on("scroll", function() {
-        if ($(this).scrollTop() > $(window).height() * 9.5 && !$isPositionFixed) {
-            $("#selma").css({ "position": "fixed", "top": "0px" })
-        } else {
-            $("#selma").css({ "position": "static" })
-        }
-    });*/
+    $(window).on("load", function() {
+            var $divh = $('.about_text').css('height')
+            console.log($divh)
+            $('.main-img').height($divh)
+        })
+        /*var $achor = $('#about-ph').offset();
+        var $fixed = $('#selma');
+        var $isPositionFixed = ($fixed.css('position') == 'fixed');
+        console.log(achor.top + $(window).height());
+        $(window).on("scroll", function() {
+            if ($(this).scrollTop() > $(window).height() * 9.5 && !$isPositionFixed) {
+                $("#selma").css({ "position": "fixed", "top": "0px" })
+            } else {
+                $("#selma").css({ "position": "static" })
+            }
+        });*/
 });
 //backbutton from the detail screen
 var domain = "https://" + window.location.hostname;

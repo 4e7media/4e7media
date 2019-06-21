@@ -350,7 +350,6 @@ body {
     position: fixed;
     top: 20vh;
     z-index: -60;
-    height: 90vh;
     .mobile-alex {
         display: none;
     }
@@ -382,21 +381,23 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 5vh 20vw;
     background: white;
     img {
         width: 50%;
     }
     .main-img {
-        width: 50%;
-        height: 400px;
+        width: auto;
     }
     .about_text {
         max-width: 40%;
         img {
             width: 100%;
             height: auto;
+        }
+        p {
+            margin: 0;
         }
     }
 }
