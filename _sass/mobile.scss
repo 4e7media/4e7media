@@ -25,7 +25,7 @@
         display: none!important;
     }
     .mobile {
-        display: block!important;
+        display: block;
     }
     .desktop {
         display: none!important;
@@ -43,7 +43,7 @@
         position: fixed;
         top: 5vh;
         left: 25vw;
-        display: flex!important;
+        display: flex;
         justify-content: space-between;
         width: 50vw;
         z-index: -120;
@@ -120,7 +120,7 @@
     }
     .about_us {
         .main-img {
-            height: 350px;
+            height: 400px!important;
             width: 100%;
         }
         img {
