@@ -349,17 +349,23 @@ body {
     display: none;
     position: fixed;
     top: 20vh;
-    z-index: -1;
+    z-index: -60;
     height: 90vh;
     .mobile-alex {
         display: none;
     }
 }
 
+#selma {
+    position: sticky;
+    top: 0;
+    z-index: -10;
+}
+
 #about-title {
     margin: 5vh 25vw;
     position: fixed;
-    z-index: -1;
+    z-index: -60;
     top: 0;
     width: 50vw;
     display: none;
@@ -411,7 +417,7 @@ body {
         grid-gap: 10px;
         grid-auto-flow: dense;
         margin: 0 auto;
-        height: 180px;
+        height: 370px;
         overflow: hidden;
     }
     .press-title {

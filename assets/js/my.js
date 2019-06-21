@@ -4,16 +4,23 @@ $('document').ready(function() {
         if ($(this).width() > 200) { $(this).parent().addClass("big"); }
     });
     var $wb = $(window).height()
+    var $first = $('#features').offset()
+    var $second = $('#about-ph').offset()
+    var $ftoggle = $first.top - $wb
+    var $stoggle = $second.top
+    console.log($ftoggle)
+    console.log($stoggle)
+
     $(window).on("scroll", function() {
-        if ($(this).scrollTop() > $wb * 2 && $(this).scrollTop() < $wb * 3) {
+        if ($(this).scrollTop() > $ftoggle && $(this).scrollTop() < $ftoggle + $wb) {
             $("#bgm-btn").css("color", "#2c2c26")
-        } else if ($(this).scrollTop() > $wb * 8.5 && $(this).scrollTop() < $wb * 11) {
+        } else if ($(this).scrollTop() > $stoggle) {
             $("#bgm-btn").css("color", "#2c2c26")
         } else {
             $('#bgm-btn').css("color", "#FFFFFF")
         }
     }).on("resize", function() { // If the user resizes the window
-        wb = $(this).height(); // you'll need the new height value
+        $wb = $(this).height(); // you'll need the new height value
     });
 
     //what we do mobile right Slide open
@@ -195,14 +202,15 @@ $('document').ready(function() {
     }).on("resize", function() { // If the user resizes the window
         wH = $(this).height(); // you'll need the new height value
     });
-    /*var achor = $('#about-ph').offset();
-    var fixed = $('#selma');
+    /*var $achor = $('#about-ph').offset();
+    var $fixed = $('#selma');
+    var $isPositionFixed = ($fixed.css('position') == 'fixed');
     console.log(achor.top + $(window).height());
     $(window).on("scroll", function() {
-        if ($(this).scrollTop() > $(window).height() * 9.5) {
-            $("#selma").css("position", "fixed")
+        if ($(this).scrollTop() > $(window).height() * 9.5 && !$isPositionFixed) {
+            $("#selma").css({ "position": "fixed", "top": "0px" })
         } else {
-            $("#selma").css("position", "static")
+            $("#selma").css({ "position": "static" })
         }
     });*/
 });
