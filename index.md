@@ -35,4 +35,4 @@ title: 4e7 Media
             }
             // other options
         });
-  </script>
+</script>
