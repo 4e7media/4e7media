@@ -1,8 +1,15 @@
 //wait for the document to be complity loaded
-$('document').ready(function() {
+$(window).on("load", function() {
     $.each($(".gridimg"), function(k, v) {
         if ($(this).width() > 200) { $(this).parent().addClass("big"); }
     });
+});
+$(window).on("load", function() {
+    $.each($(".press-img"), function(k, v) {
+        if ($(this).width() > 200) { $(this).parent().addClass("big"); }
+    });
+});
+$('document').ready(function() {
     var $wb = $(window).height()
     var $first = $('#features').offset()
     var $second = $('#about-ph').offset()
@@ -175,16 +182,7 @@ $('document').ready(function() {
     $.each($(".gridimg"), function(k, v) {
         console.log("Key: " + k + ", Value: " + v);
     });
-    $(window).on("load", function() {
-        $.each($(".gridimg"), function(k, v) {
-            if ($(this).width() > 200) { $(this).parent().addClass("big"); }
-        });
-    });
-    $(window).on("load", function() {
-        $.each($(".press-img"), function(k, v) {
-            if ($(this).width() > 200) { $(this).parent().addClass("big"); }
-        });
-    });
+
     // variablen for the about parallax
     var $v = $('.about-fixed');
     var $w = $(window);

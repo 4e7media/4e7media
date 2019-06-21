@@ -42,7 +42,7 @@
             {% endfor %}
     </div> {% endif %}
 
-    <p></p>
+
 
 
     <div class="arrow-box">
@@ -52,30 +52,33 @@
     </div>
 
     <div class="push"></div>
-    </div>
     <script>
-        // applying photobox on a `gallery` element which has lots of thumbnails links.
-        // Passing options object as well:
-        //-----------------------------------------------
-        $('#gallery').photobox('a', {
-            time: 0
+        $('.gridlink').magnificPopup({
+            type: 'image',
+            gallery: {
+                enabled: true
+            }
+            // other options
         });
-
-        // using a callback and a fancier selector
-        //----------------------------------------------
-        $('#gallery').photobox('li > a.family', {
-            time: 0
-        }, callback);
-
-        function callback() {
-            console.log('image has been loaded');
-        }
-
-        // re-initialize the photbox DOM (does what Document ready does)
-        //-----------------------------------------------
-        $('#gallery').photobox('prepareDOM');
+        $('.yt-tn').magnificPopup({
+            type: 'iframe',
+            gallery: {
+                enabled: true
+            },
+            // other options
+            iframe: {
+                patterns: {
+                    youtube: {
+                        index: 'youtube.com',
+                        id: null,
+                        src: '%id%'
+                    }
+                }
+            }
+        });
     </script>
-    {% include footer.html %}
+    </div>
+
 
 </body>
 
