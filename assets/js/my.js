@@ -10,7 +10,17 @@ $('document').ready(function() {
             if ($(this).width() > 200) { $(this).parent().addClass("big"); }
         });
     });
-
+    var $wp = $(window).width() * 0.7
+    var $hp = $(window).height()
+    console.log($hp)
+    $(window).on('load', function () {
+        if ($hp >= $wp){
+            $('.bgvideo').css({'height' : '100vh' , 'width' : 'auto'})
+        }
+        else{
+            $('.bgvideo').css({'height' : 'auto' , 'width' : '100vw'})
+        }
+    })
     var $wb = $(window).height()
     var $first = $('#features').offset()
     var $second = $('#about-ph').offset()
