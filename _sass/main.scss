@@ -387,8 +387,11 @@ body {
         width: 50%;
     }
     .main-img {
-        max-width: 500px;
+        width: 25vw;
         height: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center top;
     }
     .about_text {
         max-width: 40%;

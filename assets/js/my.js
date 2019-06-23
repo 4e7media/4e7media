@@ -10,6 +10,13 @@ $('document').ready(function() {
             if ($(this).width() > 200) { $(this).parent().addClass("big"); }
         });
     });
+    
+    
+    $(window).on('load', function () {
+        var $th = $(".ab-txt").height() + 5
+        console.log($th)
+        $('.main-img').css('margin-top', $th)
+    });
     var $wp = $(window).width() * 0.7
     var $hp = $(window).height()
     console.log($hp)
