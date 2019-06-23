@@ -47,6 +47,7 @@ fields:
     labelField: 
   label: video+video thumbnails
 pages:
+- _work/augarten.md
 - _work/potpourri.md
 - _work/youtube.md
 - _plattforms/artformum-4e7.md
