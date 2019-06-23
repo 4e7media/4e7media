@@ -4,7 +4,7 @@ title: novomatic
 tnimg: "/v1560524667/novomatic.png"
 img: []
 video: ''
-date: '2010-1-7'
+date: '2010-1-8'
 vid:
 - video: https://www.youtube.com/embed/N1keWCle0GQ
   vtn: http://i3.ytimg.com/vi/N1keWCle0GQ/hqdefault.jpg

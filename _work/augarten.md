@@ -13,5 +13,5 @@ vid:
   vtn: http://i3.ytimg.com/vi/fnS3EbYXFt4/hqdefault.jpg
 - video: https://www.youtube.com/embed/1nmRe_anH8g
   vtn: http://i3.ytimg.com/vi/1nmRe_anH8g/hqdefault.jpg
-
+date: '2010-1-6'
 ---

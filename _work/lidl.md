@@ -7,7 +7,7 @@ img:
 - "/v1559982968/4-lidl-leitner-familie-facebook-1000.jpg"
 - "/v1560845232/2-lidl-leitner-familie-facebook-1000.jpg"
 video: ''
-date: '2010-1-6'
+date: '2010-1-7'
 vid:
 - video: https://www.youtube.com/embed/6amLASHHD8Q
   vtn: http://i3.ytimg.com/vi/6amLASHHD8Q/maxresdefault.jpg

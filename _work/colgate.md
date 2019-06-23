@@ -7,7 +7,7 @@ img:
 - "/v1560169085/2-colgate-ad2-1000.jpg"
 - "/v1560169084/1-colgate-ad1-1000.jpg"
 video: ''
-date: '2010-1-8'
+date: '2010-1-9'
 vid:
 - video: https://www.youtube.com/embed/W9-r8PF7Zmg
   vtn: http://i3.ytimg.com/vi/W9-r8PF7Zmg/maxresdefault.jpg
