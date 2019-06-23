@@ -16,7 +16,6 @@ $('document').ready(function() {
         var $th = $(".ab-txt").height() + 5
         console.log($th)
         $('.main-img').css('margin-top', $th)
-    
     });
     var $os= $('#campaigns').offset()
     var $fos = $('#features').offset()
