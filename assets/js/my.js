@@ -10,21 +10,21 @@ $('document').ready(function() {
             if ($(this).width() > 200) { $(this).parent().addClass("big"); }
         });
     });
-    
-    
-    $(window).on('load', function () {
+
+
+    $(window).on('load', function() {
         var $th = $(".ab-txt").height() + 5
         console.log($th)
         $('.main-img').css('margin-top', $th)
     });
-    var $os= $('#campaigns').offset()
+    var $os = $('#campaigns').offset()
     var $fos = $('#features').offset()
-    
+
     $(window).on("scroll", function() {
-        var $os= $('#campaigns').offset()
+        var $os = $('#campaigns').offset()
         var $fos = $('#features').offset()
         var $eh = $('#eye').height()
-        if ($(this).scrollTop() > $os.top + $wb && $(this).scrollTop() < $fos.top - 800 ) {
+        if ($(this).scrollTop() > $os.top + $wb && $(this).scrollTop() < $fos.top - 800) {
             $("#eye").css("z-index", "10000")
         } else {
             $('#eye').css("z-index", "-2")
@@ -32,13 +32,12 @@ $('document').ready(function() {
     });
     var $wp = $(window).width() * 0.7
     var $hp = $(window).height()
-    
-    $(window).on('load', function () {
-        if ($hp >= $wp){
-            $('.bgvideo').css({'height' : '100vh' , 'width' : 'auto'})
-        }
-        else{
-            $('.bgvideo').css({'height' : 'auto' , 'width' : '100vw'})
+
+    $(window).on('load', function() {
+        if ($hp >= $wp) {
+            $('.bgvideo').css({ 'height': '100vh', 'width': 'auto' })
+        } else {
+            $('.bgvideo').css({ 'height': 'auto', 'width': '100vw' })
         }
     })
     var $wb = $(window).height()
@@ -225,7 +224,6 @@ $('document').ready(function() {
             $("#mobile-eye").hide()
             $('#eye').hide();
             $('.fixed-p').hide();
-            $('.eye-links').hide();
         } else {
             $('.about-fixed').css("display", "none");
             $("#mobile-eye").show()
