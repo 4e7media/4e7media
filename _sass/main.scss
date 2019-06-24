@@ -12,6 +12,8 @@ body {
     margin: 0;
     font-family: Rubik;
     color: #2c2c26;
+    height: 100vh;
+    overflow: hidden;
     h3 {
         font-size: 24px;
     }
@@ -50,11 +52,10 @@ body {
 }
 
 #campaigns {
-    width: 100vw;
-    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
     z-index: 2;
-    margin-top: 100vh;
-    margin-bottom: 100vh;
     .mobile-camp {
         display: none;
     }
@@ -464,4 +465,12 @@ body {
 
 .mobile {
     display: none;
+}
+.active{
+    animation: active 1s ease-out forwards;
+    margin: 0 auto;
+}
+.not-active{
+    animation: notactive 1s ease-out forwards;
+    margin: 0 auto;
 }
