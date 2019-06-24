@@ -19,6 +19,10 @@ img:
 - "/v1560106347/1-art_forum_4e7-drugs-saved-my-live1-1.jpg"
 video: ''
 vid:
+- video: https://www.youtube.com/embed/NdmVcUjfytY
+  vtn: http://i3.ytimg.com/vi/NdmVcUjfytY/maxresdefault.jpg
+- video: https://www.youtube.com/embed/oLCjk-vRvUI
+  vtn: http://i3.ytimg.com/vi/oLCjk-vRvUI/maxresdefault.jpg
 - video: https://res.cloudinary.com/media4e7/video/upload/v1560845514/Isa_Ess_xml8e2.mp4
   vtn: https://res.cloudinary.com/media4e7/image/upload/v1560850903/Isa_Ess_xml8e2-jpg_pvvkvl.jpg
 
