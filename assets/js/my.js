@@ -24,7 +24,7 @@ $('document').ready(function() {
         var $os = $('#campaigns').offset()
         var $fos = $('#features').offset()
         var $eh = $('#eye').height()
-        if ($(this).scrollTop() > $os.top + $wb && $(this).scrollTop() < $fos.top - 800) {
+        if ($(this).scrollTop() > $os.top + $wb + 80 && $(this).scrollTop() < $fos.top - 800) {
             $("#eye").css("z-index", "10000")
         } else {
             $('#eye').css("z-index", "-2")
