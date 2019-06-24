@@ -1,4 +1,5 @@
 @media(max-width:1500px) {
+    .cases-wrapper,
     .detail-wrapper {
         width: 940px;
         #gallery {
@@ -72,6 +73,7 @@
         margin: 0 25vw;
         z-index: -120;
     }
+    .cases-wrapper,
     .detail-wrapper {
         width: 630px;
         .play {
@@ -211,16 +213,12 @@
         z-index: -120;
     }
     .cases-wrapper {
-        width: 90vw;
+        width: 310px;
         .title-box {
-            width: 90vw;
-            a {
-                top: 7vh;
-                right: 5vw;
-            }
+            width: 310px;
         }
         .embed-container {
-            width: 90vw;
+            width: 310px;
         }
     }
     .social_footer .social-icon img {
