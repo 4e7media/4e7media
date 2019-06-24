@@ -8,9 +8,9 @@
             <h3>{{ page.title }}</h3>
             <a href="../index/#work"><i class="fas fa-times"></i></a>
         </div>
-        {% if page.video contains 'embed' %}
+        {% if page.video contains 'http' %}
         <div class="iframe-cont">
-            <iframe src="{{video}}"></iframe></div>{% endif %} {% assign img_count = page.img.size | plus:page.vid.size %} {% if img_count>= 4 %}
+            <iframe src="{{page.video}}"></iframe></div>{% endif %} {% assign img_count = page.img.size | plus:page.vid.size %} {% if img_count>= 4 %}
         <div id="gallery" class="grid">
             {% for vid in page.vid %}
             <a class="yt-tn" href="{{vid.video}}" rel="video">
