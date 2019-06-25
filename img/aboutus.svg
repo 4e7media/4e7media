@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="298" height="28" viewBox="0 0 298 28">
+  <g id="Group_268" data-name="Group 268" transform="translate(0 20.988)">
+    <g id="Group_198" data-name="Group 198" transform="translate(0 -21.188)">
+      <g id="Group" transform="translate(0 0.2)">
+        <text id="ABOUT" transform="translate(0 22)" fill="#393a36" font-size="24" font-family="Rubik-Bold, Rubik" font-weight="700" letter-spacing="0.09em"><tspan x="0" y="0">ABOUT</tspan></text>
+        <text id="_US" data-name=" US" transform="translate(99.747 22)" fill="#393a36" font-size="24" font-family="Rubik-Bold, Rubik" font-weight="700" letter-spacing="0.09em"><tspan x="0" y="0" xml:space="preserve"> US</tspan></text>
+      </g>
+      <g id="Group_195" data-name="Group 195" transform="translate(156.831 13.342)">
+        <path id="Path_129" data-name="Path 129" d="M-60.868.3s.422,0,.422-.64V-4.568s0-.64-.422-.64H-201.193s-.422,0-.422.64V-.339s0,.64.422.64Z" transform="translate(201.615 5.208)" fill="#393a36"/>
+      </g>
+    </g>
+  </g>
+</svg>

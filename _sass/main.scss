@@ -51,20 +51,23 @@ body {
 
 #campaigns {
     width: 100vw;
-    height: auto;
+    height: 100vh;
     z-index: 2;
     margin-top: 100vh;
     margin-bottom: 100vh;
+    background-color: #D4A692;
     .mobile-camp {
         display: none;
     }
     img {
-        margin: 0 auto;
-        width: 100%;
+        margin: 10% 20%;
+        width: 60%;
         height: auto;
     }
 }
-
+.m-eye-links{
+    display: none;
+}
 #eye {
     display: none;
     height: 120vh;

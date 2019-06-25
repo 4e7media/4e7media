@@ -25,8 +25,10 @@
             }
         }
     }
-    .mobile-camp {
+    #campaigns .mobile-camp {
         display: block !important;
+        width: 100vw;
+        margin: 0;
     }
     .camp-img {
         display: none !important;
@@ -49,11 +51,10 @@
         margin: 0 25vw;
         z-index: -120;
     }
-    .eye-links {
+    .m-eye-links {
         position: fixed;
         top: 5vh;
         left: 25vw;
-        display: flex;
         justify-content: space-between;
         width: 50vw;
         z-index: -120;
@@ -461,14 +462,12 @@
         }
         .press-title {
             width: 90vw;
-            margin: 0 auto;
+            margin: 5vh auto;
             height: 35px;
-            margin-bottom: 5vh;
         }
         button {
             width: 60vw;
             margin: 5vh 20vw;
-            margin-bottom: 0;
             font-size: 18px;
             color: black;
         }
@@ -540,8 +539,7 @@
     .mobile {
         display: block;
     }
-    .eye-links {
-        display: flex;
+    .m-eye-links {
         width: 90vw;
         left: 5vw;
     }
@@ -550,7 +548,6 @@
         top: 2.5vh;
         left: 7.5vw;
         z-index: -100;
-        display: block;
         opacity: 1;
     }
     .video-stream,

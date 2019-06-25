@@ -221,15 +221,25 @@ $('document').ready(function() {
     $w.on("scroll", function() {
         if ($(this).scrollTop() > wH * 6) {
             $('.about-fixed').css("display", "flex");
-            $("#mobile-eye").hide()
             $('#eye').hide();
-            $('.fixed-p').hide();
             $('.eye-links').hide();
+            $('#alex').show();
+        } else if ($(this).scrollTop() > wH * 5 && $(window).width() < 400) {
+            $('.fixed-p').hide();
+            $("#mobile-eye").hide()
+            $('.m-eye-links').hide();
+            $('#alex').show();
+            $('.mobileab').show();
+        } else if ($(this).scrollTop() < wH * 5 && $(window).width() < 400) {
+            $('.fixed-p').show();
+            $("#mobile-eye").show()
+            $('.m-eye-links').css("display", "flex");
+            $('#alex').hide();
+            $('.mobileab').hide();
         } else {
             $('.about-fixed').css("display", "none");
-            $("#mobile-eye").show()
             $('.eye-links').show();
-            $('.fixed-p').show();
+            $('#alex').hide();
         }
     }).on("resize", function() { // If the user resizes the window
         wH = $(this).height(); // you'll need the new height value
