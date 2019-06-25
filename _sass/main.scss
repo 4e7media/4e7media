@@ -119,14 +119,16 @@ body {
         button {
             display: none;
         }
-        div {
+        .feat-box {
             width: 50vw;
             background-size: cover;
             background-repeat: no-repeat;
             height: 30vw;
             overflow: hidden;
             display: flex;
-            flex-direction: column-reverse;
+            &:hover .hover-cont{
+                animation: feathovereffekt 0.2s ease-out forwards;
+            }
             img {
                 width: 90%;
                 margin: 0 5%;
@@ -139,9 +141,8 @@ body {
                 font-size: 1.5vw;
                 color: white;
                 height: 24vw;
-                &:hover {
-                    animation: feathovereffekt 0.2s ease-out forwards;
-                }
+                flex-direction: column-reverse;
+                display: flex;
                 ul.dashed {
                     list-style: none;
                     padding-left: 0;
@@ -329,6 +330,9 @@ body {
             text-transform: uppercase;
             color: #a39a9b;
             flex-direction: column-reverse;
+            &:hover .hover-cont{
+                animation: bighovereffekt 0.2s ease-out forwards;
+            }
             .hover-cont {
                 width: 20vw;
                 height: 2vw;
@@ -336,9 +340,7 @@ body {
                 background-color: #bfd0d4;
                 background-color: #bfd0d4;
                 opacity: 0;
-                &:hover {
-                    animation: bighovereffekt 0.2s ease-out forwards;
-                }
+               
             }
         }
     }
