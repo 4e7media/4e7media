@@ -224,9 +224,12 @@ $('document').ready(function() {
             $("#mobile-eye").hide()
             $('#eye').hide();
             $('.fixed-p').hide();
+            $('.eye-links').hide();
         } else {
             $('.about-fixed').css("display", "none");
             $("#mobile-eye").show()
+            $('.eye-links').show();
+            $('.fixed-p').show();
         }
     }).on("resize", function() { // If the user resizes the window
         wH = $(this).height(); // you'll need the new height value

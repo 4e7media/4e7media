@@ -127,7 +127,7 @@
     #alex {
         top: 10vh;
         padding: 0 20vw;
-        position: static;
+        position: fixed;
     }
     #about-title {
         margin: 3vh 20vw;
@@ -196,7 +196,7 @@
         position: fixed;
         width: 89vw;
         background-size: contain;
-        top: 40vh;
+        top: 35vh;
         height: 18%;
         margin: 0 6vw;
         z-index: -120;
@@ -208,7 +208,7 @@
         height: 30vw;
         background-size: contain;
         background-repeat: no-repeat;
-        top: 10vh;
+        top: 15vh;
         margin: 0 5vw;
         z-index: -120;
     }
@@ -390,7 +390,8 @@
         width: 90vw;
         padding: 0 5vw;
         .main-img {
-            height: 300px;
+            height: 250px;
+            margin-top: 0 !important;
         }
         .about_text {
             font-size: 12px;
@@ -425,9 +426,11 @@
         }
     }
     #about-ph {
-        display: none;
+        display: block;
+        height: 120vh;
     }
     #alex {
+        position: fixed;
         .mobile-alex {
             display: block;
         }
@@ -535,10 +538,10 @@
         display: none !important;
     }
     .mobile {
-        display: block !important;
+        display: block;
     }
     .eye-links {
-        display: flex !important;
+        display: flex;
         width: 90vw;
         left: 5vw;
     }
