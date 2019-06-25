@@ -4,7 +4,7 @@
     <div class="tn-cont work-cont">
         {% assign sorted = (site.work | sort: 'date') %} {% for post in sorted %}
         <a class="img-cont" href="{{ post.url }}" style="background-image: url('{{site.cloud_host}}{{ post.tnimg }}');">
-            <p class="mobile mobile-title">{{ post.title}}</p>
+            <!--<p class="mobile mobile-title">{{ post.title}}</p>-->
             <div class="hover-cont desktop">
                 {{ post.title}}
             </div>
