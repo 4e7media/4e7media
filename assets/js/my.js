@@ -178,7 +178,7 @@ $('document').ready(function() {
     });
     // closes press more
     $(".press-less").click(function() {
-        $("#press-gal").height("180px")
+        $("#press-gal").height("370px")
         $(".press-less").hide()
         $(".press-more").show()
             //scroll to press top
