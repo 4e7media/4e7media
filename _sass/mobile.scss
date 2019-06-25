@@ -1,7 +1,9 @@
 @media(max-width:1500px) {
+
     .cases-wrapper,
     .detail-wrapper {
         width: 940px;
+
         #gallery {
             grid-template-columns: repeat(6, 150px)
         }
@@ -14,37 +16,47 @@
             top: 3vw;
             right: 3vw;
         }
+
         .social-icons,
         .site_links {
             display: none;
         }
+
         .social-icons {
             justify-content: space-around;
+
             img {
                 width: 70%;
             }
         }
     }
+
     #campaigns {
         height: auto;
     }
+
     #campaigns .mobile-camp {
         display: block !important;
         width: 100vw;
         margin: 0;
     }
+
     .camp-img {
         display: none !important;
     }
+
     #eye {
         display: none !important;
     }
+
     .mobile {
         display: block;
     }
+
     .desktop {
         display: none !important;
     }
+
     .fixed-p {
         position: fixed;
         width: 70vw;
@@ -54,6 +66,7 @@
         z-index: -120;
         font-size: 25px;
     }
+
     .m-eye-links {
         position: fixed;
         top: 5vh;
@@ -62,11 +75,13 @@
         width: 50vw;
         z-index: -120;
         display: flex;
+
         img {
             width: 10vw;
             height: auto;
         }
     }
+
     #mobile-eye {
         display: block;
         position: fixed;
@@ -78,113 +93,141 @@
         margin: 0 15vw;
         z-index: -120;
     }
+
     .cases-wrapper,
     .detail-wrapper {
         width: 630px;
+
         .play {
             top: -250px;
         }
+
         #gallery {
             grid-template-columns: repeat(4, 150px)
         }
     }
+
     #landingpage {
         background-image: url('https://res.cloudinary.com/media4e7/image/upload/c_fill,h_1300,w_1038/v1561457574/workrepublic_wien11_anrdmu.jpg');
+
         .logo {
             left: 40vw;
             width: 20vw;
         }
+
         video {
             width: auto;
             height: 100vh;
         }
     }
+
     #features .feat_cont div {
         width: 100%;
         height: 60vw;
         overflow-x: hidden;
+
         .hover-cont {
             padding: 4vh 5%;
             width: 90%;
             font-size: 25px;
             height: 60vw;
+
             &:hover {
                 animation: mobilefeathovereffekt 0.2s ease-out forwards;
             }
+
             ul {
                 margin-bottom: 10vh
             }
         }
     }
+
     #work,
     #cases {
         padding: 5vh 0;
     }
+
     #work {
         button {
             font-size: 25px;
         }
     }
+
     #plattforms {
         img {
             height: 2vh;
         }
     }
+
     #alex {
         top: 10vh;
         padding: 0 20vw;
         position: fixed;
     }
+
     #about-title {
         margin: 3vh 20vw;
         width: 60vw;
     }
+
     #selma {
         flex-direction: column-reverse;
     }
+
     .about_us {
         flex-wrap: wrap;
+
         .main-img {
             width: 100%;
             height: 600px;
-            margin-top: 0!important;
+            margin-top: 0 !important;
         }
+
         img {
             width: 100%;
             height: auto;
         }
+
         .about_text {
             font-size: 23px;
             max-width: 100%
         }
     }
+
     #press {
         width: 70vw;
         padding: 10vh 15vw;
-        .press-title{
-            width:70vw;
+
+        .press-title {
+            width: 70vw;
             margin: 5vh 0;
         }
+
         #press-gal {
             grid-template-columns: repeat(4, 120px)
         }
+
         button {
             width: 60vw;
             margin: 5vh 0;
         }
+
         .press-box {
             height: 20vw;
             overflow: hidden;
         }
+
         .press-more {
             display: inline-block;
         }
     }
-    #footer{
-        .first_row{
+
+    #footer {
+        .first_row {
             width: 70vw;
             padding: 40px 15vw;
-            .touch{
+
+            .touch {
                 margin-right: 100px;
             }
         }
@@ -196,23 +239,29 @@
         h3 {
             font-size: 14px;
         }
+
         a {
             font-size: 14px;
             font-weight: 500;
         }
     }
+
     #campaigns {
         margin-bottom: 100vh;
+
         img {
             display: none;
         }
+
         .mobile-camp {
             display: block;
         }
     }
+
     #eye {
         display: none !important;
     }
+
     .fixed-p {
         position: fixed;
         width: 89vw;
@@ -222,6 +271,7 @@
         z-index: -120;
         font-size: 12px;
     }
+
     #mobile-eye {
         display: block;
         position: fixed;
@@ -233,74 +283,103 @@
         margin: 0 5vw;
         z-index: -120;
     }
+
     .cases-wrapper {
         width: 310px;
+
         .title-box {
             width: 310px;
+            i{
+                font-size: 28px;
+            }
+            h3 {
+                font-size: 22px;
+                height: 22px;
+                margin-bottom: 10px;
+            }
         }
+
         .embed-container {
             width: 310px;
         }
     }
+
     .social_footer .social-icon img {
         width: 45px;
     }
+
     .detail-wrapper {
         width: 310px;
+
         .play {
             top: -250px;
             left: 80px;
             width: 50% !important;
         }
+
         h3 {
             height: auto;
         }
+
         .yt-tn {
             height: 170px;
+
             img {
                 height: 170px;
             }
         }
+
         #gallery {
             width: 310px;
             grid-template-columns: repeat(2, 150px);
         }
     }
+
     .push {
         height: 300px;
     }
+
     .detail-wrapper {
         .yt-tn {
             width: 310px;
             margin: 5px auto;
+
             img {
                 width: 100%;
             }
         }
+
         .title-box {
             .fa-times {
                 color: black;
                 font-size: 28px;
             }
+
             h3 {
                 font-size: 22px;
+                height: 22px;
+                margin-bottom: 10px;
             }
         }
     }
+
     #bgm-btn {
         top: 8vw;
         right: 42%;
         color: #ffff !important;
+
         i {
             text-shadow: 0px -1px 4px rgb(184, 209, 214);
             font-size: 30px;
         }
     }
+
     #brg-menu {
         a {
             margin-top: 25px;
             font-size: 20px;
         }
+
         .social-icons {
             display: flex;
             opacity: 0;
@@ -308,30 +387,37 @@
             margin: 0;
             margin-top: 10vh;
             width: 100%;
+
             img {
                 width: 50%;
             }
         }
     }
+
     .show {
         animation: none;
     }
+
     nav {
+
         .social-icons,
         .site_links {
             display: none;
         }
     }
+
     #landingpage {
         background-image: url('https://res.cloudinary.com/media4e7/image/upload/c_fill,h_600,w_320/v1561457574/workrepublic_wien11_anrdmu.jpg');
         height: 100vh;
         background-size: cover;
         background-repeat: no-repeat;
+
         .logo {
             left: 35vw;
             width: 30vw;
         }
     }
+
     #features button {
         background: none;
         border: none;
@@ -340,70 +426,85 @@
         left: 2vw;
         color: white;
         display: block !important;
+
         .featclose {
             display: none;
             position: absolute;
             bottom: 2px;
             left: 88vw;
         }
+
         i {
             font-size: 25px;
         }
     }
+
     .sideslide {
         animation: mobilerightslide 0.2s ease-out forwards;
     }
+
     #features .feat_cont div {
         img {
             margin: 0 5%;
             margin-top: 3vh;
         }
+
         .hover-cont {
             width: 0;
             font-size: 30px;
             padding: 0;
             font-size: 12px;
         }
+
         .dashed {
             margin-bottom: 10vw;
         }
     }
+
     .img-cont {
         width: 90vw;
         height: 90vw;
         margin: 0 5vw;
     }
+
     #work,
     #cases {
         padding-top: 5vh;
         padding-bottom: 5vh;
         margin-top: -1px;
+
         .case-more {
             display: inline-block;
         }
+
         button {
             width: 60vw;
             margin: 5vh 20vw;
             margin-bottom: 0;
             font-size: 18px;
         }
+
         img {
             width: 85vw;
             margin: 11vh 7.5vw 5vh 7.5vw
         }
+
         .tn-cont {
             height: 270vw;
             overflow: hidden;
             padding: 0;
             width: 100vw;
+
             .img-cont .hover-cont {
                 width: 100%;
+
                 &:hover {
                     animation: mobilehovereffekt 0.4s ease-out forwards;
                 }
             }
         }
     }
+
     #about-title {
         width: 90vw;
         padding: 0 5vw;
@@ -411,38 +512,48 @@
         margin-top: 3vh;
         z-index: -50;
     }
+
     .about_us {
         width: 90vw;
         padding: 0 5vw;
+
         .main-img {
             height: 250px;
             margin-top: 0 !important;
         }
+
         .about_text {
             font-size: 12px;
+
             p {
                 margin: 0;
             }
+
             img {
                 height: 22vw !important;
             }
         }
     }
+
     #plattforms {
         padding: 0;
         padding-bottom: 5vh;
         margin-top: -1px;
+
         img {
             width: 85vw;
             height: 6vw;
             margin: 11vh 7.5vw 5vh 7.5vw;
         }
+
         .plattform-box {
             width: 90vw;
+
             a {
                 width: 90vw;
                 height: 90vw;
                 padding: 0;
+
                 .hover-cont {
                     width: 90vw;
                     height: 90vw;
@@ -450,55 +561,70 @@
             }
         }
     }
+
     #about-ph {
         display: block;
         height: 120vh;
     }
+
     #alex {
         position: fixed;
+
         .mobile-alex {
             display: block;
         }
+
         .des-alex {
             display: none !important;
         }
+
         padding: 0 5vw !important;
+
         img {
             width: 90vw;
         }
     }
+
     .main-img {
         height: auto !important;
     }
+
     #selma {
         padding-bottom: 10px;
+
         img {
             width: 90vw;
         }
     }
+
     #press {
         width: 100vw;
         display: flex;
         padding: 0;
         flex-wrap: wrap;
         margin-top: -1px;
+
         #press-gal {
             grid-template-columns: repeat(2, 120px)
         }
+
         .press-title {
             width: 80vw;
             margin: 10vh auto;
         }
+
         button {
             width: 60vw;
             margin: 5vh 20vw;
             font-size: 18px;
             color: black;
         }
+
         .press-more {
             display: inline-block;
             color: black;
         }
+
         .press-box {
             display: flex;
             height: 30vw;
@@ -506,67 +632,83 @@
             justify-content: space-around;
             flex-wrap: wrap;
         }
+
         img {
             margin-bottom: 1vh;
             margin-right: 1vh;
         }
     }
+
     #footer {
         height: auto;
+
         .first_row {
             padding: 10px 5vw;
             flex-wrap: wrap;
             width: 90vw;
             text-align: center;
+
             .touch {
                 width: 100%;
                 margin: 55px 0 10px 0;
             }
+
             .links {
                 width: 100%;
                 margin-bottom: 55px;
+
                 a {
                     margin-bottom: 5px;
                 }
             }
         }
+
         .second_row {
             flex-wrap: wrap-reverse;
             width: 90vw;
             padding: 10px 5vw;
             margin-top: -1px;
+
             .link {
                 margin: 4vh auto;
             }
+
             .social_footer {
                 width: 45vw;
                 margin: 20px auto 5px auto;
+
                 a img {
                     width: 25px;
                 }
             }
+
             p {
                 width: 100%;
                 font-size: 10px;
                 text-align: center;
                 margin-bottom: 4vh;
             }
+
             div {
                 width: 80%;
                 justify-content: space-around;
             }
         }
     }
+
     .desktop {
         display: none !important;
     }
+
     .mobile {
         display: block;
     }
+
     .m-eye-links {
         width: 90vw;
         left: 5vw;
     }
+
     .mobileab {
         position: fixed;
         top: 2.5vh;
@@ -574,16 +716,19 @@
         z-index: -100;
         opacity: 1;
     }
+
     .video-stream,
     .html5-main-video {
         width: 320px !important;
         height: 300px !important;
     }
+
     .mobile-title {
         color: white;
         margin-bottom: 40vw !important;
         font-size: 25px;
     }
+
     #impressum {
         width: 90vw;
     }

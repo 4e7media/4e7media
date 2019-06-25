@@ -96,7 +96,6 @@
     .title-box {
         border-bottom: 5px solid black;
         display: flex;
-        height: 50px;
         margin-bottom: 10px;
         margin-top: 50px;
         align-content: center;
@@ -111,6 +110,8 @@
             width: 95%;
             font-size: 36px;
             margin: 0;
+            height: 35px;
+            margin-bottom: 10px;
         }
         a {
             color: black;
