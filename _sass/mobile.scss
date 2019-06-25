@@ -47,7 +47,6 @@
         width: 50vw;
         background-size: contain;
         top: 50vh;
-        height: 18%;
         margin: 0 25vw;
         z-index: -120;
     }
@@ -198,7 +197,6 @@
         width: 89vw;
         background-size: contain;
         top: 35vh;
-        height: 18%;
         margin: 0 6vw;
         z-index: -120;
     }
@@ -456,13 +454,13 @@
         display: flex;
         padding: 0;
         flex-wrap: wrap;
-        margin-top: -1px;
+        margin-top: 50px;
         #press-gal {
             grid-template-columns: repeat(2, 120px)
         }
         .press-title {
-            width: 90vw;
-            margin: 5vh auto;
+            width: 80vw;
+            margin: 10vh auto;
             height: 35px;
         }
         button {
