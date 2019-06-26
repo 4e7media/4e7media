@@ -10,7 +10,35 @@ $('document').ready(function() {
             if ($(this).width() > 200) { $(this).parent().addClass("big"); }
         });
     });
-
+    $(window).on("load", function() {
+        var $v = $('.about-fixed');
+    var $w = $(window);
+    var wH = $w.height(); // Get the window height.
+    // shows the about cont after scrolling 4 screens to prevent seeing the about in the loading time
+        if ($(this).scrollTop() > wH * 6) {
+            $('.about-fixed').css("display", "flex");
+            $('#eye').hide();
+            $('.eye-links').hide();
+            $('#alex').show();
+        } else if ($(this).scrollTop() > wH * 5 && $(window).width() < 1200) {
+            $('.fixed-p').hide();
+            $("#mobile-eye").hide()
+            $('.m-eye-links').hide();
+            $('#alex').show();
+            $('.about-fixed').show();
+        } else if ($(this).scrollTop() < wH * 5 && $(window).width() < 1200) {
+            $('.fixed-p').show();
+            $("#mobile-eye").show()
+            $('.m-eye-links').css("display", "flex");
+            $('#alex').hide();
+            $('.about-fixed').hide();
+        } else {
+            $('.about-fixed').css("display", "none");
+            $('.eye-links').show();
+            $('#alex').hide();
+        }
+    });
+    
 
     $(window).on('load', function() {
         var $th = $(".ab-txt").height() + 5
@@ -67,8 +95,10 @@ $('document').ready(function() {
         $(".yellow").removeClass("sideslide");
         $(".rosa").removeClass("sideslide");
         $(".featclose").hide()
-        $(".o-one").show();
+        $(".two").show();
         $(".one").hide();
+        $(".tree").show();
+        $(".four").show();
     });
     $(".two").click(function() {
         $(".grey").addClass("sideslide");
@@ -76,8 +106,10 @@ $('document').ready(function() {
         $(".yellow").removeClass("sideslide");
         $(".rosa").removeClass("sideslide");
         $(".featclose").hide()
-        $(".o-two").show();
+        $(".one").show();
         $(".two").hide();
+        $(".tree").show();
+        $(".four").show();
     });
     $(".tree").click(function() {
         $(".yellow").addClass("sideslide");
@@ -85,8 +117,10 @@ $('document').ready(function() {
         $(".grey").removeClass("sideslide");
         $(".rosa").removeClass("sideslide");
         $(".featclose").hide()
-        $(".o-tree").show();
+        $(".one").show();
         $(".tree").hide();
+        $(".two").show();
+        $(".four").show();
     });
     $(".four").click(function() {
         $(".rosa").addClass("sideslide");
@@ -94,8 +128,10 @@ $('document').ready(function() {
         $(".grey").removeClass("sideslide");
         $(".yellow").removeClass("sideslide");
         $(".featclose").hide()
-        $(".o-four").show();
+        $(".one").show();
         $(".four").hide();
+        $(".tree").show();
+        $(".two").show();
     });
     //what we do mobile close the slide
     $(".featclose").click(function() {
