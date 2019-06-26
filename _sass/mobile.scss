@@ -556,6 +556,9 @@
                 width: 90vw;
                 height: 90vw;
                 padding: 0;
+                &:hover .hover-cont{
+                    animation: mobilebighovereffekt 0.2s ease-out forwards;
+                }
 
                 .hover-cont {
                     width: 90vw;
