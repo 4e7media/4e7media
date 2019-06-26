@@ -462,6 +462,7 @@
             display: flex;
             width: 100vw;
             background-size: cover;
+            cursor: pointer;
             &:hover .hover-cont{
                 animation: mobilefeathovereffekt 0.2s ease-out forwards;
             }
