@@ -468,15 +468,7 @@
             img {
                 margin: 40px 5vw;
             }
-            .grey {
-                background-color: rgba(163, 154, 155, 1);
-            }
-            .yellow {
-                background-color: rgba(219, 200, 160, 1);
-            }
-            .rosa {
-                background-color: rgba(212, 167, 146, 1);
-            }
+            
             .hover-cont {
                 width: 0;
                 font-size: 30px;
@@ -505,7 +497,15 @@
                     }
                 }
             }
-
+            .grey {
+                background-color: rgba(163, 154, 155, 1);
+            }
+            .yellow {
+                background-color: rgba(219, 200, 160, 1);
+            }
+            .rosa {
+                background-color: rgba(212, 167, 146, 1);
+            }
 
         }
     }
