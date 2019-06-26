@@ -67,7 +67,7 @@ $('document').ready(function() {
         } else {
             $('.bgvideo').css({ 'height': 'auto', 'width': '100vw' })
         }
-    })
+    });
     var $wb = $(window).height()
     var $first = $('#features').offset()
     var $second = $('#about-ph').offset()
@@ -87,7 +87,7 @@ $('document').ready(function() {
     }).on("resize", function() { // If the user resizes the window
         $wb = $(this).height(); // you'll need the new height value
     });
-
+    $(".mfeat-box").click(function() {})
     //what we do mobile right Slide open
     $(".one").click(function() {
         $(".green").addClass("sideslide");
