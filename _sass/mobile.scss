@@ -125,19 +125,21 @@
         width: 100%;
         height: 60vw;
         overflow-x: hidden;
+        &:hover .hover-cont {
+                animation: mobilefeathovereffekt 0.2s ease-out forwards;
+            }
 
         .hover-cont {
             padding: 4vh 5%;
             width: 90%;
-            font-size: 25px;
+            font-size: 15px;
             height: 60vw;
 
-            &:hover {
-                animation: mobilefeathovereffekt 0.2s ease-out forwards;
-            }
+            
 
             ul {
-                margin-bottom: 10vh
+                margin: 0;
+                margin-bottom: 3vh
             }
         }
     }
