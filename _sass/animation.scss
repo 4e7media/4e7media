@@ -24,9 +24,9 @@
     100%{opacity:1; padding: 3vw 5%; height: 24vw; margin-top: 0}
 }
 @keyframes mobilefeathovereffekt{
-    0%{opacity: 0; padding: 0 5%; width: 0;}
-    50%{opacity: 0.5; padding: 1.5vw 5%; width: 50vw;}
-    100%{opacity:1; padding: 3vw 5%; width: 100vw;}
+    0%{opacity: 0;  width: 0;}
+    50%{opacity: 0.5; width: 50vw;}
+    100%{opacity:1;  width: 100vw;}
 }
 @keyframes menuopen{
     0% {width:0; height:0; padding: 0; background: rgba(0, 0, 0, 0);}

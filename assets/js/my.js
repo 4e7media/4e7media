@@ -260,6 +260,7 @@ $('document').ready(function() {
             $('#eye').hide();
             $('.eye-links').hide();
             $('#alex').show();
+            $('.m-eye-links').hide();
         } else if ($(this).scrollTop() > wH * 5 && $(window).width() < 1200) {
             $('.fixed-p').hide();
             $("#mobile-eye").hide()
@@ -276,6 +277,7 @@ $('document').ready(function() {
             $('.about-fixed').css("display", "none");
             $('.eye-links').show();
             $('#alex').hide();
+            $('.m-eye-links').hide();
         }
     }).on("resize", function() { // If the user resizes the window
         wH = $(this).height(); // you'll need the new height value

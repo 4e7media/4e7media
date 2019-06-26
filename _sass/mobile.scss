@@ -125,21 +125,27 @@
         width: 100%;
         height: 60vw;
         overflow-x: hidden;
+
         &:hover .hover-cont {
-                animation: mobilefeathovereffekt 0.2s ease-out forwards;
-            }
+            animation: mobilefeathovereffekt 0.2s ease-out forwards;
+        }
 
         .hover-cont {
             padding: 4vh 5%;
             width: 90%;
-            font-size: 15px;
+            font-size: 12px;
             height: 60vw;
+            justify-content: center;
+            img{
+                margin-bottom: 20px;
+            }
 
-            
 
             ul {
-                margin: 0;
-                margin-bottom: 3vh
+                margin: 0 10%;
+                margin-bottom: 3vh;
+                font-size: 20px;
+                width: 80%;
             }
         }
     }
@@ -291,9 +297,11 @@
 
         .title-box {
             width: 310px;
-            i{
+
+            i {
                 font-size: 28px;
             }
+
             h3 {
                 font-size: 22px;
                 height: 22px;
@@ -445,22 +453,60 @@
         animation: mobilerightslide 0.2s ease-out forwards;
     }
 
-    #features .feat_cont div {
-        img {
-            margin: 0 5%;
-            margin-top: 3vh;
+    #features .feat_cont {
+        .feat-box{
+            display:none;
         }
+        .mfeat-box {
+            height: 100vh;
+            display: flex;
+            width: 100vw;
+            background-size: cover;
+            &:hover .hover-cont{
+                animation: mobilefeathovereffekt 0.2s ease-out forwards;
+            }
+            img {
+                margin: 40px 5vw;
+            }
+            .grey {
+                background-color: rgba(163, 154, 155, 1);
+            }
+            .yellow {
+                background-color: rgba(219, 200, 160, 1);
+            }
+            .rosa {
+                background-color: rgba(212, 167, 146, 1);
+            }
+            .hover-cont {
+                width: 0;
+                font-size: 30px;
+                padding: 0;
+                height: 100vh;
+                opacity: 0;
+                font-size: 18px;
+                display: flex;
+                justify-content: center;
+                flex-direction: column-reverse;
+                background-color: rgba(122, 159, 167, 1);
 
-        .hover-cont {
-            width: 0;
-            font-size: 30px;
-            padding: 0;
-            height: 100vw;
-            font-size: 11px;
-        }
+                .dashed {
+                    width: 90vw;
+                    margin: 0 5vw;
+                    padding: 0!important;
+                    list-style-type: none;
+                    li {
+                        margin: 20px 10%;
+                        width: 80%;
+                        color: white;
+                    }
+                    li::before {
+                        content: "-";
+                        margin-left: -15px;
+                    }
+                }
+            }
 
-        .dashed {
-            margin-bottom: 10vw;
+
         }
     }
 
@@ -556,7 +602,8 @@
                 width: 90vw;
                 height: 90vw;
                 padding: 0;
-                &:hover .hover-cont{
+
+                &:hover .hover-cont {
                     animation: mobilebighovereffekt 0.2s ease-out forwards;
                 }
 
