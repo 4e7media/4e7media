@@ -5,17 +5,17 @@ nav {
     width: 90vw;
     padding: 10px 5vw;
     color: white;
-    position: fixed;
     top: 3vh;
-    z-index: -98;
+    z-index: 3;
     justify-content: space-between;
+    margin-bottom: -70px;
     a {
         color: white;
         text-decoration-line: none;
     }
     .social-icons {
         width: 25%;
-        z-index: -98;
+        z-index: 3;
         img {
             width: 35px;
             height: auto;
