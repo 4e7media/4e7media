@@ -144,9 +144,40 @@ body {
         }
     }
 }
-
+.img-slide{
+    animation: imgslide 3s;
+}
+.more-slide{
+    animation: more 1s forwards;
+}
+.next-slide{
+    animation: morenext 1s forwards;
+}
+.lesser-slide{
+    animation: morenext 1s forwards;
+    animation-direction: reverse;
+}
+.less-slide{
+    animation: more 1s forwards;
+    animation-direction: reverse;
+}
+#cases, #work{
+    i{
+        position: absolute;
+        font-size: 20vh;
+        color: white;
+        top: 45vh;
+    }
+    .fa-chevron-left{
+        left: 10vw;
+    }
+    .fa-chevron-right{
+        right: 10vw;
+    }
+}
 #cases {
     background-color: #7a9fa7;
+   
     button {
         background: none;
         border: none;
@@ -178,8 +209,10 @@ body {
         flex-direction: row;
         z-index: 2;
         color: transparent;
-        overflow: hidden;
-         :nth-child(even) .hover-cont {
+        overflow: hidden; 
+        :first-child[style]{
+        margin-left:-120vw;}
+        :nth-child(even) .hover-cont {
             background-color: rgb(228, 214, 187)!important;
         }
         p {
@@ -249,7 +282,7 @@ body {
     }
     .tn-cont {
         width: 60vw;
-        padding: 0 20vw;
+        margin: 0 auto;
         display: flex;
         flex-direction: row;
         height: 20vw;

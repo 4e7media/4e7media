@@ -62,3 +62,15 @@
     from{opacity: 0; width: 0; padding:0;}
     to{opacity: 1; width: 90vw; padding: 0 5vw;}
 }
+@keyframes imgslide{
+    from{margin-left:-120vw}
+    to{margin-left: 0vw}
+}
+@keyframes more{
+    from{margin-left:0}
+    to{margin-left:-60vw}
+}
+@keyframes morenext{
+    from{margin-left:-60vw}
+    to{margin-left:-120vw}
+}

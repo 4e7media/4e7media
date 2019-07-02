@@ -1,9 +1,10 @@
 <div id="cases" class="section">
     <img class="desktop" src="../img/case-title.svg">
     <img class="mobile" src="https://res.cloudinary.com/media4e7/image/upload/v1560353453/cases_tqtegn.svg">
+    <i class="fas fa-chevron-left slidebtn-o" style="display:none;"></i>
     <div class="tn-cont cases-cont">
         {% for post in site.cases %}
-        <a class="img-cont" href="{{ post.url }}" style="background-image: url('{{site.cloud_host}}{{ post.tnimg }}');">
+        <a class="img-cont c-img" href="{{ post.url }}" style="background-image: url('{{site.cloud_host}}{{ post.tnimg }}');">
             <!--<p class="mobile mobile-title">{{ post.title}}</p>-->
             <div class="hover-cont desktop">
                 {{ post.title}}
@@ -11,4 +12,6 @@
         </a>
         {% endfor %}
     </div>
+    <i class="fas fa-chevron-right slidebtn-c"></i>
+
 </div>

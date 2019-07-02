@@ -3,7 +3,7 @@
     <img class="mobile" src="https://res.cloudinary.com/media4e7/image/upload/v1560353453/4e7_work_boa1bb.svg">
     <div class="tn-cont work-cont">
         {% assign sorted = (site.work | sort: 'date') %} {% for post in sorted %}
-        <a class="img-cont" href="{{ post.url }}" style="background-image: url('{{site.cloud_host}}{{ post.tnimg }}');">
+        <a class="img-cont w-img" href="{{ post.url }}" style="background-image: url('{{site.cloud_host}}{{ post.tnimg }}');">
             <!--<p class="mobile mobile-title">{{ post.title}}</p>-->
             <div class="hover-cont desktop">
                 {{ post.title}}
