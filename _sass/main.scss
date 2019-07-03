@@ -30,21 +30,29 @@ body {
 #landingpage {
     width: 100vw;
     margin: 0 auto;
+    height: 100vh;
     top: 0;
     z-index: 2;
-    overflow: hidden;
     background-color: white;
+    overflow: hidden;
+    .fp-tableCell{
+        overflow: hidden;
+    }
     video {
+        position: absolute;
+        top: 0;
         width: 100%;
         z-index: 0;
     }
-    .logo {
-        z-index: 59;
-        opacity: 1;
-        position: absolute;
-        top: 40vh;
-        left: 45vw;
-        width: 10vw;
+    
+
+        .logo {
+            z-index: 59;
+            opacity: 1;
+            position: fixed;
+            top: 40vh;
+            left: 45vw;
+             width: 10vw;
     }
 }
 
@@ -63,13 +71,15 @@ body {
     display: none;
 }
 #eye {
+    width: 60vw;
+    margin: 0 auto;
     img {
         width: 25vw;
     }
     .eye-links {
         position: absolute;
-        top: 3vh;
-        right: 0;
+        top: 17vh;
+        right: 10vw;
         display: flex;
         justify-content: space-between;
         width: 20vw;
@@ -81,7 +91,7 @@ body {
     .eye-text {
         width: 35vw;
         position: absolute;
-        top: 10vw;
+        top: 33vh;
         left: 14vw;
     }
     p {
@@ -164,7 +174,7 @@ body {
 #cases, #work{
     i{
         position: absolute;
-        font-size: 20vh;
+        font-size: 10vh;
         color: white;
         top: 45vh;
     }
@@ -197,9 +207,11 @@ body {
         display: none;
     }
     img {
-        width: 50%;
+        width: 60%;
         height: auto;
-        margin: 5vh 25%;
+        position: absolute;
+        top: 10vh;
+        left: 20vw;
     }
     .tn-cont {
         width: 60vw;
@@ -276,9 +288,11 @@ body {
         display: none;
     }
     img {
-        width: 50%;
+        width: 60vw;
         height: auto;
-        margin: 5vh 25%;
+        position: absolute;
+        top: 10vh;
+        left: 20vw;
     }
     .tn-cont {
         width: 60vw;
@@ -312,11 +326,11 @@ body {
     img {
         width: 50%;
         height: auto;
-        margin: 0 auto;
+        margin: 0 25%;
         margin-bottom: 5vh;
     }
     .plattform-box {
-        width: 60vw;
+        width: 40vw;
         display: flex;
         margin: 0 auto;
         flex-wrap: wrap;
@@ -324,8 +338,8 @@ body {
             background-color: rgb(228, 214, 187)!important;
         }
         a {
-            width: 30vw;
-            height: 30vw;
+            width: 20vw;
+            height: 20vw;
             background-size: cover;
             text-align: center;
             text-decoration-line: none;
@@ -339,7 +353,7 @@ body {
                 animation: bighovereffekt 0.2s ease-out forwards;
             }
             .hover-cont {
-                width: 20vw;
+                width: 10vw;
                 height: 2vw;
                 padding: 14vw 5vw;
                 background-color: #bfd0d4;
@@ -357,10 +371,16 @@ body {
 }
 
 #alex {
-    display: none;
-    position: fixed;
-    top: 20vh;
-    z-index: -60;
+    .about_text{
+        position: absolute;
+        right: 20vw;
+        top: 35vh;
+    }
+    .main-img{
+        left: 20vw;
+    }
+    display: flex;
+    flex-wrap: wrap;
     .mobile-alex {
         display: none;
     }
@@ -370,15 +390,15 @@ body {
     position: sticky;
     top: 0;
     z-index: -10;
+    .main-img{
+        right: 20vw;
+    }
 }
 
 #about-title {
-    margin: 5vh 25vw;
-    position: fixed;
-    z-index: -60;
-    top: 0;
-    width: 50vw;
-    display: none;
+    position: absolute;
+    top: 10vh;
+    width: 60vw;
 }
 
 .mobileab {
@@ -399,13 +419,15 @@ body {
     }
     .main-img {
         width: 25vw;
-        height: auto;
+        height: 45vh;
+        position: absolute;
+        top: 35vh;
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center top;
     }
     .about_text {
-        max-width: 40%;
+        max-width: 30vw;
         img {
             width: 100%;
             height: auto;
@@ -418,10 +440,11 @@ body {
 
 #press {
     width: 60vw;
-    padding: 10vh 20vw;
     background: white;
     display: flex;
     flex-direction: column;
+    position: absolute;
+    left: 20vw;
     .big {
         grid-column: auto/ span 2;
     }
@@ -431,14 +454,13 @@ body {
         grid-auto-rows: 180px;
         grid-gap: 10px;
         grid-auto-flow: dense;
-        margin: 0 auto;
-        height: 370px;
+        margin: 0 10vw;
+        height: auto;
         overflow: hidden;
     }
     .press-title {
-        width: 30vw;
-        margin: 0 20vw;
-        margin-bottom: 5vh;
+        width: 60vw;
+        margin: 5vh 0;
     }
     .press-box {
         height: 180px;

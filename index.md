@@ -13,7 +13,7 @@ title: 4e7 Media
   {% include work.html %}
   {% include plattforms.html %}
   {% include aboutus.html %}
-  <div id="press">
+  <div id="press" class="section">
     <img class="press-title" src="../img/press-title.svg">
     <div id="press-gal">
     {% for img in site.data.press.url %}

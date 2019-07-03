@@ -4,8 +4,6 @@
 <html>
   {% include head.html %}
   <body>
-    {% include menu-window.html %}
-    {% include navigation.html %}
     <div class="wrapper">
       {{ content }}
     <div class="push"></div>
@@ -16,7 +14,17 @@
     $('#home').fullpage({
       //options here
       autoScrolling:true,
-      scrollHorizontally: true
+      scrollHorizontally: true,
+      //Navigation
+    	menu: '#menu',
+	    lockAnchors: false,
+    	anchors:['lp', 'campaigne', 'medien', 'wwd', 'case', 'works', 'platforms'],
+	    navigation: true,
+    	navigationPosition: 'right',
+	    navigationTooltips: ['Landingpage', 'Campaigne', 'Medien', 'What we do', 'Cases', 'Work', 'Platforms',],
+    	showActiveTooltip: false,
+     	slidesNavigation: false,
+    	slidesNavPosition: 'bottom',
     });
   });</script>
 </html>
