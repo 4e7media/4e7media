@@ -46,7 +46,7 @@
     }
 
     #eye {
-        display: none !important;
+        display: flex;
     }
 
     .mobile {
@@ -84,7 +84,7 @@
 
     #mobile-eye {
         display: block;
-        position: fixed;
+        position: relative;
         width: 70vw;
         height: 30vw;
         background-size: contain;
@@ -150,10 +150,6 @@
         }
     }
 
-    #work,
-    #cases {
-        padding: 5vh 0;
-    }
 
     #work {
         button {
@@ -267,7 +263,41 @@
     }
 
     #eye {
-        display: none !important;
+        display: flex;
+        width: 80vw;
+        .eye-img{
+            width: 50vw;
+            position: absolute;
+            top: 10vh;
+        }
+        .eye-text{
+            width: 50vw;
+            position: absolute;
+            top: 23vh;
+            left: 30vw;
+        }
+        .eye-links{
+            position: absolute;
+            top: 10vh;
+            right:0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 30vw; 
+            a{
+                width: 12vw;
+                img{
+                    width: 10vw;
+                    height: auto;
+                }
+            }
+        }
+        p{
+            font-size: 4vw;
+            position: absolute;
+            top: 30vh;
+            width: 80vw;
+        }
     }
 
     .fixed-p {
@@ -454,6 +484,12 @@
     }
 
     #features .feat_cont {
+        .fp-controlArrow{
+                display: none;
+            }
+        .fp-slidesContainer{
+            width: 800vw!important;
+        }
         .feat-box{
             display:none;
         }
@@ -462,25 +498,21 @@
             display: flex;
             width: 100vw;
             background-size: cover;
-            cursor: pointer;
-            &:hover .hover-cont{
-                animation: mobilefeathovereffekt 0.2s ease-out forwards;
-            }
+            
             img {
                 margin: 40px 5vw;
             }
             
             .hover-cont {
-                width: 0;
+                width: 100vw;
                 font-size: 30px;
                 padding: 0;
                 height: 100vh;
-                opacity: 0;
                 font-size: 18px;
                 display: flex;
                 justify-content: center;
                 flex-direction: column-reverse;
-                background-color: rgba(122, 159, 167, 1);
+                background-color: rgba(0, 0, 0, 0.8);
 
                 .dashed {
                     width: 90vw;
@@ -498,15 +530,6 @@
                     }
                 }
             }
-            .grey {
-                background-color: rgba(163, 154, 155, 1);
-            }
-            .yellow {
-                background-color: rgba(219, 200, 160, 1);
-            }
-            .rosa {
-                background-color: rgba(212, 167, 146, 1);
-            }
 
         }
     }
@@ -519,9 +542,6 @@
 
     #work,
     #cases {
-        padding-top: 5vh;
-        padding-bottom: 5vh;
-        margin-top: -1px;
 
         .case-more {
             display: inline-block;
@@ -536,15 +556,16 @@
 
         img {
             width: 85vw;
-            margin: 11vh 7.5vw 5vh 7.5vw
+            left: 7.5vw;
         }
 
         .tn-cont {
-            height: 270vw;
             overflow: hidden;
             padding: 0;
             width: 100vw;
-
+            height: auto;
+            position: absolute;
+            top: 30vh;
             .img-cont .hover-cont {
                 width: 100%;
 
@@ -570,11 +591,14 @@
         .main-img {
             height: 250px;
             margin-top: 0 !important;
+            right: 0;
+            top: 10vh;
         }
 
         .about_text {
             font-size: 12px;
-
+            top: 50vh;
+            position: absolute;
             p {
                 margin: 0;
             }
@@ -597,13 +621,12 @@
         }
 
         .plattform-box {
-            width: 90vw;
+            width: 80vw;
 
             a {
-                width: 90vw;
-                height: 90vw;
+                width: 40vw;
+                height: 40vw;
                 padding: 0;
-
                 &:hover .hover-cont {
                     animation: mobilebighovereffekt 0.2s ease-out forwards;
                 }
@@ -622,7 +645,7 @@
     }
 
     #alex {
-        position: fixed;
+        position: relative;
 
         .mobile-alex {
             display: block;
