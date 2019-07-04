@@ -217,13 +217,11 @@ body {
         width: 60vw;
         height: 20vw;
         margin: 0 auto;
-        display: flex;
+        display: block;
         flex-direction: row;
         z-index: 2;
         color: transparent;
         overflow: hidden; 
-        :first-child[style]{
-        margin-left:-120vw;}
         :nth-child(even) .hover-cont {
             background-color: rgb(228, 214, 187)!important;
         }
@@ -297,7 +295,7 @@ body {
     .tn-cont {
         width: 60vw;
         margin: 0 auto;
-        display: flex;
+        display: block;
         flex-direction: row;
         height: 20vw;
         overflow: hidden;

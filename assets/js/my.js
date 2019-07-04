@@ -1,6 +1,6 @@
 
 $('document').ready(function() {
-    $ww = $('.c-img').width()
+   /* $ww = $('.c-img').width()
     $ic = "-" + $ww*6 + "px"
     $hic = "-" + $ww*2 + "px"
     $hdic = "-" + $ww*8 + "px"
@@ -78,7 +78,34 @@ $('document').ready(function() {
             $('.w-img:first').animate({'margin-left':'0'})
             $('.w-slidebtn-o').hide()
         }
-    })
+    })*/
+    $('.owl-carousel').owlCarousel({
+        items: 3,
+        loop: true,
+        Center: true,
+        nav: true,
+        autoplay: true,
+        //slideBy: 3,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        autoplaySpeed: 2000,
+        smartSpeed: 100,
+        slideSpeed: 50,
+        responsive:{
+            0:{
+                items:1,
+                nav:true
+            },
+            600:{
+                items:3,
+                nav:false
+            },
+            1000:{
+                items:3,
+                nav:true,
+            }
+        }
+    }),
     $(window).on("load", function() {
         console.log($('#landingpage').hasClass('active'))
         $.each($(".gridimg"), function(k, v) {

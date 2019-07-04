@@ -4,11 +4,17 @@
 <html>
   {% include head.html %}
   <body>
+    <!--<div class="ldBar" data-stroke="data:ldbar/res,gradient(0,1,#f99,#ff9)"></div>-->
     <div class="wrapper">
       {{ content }}
     <div class="push"></div>
     </div>
     {% include footer.html %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.js" integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha256-pTxD+DSzIwmwhOqTFN+DB+nHjO4iAsbgfyFq5K5bcE0=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.js" integrity="sha256-47ID+V2VWUtAdqO9l5GlnnbwqLCUtputV73sG/rBZ3k=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.extensions.min.js" integrity="sha256-SjXUPmxobD+vLCws0crIzpdBrHgDjs8jamhUMv0eRac=" crossorigin="anonymous"></script>
+    <script src="/assets/js/magnific_popup_main.js"></script>
   </body>
   <script>$(document).ready(function() {
     $('#home').fullpage({

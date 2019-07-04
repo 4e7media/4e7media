@@ -1,8 +1,8 @@
 <div id="work" class="section">
     <img class="desktop" src="../img/work.svg">
     <img class="mobile" src="https://res.cloudinary.com/media4e7/image/upload/v1560353453/4e7_work_boa1bb.svg">
-    <i class="fas fa-chevron-left w-slidebtn-o" style="display:none;"></i>
-    <div class="tn-cont work-cont">
+    <!--<i class="fas fa-chevron-left w-slidebtn-o" style="display:none;"></i>-->
+    <div class="tn-cont work-cont owl-carousel">
         {% assign sorted = (site.work | sort: 'date') %} {% for post in sorted %}
         <a class="img-cont w-img" href="{{ post.url }}" style="background-image: url('{{site.cloud_host}}{{ post.tnimg }}');">
             <!--<p class="mobile mobile-title">{{ post.title}}</p>-->
@@ -12,5 +12,5 @@
         </a>
         {% endfor %}
     </div>
-    <i class="fas fa-chevron-right w-slidebtn-c"></i>
+    <!--<i class="fas fa-chevron-right w-slidebtn-c"></i>-->
 </div>
