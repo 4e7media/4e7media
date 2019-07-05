@@ -397,7 +397,9 @@ body {
     top: 10vh;
     width: 60vw;
 }
-
+.mfeat-cont{
+    display: none;
+}
 .mobileab {
     display: none;
     opacity: 0;
@@ -485,7 +487,9 @@ body {
         }
     }
 }
-
+.mcamp-img{
+    display: none;
+}
 #impressum {
     width: 70vw;
     margin: 0 auto;

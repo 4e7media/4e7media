@@ -320,7 +320,7 @@
             font-weight: 500;
         }
     }
-
+    
     #campaigns {
         margin-bottom: 100vh;
 
@@ -678,12 +678,13 @@
         }
 
         .about_text {
-            font-size: 12px;
+            
             top: 50vh;
             position: absolute;
 
             p {
                 margin: 0;
+                font-size: 12px;
             }
 
             img {
@@ -735,6 +736,7 @@
             right: 5vw;
             top: 37vh;
             width: 90vw;
+
         }
 
         .mobile-alex {
@@ -760,7 +762,6 @@
 
     #selma {
         padding-bottom: 10px;
-
         img {
             width: 90vw;
         }
@@ -902,5 +903,8 @@
 
     #impressum {
         width: 90vw;
+    }
+    .mcamp-img{
+        display: block!important;
     }
 }
