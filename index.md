@@ -25,6 +25,7 @@ title: 4e7 Media
     <button type="button" class="press-more">More</button>
     <button type="button" class="press-less">Close</button>
   </div>
+  {% include footer.html %}
 </div>
 <script>
         $('.press-link').magnificPopup({

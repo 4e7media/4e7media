@@ -24,7 +24,6 @@ body {
 
 .wrapper {
     min-height: 100%;
-    margin-bottom: -300px;
 }
 
 #landingpage {
@@ -369,18 +368,18 @@ body {
 }
 
 #alex {
-    .about_text{
-        position: absolute;
-        right: 20vw;
-        top: 35vh;
-    }
-    .main-img{
-        left: 20vw;
-    }
     display: flex;
     flex-wrap: wrap;
     .mobile-alex {
         display: none;
+    }
+    .about_text{
+        position: absolute;
+        right: 20vw;
+        top: 20vh;
+    }
+    .main-img{
+        left: 20vw;
     }
 }
 
@@ -432,17 +431,17 @@ body {
         }
         p {
             margin: 0;
+            font-size: 1.5vw;
         }
     }
 }
 
 #press {
-    width: 60vw;
+    width: 100vw;
     background: white;
     display: flex;
     flex-direction: column;
-    position: absolute;
-    left: 20vw;
+    position: relative;
     .big {
         grid-column: auto/ span 2;
     }
@@ -457,8 +456,8 @@ body {
         overflow: hidden;
     }
     .press-title {
-        width: 60vw;
-        margin: 5vh 0;
+        width: 80vw;
+        margin: 5vh 10vw;
     }
     .press-box {
         height: 180px;

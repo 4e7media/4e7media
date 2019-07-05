@@ -10,7 +10,7 @@
     }
 }
 
-@media(max-width:1050px) {
+@media(max-width:800px) {
     nav {
         #bgm-btn {
             top: 3vw;
@@ -42,11 +42,42 @@
     }
 
     .camp-img {
-        display: none !important;
+        display: block;
     }
 
     #eye {
         display: flex;
+
+        .eye-img {
+            top: 18vh;
+            position: absolute;
+            width: 40vw;
+        }
+
+        .eye-links {
+            right: 0;
+            flex-wrap: wrap;
+
+            a {
+                img {
+                    height: 7vw;
+                }
+            }
+        }
+
+        .eye-text {
+            position: absolute;
+            top: 30vh;
+            left: 20vw;
+            width: 40vw;
+        }
+
+        p {
+            position: absolute;
+            top: 40vh;
+            font-size: 3vw;
+            width: 60vw;
+        }
     }
 
     .mobile {
@@ -123,7 +154,7 @@
 
     #features .feat_cont .feat-box {
         width: 100%;
-        height: 60vw;
+        height: 100vh;
         overflow-x: hidden;
 
         &:hover .hover-cont {
@@ -134,9 +165,10 @@
             padding: 4vh 5%;
             width: 90%;
             font-size: 12px;
-            height: 60vw;
+            height: 100vh;
             justify-content: center;
-            img{
+
+            img {
                 margin-bottom: 20px;
             }
 
@@ -163,19 +195,50 @@
         }
     }
 
+
+    .des-alex {
+        display: none;
+    }
+
     #alex {
-        top: 10vh;
-        padding: 0 20vw;
-        position: fixed;
+        .about_text{
+            right: 5vw;
+            top: 43vh;
+        }
+        .mobile-alex {
+            display: block;
+            left: 5vw;
+            width: 90vw;
+            top: 10vh;
+            height: 500px;
+        }
     }
 
     #about-title {
-        margin: 3vh 20vw;
-        width: 60vw;
+        top: 3vh;
+        left: 5vw;
+        width: 90vw;
     }
 
     #selma {
         flex-direction: column-reverse;
+        padding: 0;
+        .main-img {
+            width: 90vw;
+            height: 600px;
+            margin-top: 0 !important;
+            top: 0;
+            right: 5vw;
+        }
+
+        .about_text {
+            width: 90vw;
+            top: 40vh;
+            background: white;
+            left: 5vw;
+            position: absolute;
+            z-index: 40;
+        }
     }
 
     .about_us {
@@ -185,6 +248,8 @@
             width: 100%;
             height: 600px;
             margin-top: 0 !important;
+            top: 0;
+            right: 5vw;
         }
 
         img {
@@ -194,17 +259,19 @@
 
         .about_text {
             font-size: 23px;
-            max-width: 100%
+            max-width: 90vw;
+            top: 40vh;
         }
     }
 
     #press {
-        width: 70vw;
-        padding: 10vh 15vw;
+        width: 100vw;
+        padding: 10vh 5vw;
+        left: 0;
 
         .press-title {
-            width: 70vw;
-            margin: 5vh 0;
+            width: 80vw;
+            margin: 5vh 5vw;
         }
 
         #press-gal {
@@ -234,6 +301,10 @@
             .touch {
                 margin-right: 100px;
             }
+        }
+        .second_row{
+            width: 70vw; 
+            padding: 0 15vw;
         }
     }
 }
@@ -265,34 +336,40 @@
     #eye {
         display: flex;
         width: 80vw;
-        .eye-img{
+
+        .eye-img {
             width: 50vw;
             position: absolute;
             top: 10vh;
         }
-        .eye-text{
+
+        .eye-text {
             width: 50vw;
             position: absolute;
             top: 23vh;
             left: 30vw;
         }
-        .eye-links{
+
+        .eye-links {
             position: absolute;
             top: 10vh;
-            right:0;
+            right: 0;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            width: 30vw; 
-            a{
+            width: 30vw;
+
+            a {
                 width: 12vw;
-                img{
+
+                img {
                     width: 10vw;
                     height: auto;
                 }
             }
         }
-        p{
+
+        p {
             font-size: 4vw;
             position: absolute;
             top: 30vh;
@@ -484,25 +561,28 @@
     }
 
     #features .feat_cont {
-        .fp-controlArrow{
-                display: none;
-            }
-        .fp-slidesContainer{
-            width: 800vw!important;
+        .fp-controlArrow {
+            display: none;
         }
-        .feat-box{
-            display:none;
+
+        .fp-slidesContainer {
+            width: 800vw !important;
         }
+
+        .feat-box {
+            display: none;
+        }
+
         .mfeat-box {
             height: 100vh;
             display: flex;
             width: 100vw;
             background-size: cover;
-            
+
             img {
                 margin: 40px 5vw;
             }
-            
+
             .hover-cont {
                 width: 100vw;
                 font-size: 30px;
@@ -517,13 +597,15 @@
                 .dashed {
                     width: 90vw;
                     margin: 0 5vw;
-                    padding: 0!important;
+                    padding: 0 !important;
                     list-style-type: none;
+
                     li {
                         margin: 20px 10%;
                         width: 80%;
                         color: white;
                     }
+
                     li::before {
                         content: "-";
                         margin-left: -15px;
@@ -566,6 +648,7 @@
             height: auto;
             position: absolute;
             top: 30vh;
+
             .img-cont .hover-cont {
                 width: 100%;
 
@@ -578,9 +661,8 @@
 
     #about-title {
         width: 90vw;
-        padding: 0 5vw;
         margin: 0;
-        margin-top: 3vh;
+        top: 3.5vh;
         z-index: -50;
     }
 
@@ -599,6 +681,7 @@
             font-size: 12px;
             top: 50vh;
             position: absolute;
+
             p {
                 margin: 0;
             }
@@ -627,6 +710,7 @@
                 width: 40vw;
                 height: 40vw;
                 padding: 0;
+
                 &:hover .hover-cont {
                     animation: mobilebighovereffekt 0.2s ease-out forwards;
                 }
@@ -647,8 +731,16 @@
     #alex {
         position: relative;
 
+        .about_text {
+            right: 5vw;
+            top: 37vh;
+            width: 90vw;
+        }
+
         .mobile-alex {
             display: block;
+            left: 5vw;
+            top: 10vh;
         }
 
         .des-alex {
@@ -686,8 +778,8 @@
         }
 
         .press-title {
-            width: 80vw;
-            margin: 10vh auto;
+            width: 90vw;
+            margin: 10vh 5vw;
         }
 
         button {
@@ -727,7 +819,7 @@
 
             .touch {
                 width: 100%;
-                margin: 55px 0 10px 0;
+                margin: 10px 0 10px 0;
             }
 
             .links {
@@ -752,7 +844,9 @@
 
             .social_footer {
                 width: 45vw;
-                margin: 20px auto 5px auto;
+                position: absolute;
+                bottom: 18vh;
+                left: 25vw;
 
                 a img {
                     width: 25px;
