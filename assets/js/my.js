@@ -90,6 +90,9 @@ $('document').ready(function() {
         autoplaySpeed: 2000,
         smartSpeed: 100,
         slideSpeed: 50,
+        dots: true,
+        pagination:false,
+        navigation:true,
         responsive:{
             0:{
                 items:1,

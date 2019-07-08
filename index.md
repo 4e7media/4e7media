@@ -22,8 +22,6 @@ title: 4e7 Media
       </a>
     {% endfor %}
     </div>
-    <button type="button" class="press-more">More</button>
-    <button type="button" class="press-less">Close</button>
   </div>
   {% include footer.html %}
 </div>
