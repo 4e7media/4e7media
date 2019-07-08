@@ -11,7 +11,7 @@ $('document').ready(function() {
         });
     });
     $(window).on("load", function() {
-        var $v = $('.about-fixed');
+        console.log($(window).width())
     var $w = $(window);
     var wH = $w.height(); // Get the window height.
     // shows the about cont after scrolling 4 screens to prevent seeing the about in the loading time
@@ -20,13 +20,14 @@ $('document').ready(function() {
             $('#eye').hide();
             $('.eye-links').hide();
             $('#alex').show();
-        } else if ($(this).scrollTop() > wH * 5 && $(window).width() < 1200) {
+            $('.fixed-p').hide();
+        } else if ($(this).scrollTop() > wH * 5 ){
             $('.fixed-p').hide();
             $("#mobile-eye").hide()
             $('.m-eye-links').hide();
             $('#alex').show();
             $('.about-fixed').show();
-        } else if ($(this).scrollTop() < wH * 5 && $(window).width() < 1200) {
+        } else if ($(this).scrollTop() < wH * 5 && $(window).width() < 900) {
             $('.fixed-p').show();
             $("#mobile-eye").show()
             $('.m-eye-links').css("display", "flex");
@@ -36,6 +37,7 @@ $('document').ready(function() {
             $('.about-fixed').css("display", "none");
             $('.eye-links').show();
             $('#alex').hide();
+            $('#eye').show();
         }
     });
     
@@ -261,14 +263,14 @@ $('document').ready(function() {
             $('.eye-links').hide();
             $('#alex').show();
             $('.m-eye-links').hide();
-        } else if ($(this).scrollTop() > wH * 5 && $(window).width() < 1200) {
-            $('.fixed-p').hide();
+        } else if ($(this).scrollTop() > wH * 5 ){
+            $('.fixed-p').css("display", "none");
             $("#mobile-eye").hide()
             $('.m-eye-links').hide();
             $('#alex').show();
             $('.about-fixed').show();
-        } else if ($(this).scrollTop() < wH * 5 && $(window).width() < 1200) {
-            $('.fixed-p').show();
+        } else if ($(this).scrollTop() < wH * 5 && $(window).width() < 900) {
+            $('.fixed-p').css("display", "block");
             $("#mobile-eye").show()
             $('.m-eye-links').css("display", "flex");
             $('#alex').hide();
@@ -278,6 +280,7 @@ $('document').ready(function() {
             $('.eye-links').show();
             $('#alex').hide();
             $('.m-eye-links').hide();
+            $('#eye').show();
         }
     }).on("resize", function() { // If the user resizes the window
         wH = $(this).height(); // you'll need the new height value

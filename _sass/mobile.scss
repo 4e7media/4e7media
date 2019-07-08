@@ -8,9 +8,12 @@
             grid-template-columns: repeat(6, 150px)
         }
     }
+    .ab-p{
+        font-size: 12px;
+    }
 }
 
-@media(max-width:1050px) {
+@media(max-width:800px) {
     nav {
         #bgm-btn {
             top: 3vw;
@@ -187,7 +190,7 @@
 
         .main-img {
             width: 100%;
-            height: 600px;
+            height: 300px;
             margin-top: 0 !important;
         }
 
@@ -761,6 +764,7 @@
     .m-eye-links {
         width: 90vw;
         left: 5vw;
+        position: fixed;
     }
 
     .mobileab {

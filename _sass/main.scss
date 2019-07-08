@@ -103,6 +103,9 @@ body {
         font-size: 1.5vw;
         text-align: justify;
     }
+    .fixed-p{
+        display: none;
+    }
 }
 
 #mobile-eye {
@@ -357,7 +360,7 @@ body {
 #alex {
     display: none;
     position: fixed;
-    top: 20vh;
+    top: 15vh;
     z-index: -60;
     .mobile-alex {
         display: none;
@@ -404,6 +407,7 @@ body {
     }
     .about_text {
         max-width: 40%;
+        font-size: 1vw;
         img {
             width: 100%;
             height: auto;
@@ -425,13 +429,16 @@ body {
     }
     #press-gal {
         display: grid;
-        grid-template-columns: repeat(6, 120px);
+        grid-template-columns: repeat(6, 10vw);
         grid-auto-rows: 180px;
         grid-gap: 10px;
         grid-auto-flow: dense;
         margin: 0 auto;
         height: 370px;
         overflow: hidden;
+        a{
+            overflow: hidden;
+        }
     }
     .press-title {
         width: 30vw;
