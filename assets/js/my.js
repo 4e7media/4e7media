@@ -33,7 +33,7 @@ $('document').ready(function() {
             $('.m-eye-links').css("display", "flex");
             $('#alex').hide();
             $('.about-fixed').hide();
-        } else {
+        } else if($(this).scrollTop() > wH * 2) {
             $('.about-fixed').css("display", "none");
             $('.eye-links').show();
             $('#alex').hide();
@@ -275,7 +275,7 @@ $('document').ready(function() {
             $('.m-eye-links').css("display", "flex");
             $('#alex').hide();
             $('.about-fixed').hide();
-        } else {
+        } else if($(this).scrollTop() > wH * 2){
             $('.about-fixed').css("display", "none");
             $('.eye-links').show();
             $('#alex').hide();
