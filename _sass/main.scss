@@ -23,7 +23,7 @@ body {
 }
 
 .wrapper {
-    min-height: 100%;
+    min-height: 100vh;
     margin-bottom: -300px;
 }
 
@@ -204,13 +204,16 @@ body {
     .tn-cont {
         width: 60vw;
         height: 60vw;
-        padding: 0 20vw;
+        margin: 0 auto;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         z-index: 2;
         color: transparent;
         overflow: hidden;
+        /*-webkit-box-shadow: 6px 7px 31px 3px rgba(0,0,0,0.75);
+        -moz-box-shadow: 6px 7px 31px 3px rgba(0,0,0,0.75);
+        box-shadow: 6px 7px 31px 3px rgba(0,0,0,0.75);*/
          :nth-child(even) .hover-cont {
             background-color: rgb(228, 214, 187)!important;
         }
@@ -279,16 +282,20 @@ body {
         width: 50%;
         height: auto;
         margin: 5vh 25%;
+        text-shadow: 2px 2px 8px #FF0000;
     }
     .tn-cont {
         width: 60vw;
-        padding: 0 20vw;
+        margin: 0 20vw;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         height: 60vw;
         overflow: hidden;
         z-index: 2;
+        /*-webkit-box-shadow: 6px 7px 31px 3px rgba(0,0,0,0.75);
+        -moz-box-shadow: 6px 7px 31px 3px rgba(0,0,0,0.75);
+        box-shadow: 6px 7px 31px 3px rgba(0,0,0,0.75);*/
          :nth-child(even) .hover-cont {
             background-color: rgb(228, 214, 187)!important;
         }
