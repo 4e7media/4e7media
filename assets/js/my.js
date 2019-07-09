@@ -230,15 +230,16 @@ $('document').ready(function() {
     var winH = $win.height(); // Get the window height.
     //makes the burgermenubutton visible after scrolling on screen
     $win.on("scroll", function() {
-        if ($(this).scrollTop() > winH) {
+        if ($(this).scrollTop() > winH && $(this).scrollTop() < winH*4) {
             $nav.addClass("show");
             $("#landingpage").hide()
             $("#mobile-eye").show()
             $('#eye').show();
             $('eye-links').show();
+        }else if($(this).scrollTop() < winH+2){
+            $("#landingpage").show()
         } else {
             $nav.removeClass("show");
-            $("#landingpage").show();
             $("#mobile-eye").hide();
             $('#eye').hide();
             $('eye-links').hide();
@@ -257,13 +258,13 @@ $('document').ready(function() {
     var wH = $w.height(); // Get the window height.
     // shows the about cont after scrolling 4 screens to prevent seeing the about in the loading time
     $w.on("scroll", function() {
-        if ($(this).scrollTop() > wH * 6) {
+        if ($(this).scrollTop() > wH * 5) {
             $('.about-fixed').css("display", "flex");
             $('#eye').hide();
             $('.eye-links').hide();
             $('#alex').show();
             $('.m-eye-links').hide();
-        } else if ($(this).scrollTop() > wH * 5 ){
+        } else if ($(this).scrollTop() > wH * 4 ){
             $('.fixed-p').css("display", "none");
             $("#mobile-eye").hide()
             $('.m-eye-links').hide();
