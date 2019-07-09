@@ -483,6 +483,12 @@ body {
     width: 70vw;
     margin: 0 auto;
     text-align: center;
+    a{
+        position: absolute;
+        right: 25px;
+        top: 25px;
+        color: black;
+    }
 }
 
 .mobile {

@@ -2,6 +2,7 @@
 layout: default
 ---
 <div id="impressum">
+<a href="https://www.4e7media.com/#footer"><i class="fas fa-times"></i></a>
 <h2>IMPRESSUM</h2>
 <p>Unternehmensgegenstand<br>
 <br>
