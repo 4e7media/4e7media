@@ -8,8 +8,19 @@
             grid-template-columns: repeat(6, 150px)
         }
     }
-    .ab-p{
-        font-size: 12px;
+    .about_us{
+        flex-direction: column;
+        .main-img{
+            margin: 0 auto;
+            height: 25vw;
+        }
+        .about_text{
+            max-width: 90%;
+            margin: 0 auto;
+            .ab-p{
+                font-size: 20px;
+            }
+        }
     }
 }
 
@@ -180,9 +191,15 @@
         margin: 3vh 20vw;
         width: 60vw;
     }
-
+    
     #selma {
         flex-direction: column-reverse;
+        .mob{
+            display: none;
+        }
+        .desk{
+            display: flex
+        }
     }
 
     .about_us {
@@ -201,7 +218,10 @@
 
         .about_text {
             font-size: 23px;
-            max-width: 100%
+            max-width: 100%;
+            .ab-p{
+                font-size: 20px;
+            }
         }
     }
 
@@ -648,6 +668,12 @@
 
     #selma {
         padding-bottom: 10px;
+        .mob{
+            display: block;
+        }
+        .desk{
+            display: none;
+        }
 
         img {
             width: 90vw;

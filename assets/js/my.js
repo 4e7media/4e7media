@@ -21,12 +21,14 @@ $('document').ready(function() {
             $('.eye-links').hide();
             $('#alex').show();
             $('.fixed-p').hide();
+            $("#landingpage").hide()
         } else if ($(this).scrollTop() > wH * 5 ){
             $('.fixed-p').hide();
             $("#mobile-eye").hide()
             $('.m-eye-links').hide();
             $('#alex').show();
             $('.about-fixed').show();
+            $("#landingpage").hide()
         } else if ($(this).scrollTop() < wH * 5 && $(window).width() < 900) {
             $('.fixed-p').show();
             $("#mobile-eye").show()
@@ -38,6 +40,7 @@ $('document').ready(function() {
             $('.eye-links').show();
             $('#alex').hide();
             $('#eye').show();
+            $("#landingpage").hide()
         }
     });
     
@@ -236,7 +239,7 @@ $('document').ready(function() {
             $("#mobile-eye").show()
             $('#eye').show();
             $('eye-links').show();
-        }else if($(this).scrollTop() < winH+2){
+        }else if($(this).scrollTop() < winH*2){
             $("#landingpage").show()
         } else {
             $nav.removeClass("show");
