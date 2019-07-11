@@ -1,7 +1,7 @@
 
 $('document').ready(function() {
+
     $('#home').fullpage({
-        //options here
         licenseKey: '65CF5AD2-DC6F4574-B7CBF278-BB170808',
         autoScrolling: true,
         scrollHorizontally: true,
@@ -16,18 +16,21 @@ $('document').ready(function() {
         showActiveTooltip: false,
         slidesNavigation: false,
         slidesNavPosition: 'bottom',
-        parallax: true,
+        parallax: false,
+        parallaxKey: 'INSERT YOUR EXTENSION KEY HERE', //see https://goo.gl/xkUmHS
         parallaxOptions: {
-          type: 'reveal',
-          percentage: 62,
-          property: 'translate'
+            type: 'reveal',
+            percentage: 121,
+            property: 'background'
         },
-      });
+    });
     $('.owl-carousel').owlCarousel({
         items: 3,
         loop: true,
         Center: true,
         autoplay: true,
+        margin: 15,
+        stagePadding: 20,
         //slideBy: 3,
         autoplayTimeout: 2000,
         autoplayHoverPause: true,
@@ -59,20 +62,5 @@ $('document').ready(function() {
             if ($(this).width() > 200) { $(this).parent().addClass("big"); }
         });
         
-    });
-    $(window).on('DOMMouseScroll mousewheel', function(){
-        console.log('hallo')
-     if($('#cases').hasClass('active')){
-            $('.c-img:first').animate({'margin-left' : '0'}, 3000)
-            console.log('hallo')
-        }else{
-            $('.c-img:first').removeClass('img-slide')
-        }
-    if($('#work').hasClass('active')){
-            $('.w-img:first').addClass('img-slide')
-            console.log('hallo')
-        }else{
-            $('.w-img:first').removeClass('img-slide')
-        }
     });
 });

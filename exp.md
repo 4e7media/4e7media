@@ -21,21 +21,20 @@ layout: new
             background-color: yellow;
         }
     </style>
-    <div id="#some">
+    <div id="some">
         <div class="section" id="section-1">
-            <div class="fp-bg"></div>
+            <div class="fp-bg" id="section-1"></div>
             <p>thx for help</p>
         </div>
         <div class="section" id="section-2">
-            <div class="fp-bg"></div>
+                <div class="fp-bg" id="section-2"></div>
             <p>i hope that helps</p>
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.js"
     integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" crossorigin="anonymous"></script>
-    <script scr="/assets/js/fullpage.parallax.min.js"></script>
+    <script scr="../assets/js/fullpage.parallax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.extensions.min.js"
-    integrity="sha256-l/fwzXp9IwBn0fFrBx+IU4JGuSP5lZsfE5i8uMAWD90=" crossorigin="anonymous"></script>
-    <script src="/assets/js/new.js"></script>
+        integrity="sha256-l/fwzXp9IwBn0fFrBx+IU4JGuSP5lZsfE5i8uMAWD90=" crossorigin="anonymous"></script>
 </body>
 </html>
