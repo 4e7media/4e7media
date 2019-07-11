@@ -1,7 +1,6 @@
 ---
 layout: new
 ---
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,6 +9,33 @@ layout: new
     <title>isolate</title>
 </head>
 <body>
-    <div id="#home"
+    <style>
+        .section .fp-bg{
+            background-size: cover;
+            background-position: center 80%;
+        }
+        #section-1 .fp-bg{
+            background-color: brown;
+        }
+        #section-2 .fp-bg{
+            background-color: yellow;
+        }
+    </style>
+    <div id="#some">
+        <div class="section" id="section-1">
+            <div class="fp-bg"></div>
+            <p>thx for help</p>
+        </div>
+        <div class="section" id="section-2">
+            <div class="fp-bg"></div>
+            <p>i hope that helps</p>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.js"
+    integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" crossorigin="anonymous"></script>
+    <script scr="/assets/js/fullpage.parallax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.extensions.min.js"
+    integrity="sha256-l/fwzXp9IwBn0fFrBx+IU4JGuSP5lZsfE5i8uMAWD90=" crossorigin="anonymous"></script>
+    <script src="/assets/js/new.js"></script>
 </body>
 </html>
