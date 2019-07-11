@@ -93,6 +93,7 @@ $('document').ready(function() {
         dots: true,
         pagination:false,
         navigation:true,
+        responsiveBaseElement:"#home",
         responsive:{
             0:{
                 items:1,
