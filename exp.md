@@ -10,6 +10,6 @@ layout: new
     <title>isolate</title>
 </head>
 <body>
-    
+    <div id="#home"
 </body>
 </html>
