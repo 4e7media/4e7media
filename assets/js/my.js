@@ -1,84 +1,30 @@
 
 $('document').ready(function() {
-   /* $ww = $('.c-img').width()
-    $ic = "-" + $ww*6 + "px"
-    $hic = "-" + $ww*2 + "px"
-    $hdic = "-" + $ww*8 + "px"
-    $dic = "-" + $ww*12 + "px"
-    $htic = "-" + $ww*15 + "px"
-    $tic = "-" + $ww*18 + "px"
-    $hqic = "-" + $ww*21 + "px"
-    $qic = "-" + $ww*24 + "px"
-    console.log($ic)
-    $(window).on('resize', function(){
-        $ww = $(window).width()
-    })
-    $('.slidebtn-c').on('click', function(){
-        console.log($(".c-img:first").css("marginLeft"))
-        if($('.c-img:first').css('marginLeft') == '0px'){
-            $('.c-img:first').removeClass('img-slide lesser-slide less-slide')
-            $('.c-img:first').animate({'margin-left':'-60vw'})
-            $('.slidebtn-o').show()
-        }else{
-            $('.c-img:first').animate({'margin-left':'-120vw'})
-            $('.slidebtn-c').hide()
-        }
-    })
-    $('.slidebtn-o').on('click', function(){
-        console.log($('.c-img:first').css('margin'))
-        if($('.c-img:first').css('marginLeft') > $hic){
-            $('.c-img:first').animate({'margin-left':'0'})
-            $('.slidebtn-o').hide() 
-        }else if($('.c-img:first').css('marginLeft') > $ic){
-            $('.c-img:first').animate({'margin-left':'-60vw'})
-            $('.slidebtn-c').show()
-        }
-    })
-    $('.w-slidebtn-c').on('click', function(){
-        console.log($(".w-img:first").css("marginLeft"))
-        if($('.w-img:first').css('marginLeft') == '0px'){
-            $('.w-img:first').removeClass('img-slide lesser-slide less-slide')
-            $('.w-img:first').animate({'margin-left':'-60vw'})
-            $('.w-slidebtn-o').show()
-        }else if($('.w-img:first').css('marginLeft') >= $hic){
-            $('.w-img:first').animate({'margin-left':'-120vw'})
-        }else if($('.w-img:first').css('marginLeft') >= $ic){
-            $('.w-img:first').animate({'margin-left':'-180vw'})
-        }else if($('.w-img:first').css('marginLeft') >= $hdic){
-            $('.w-img:first').animate({'margin-left':'-240vw'})
-        }else if($('.w-img:first').css('marginLeft') >= $dic){
-            $('.w-img:first').animate({'margin-left':'-300vw'})
-        }else if($('.w-img:first').css('marginLeft') >= $htic){
-            $('.w-img:first').animate({'margin-left':'-360vw'})
-        }else if($('.w-img:first').css('marginLeft') >= $tic){
-            $('.w-img:first').animate({'margin-left':'-420vw'})
-        }else if($('.w-img:first').css('marginLeft') >= $hqic){
-            $('.w-img:first').animate({'margin-left':'-480vw'})
-            $('.w-slidebtn-c').hide()
-        }
-    })
-    $('.w-slidebtn-o').on('click', function(){
-        console.log($(".w-img:first").css("marginLeft"))
-        if($('.w-img:first').css('marginLeft') >= $qic){
-            $('.w-img:first').animate({'margin-left':'-420vw'})
-            $('.w-slidebtn-c').show()
-        }else if($('.w-img:first').css('marginLeft') >= $hqic){
-            $('.w-img:first').animate({'margin-left':'-360vw'})
-        }else if($('.w-img:first').css('marginLeft') >= $tic){
-            $('.w-img:first').animate({'margin-left':'-300vw'})
-        }else if($('.w-img:first').css('marginLeft') >= $htic){
-            $('.w-img:first').animate({'margin-left':'-240vw'})
-        }else if($('.w-img:first').css('marginLeft') >= $dic){
-            $('.w-img:first').animate({'margin-left':'-180vw'})
-        }else if($('.w-img:first').css('marginLeft') >= $hdic){
-            $('.w-img:first').animate({'margin-left':'-120vw'})
-        }else if($('.w-img:first').css('marginLeft') >= $ic){
-            $('.w-img:first').animate({'margin-left':'-60vw'})
-        }else if($('.w-img:first').css('marginLeft') >= $hic){
-            $('.w-img:first').animate({'margin-left':'0'})
-            $('.w-slidebtn-o').hide()
-        }
-    })*/
+    $(document).ready(function () {
+        $('#home').fullpage({
+          //options here
+          licenseKey: '65CF5AD2-DC6F4574-B7CBF278-BB170808',
+          autoScrolling: true,
+          scrollHorizontally: true,
+          //Navigation
+          menu: '#menu',
+          lockAnchors: false,
+          anchors: ['lp', 'campaigne', 'medien', 'wwd', 'case', 'works', 'platforms'],
+          navigation: true,
+          navigationPosition: 'right',
+          navigationTooltips: ['Landingpage', 'Campaigne', 'Medien', 'What we do', 'Cases', 'Work',
+            'Platforms', ],
+          showActiveTooltip: false,
+          slidesNavigation: false,
+          slidesNavPosition: 'bottom',
+          parallax: true,
+          parallaxOptions: {
+            type: 'reveal',
+            percentage: 62,
+            property: 'translate'
+          },
+        });
+      });
     $('.owl-carousel').owlCarousel({
         items: 3,
         loop: true,
