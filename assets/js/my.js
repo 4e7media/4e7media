@@ -16,21 +16,19 @@ $('document').ready(function() {
         showActiveTooltip: false,
         slidesNavigation: false,
         slidesNavPosition: 'bottom',
-        parallax: false,
+        parallax: true,
         parallaxKey: 'INSERT YOUR EXTENSION KEY HERE', //see https://goo.gl/xkUmHS
         parallaxOptions: {
             type: 'reveal',
-            percentage: 121,
-            property: 'background'
+            percentage: 100,
+            property: 'transition'
         },
     });
     $('.owl-carousel').owlCarousel({
         items: 3,
         loop: true,
-        Center: true,
         autoplay: true,
         margin: 15,
-        stagePadding: 20,
         //slideBy: 3,
         autoplayTimeout: 2000,
         autoplayHoverPause: true,
@@ -44,6 +42,7 @@ $('document').ready(function() {
         responsive:{
             0:{
                 items:1,
+                center: true,
             },
             600:{
                 items:3,
@@ -52,8 +51,10 @@ $('document').ready(function() {
                 items:3,
             }
         }
-    }),
-    $(window).on("load", function() {
+    })
+    
+});
+$(window).on("load", function() {
         console.log($('#landingpage').hasClass('active'))
         $.each($(".gridimg"), function(k, v) {
             if ($(this).width() > 200) { $(this).parent().addClass("big"); }
@@ -63,4 +64,3 @@ $('document').ready(function() {
         });
         
     });
-});

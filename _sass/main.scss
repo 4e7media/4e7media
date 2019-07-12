@@ -7,7 +7,10 @@ html {
     overflow-x: hidden;
     width: 100vw;
 }
-
+.fp-bg{
+    background-size: cover;
+    background-position: center 80%;
+}
 body {
     height: 100%;
     margin: 0;
@@ -56,7 +59,9 @@ body {
 }
 
 #campaigns {
-    background-color: #D4A692;
+    .fp-bg{
+        background-color: #D4A692;
+    }
     .mobile-camp {
         display: none;
     }
@@ -70,6 +75,9 @@ body {
     display: none;
 }
 #eye {
+    .fp-bg{
+        background-color: white;
+    }
     width: 60vw;
     margin: 0 auto;
     img {
@@ -185,7 +193,9 @@ body {
     }
 }
 #cases {
-    background-color: #7a9fa7;
+    .fp-bg{
+        background-color: #7a9fa7;
+    }
    
     button {
         background: none;
@@ -272,19 +282,7 @@ body {
 
 #work {
     .fp-bg{
-        background-size: cover;
-        transform: translate3d(0,0,0);
-        -webkit-backface-visibility: hidden; /* Chrome, Safari, Opera */
-        backface-visibility: hidden;
         background-color: #a2999c;
-        background-size: cover;
-        background-position: center 80%;
-        position: absolute;
-        display: block;
-        top:0;
-        bottom:0;
-        height: 100%;
-        width: 100%;
     }
     .less {
         display: none;
@@ -380,11 +378,11 @@ body {
     }
     .about_text{
         position: absolute;
-        right: 20vw;
+        right: 0;
         top: 20vh;
     }
     .main-img{
-        left: 20vw;
+        left: 0;
     }
 }
 
@@ -393,7 +391,7 @@ body {
     top: 0;
     z-index: -10;
     .main-img{
-        right: 20vw;
+        right: 0;
     }
 }
 
@@ -454,13 +452,13 @@ body {
     }
     #press-gal {
         display: grid;
-        grid-template-columns: repeat(6, 10vw);
+        grid-template-columns: repeat(6, 120px);
         grid-auto-rows: 180px;
         grid-gap: 10px;
         grid-auto-flow: dense;
         margin: 0 auto;
         height: 370px;
-        width: 60vw;
+        width: 750px;
         overflow: hidden;
         a{
             overflow: hidden;
