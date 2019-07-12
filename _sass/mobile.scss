@@ -11,11 +11,12 @@
 }
 
 @media(max-width:800px) {
-    nav {
-        #bgm-btn {
-            top: 3vw;
-            right: 3vw;
+    #bgm-btn {
+            top: 5vw;
+            right: 5vw;
         }
+    nav {
+        
 
         .social-icons,
         .site_links {
@@ -269,13 +270,12 @@
     }
 
     #press {
-        width: 100vw;
-        padding: 10vh 5vw;
+        width: 480px;
         left: 0;
-
+        margin: 0 auto;
         .press-title {
-            width: 80vw;
-            margin: 5vh 5vw;
+            width: 100%;
+            margin: 10vh 0;
         }
 
         #press-gal {
@@ -485,8 +485,8 @@
     }
 
     #bgm-btn {
-        top: 8vw;
-        right: 42%;
+        top: 5vw;
+        right: 5vw;
         color: #ffff !important;
 
         i {

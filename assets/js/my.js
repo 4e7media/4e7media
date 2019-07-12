@@ -64,3 +64,29 @@ $(window).on("load", function() {
         });
         
     });
+//open the menu
+$("#bgm-btn").click(function() {
+    $("#menu").removeClass("menu-close");
+    $("#menu").addClass("menu-open");
+    $(".fas").addClass("closeslide");
+    $(".bgm-txt").addClass("textslide");
+    $(".wrapper").addClass("click-tr");
+    $(".social-icons").addClass("social-slide");
+    $("#bgm-btn").removeClass("show");
+});
+//close the menu if u click text in the menu
+$(".textslide").click(function() {
+    $("#menu").addClass("menu-close");
+    $(".fas").removeClass("closeslide");
+    $(".bgm-txt").removeClass("textslide");
+    console.log("hallo")
+});
+//close the menu on the X
+$(".close-trigger").click(function() {
+    $("#menu").addClass("menu-close");
+    $(".fas").removeClass("closeslide");
+    $(".bgm-txt").removeClass("textslide");
+    $(".wrapper").removeClass("click-tr");
+    $(".social-icons").removeClass("social-slide");
+    $("#bgm-btn").addClass("show");
+});
