@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    console.log("init is included")
     $('#some').fullpage({
         slidesNavigation: true,
         scrollingSpeed: 1000,
