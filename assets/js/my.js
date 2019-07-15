@@ -1,6 +1,13 @@
 
 $('document').ready(function() {
-
+    var winw= $(window).width()
+    var winh= $(window).height()
+    if(winw > 450){
+        console.log("epic")
+        $("div").remove(".mfeat_cont");
+    }else{
+        $("div").remove(".feat_cont");
+    }
     $('#home').fullpage({
         licenseKey: '65CF5AD2-DC6F4574-B7CBF278-BB170808',
         autoScrolling: true,
@@ -51,9 +58,10 @@ $('document').ready(function() {
                 items:3,
             }
         }
-    })
-    
+    });
+
 });
+
 $(window).on("load", function() {
         console.log($('#landingpage').hasClass('active'))
         $.each($(".gridimg"), function(k, v) {
@@ -90,3 +98,11 @@ $(".close-trigger").click(function() {
     $(".social-icons").removeClass("social-slide");
     $("#bgm-btn").addClass("show");
 });
+$(window).resize(function(){
+    if(winw > 450){
+        console.log("epic")
+        $("div").remove(".mfeat_cont");
+    }else{
+        $("div").remove(".feat_cont");
+    }
+})

@@ -82,11 +82,13 @@ body {
     margin: 0 auto;
     img {
         width: 25vw;
+        top: 5vh;
+        position: absolute;
     }
     .eye-links {
         position: absolute;
-        top: 17vh;
-        right: 10vw;
+        top: 0;
+        right: 14vw;
         display: flex;
         justify-content: space-between;
         width: 20vw;
@@ -98,13 +100,15 @@ body {
     .eye-text {
         width: 35vw;
         position: absolute;
-        top: 33vh;
+        top: 25vh;
         left: 14vw;
     }
     p {
         width: 50vw;
         font-size: 1.5vw;
         text-align: justify;
+        position: absolute;
+        top: 36vh;
     }
 }
 
@@ -113,6 +117,9 @@ body {
 }
 
 #features {
+    .mfeat_cont{
+        display: none;
+    }
     .feat_cont {
         width: 100vw;
         display: flex;
@@ -120,9 +127,6 @@ body {
         flex-wrap: wrap;
         z-index: 2;
         button {
-            display: none;
-        }
-        .mfeat-box{
             display: none;
         }
         .feat-box {
@@ -145,6 +149,7 @@ body {
                 padding: 25vh 25vw;
                 z-index: 2;
                 background: rgba(0, 0, 0, 0.7);
+                justify-content: center;
                 ul.dashed {
                     list-style: none;
                     padding-left: 0;
@@ -231,7 +236,7 @@ body {
         z-index: 2;
         color: transparent;
         overflow: hidden; 
-        padding-bottom: 10px;
+        padding-bottom: 20px;
         :nth-child(even) .hover-cont {
             background-color: rgb(228, 214, 187)!important;
         }
@@ -302,6 +307,7 @@ body {
         height: 20vw;
         overflow: hidden;
         z-index: 2;
+        padding-bottom: 20px;
          :nth-child(even) .hover-cont {
             background-color: rgb(228, 214, 187)!important;
         }
@@ -334,6 +340,9 @@ body {
         display: flex;
         margin: 0 auto;
         flex-wrap: wrap;
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
          :nth-child(even) .hover-cont {
             background-color: rgb(228, 214, 187)!important;
         }

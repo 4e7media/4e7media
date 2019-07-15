@@ -563,8 +563,49 @@
     .sideslide {
         animation: mobilerightslide 0.2s ease-out forwards;
     }
+    #features .mfeat_cont {
+        height: 100vh;
+        display: flex;
+        width: 100vw;
+        background-size: cover;
 
+        img {
+            margin: 40px 5vw;
+        }
+
+        .hover-cont {
+            width: 100vw;
+            font-size: 30px;
+            padding: 0;
+            height: 100vh;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column-reverse;
+            background-color: rgba(0, 0, 0, 0.8);
+
+            .dashed {
+                width: 90vw;
+                margin: 0 5vw;
+                padding: 0 !important;
+                list-style-type: none;
+
+                li {
+                    margin: 20px 10%;
+                    width: 80%;
+                    color: white;
+                }
+
+                li::before {
+                    content: "-";
+                    margin-left: -15px;
+                }
+            }
+        }
+
+    }
     #features .feat_cont {
+        display: none;
         .fp-controlArrow {
             display: none;
         }
@@ -573,51 +614,8 @@
             width: 800vw !important;
         }
 
-        .feat-box {
-            display: none;
-        }
 
-        .mfeat-box {
-            height: 100vh;
-            display: flex;
-            width: 100vw;
-            background-size: cover;
-
-            img {
-                margin: 40px 5vw;
-            }
-
-            .hover-cont {
-                width: 100vw;
-                font-size: 30px;
-                padding: 0;
-                height: 100vh;
-                font-size: 18px;
-                display: flex;
-                justify-content: center;
-                flex-direction: column-reverse;
-                background-color: rgba(0, 0, 0, 0.8);
-
-                .dashed {
-                    width: 90vw;
-                    margin: 0 5vw;
-                    padding: 0 !important;
-                    list-style-type: none;
-
-                    li {
-                        margin: 20px 10%;
-                        width: 80%;
-                        color: white;
-                    }
-
-                    li::before {
-                        content: "-";
-                        margin-left: -15px;
-                    }
-                }
-            }
-
-        }
+        
     }
 
     .img-cont {
