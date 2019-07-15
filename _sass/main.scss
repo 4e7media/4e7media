@@ -40,8 +40,14 @@ body {
 
 .wrapper {
     min-height: 100%;
+    visibility: hidden;
 }
-
+.fp-prev{
+    left: 55px!important;
+}
+.fp-next{
+    right: 55px!important;
+}
 #landingpage {
     width: 100vw;
     margin: 0 auto;
@@ -275,9 +281,6 @@ body {
     flex-direction: column-reverse;
     height: 20vw;
     margin: 0;
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     &:hover .hover-cont {
         animation: hovereffekt 0.2s ease-out forwards;
     }
@@ -353,9 +356,6 @@ body {
         display: flex;
         margin: 0 auto;
         flex-wrap: wrap;
-        -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-        -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
          :nth-child(even) .hover-cont {
             background-color: rgb(228, 214, 187)!important;
         }
