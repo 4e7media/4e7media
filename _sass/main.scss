@@ -1,7 +1,20 @@
 .click-tr {
     pointer-events: none;
 }
-
+.load{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2000;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    img{
+        width: 10vw;
+    }
+}
 html {
     min-height: 100vh;
     overflow-x: hidden;

@@ -72,6 +72,17 @@ $(window).on("load", function() {
         });
         
     });
+    var $wp = $(window).width() * 0.7
+    var $hp = $(window).height()
+
+    $(window).on('load', function() {
+        $(".load").hide()
+        if ($hp >= $wp) {
+            $('.bgvideo').css({ 'height': '100vh', 'width': 'auto' })
+        } else {
+            $('.bgvideo').css({ 'height': 'auto', 'width': '100vw' })
+        }
+    });
 //open the menu
 $("#bgm-btn").click(function() {
     $("#menu").removeClass("menu-close");
