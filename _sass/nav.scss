@@ -50,7 +50,7 @@ nav {
     right: -3vw;
     background: none;
     border: none;
-    z-index: 99;
+    z-index: 9999999999;
     &:focus {
         outline: none;
     }
@@ -66,6 +66,11 @@ nav {
 .show {
     animation: bgmshow 0.6s ease-out forwards;
 }
+.nshow{
+    animation: bgmshow 0.6s ease-out forwards;
+    animation-direction: reverse;
+}
+
 
 #menu {
     width: 0;

@@ -8,6 +8,34 @@
             grid-template-columns: repeat(6, 150px)
         }
     }
+    #alex{
+        .main-img{
+            left: 0;
+            width: 100%;
+            margin: 0;
+        } 
+        .about_text{
+            top: 50vh;
+        }
+    }
+    .about_us{
+        .main-img{
+            width: 100%;
+            top: 10vh;
+        }
+        .about_text{
+            z-index: 3333;
+            background: white;
+            position: absolute;
+            max-width: 100%;
+            .ab-p{
+                font-size: 2vw;
+            }
+        }
+    }
+    .owl-dots{
+        width: 20vw;
+    }
 }
 
 @media(max-width:800px) {
@@ -31,7 +59,24 @@
             }
         }
     }
-
+    #menu{
+        .fa-times {
+            margin-bottom: 5vh;
+        }
+        a{
+            margin-top: 30px;
+            font-size: 25px;
+        }
+        .social-icons{
+            width: 70%;
+            margin: 0 15%;
+            .social-icon{
+                img{
+                    width: 70%;
+                }
+            }
+        }
+    }
     #campaigns {
         height: auto;
     }
@@ -324,7 +369,9 @@
             font-weight: 500;
         }
     }
-    
+    .fp-prev,.fp-next{
+        display: none;
+    }
     #campaigns {
         margin-bottom: 100vh;
 
@@ -665,8 +712,8 @@
         width: 90vw;
         margin: 0;
         top: 3.5vh;
-        z-index: -50;
-        left: 0;
+        z-index: 50;
+        left: 5vw;
     }
 
     .about_us {
@@ -772,7 +819,8 @@
         margin: 0 auto;
 
         #press-gal {
-            grid-template-columns: repeat(2, 120px)
+            grid-template-columns: repeat(2, 120px);
+            height: 370px;
         }
 
         .press-title {

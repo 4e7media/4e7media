@@ -43,13 +43,15 @@ $('document').ready(function() {
         smartSpeed: 100,
         slideSpeed: 50,
         dots: true,
-        pagination:false,
+        dotsEach: 3,
+        pagination:true,
         navigation:true,
         responsiveBaseElement:"#home",
         responsive:{
             0:{
                 items:1,
                 center: true,
+                dots: false,
             },
             600:{
                 items:3,
@@ -61,7 +63,45 @@ $('document').ready(function() {
     });
 
 });
-
+$(window).bind('mousewheel DOMMouseScroll', function(){
+    var nav= $("#fp-nav ul li a span")
+    if($("#campaigns").hasClass("active")){
+      nav.css('background', "black")
+      $("#bgm-btn").css('color', "black")
+      $("#bgm-btn").addClass('show')
+    }else if($("#eye").hasClass("active")){
+      nav.css('background', "black")
+      $("#bgm-btn").css('color', "black")
+    }else if($("#features").hasClass("active")){
+      nav.css('background', "white")
+      $("#bgm-btn").css('color', "white")
+    }else if($("#plattforms").hasClass("active")){
+      nav.css('background', "white")
+      $("#bgm-btn").css({'color':"white", "background" : "transparent"})
+      $("#about-title").hide()
+    }else if($("#alex").hasClass("active") && $("#about-title").css('display') == 'none'){
+        nav.css('background', "black")
+        $("#about-title").delay(300).show(0)
+        $("#bgm-btn").css({'color':"black", "background" : "white"})
+    }else if($("#selma").hasClass("active") && $(window).width()< 1200){
+        $("#about-title").hide()
+    }
+    else if($("#selma").hasClass("active") && $(window).width()> 1200){
+        $("#about-title").show()
+    }else if($("#about-title").hasClass("active")){
+        $("#about-title").hide()
+    }else if($("#press").hasClass("active")){
+        nav.css('background', "black")
+        $("#bgm-btn").css('color', "black")
+        $("#about-title").hide()
+    }else if($("#footer").hasClass("active")){
+        nav.css('background', "white")
+        $("#bgm-btn").css({'color':"white", "background" : "transparent"})
+    }else if($("#landingpage").hasClass("active")){
+        nav.css('background', "white")
+        $("#bgm-btn").css('color', "transparent")
+    }
+})
 $(window).on("load", function() {
         console.log($('#landingpage').hasClass('active'))
         $.each($(".gridimg"), function(k, v) {
@@ -92,7 +132,7 @@ $("#bgm-btn").click(function() {
     $(".bgm-txt").addClass("textslide");
     $(".wrapper").addClass("click-tr");
     $(".social-icons").addClass("social-slide");
-    $("#bgm-btn").removeClass("show");
+    $("#bgm-btn").hide();
 });
 //close the menu if u click text in the menu
 $(".textslide").click(function() {
@@ -108,7 +148,7 @@ $(".close-trigger").click(function() {
     $(".bgm-txt").removeClass("textslide");
     $(".wrapper").removeClass("click-tr");
     $(".social-icons").removeClass("social-slide");
-    $("#bgm-btn").addClass("show");
+    $("#bgm-btn").show();
 });
 $(window).resize(function(){
     if(winw > 450){
