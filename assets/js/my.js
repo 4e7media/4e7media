@@ -15,11 +15,10 @@ $('document').ready(function() {
         //Navigation
         menu: '#menu',
         lockAnchors: false,
-        anchors: ['lp', 'campaigne', 'medien', 'wwd', 'case', 'works', 'platforms'],
+        anchors: ['lp', 'campaigne', 'medien', 'wwd', 'case', 'works', 'platforms', 'ab-alex', 'ab-selma', 'presses', 'footers'],
         navigation: true,
         navigationPosition: 'right',
-        navigationTooltips: ['Landingpage', 'Campaigne', 'Medien', 'What we do', 'Cases', 'Work',
-          'Platforms', ],
+        navigationTooltips: ['Landingpage', 'Campaigne', 'Medien', 'What we do', 'Cases', 'Work', 'Platforms', 'Alex', 'Selma', 'Press', 'Find Us' ],
         showActiveTooltip: false,
         slidesNavigation: false,
         slidesNavPosition: 'bottom',
@@ -30,8 +29,13 @@ $('document').ready(function() {
             percentage: 100,
             property: 'transition'
         },
+        /*afterLoad: function(origin, destination, direction){
+            if(origin.anchor == 'ab-selma'){
+                $("#about-title").show()
+            }
+        }*/
     });
-    $('.owl-carousel').owlCarousel({
+   /* $('.owl-carousel').owlCarousel({
         items: 3,
         loop: true,
         autoplay: true,
@@ -45,7 +49,7 @@ $('document').ready(function() {
         dots: true,
         dotsEach: 3,
         pagination:true,
-        navigation:true,
+        nav:true,
         responsiveBaseElement:"#home",
         responsive:{
             0:{
@@ -60,9 +64,51 @@ $('document').ready(function() {
                 items:3,
             }
         }
-    });
-
+    });*/
+    $('.owl-carousel').slick({
+        infinite: true,
+        row: 1,
+        slidesToShow: 3,
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                row: 1,
+              }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ]
+    })
 });
+$('.w-prev').click(function(){
+    $('.owl-carousel').slick('slickPrev');
+})
+$(".ab-btn").click(function(){
+    $("#about-title").show()
+    nav.css('background', "black")
+    $("#bgm-btn").css('color', "black")
+    $("#bgm-btn").addClass('show')
+})
 $(window).bind('mousewheel DOMMouseScroll', function(){
     var nav= $("#fp-nav ul li a span")
     if($("#campaigns").hasClass("active")){
@@ -84,9 +130,9 @@ $(window).bind('mousewheel DOMMouseScroll', function(){
       $("#about-title").hide()
     }else if($("#alex").hasClass("active") && $("#about-title").css('display') == 'none'){
         nav.css('background', "black")
-        $("#about-title").delay(300).show(0)
         $("#bgm-btn").addClass('show')
         $("#bgm-btn").css({'color':"black",})
+        $("#about-title").show()
     }else if($("#selma").hasClass("active") && $(window).width()< 1200){
         $("#about-title").hide()
         $("#bgm-btn").addClass('show')
