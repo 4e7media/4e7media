@@ -72,34 +72,44 @@ $(window).bind('mousewheel DOMMouseScroll', function(){
     }else if($("#eye").hasClass("active")){
       nav.css('background', "black")
       $("#bgm-btn").css('color', "black")
+      $("#bgm-btn").addClass('show')
     }else if($("#features").hasClass("active")){
       nav.css('background', "white")
       $("#bgm-btn").css('color', "white")
+      $("#bgm-btn").addClass('show')
     }else if($("#plattforms").hasClass("active")){
       nav.css('background', "white")
       $("#bgm-btn").css({'color':"white", "background" : "transparent"})
+      $("#bgm-btn").addClass('show')
       $("#about-title").hide()
     }else if($("#alex").hasClass("active") && $("#about-title").css('display') == 'none'){
         nav.css('background', "black")
         $("#about-title").delay(300).show(0)
-        $("#bgm-btn").css({'color':"black", "background" : "white"})
+        $("#bgm-btn").addClass('show')
+        $("#bgm-btn").css({'color':"black",})
     }else if($("#selma").hasClass("active") && $(window).width()< 1200){
         $("#about-title").hide()
+        $("#bgm-btn").addClass('show')
     }
     else if($("#selma").hasClass("active") && $(window).width()> 1200){
         $("#about-title").show()
+        $("#bgm-btn").addClass('show')
     }else if($("#about-title").hasClass("active")){
         $("#about-title").hide()
+        $("#bgm-btn").addClass('show')
     }else if($("#press").hasClass("active")){
         nav.css('background', "black")
         $("#bgm-btn").css('color', "black")
         $("#about-title").hide()
+        $("#bgm-btn").addClass('show')
     }else if($("#footer").hasClass("active")){
         nav.css('background', "white")
         $("#bgm-btn").css({'color':"white", "background" : "transparent"})
+        $("#bgm-btn").addClass('show')
     }else if($("#landingpage").hasClass("active")){
         nav.css('background', "white")
         $("#bgm-btn").css('color', "transparent")
+        $("#bgm-btn").addClass('show')
     }
 })
 $(window).on("load", function() {

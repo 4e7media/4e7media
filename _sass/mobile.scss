@@ -1,5 +1,4 @@
-@media(max-width:1500px) {
-
+@media(max-width:1500px){
     .cases-wrapper,
     .detail-wrapper {
         width: 940px;
@@ -7,6 +6,13 @@
         #gallery {
             grid-template-columns: repeat(6, 150px)
         }
+    }
+}
+@media(max-width:1100px) {
+
+    
+    #about-title{
+        padding: 0;
     }
     #alex{
         .main-img{
