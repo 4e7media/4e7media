@@ -43,7 +43,10 @@
         }
     }
     #plattforms .plattform-box{
-        top: 32%;
+        top: 30%;
+        a{
+            height: auto;
+        }
     }
     #press #press-gal{
         grid-template-columns: repeat(6, 120px);
@@ -90,6 +93,17 @@
                 }
             }
         }
+    }
+    #plattforms .plattform-box{
+        width: 60vw;
+        height: 20vw;
+        a{
+            height: 20vw;
+        }
+    }
+    #work .tn-cont, #cases .tn-cont{
+        width: 60vw;
+        height: 20vw;
     }
     #campaigns {
         height: auto;
@@ -251,10 +265,7 @@
 
     #plattforms {
         .plattform-box{
-            top: 32%;
-        }
-        img {
-            height: 2vh;
+            top: 33%;
         }
     }
 
@@ -279,9 +290,10 @@
     }
 
     #about-title {
-        top: 3vh;
         left: 5vw;
         width: 90vw;
+        padding: 3vh 2px;
+        background: white;
     }
 
     #selma {

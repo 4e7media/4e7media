@@ -29,11 +29,64 @@ $('document').ready(function() {
             percentage: 100,
             property: 'transition'
         },
-        /*afterLoad: function(origin, destination, direction){
-            if(origin.anchor == 'ab-selma'){
+        onLeave: function(origin, destination, direction){
+          if(origin.index == '7' && destination.index != '8'){
+            $("#about-title").hide()
+            $("#bgm-btn").css({"background" : "transparent"})
+          }else if(origin.index == '8' && destination.index != '7'){
+            $("#about-title").hide()
+          }
+        },
+        afterLoad: function(origin, destination, direction){
+            var nav= $("#fp-nav ul li a span")
+            if(destination.index == '1'){
+              nav.css('background', "black")
+              $("#bgm-btn").css({'color':"black", "background" : "transparent"})
+              $("#bgm-btn").addClass('show')
+            }else if(destination.index == '2'){
+              nav.css('background', "black")
+              $("#bgm-btn").css({'color':"black", "background" : "transparent"})
+              $("#bgm-btn").addClass('show')
+            }else if(destination.index == '3'){
+              nav.css('background', "white")
+              $("#bgm-btn").css({'color':"white", "background" : "transparent"})
+              $("#bgm-btn").addClass('show')
+            }else if(destination.index == '4'){
+              nav.css('background', "white")
+              $("#bgm-btn").css({'color':"white", "background" : "transparent"})
+              $("#bgm-btn").addClass('show')
+            }else if(destination.index == '5'){
+              nav.css('background', "white")
+              $("#bgm-btn").css({'color':"white", "background" : "transparent"})
+              $("#bgm-btn").addClass('show')
+            }else if(destination.index == '6'){
+              nav.css('background', "white")
+              $("#bgm-btn").css({'color':"white", "background" : "transparent"})
+              $("#bgm-btn").addClass('show')
+            }else if(destination.index == '7'){
                 $("#about-title").show()
+                nav.css('background', "black")
+                $("#bgm-btn").css({'color':"black","background" : "white"})
+                $("#bgm-btn").addClass('black')
+            }else if(destination.index == '8'){
+              $("#about-title").show()
+              nav.css('background', "black")
+              $("#bgm-btn").css({'color':"black","background" : "white"})
+              $("#bgm-btn").addClass('black')
+            }else if(destination.index == '9'){
+              nav.css('background', "black")
+              $("#bgm-btn").css({'color':"black", "background" : "transparent"})
+              $("#bgm-btn").addClass('black')
+            }else if(destination.index == '10'){
+              nav.css('background', "white")
+              $("#bgm-btn").css({'color':"white", "background" : "transparent"})
+              $("#bgm-btn").addClass('show')
+            }else if(destination.index == '0'){
+              nav.css('background', "white")
+              $("#bgm-btn").css({'color':"white", "background" : "transparent"})
+              $("#bgm-btn").removeClass('show')
             }
-        }*/
+        },
     });
    /* $('.owl-carousel').owlCarousel({
         items: 3,
@@ -197,57 +250,8 @@ $('.p-next').click(function(){
 $(".ab-btn").click(function(){
     $("#about-title").show()
     nav.css('background', "black")
-    $("#bgm-btn").css('color', "black")
+    $("#bgm-btn").css({'color':"black", "background" : "transparent"})
     $("#bgm-btn").addClass('show')
-})
-$(window).bind('mousewheel DOMMouseScroll', function(){
-    var nav= $("#fp-nav ul li a span")
-    if($("#campaigns").hasClass("active")){
-      nav.css('background', "black")
-      $("#bgm-btn").css('color', "black")
-      $("#bgm-btn").addClass('show')
-    }else if($("#eye").hasClass("active")){
-      nav.css('background', "black")
-      $("#bgm-btn").css('color', "black")
-      $("#bgm-btn").addClass('show')
-    }else if($("#features").hasClass("active")){
-      nav.css('background', "white")
-      $("#bgm-btn").css('color', "white")
-      $("#bgm-btn").addClass('show')
-    }else if($("#plattforms").hasClass("active")){
-      nav.css('background', "white")
-      $("#bgm-btn").css({'color':"white", "background" : "transparent"})
-      $("#bgm-btn").addClass('show')
-      $("#about-title").hide()
-    }else if($("#alex").hasClass("active") && $("#about-title").css('display') == 'none'){
-        nav.css('background', "black")
-        $("#bgm-btn").addClass('show')
-        $("#bgm-btn").css({'color':"black",})
-        $("#about-title").show()
-    }else if($("#selma").hasClass("active") && $(window).width()< 1200){
-        $("#about-title").hide()
-        $("#bgm-btn").addClass('show')
-    }
-    else if($("#selma").hasClass("active") && $(window).width()> 1200){
-        $("#about-title").show()
-        $("#bgm-btn").addClass('show')
-    }else if($("#about-title").hasClass("active")){
-        $("#about-title").hide()
-        $("#bgm-btn").addClass('show')
-    }else if($("#press").hasClass("active")){
-        nav.css('background', "black")
-        $("#bgm-btn").css('color', "black")
-        $("#about-title").hide()
-        $("#bgm-btn").addClass('show')
-    }else if($("#footer").hasClass("active")){
-        nav.css('background', "white")
-        $("#bgm-btn").css({'color':"white", "background" : "transparent"})
-        $("#bgm-btn").addClass('show')
-    }else if($("#landingpage").hasClass("active")){
-        nav.css('background', "white")
-        $("#bgm-btn").css('color', "transparent")
-        $("#bgm-btn").addClass('show')
-    }
 })
 $(window).on("load", function() {
         console.log($('#landingpage').hasClass('active'))
