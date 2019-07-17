@@ -73,7 +73,6 @@ $('document').ready(function() {
         slidesToScroll: 3,
         autoplay: true,
         cssEase: 'linear',
-        dots: true,
         responsive: [
             {
               breakpoint: 1024,

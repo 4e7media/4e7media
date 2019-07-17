@@ -375,6 +375,9 @@
             font-weight: 500;
         }
     }
+    .slick-slide{
+        margin: 0 10px;
+    }
     .fp-prev,.fp-next{
         display: none;
     }
@@ -674,7 +677,6 @@
     .img-cont {
         width: 90vw;
         height: 90vw;
-        margin: 0 5vw;
     }
 
     #work,
@@ -761,11 +763,9 @@
         }
 
         .plattform-box {
-            width: 80vw;
-
+            width: 100vw;
+            top: 5%;
             a {
-                width: 40vw;
-                height: 40vw;
                 padding: 0;
 
                 &:hover .hover-cont {
