@@ -2,6 +2,7 @@
     <div class="fp-bg"></div>
     <img class="desktop" src="../img/platforms.svg">
     <img class="mobile" src="https://res.cloudinary.com/media4e7/image/upload/v1560353453/platforms_jsnqut.svg">
+    <div class="fp-controlArrow fp-prev p-prev"></div>
     <div class="plattform-box owl-carousel">
         {% for post in site.plattforms %}
         <a href="{{ post.url }}" style="background-image: url('{{site.cloud_host}}{{ post.tnimg }}');">
@@ -11,4 +12,5 @@
         </a>
         {% endfor %}
     </div>
+    <div class="fp-controlArrow fp-next p-next"></div>
 </div>
