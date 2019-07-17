@@ -102,10 +102,10 @@ body {
         .logo {
             z-index: 59;
             opacity: 1;
-            position: fixed;
+            position: absolute;
             top: 40vh;
             left: 45vw;
-             width: 10vw;
+            width: 10vw;
     }
 }
 
@@ -269,15 +269,15 @@ body {
         display: none;
     }
     img {
-        width: 60%;
+        width: 80%;
         height: auto;
         position: absolute;
-        top: 10vh;
-        left: 20vw;
+        top: 5vh;
+        left: 10vw;
     }
     .tn-cont {
-        width: 60vw;
-        height: 20vw;
+        width: 80vw;
+        height: 26.6vw;
         margin: 0 auto;
         display: block;
         flex-direction: row;
@@ -306,7 +306,7 @@ body {
     color: #a39a9b;
     text-align: center;
     flex-direction: column-reverse;
-    height: 20vw;
+    height: 26.6vw;
     margin: 0;
     &:hover .hover-cont {
         animation: hovereffekt 0.2s ease-out forwards;
@@ -318,7 +318,7 @@ body {
     }
     .hover-cont {
         padding: 0;
-        width: 20vw;
+        width: 27vw;
         height: 0;
         background-color: #bfd0d4;
         opacity: 0;
@@ -336,18 +336,18 @@ body {
         display: none;
     }
     img {
-        width: 60vw;
+        width: 80vw;
         height: auto;
         position: absolute;
-        top: 10vh;
-        left: 20vw;
+        top: 5vh;
+        left: 10vw;
     }
     .tn-cont {
-        width: 60vw;
+        width: 80vw;
         margin: 0 auto;
         display: block;
         flex-direction: row;
-        height: 20vw;
+        height: 26.6vw;
         overflow: hidden;
         z-index: 2;
         padding-bottom: 20px;
@@ -370,19 +370,21 @@ body {
     background-color: #dbc8a0;
     z-index: 99999999999;
     img {
-        width: 50%;
+        width: 80%;
         height: auto;
-        margin: 0 25%;
+        margin: 0 10%;
         margin-bottom: 5vh;
     }
     .plattform-box {
-        width: 60vw;
+        width: 80vw;
         display: flex;
         margin: 0 auto;
         flex-wrap: wrap;
-        top: 20%;
+        height: 26.6vw;
+        top: 8%;
         a {
             width: 20vw;
+            height: 26.6vw;
             background-size: cover;
             text-align: center;
             text-decoration-line: none;
@@ -402,7 +404,6 @@ body {
                 background-color: #bfd0d4;
                 background-color: #bfd0d4;
                 opacity: 0;
-                font-size: 80%;
             }
         }
     }
