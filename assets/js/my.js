@@ -117,7 +117,6 @@ $('document').ready(function() {
                 slidesToShow: 3,
                 slidesToScroll: 3,
                 infinite: true,
-                dots: true
               }
             },
             {
@@ -154,7 +153,6 @@ $('document').ready(function() {
                 slidesToShow: 3,
                 slidesToScroll: 3,
                 infinite: true,
-                dots: true
               }
             },
             {
