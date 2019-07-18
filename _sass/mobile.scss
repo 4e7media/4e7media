@@ -206,6 +206,18 @@
         .play {
             top: -250px;
         }
+        #gallery.flex{
+            .half:nth-child(even) .play{
+                top: 71%;
+            }
+            .half{
+                width: 100%;
+                .play{
+                    top: 22%;
+                    margin-left: 220px;
+                }
+            }
+        }
 
         #gallery {
             grid-template-columns: repeat(4, 150px)
