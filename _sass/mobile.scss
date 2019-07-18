@@ -561,6 +561,35 @@
                 margin-bottom: 10px;
             }
         }
+        #gallery.flex {
+            width: 100%;
+            .half {
+                width: 100%;
+                height: auto;
+                margin: 0 5px;
+    
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+                .play{
+                    position: absolute;
+                    width: 25vw;
+                    top: 100px;
+                    margin-left: 60px;
+                }
+            }
+    
+            .third {
+                width: 32%;
+                height: auto;
+                margin: 0 5px;
+    
+                img {
+                    width: 100%;
+                }
+            }
+        }
     }
 
     #bgm-btn {

@@ -67,13 +67,10 @@
         height: 170px;
         width: 310px;
     }
-    .yt-tn:nth-child(n+5) .play{
-        top: 370px;
-    }
     .play {
         z-index: 99;
-        position: absolute;
-        top: 110px;
+        position: relative;
+        top: -570px;
         opacity: 0.7;
     }
 
@@ -153,6 +150,7 @@
                 height: auto;
             }
             .play{
+                position: absolute;
                 width: 25vw;
                 top: 100px;
                 margin-left: 60px;
