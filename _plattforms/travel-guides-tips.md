@@ -1,5 +1,5 @@
 ---
-layout: detail
+layout: plat
 title: travel guides tips
 tnimg: "/v1560106448/travel-guides-tips-platform.jpg"
 img:

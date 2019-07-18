@@ -1,5 +1,5 @@
 ---
-layout: detail
+layout: plat
 title: artformum 4e7
 tnimg: "/v1560106335/thumbnail-artforum4e7-2.jpg"
 img:

@@ -1,5 +1,5 @@
 ---
-layout: detail
+layout: plat
 title: trendsylvania
 tnimg: "/v1560106191/trendsylvania-platform.jpg"
 img:

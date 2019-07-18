@@ -1,5 +1,5 @@
 ---
-layout: detail
+layout: plat
 title: notorious
 tnimg: "/v1560106507/Notorious-patformJPG.jpg"
 img:
