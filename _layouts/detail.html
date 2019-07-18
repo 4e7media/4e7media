@@ -10,67 +10,90 @@
         </div>
         {% if page.video contains 'http' %}
         <div class="iframe-cont">
-            <iframe src="{{page.video}}"></iframe></div>{% endif %} {% assign img_count = page.img.size | plus:page.vid.size %} {% if img_count>= 4 %}
+            <iframe src="{{page.video}}"></iframe></div>{% endif %}
+        {% assign img_count = page.img.size | plus:page.vid.size %} {% if img_count>= 4 %}
         <div id="gallery" class="grid">
             {% for vid in page.vid %}
             <a class="yt-tn" href="{{vid.video}}" rel="video">
                 <img src="{{vid.vtn}}">
-                <img class="play" src="https://res.cloudinary.com/media4e7/image/upload/v1560939922/play-button_yy3um4.svg">
+                <img class="play"
+                    src="https://res.cloudinary.com/media4e7/image/upload/v1560939922/play-button_yy3um4.svg">
             </a>
             {% endfor %}{% for pic in page.img %}
             <a class="gridlink" href="{{site.cloud_host}}{{pic}}">
-                <img class="gridimg" src="{{site.cloud_host}}if_w_gt_h,c_fill,h_250,w_310/if_h_gt_w,c_fill,w_150,h_250/if_h_eq_w,c_fill,w_150,h_250{{pic}}">
+                <img class="gridimg"
+                    src="{{site.cloud_host}}if_w_gt_h,c_fill,h_250,w_310/if_h_gt_w,c_fill,w_150,h_250/if_h_eq_w,c_fill,w_150,h_250{{pic}}">
             </a>
             {% endfor %}
         </div>
-        {% elsif img_count > 0 and img_count <= 3 %}<div id="gallery" class="flex">
+        {% elsif img_count > 0 and img_count == 2 %}
+        <div id="gallery" class="flex">
             {% for vid in page.vid %}
-            <a class="desktop yt-tn" href="{{vid.video}}" rel="video">
+            <a class="desktop yt-tn half" href="{{vid.video}}" rel="video">
                 <img src="{{vid.vtn}}">
-                <img class="play" src="https://res.cloudinary.com/media4e7/image/upload/v1560939922/play-button_yy3um4.svg">
+                <img class="play"
+                    src="https://res.cloudinary.com/media4e7/image/upload/v1560939922/play-button_yy3um4.svg">
             </a>
             {% endfor %}{% for pic in page.img %}
-            <a class="gridlink" href="{{site.cloud_host}}{{pic}}">
-                <img class="gridimg" src="{{site.cloud_host}}if_w_gt_h,c_fill,h_250,w_310/if_h_gt_w,c_fill,w_150,h_250/if_h_eq_w,c_fill,w_150,h_250{{pic}}">
+            <a class="gridlink half" href="{{site.cloud_host}}{{pic}}">
+                <img class="gridimg half"
+                    src="{{site.cloud_host}}if_w_gt_h,c_fill,h_350,w_500/if_h_gt_w,c_fill,w_250,h_350/if_h_eq_w,c_fill,w_150,h_250{{pic}}">
             </a>
             {% endfor %}
-    </div> {% endif %}
+        </div> 
+
+        {% elsif img_count > 0 and img_count == 3 %}
+        <div id="gallery" class="flex">
+            {% for vid in page.vid %}
+            <a class="desktop yt-tn third" href="{{vid.video}}" rel="video">
+                <img src="{{vid.vtn}}">
+                <img class="play"
+                    src="https://res.cloudinary.com/media4e7/image/upload/v1560939922/play-button_yy3um4.svg">
+            </a>
+            {% endfor %}{% for pic in page.img %}
+            <a class="gridlink third" href="{{site.cloud_host}}{{pic}}">
+                <img class="gridimg"
+                    src="{{site.cloud_host}}if_w_gt_h,c_fill,h_270,w_400/if_h_gt_w,c_fill,w_200,h_270/if_h_eq_w,c_fill,w_150,h_250{{pic}}">
+            </a>
+            {% endfor %}
+        </div> {% endif %}
+        
 
 
 
+        <div class="arrow-box">
+            {% if page.previous.url %}
+            <a class="prev" href="{{page.previous.url}}"><i class="fas fa-chevron-left"></i></a> {% endif %}
+            {% if page.next.url %}
+            <a class="next" href="{{page.next.url}}"><i class="fas fa-chevron-right"></i></a> {% endif %}
+        </div>
 
-    <div class="arrow-box">
-        {% if page.previous.url %}
-        <a class="prev" href="{{page.previous.url}}"><i class="fas fa-chevron-left"></i></a> {% endif %} {% if page.next.url %}
-        <a class="next" href="{{page.next.url}}"><i class="fas fa-chevron-right"></i></a> {% endif %}
-    </div>
-
-    <script src="/assets/js/my.js"></script>
-    <script>
-        $('.gridlink').magnificPopup({
-            type: 'image',
-            gallery: {
-                enabled: true
-            }
-            // other options
-        });
-        $('.yt-tn').magnificPopup({
-            type: 'iframe',
-            gallery: {
-                enabled: true
-            },
-            // other options
-            iframe: {
-                patterns: {
-                    youtube: {
-                        index: 'youtube.com',
-                        id: null,
-                        src: '%id%'
+        <script src="/assets/js/my.js"></script>
+        <script>
+            $('.gridlink').magnificPopup({
+                type: 'image',
+                gallery: {
+                    enabled: true
+                }
+                // other options
+            });
+            $('.yt-tn').magnificPopup({
+                type: 'iframe',
+                gallery: {
+                    enabled: true
+                },
+                // other options
+                iframe: {
+                    patterns: {
+                        youtube: {
+                            index: 'youtube.com',
+                            id: null,
+                            src: '%id%'
+                        }
                     }
                 }
-            }
-        });
-    </script>
+            });
+        </script>
     </div>
 </body>
 

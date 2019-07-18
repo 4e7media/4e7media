@@ -3,6 +3,7 @@
     width: 1270px;
     margin: 0 auto;
     margin-bottom: -300px;
+
     .embed-container {
         position: relative;
         padding-bottom: 56.25%;
@@ -11,6 +12,7 @@
         overflow: hidden;
         width: 100%;
         height: auto;
+
         iframe {
             position: absolute;
             top: 0;
@@ -20,6 +22,7 @@
             border: none;
         }
     }
+
     .arrow-box {
         display: flex;
         justify-content: space-between;
@@ -27,23 +30,29 @@
         margin-bottom: 5vh;
         margin-top: 10px;
     }
+
     .grid {
         display: grid;
     }
+
     .flex {
         display: flex;
         justify-content: center;
+
         img {
             margin-right: 10px;
         }
+
         .yt-tn {
             margin-right: 10px;
         }
     }
+
     .iframe-cont {
         position: relative;
         overflow: hidden;
         padding-top: 56.25%;
+
         iframe {
             position: absolute;
             top: 0;
@@ -53,16 +62,21 @@
             border: 0;
         }
     }
+
     .yt-tn {
         height: 170px;
         width: 310px;
     }
+    .yt-tn:nth-child(n+5) .play{
+        top: 370px;
+    }
     .play {
         z-index: 99;
-        position: relative;
-        top: -250px;
+        position: absolute;
+        top: 110px;
         opacity: 0.7;
     }
+
     #gallery {
         flex-wrap: wrap;
         min-height: 40vh;
@@ -74,25 +88,31 @@
         grid-auto-rows: 250px;
         grid-auto-flow: dense;
         margin: 0 auto;
+
         .big {
             grid-column: auto/ span 2;
         }
+
         .yt-tn {
             grid-column: auto/ span 2;
             height: 250px;
+
             img {
                 width: 310px;
                 height: 250px;
             }
         }
+
         .iframe-cont {
             width: 100vw;
             padding-bottom: 51%;
         }
     }
+
     a {
         color: black;
     }
+
     .title-box {
         border-bottom: 5px solid black;
         display: flex;
@@ -100,11 +120,13 @@
         margin-top: 50px;
         align-content: center;
         justify-content: space-between;
+
         i {
             font-size: 36px;
             color: black;
             margin: 0;
         }
+
         h3 {
             text-transform: uppercase;
             width: 95%;
@@ -113,8 +135,38 @@
             height: 35px;
             margin-bottom: 10px;
         }
+
         a {
             color: black;
+        }
+    }
+
+    #gallery.flex {
+        width: 100%;
+        .half {
+            width: 48%;
+            height: auto;
+            margin: 0 5px;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+            .play{
+                width: 25vw;
+                top: 100px;
+                margin-left: 60px;
+            }
+        }
+
+        .third {
+            width: 32%;
+            height: auto;
+            margin: 0 5px;
+
+            img {
+                width: 100%;
+            }
         }
     }
 }
