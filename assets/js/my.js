@@ -23,7 +23,7 @@ $('document').ready(function() {
         slidesNavigation: false,
         slidesNavPosition: 'bottom',
         parallax: true,
-        parallaxKey: 'INSERT YOUR EXTENSION KEY HERE', //see https://goo.gl/xkUmHS
+        parallaxKey: 'NGU3bWVkaWEuY29tX2RBUWNHRnlZV3hzWVhnPTg3TQ==', //see https://goo.gl/xkUmHS
         parallaxOptions: {
             type: 'reveal',
             percentage: 100,
