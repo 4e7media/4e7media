@@ -70,7 +70,7 @@ $('document').ready(function() {
                 $("#bgm-btn").addClass('black')
             }else if(destination.index == '8'){
               $("#about-title").show()
-              nav.css('background', "black")
+              nav.css('background', "black") 
               $("#bgm-btn").css({'color':"black","background" : "white"})
               $("#bgm-btn").addClass('black')
             }else if(destination.index == '9'){
