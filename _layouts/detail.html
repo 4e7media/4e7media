@@ -29,7 +29,7 @@
         {% elsif img_count > 0 and img_count == 2 %}
         <div id="gallery" class="flex">
             {% for vid in page.vid %}
-            <a class="desktop yt-tn half" href="{{vid.video}}" rel="video">
+            <a class="yt-tn half" href="{{vid.video}}" rel="video">
                 <img src="{{vid.vtn}}">
                 <img class="play"
                     src="https://res.cloudinary.com/media4e7/image/upload/v1560939922/play-button_yy3um4.svg">
@@ -45,7 +45,7 @@
         {% elsif img_count > 0 and img_count == 3 %}
         <div id="gallery" class="flex">
             {% for vid in page.vid %}
-            <a class="desktop yt-tn third" href="{{vid.video}}" rel="video">
+            <a class="yt-tn third" href="{{vid.video}}" rel="video">
                 <img src="{{vid.vtn}}">
                 <img class="play"
                     src="https://res.cloudinary.com/media4e7/image/upload/v1560939922/play-button_yy3um4.svg">

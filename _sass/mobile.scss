@@ -563,6 +563,9 @@
         }
         #gallery.flex {
             width: 100%;
+            .half:nth-child(even) .play{
+                    top: 45%;
+                }
             .half {
                 width: 100%;
                 height: auto;
@@ -572,11 +575,12 @@
                     width: 100%;
                     height: auto;
                 }
+                
                 .play{
                     position: absolute;
                     width: 25vw;
-                    top: 100px;
-                    margin-left: 60px;
+                    top: 15%;
+                    margin-left: 30px;
                 }
             }
     
