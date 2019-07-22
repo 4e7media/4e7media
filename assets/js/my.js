@@ -10,7 +10,7 @@ $('document').ready(function() {
     }
     $('#home').fullpage({
         licenseKey: '65CF5AD2-DC6F4574-B7CBF278-BB170808',
-        autoScrolling: true,
+        autoScrolling: false,
         scrollHorizontally: true,
         //Navigation
         menu: '#menu',

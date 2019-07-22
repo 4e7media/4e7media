@@ -499,6 +499,7 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
+    background-color: #fff;
     .big {
         grid-column: auto/ span 2;
     }
@@ -508,7 +509,7 @@ body {
         grid-auto-rows: 180px;
         grid-gap: 10px;
         grid-auto-flow: dense;
-        margin: 200px auto;
+        margin: 0 auto;
         height: 560px;
         width: 1000px;
         overflow: hidden;

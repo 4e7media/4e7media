@@ -14,7 +14,8 @@ title: 4e7 Media
   {% include plattforms.html %}
   {% include aboutus.html %}
   <div id="press" class="section">
-    <div class="fp-bg"><img class="press-title" src="../img/press-title.svg"></div>
+    <div class="fp-bg"></div>
+    <img class="press-title" src="../img/press-title.svg">
       <div id="press-gal">
         {% for img in site.data.press.url %}
         <a class="press-link" href="{{site.cloud_host}}{{img}}">
