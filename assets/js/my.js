@@ -268,7 +268,7 @@ $(window).on("load", function() {
 
     $(window).on('load', function() {
         $(".wrapper").css("visibility", "visible")
-        $(".load").hide()
+        (".load").hide()
         if ($hp >= $wp) {
             $('.bgvideo').css({ 'height': '100vh', 'width': 'auto' })
         } else {
