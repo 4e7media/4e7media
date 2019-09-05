@@ -88,6 +88,10 @@ $('document').ready(function() {
             }
         },
     });
+    $(".mfp-close").click(function () { 
+      Location.reload()
+      
+    });
    /* $('.owl-carousel').owlCarousel({
         items: 3,
         loop: true,
