@@ -21,7 +21,7 @@ Firmensitz<br>
 Sitz in politischer Gemeinde Wien<br>
 Volle geografische Anschrift<br>
 <br>
-Schwarzenbergplatz,6 - 1030 - Wien<br>
+Marokkanergasse,7 - 1030 - Wien<br>
 Kontaktdaten (Tel, Fax, E-Mail)<br>
 <br>
 Tel: +43 0676/9330517<br>
