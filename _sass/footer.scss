@@ -3,6 +3,9 @@
     position: relative;
     bottom: 0;
     background-size: cover;
+    .fp-bg{
+        background-position: center 52%;
+    }
     .fp-tableCell{
         background: rgba(0,0,0,0.7);
     }
