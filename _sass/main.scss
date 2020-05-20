@@ -431,7 +431,6 @@ body {
 }
 
 #selma {
-    position: sticky;
     top: 0;
     z-index: -10;
     .about_text{
@@ -445,7 +444,6 @@ body {
 
 #about-title {
     display: none;
-    position: fixed;
     top: 0;
     padding-top: 5vh;
     width: 60vw;
@@ -499,6 +497,7 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
+    background-color: #fff;
     .big {
         grid-column: auto/ span 2;
     }

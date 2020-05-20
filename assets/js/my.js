@@ -10,7 +10,7 @@ $('document').ready(function() {
     }
     $('#home').fullpage({
         licenseKey: '65CF5AD2-DC6F4574-B7CBF278-BB170808',
-        autoScrolling: true,
+        autoScrolling: false,
         scrollHorizontally: true,
         //Navigation
         menu: '#menu',
@@ -87,6 +87,10 @@ $('document').ready(function() {
               $("#bgm-btn").removeClass('show')
             }
         },
+    });
+    $(".mfp-close").click(function () { 
+      Location.reload()
+      
     });
    /* $('.owl-carousel').owlCarousel({
         items: 3,
@@ -265,7 +269,6 @@ $(window).on("load", function() {
     });
     var $wp = $(window).width() * 0.7
     var $hp = $(window).height()
-
     $(window).on('load', function() {
         $(".wrapper").css("visibility", "visible")
         $(".load").hide()

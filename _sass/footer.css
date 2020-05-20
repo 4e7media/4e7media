@@ -1,0 +1,128 @@
+#footer {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  bottom: 0;
+  background-size: cover;
+}
+
+#footer .fp-bg {
+  background-position: center 52%;
+}
+
+#footer .fp-tableCell {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+#footer h2 {
+  font-size: 30px;
+  margin: 10px 0;
+  color: white;
+}
+
+#footer p {
+  font-size: 14px;
+  line-height: 1.65;
+  margin: 5px 0;
+  color: white;
+}
+
+#footer a {
+  font-size: 14px;
+  color: white;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+
+#footer .first_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 60vw;
+  padding: 40px 20vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#footer .first_row .touch {
+  width: 40%;
+}
+
+#footer .first_row .links {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  right: 20vw;
+}
+
+#footer .first_row .links a {
+  width: 100%;
+  color: white;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+
+#footer .second_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 60vw;
+  padding: 20px 20vw;
+  color: #ffff;
+  position: absolute;
+  bottom: 10px;
+}
+
+#footer .second_row a {
+  color: white;
+}
+
+#footer .second_row .link {
+  margin-left: 20px;
+}
+
+#footer .second_row .social_footer {
+  margin: 5px 4vw;
+}
+
+#footer .second_row .social_footer a {
+  color: white;
+}
+
+#footer .second_row .social_footer a img {
+  width: 30px;
+  margin: 0;
+}
+
+#footer .second_row p {
+  width: 40%;
+  margin-top: 8px;
+}
+
+#footer .second_row div {
+  width: 25%;
+  margin-top: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/*# sourceMappingURL=footer.css.map */
