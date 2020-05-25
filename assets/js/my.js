@@ -122,44 +122,7 @@ $('document').ready(function() {
             }
         }
     });*/
-    $('.work-cont').slick({
-        infinite: true,
-        row: 1,
-        accessibility: false,
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        autoplay: true,
-        cssEase: 'linear',
-        responsive: [
-            {
-              breakpoint: 1024,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                infinite: true,
-                dots: true
-              }
-            },
-            {
-              breakpoint: 600,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
-              }
-            },
-            {
-              breakpoint: 480,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                row: 1,
-              }
-            }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
-          ]
-    })
+    
     $('.cases-cont').slick({
         infinite: true,
         row: 1,
