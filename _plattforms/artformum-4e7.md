@@ -1,4 +1,5 @@
 ---
+#test
 layout: plat
 title: artforum 4e7
 tnimg: "/v1560106335/thumbnail-artforum4e7-2.jpg"
