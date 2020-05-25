@@ -1,22 +1,34 @@
 <div id="work" class="section">
-    <div class="fp-bg"></div>
-    
+    <div class="fp-bg"><div class="tn-cont work-cont owl-carousel owl-theme">
     <img class="desktop" src="../img/work.svg">
     <img class="mobile" src="https://res.cloudinary.com/media4e7/image/upload/v1560353453/4e7_work_boa1bb.svg">
-    <!--<i class="fas fa-chevron-left w-slidebtn-o" style="display:none;"></i>-->
-    <div class="fp-controlArrow fp-prev w-prev"></div>
-    <div class="tn-cont work-cont owl-carousel owl-theme">
+        <div class="work-display">
+            <div class="work_ph"></div>
         
-        {% assign sorted = (site.work | sort: 'date') %} {% for post in sorted %}
-        <a class="img-cont w-img" href="{{ post.url }}" style="background-image: url('{{site.cloud_host}}{{ post.tnimg }}');">
-            <!--<p class="mobile mobile-title">{{ post.title}}</p>-->
-            <div class="hover-cont desktop">
-                {{ post.title}}
-            </div>
-        </a>
+        
+            {% assign rows = site.work.size | divided_by: 8.0 | ceil %}
+            {% assign sorted = (site.work | sort: 'date' ) %} 
+            {% for i in (1..rows) %}
+            {% assign offset = forloop.index0 | times: 8 %}
+      <div class="inner-cont">
+        {% for post in sorted limit:8 offset:offset %}
+            <a class="img-cont w-img new" href="{{ post.url }}" >
+                <!--<p class="mobile mobile-title">{{ post.title}}</p>-->
+                <div class="img-box" style="background-image: url('{{site.cloud_host}}{{ post.tnimg }}');"></div>
+                <div class="hover-cont desktop">
+                    <h3>{{ post.title}}</h3>
+                </div>
+            </a>
         {% endfor %}
-        
-    </div>
-    <div class="fp-controlArrow fp-next w-next"></div>
+      </div>
+      {% endfor %}
+    
+            </div>
+    </div></div>
+    
+    
+    <!--<i class="fas fa-chevron-left w-slidebtn-o" style="display:none;"></i>-->
+    
+
     <!--<i class="fas fa-chevron-right w-slidebtn-c"></i>-->
 </div>

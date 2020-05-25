@@ -92,7 +92,7 @@
 .cases-wrapper .play {
   z-index: 99;
   position: relative;
-  top: -250px;
+  top: -270px;
   opacity: 0.7;
 }
 
@@ -179,6 +179,44 @@
 .detail-wrapper .title-box a,
 .cases-wrapper .title-box a {
   color: black;
+}
+
+.detail-wrapper #gallery.flex,
+.cases-wrapper #gallery.flex {
+  width: 100%;
+}
+
+.detail-wrapper #gallery.flex .half,
+.cases-wrapper #gallery.flex .half {
+  width: 48%;
+  height: auto;
+  margin: 0 5px;
+}
+
+.detail-wrapper #gallery.flex .half img,
+.cases-wrapper #gallery.flex .half img {
+  width: 100%;
+  height: auto;
+}
+
+.detail-wrapper #gallery.flex .half .play,
+.cases-wrapper #gallery.flex .half .play {
+  position: absolute;
+  width: 25vw;
+  top: 100px;
+  margin-left: 60px;
+}
+
+.detail-wrapper #gallery.flex .third,
+.cases-wrapper #gallery.flex .third {
+  width: 32%;
+  height: auto;
+  margin: 0 5px;
+}
+
+.detail-wrapper #gallery.flex .third img,
+.cases-wrapper #gallery.flex .third img {
+  width: 100%;
 }
 
 #pbOverlay.show {

@@ -47,7 +47,7 @@
   }
   100% {
     opacity: 1;
-    padding: 9vw 0;
+    padding: 12.5vw 0;
     height: 2vw;
   }
 }
@@ -65,7 +65,7 @@
   }
   100% {
     opacity: 1;
-    padding: 9vw 0;
+    padding: 12.5vw 0;
     height: 2vw;
   }
 }
@@ -78,12 +78,12 @@
   }
   50% {
     opacity: 0.5;
-    padding: 7vw 5vw;
+    padding: 4vw 0;
     height: 2vw;
   }
   100% {
     opacity: 1;
-    padding: 14vw 5vw;
+    padding: 12.5vw 0;
     height: 2vw;
   }
 }
@@ -96,12 +96,12 @@
   }
   50% {
     opacity: 0.5;
-    padding: 7vw 5vw;
+    padding: 4vw 0;
     height: 2vw;
   }
   100% {
     opacity: 1;
-    padding: 14vw 5vw;
+    padding: 12.5vw 0;
     height: 2vw;
   }
 }
@@ -435,6 +435,82 @@
     opacity: 1;
     width: 90vw;
     padding: 0 5vw;
+  }
+}
+
+@-webkit-keyframes imgslide {
+  from {
+    margin-left: -120vw;
+  }
+  to {
+    margin-left: 0vw;
+  }
+}
+
+@keyframes imgslide {
+  from {
+    margin-left: -120vw;
+  }
+  to {
+    margin-left: 0vw;
+  }
+}
+
+@-webkit-keyframes more {
+  from {
+    margin-left: 0;
+  }
+  to {
+    margin-left: -60vw;
+  }
+}
+
+@keyframes more {
+  from {
+    margin-left: 0;
+  }
+  to {
+    margin-left: -60vw;
+  }
+}
+
+@-webkit-keyframes morenext {
+  from {
+    margin-left: -60vw;
+  }
+  to {
+    margin-left: -120vw;
+  }
+}
+
+@keyframes morenext {
+  from {
+    margin-left: -60vw;
+  }
+  to {
+    margin-left: -120vw;
+  }
+}
+
+@-webkit-keyframes newworkhover {
+  from {
+    height: 0;
+    opacity: 0;
+  }
+  to {
+    height: 20vw;
+    opacity: 1;
+  }
+}
+
+@keyframes newworkhover {
+  from {
+    height: 0;
+    opacity: 0;
+  }
+  to {
+    height: 20vw;
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=animation.css.map */

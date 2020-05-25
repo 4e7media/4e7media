@@ -10,12 +10,13 @@ nav {
   width: 90vw;
   padding: 10px 5vw;
   color: white;
-  position: fixed;
   top: 3vh;
-  z-index: -98;
+  z-index: 3;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: -70px;
+  position: absolute;
 }
 
 nav a {
@@ -26,7 +27,7 @@ nav a {
 
 nav .social-icons {
   width: 25%;
-  z-index: -98;
+  z-index: 3;
 }
 
 nav .social-icons img {
@@ -72,7 +73,7 @@ nav :nth-child(2) {
   right: -3vw;
   background: none;
   border: none;
-  z-index: 99;
+  z-index: 9999999999;
 }
 
 #bgm-btn:focus {
@@ -93,7 +94,13 @@ nav :nth-child(2) {
           animation: bgmshow 0.6s ease-out forwards;
 }
 
-#brg-menu {
+.nshow {
+  -webkit-animation: bgmshow 0.6s ease-out forwards;
+          animation: bgmshow 0.6s ease-out forwards;
+  animation-direction: reverse;
+}
+
+#menu {
   width: 0;
   height: 100vh;
   position: fixed;
@@ -111,7 +118,7 @@ nav :nth-child(2) {
   z-index: 99;
 }
 
-#brg-menu a {
+#menu a {
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
   color: white;
@@ -119,27 +126,27 @@ nav :nth-child(2) {
   font-size: 35px;
 }
 
-#brg-menu .bgm-txt {
+#menu .bgm-txt {
   opacity: 0;
 }
 
-#brg-menu .social-icons {
+#menu .social-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   opacity: 0;
   width: 40%;
   margin: 0 30%;
-  margin-top: 10vh;
+  margin-top: 5vh;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
 
-#brg-menu .social-icons .social-icon img {
+#menu .social-icons .social-icon img {
   width: 50%;
 }
 
-#brg-menu .fa-times {
+#menu .fa-times {
   color: white;
   margin-top: 15vh;
   margin-bottom: 10vh;

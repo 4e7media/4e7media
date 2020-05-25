@@ -74,3 +74,7 @@
     from{margin-left:-60vw}
     to{margin-left:-120vw}
 }
+@keyframes newworkhover {
+    from{height: 0; opacity: 0;}
+    to{height: 20vw; opacity: 1;}
+}
