@@ -382,6 +382,11 @@ body a {
   padding-bottom: 10px;
 }
 
+#cases .img-cont:hover .hover-cont {
+  -webkit-animation: hovereffekt 0.2s ease-out forwards;
+          animation: hovereffekt 0.2s ease-out forwards;
+}
+
 .img-cont {
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
@@ -398,11 +403,6 @@ body a {
           flex-direction: column-reverse;
   height: 26.6vw;
   margin: 0;
-}
-
-.img-cont:hover .hover-cont {
-  -webkit-animation: hovereffekt 0.2s ease-out forwards;
-          animation: hovereffekt 0.2s ease-out forwards;
 }
 
 .img-cont img {
@@ -422,6 +422,10 @@ body a {
 .img-cont .hover-cont:hover {
   -webkit-animation: hovereffekt 0.2s ease-out forwards;
           animation: hovereffekt 0.2s ease-out forwards;
+}
+
+#work h3 {
+  font-weight: 500;
 }
 
 #work .fp-bg {

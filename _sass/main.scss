@@ -352,7 +352,11 @@ body {
 .owl-stage-outer {
   padding-bottom: 10px;
 }
-
+#cases .img-cont{
+  &:hover .hover-cont {
+    animation: hovereffekt 0.2s ease-out forwards;
+  }
+}
 .img-cont {
   text-decoration-line: none;
   background-size: cover;
@@ -364,9 +368,7 @@ body {
   height: 26.6vw;
   margin: 0;
 
-  &:hover .hover-cont {
-    animation: hovereffekt 0.2s ease-out forwards;
-  }
+  
 
   img {
     height: auto;
@@ -386,7 +388,9 @@ body {
     }
   }
 }
-
+#work h3{
+  font-weight: 500;
+}
 #work {
   .fp-bg {
     background-color: #a2999c;
