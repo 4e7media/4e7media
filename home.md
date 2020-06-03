@@ -26,6 +26,7 @@ title: 4e7 Media Werbeagentur
       </div>
     
   </div>
+  {% include telescope.html %}
   {% include footer.html %}
 </div>
 <script>

@@ -22,8 +22,21 @@
         {% endfor %}
       </div>
       {% endfor %}
+     
     
-            </div>
+            </div> 
+
+                <div class="work-mobile">
+                    {% for post in sorted %}
+                    <a class="img-cont w-img new" href="{{ post.url }}" >
+                        <!--<p class="mobile mobile-title">{{ post.title}}</p>-->
+                        <div class="img-box" style="background-image: url('{{site.cloud_host}}{{ post.tnimg }}');"></div>
+                        <div class="hover-cont desktop">
+                            <h3>{{ post.title}}</h3>
+                        </div>
+                    </a>
+                {% endfor %}
+                  </div>
     </div></div>
     
     

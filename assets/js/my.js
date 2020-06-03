@@ -1,4 +1,6 @@
 $('document').ready(function () {
+  console.log("3");
+
   var z_i = 99
   var n_i = 0;
   var under = false;
@@ -11,6 +13,7 @@ $('document').ready(function () {
     $(this).addClass("box_" + n_i),
       n_i++;
   });
+  $(".box_0").addClass("act")
   var active = false;
   var winw = $(window).width()
   var winh = $(window).height()
@@ -20,71 +23,7 @@ $('document').ready(function () {
   } else {
     $("div").remove(".feat_cont");
   }
-  var l_i = 0;
-  var run = false;
 
-  function rundelay(params) {
-    run = true;
-    setTimeout(() => {
-      run = false;
-    }, 500);
-  }
-
-  function fixit(params) {
-    active = true;
-    if (under == false) {
-      $.fn.fullpage.setAllowScrolling(false, 'down');
-    } else if (under == true) {
-      $.fn.fullpage.setAllowScrolling(false, 'up');
-    }
-
-  }
-  console.log(active + "is");
-  
-  $(window).bind('mousewheel', function (event) {
-    
-    console.log(active + "is");
-    
-    if (run == false) {
-      if (event.originalEvent.wheelDelta > 0) {
-        if (active == true && l_i < 0) {
-          $.fn.fullpage.setAllowScrolling(true, 'down, up');
-          active = false;
-          l_i= 0;
-        } else if (active == true && l_i >= 0) {
-          $(".box_" + l_i).animate({
-              top: "0vw",
-            }, 500);
-            l_i--;
-            rundelay();
-          if (l_i < length - 1 && l_i >= 1) {
-            console.log(l_i);
-            $.fn.fullpage.setAllowScrolling(false, 'down, up');
-          }
-
-        }
-      } else {
-        if (active == true) {
-          $(".box_" + l_i).animate({
-            top: "-40vw",
-          }, 500);
-          l_i++;
-          rundelay();
-          if (l_i == 3) {
-            $.fn.fullpage.setAllowScrolling(true, 'down');
-            active = false;
-            console.log("here");
-
-          }
-          if (l_i > length) {
-            $.fn.fullpage.setAllowScrolling(true, 'down, up');
-          }
-        }
-      }
-      console.log(l_i);
-    }
-
-  });
   $('#home').fullpage({
     licenseKey: '65CF5AD2-DC6F4574-B7CBF278-BB170808',
     autoScrolling: true,
@@ -114,11 +53,15 @@ $('document').ready(function () {
         })
       } else if (origin.index == '8' && destination.index != '7') {
         $("#about-title").hide()
+      } else if (origin.index == '5') {
+        $.fn.fullpage.setAllowScrolling(true, 'down, up');
+        console.log("allowScroll");
       }
     },
 
     afterLoad: function (origin, destination, direction) {
       var nav = $("#fp-nav ul li a span")
+      console.log("after load indexÖ", destination.index)
       if (destination.index == '1') {
         nav.css('background', "black")
         $("#bgm-btn").css({
@@ -126,6 +69,8 @@ $('document').ready(function () {
           "background": "transparent"
         })
         $("#bgm-btn").addClass('show')
+        active = false;
+        $.fn.fullpage.setAllowScrolling(true, 'down, up');
       } else if (destination.index == '2') {
         nav.css('background', "black")
         $("#bgm-btn").css({
@@ -133,6 +78,8 @@ $('document').ready(function () {
           "background": "transparent"
         })
         $("#bgm-btn").addClass('show')
+        active = false;
+        $.fn.fullpage.setAllowScrolling(true, 'down, up');
       } else if (destination.index == '3') {
         nav.css('background', "white")
         $("#bgm-btn").css({
@@ -140,6 +87,7 @@ $('document').ready(function () {
           "background": "transparent"
         })
         $("#bgm-btn").addClass('show')
+        active = false;
       } else if (destination.index == '4') {
         nav.css('background', "white")
         $("#bgm-btn").css({
@@ -147,6 +95,7 @@ $('document').ready(function () {
           "background": "transparent"
         })
         $("#bgm-btn").addClass('show')
+        active = false;
       } else if (destination.index == '5') {
         nav.css('background', "white")
         $("#bgm-btn").css({
@@ -154,7 +103,6 @@ $('document').ready(function () {
           "background": "transparent"
         })
         $("#bgm-btn").addClass('show')
-        console.log("here");
         fixit()
       } else if (destination.index == '6') {
         nav.css('background', "white")
@@ -164,6 +112,7 @@ $('document').ready(function () {
         })
         $("#bgm-btn").addClass('show')
         under = true;
+        active = false;
       } else if (destination.index == '7') {
         $("#about-title").show()
         nav.css('background', "black")
@@ -173,6 +122,7 @@ $('document').ready(function () {
         })
         $("#bgm-btn").addClass('black')
         under = true;
+        active = false;
       } else if (destination.index == '8') {
         $("#about-title").show()
         nav.css('background', "black")
@@ -182,6 +132,7 @@ $('document').ready(function () {
         })
         $("#bgm-btn").addClass('black')
         under = true;
+        active = false;
       } else if (destination.index == '9') {
         nav.css('background', "black")
         $("#bgm-btn").css({
@@ -190,6 +141,7 @@ $('document').ready(function () {
         })
         $("#bgm-btn").addClass('black')
         under = true;
+        active = false;
       } else if (destination.index == '10') {
         nav.css('background', "white")
         $("#bgm-btn").css({
@@ -198,6 +150,7 @@ $('document').ready(function () {
         })
         $("#bgm-btn").addClass('show')
         under = true;
+        active = false;
       } else if (destination.index == '0') {
         nav.css('background', "white")
         $("#bgm-btn").css({
@@ -205,7 +158,7 @@ $('document').ready(function () {
           "background": "transparent"
         })
         $("#bgm-btn").removeClass('show')
-        under = true;
+
       }
     },
   });
@@ -213,6 +166,115 @@ $('document').ready(function () {
     Location.reload()
 
   });
+  var l_i = 0;
+  var run = false;
+
+  function rundelay(params) {
+    run = true;
+    setTimeout(() => {
+      run = false;
+    }, 500);
+  }
+  var win_w = $(window).width();
+
+  function fixit() {
+    if (win_w > 900) {
+
+      if ($(".box_3").hasClass("act") == true) {
+        $.fn.fullpage.setAllowScrolling(false, 'up');
+        console.log("START BLOCKING! )up=");
+        active = true;
+      } else {
+        $.fn.fullpage.setAllowScrolling(false, 'down');
+        console.log("START BLOCKING! down");
+        active = true;
+      }
+
+    }
+  }
+  var up_endz = false;
+  var down_endz = false;
+
+  function setz_up() {
+    if (up_endz == false) {
+      $(".act").addClass("semi")
+      $(".act").prev().addClass("act")
+      $(".semi").removeClass("act")
+      $(".semi").removeClass("semi")
+      $(".act").animate({
+        "top": "0vw"
+      }, 300)
+    }
+  }
+
+  function setz_down() {
+    if (down_endz == false) {
+      $(".act").addClass("semi")
+      $(".act").next().addClass("act")
+      $(".semi").animate({
+        "top": "-40vw"
+      }, 300)
+      $(".semi").removeClass("act")
+      $(".semi").removeClass("semi")
+    }
+  }
+
+  function movezdown() {
+    if ($(".box_0").hasClass("act")) {
+      $.fn.fullpage.setAllowScrolling(false, 'up');
+      console.log("START BLOCKING! )up1");
+      setz_down()
+    } else if ($(".box_2").hasClass("act")) {
+      setz_down()
+      $.fn.fullpage.setAllowScrolling(true, 'down');
+      console.log("free down");
+      down_endz = true
+    } else {
+      setz_down()
+    }
+    rundelay()
+  }
+
+  function movezup() {
+    if ($(".box_1").hasClass("act") == true) {
+      setz_up()
+      $.fn.fullpage.setAllowScrolling(true, 'up');
+      console.log("free up");
+      up_endz = true
+
+    } else if ($(".box_3").hasClass("act") == true) {
+      $.fn.fullpage.setAllowScrolling(false, 'down');
+      console.log("look down");
+      setz_up()
+    } else {
+      setz_up()
+    }
+    rundelay()
+  }
+
+  $(window).bind('mousewheel', function (event) {
+    if (active == true) {
+      if (run == false) {
+        if (event.originalEvent.wheelDelta > 0) {
+          console.log("up");
+          if (run == false) {
+            movezup()
+            down_endz = false;
+          }
+        } else {
+          console.log("down");
+
+          if (run == false) {
+            movezdown()
+            up_endz = false;
+          }
+
+        }
+      }
+    }
+  });
+
+
 
   /* $('.owl-carousel').owlCarousel({
        items: 3,
@@ -398,12 +460,4 @@ $(".close-trigger").click(function () {
   $(".wrapper").removeClass("click-tr");
   $(".social-icons").removeClass("social-slide");
   $("#bgm-btn").show();
-});
-$(window).resize(function () {
-  if (winw > 450) {
-    console.log("epic")
-    $("div").remove(".mfeat_cont");
-  } else {
-    $("div").remove(".feat_cont");
-  }
 });

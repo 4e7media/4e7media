@@ -699,6 +699,9 @@
     -webkit-animation: mobilehovereffekt 0.4s ease-out forwards;
             animation: mobilehovereffekt 0.4s ease-out forwards;
   }
+  #work .tn-cont {
+    top: 5vh;
+  }
   #about-title {
     width: 90vw;
     margin: 0;
