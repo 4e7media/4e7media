@@ -805,6 +805,32 @@ body a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 0 5vw;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1050px) {
+  #tele .tn-cont {
+    height: 75vh;
+  }
+}
+
+#tele .tele-link {
+  width: 33%;
+  padding: 1vw;
+}
+
+@media screen and (max-width: 1050px) {
+  #tele .tele-link {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #tele .tele-link {
+    width: 100%;
+  }
 }
 
 #tele .tele-title {
