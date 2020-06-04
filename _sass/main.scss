@@ -704,7 +704,7 @@ body {
     
   }
   .tele-link{
-    width: 33%;
+    width: 31%;
     padding: 1vw;
     @media screen and (max-width : 1050px) {
       width: 60%;
@@ -729,4 +729,11 @@ body {
     }
   }
 
+}
+.gallery{
+  position: fixed;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(3, 3, 3, 0.3);
 }
