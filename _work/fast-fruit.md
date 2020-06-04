@@ -1,5 +1,5 @@
 ---
-layout: detail
+layout: work-detail
 title: fast fruit
 tnimg: "/v1560169586/21-thumbnail-fast-fruit.jpg"
 img:

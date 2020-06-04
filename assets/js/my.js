@@ -273,7 +273,23 @@ $('document').ready(function () {
       }
     }
   });
-
+  $(".worklink").click(function (e) {
+    e.preventDefault()
+    data= $(this).attr("href");
+    console.log(data);
+    $(".gallery").css("display" , "flex");
+    $(".gallery").load(data + ".html")
+    $.fn.fullpage.setAllowScrolling(false, 'up, down')
+    active= false;
+    
+  })
+  $(".gal-close").click(function (e) { 
+    e.preventDefault();
+    $(".gallery").css("display" , "none");
+    $.fn.fullpage.setAllowScrolling(true, 'up, down')
+    active= true;
+    $(".gallery").empty();
+  });
 
 
   /* $('.owl-carousel').owlCarousel({

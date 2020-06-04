@@ -1,5 +1,5 @@
 ---
-layout: detail
+layout: work-detail
 title: spfw
 tnimg: "/v1560169360/16-thumbnail-spfw.jpg"
 img:

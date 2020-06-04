@@ -1,5 +1,5 @@
 ---
-layout: detail
+layout: work-detail
 title: lidl
 tnimg: "/v1559982959/4-thumbnail-lidl.jpg"
 img:
@@ -9,11 +9,11 @@ img:
 video: ''
 date: '2010-1-7'
 vid:
-- video: https://www.youtube.com/embed/6amLASHHD8Q
+- video: 6amLASHHD8Q
   vtn: http://i3.ytimg.com/vi/6amLASHHD8Q/maxresdefault.jpg
-- video: https://www.youtube.com/embed/Kfe_95ZbnFs
+- video: Kfe_95ZbnFs
   vtn: http://i3.ytimg.com/vi/Kfe_95ZbnFs/maxresdefault.jpg
-- video: https://www.youtube.com/embed/IDeo8VgxeOk
+- video: IDeo8VgxeOk
   vtn: http://i3.ytimg.com/vi/IDeo8VgxeOk/maxresdefault.jpg
 
 ---

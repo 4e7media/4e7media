@@ -1,5 +1,5 @@
 ---
-layout: detail
+layout: work-detail
 title: unicredit
 tnimg: "/v1560168872/6-thumbnail-unicredit.jpg"
 img:

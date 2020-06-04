@@ -1,5 +1,5 @@
 ---
-layout: detail
+layout: work-detail
 title: arnette
 tnimg: "/v1560170923/22-thumbnail-arnette.jpg"
 img:

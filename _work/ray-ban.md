@@ -1,5 +1,5 @@
 ---
-layout: detail
+layout: work-detail
 title: ray-ban
 tnimg: "/v1559982833/2-thumbnail-ray-ban.jpg"
 img:

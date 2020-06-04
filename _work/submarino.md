@@ -1,5 +1,5 @@
 ---
-layout: detail
+layout: work-detail
 title: submarino
 tnimg: "/v1560169469/18-thumbnail-submarino.jpg"
 img:

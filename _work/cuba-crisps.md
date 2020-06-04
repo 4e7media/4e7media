@@ -1,5 +1,5 @@
 ---
-layout: detail
+layout: work-detail
 title: cuba crisps
 tnimg: "/v1560169258/14-thumbnail-cuba-crisps.jpg"
 img:

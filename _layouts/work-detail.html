@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script type='text/javascript' src='/assets/unitegallery/unitegallery.min.js'></script> 
+		
+		<link rel='stylesheet' href='/assets/unitegallery/unite-gallery.css' type='text/css' /> 
+		<script type='text/javascript' src='/assets/unitegallery/ug-theme-default.js'></script> 
+		<link rel='stylesheet' href='/assets/unitegallery/ug-theme-default.css' type='text/css' /> </head>
+<body>
+<div class="boxe">
+    <div class="title-box"><h3>{{ page.title }}</h3><button class="gal-close"><i class="fas fa-times"></button></i></div>
+    
+    <div id="gallery" style="display:none;">
+        {% for vid in page.vid %}
+        <img alt="Youtube Without Images"
+        data-type="youtube"
+        data-videoid="{{vid.video}}"
+        data-description="Youtube video description">
+            {% endfor %}
+		{% for pic in page.img %}
+        <img src="{{site.cloud_host}}{{pic}}">
+
+        {% endfor %}
+    </div>
+</div>
+<script type="text/javascript"> 
+			
+    jQuery(document).ready(function(){ 
+        jQuery("#gallery").unitegallery({
+            slider_scale_mode: "fit",
+        }); 
+    }); 
+    $(".gal-close").click(function (e) { 
+    e.preventDefault();
+    $(".gallery").css("display" , "none");
+    $.fn.fullpage.setAllowScrolling(true, 'up, down')
+    active= true;
+    $(".gallery").empty();
+  });
+</script>
+</body>
+</html>

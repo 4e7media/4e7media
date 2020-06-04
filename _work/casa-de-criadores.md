@@ -1,5 +1,5 @@
 ---
-layout: detail
+layout: work-detail
 title: casa de criadores
 tnimg: "/v1560169433/17-thumbnail-casa-dos-criadores.jpg"
 img:

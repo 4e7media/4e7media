@@ -1,5 +1,5 @@
 ---
-layout: detail
+layout: work-detail
 title: humanic
 tnimg: "/v1559983026/5-thumbnail-humanic.jpg"
 img:
@@ -36,19 +36,19 @@ img:
 video: ''
 date: '2010-1-4'
 vid:
-- video: https://www.youtube.com/embed/Ys_TnDvtkS0
+- video: Ys_TnDvtkS0
   vtn: http://i3.ytimg.com/vi/Ys_TnDvtkS0/maxresdefault.jpg
-- video: https://www.youtube.com/embed/6D9ObSy-qck
+- video: 6D9ObSy-qck
   vtn: http://i3.ytimg.com/vi/6D9ObSy-qck/maxresdefault.jpg
-- video: https://www.youtube.com/embed/Fv6LjmPd64A
+- video: Fv6LjmPd64A
   vtn: http://i3.ytimg.com/vi/Fv6LjmPd64A/maxresdefault.jpg
-- video: https://www.youtube.com/embed/p_vKrTu3L2A
+- video: p_vKrTu3L2A
   vtn: http://i3.ytimg.com/vi/p_vKrTu3L2A/maxresdefault.jpg
-- video: https://www.youtube.com/embed/zJ4PrrnXX_g
+- video: zJ4PrrnXX_g
   vtn: http://i3.ytimg.com/vi/zJ4PrrnXX_g/maxresdefault.jpg
-- video: https://www.youtube.com/embed/nbVHUzfnnTY
+- video: nbVHUzfnnTY
   vtn: http://i3.ytimg.com/vi/nbVHUzfnnTY/maxresdefault.jpg
-- video: https://www.youtube.com/embed/LQXK1V4GQKk
+- video: LQXK1V4GQKk
   vtn: http://i3.ytimg.com/vi/LQXK1V4GQKk/maxresdefault.jpg
 
 ---

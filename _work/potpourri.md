@@ -1,5 +1,5 @@
 ---
-layout: detail
+layout: work-detail
 title: potpourri
 tnimg: "/v1560855163/Screenshot%202019-06-18%20at%2011.43.10.png"
 img: []

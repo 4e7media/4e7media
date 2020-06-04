@@ -1,5 +1,5 @@
 ---
-layout: detail
+layout: work-detail
 title: öbb
 tnimg: "/v1560169129/11-thumbnail-oebb.jpg"
 img:

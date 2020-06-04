@@ -1,5 +1,5 @@
 ---
-layout: detail
+layout: work-detail
 title: youtube
 tnimg: "/v1560854880/Screenshot%202019-06-18%20at%2011.22.00.png"
 img:
@@ -13,6 +13,6 @@ img:
 - "/v1560854891/box_02_p.jpg"
 - "/v1560854891/box_01_p.jpg"
 video: ''
-vid: []
+vid: [] 
 
 ---

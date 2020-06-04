@@ -1,5 +1,5 @@
 ---
-layout: detail
+layout: work-detail
 title: lacoste
 tnimg: "/v1560169227/13-thumbnail-lacoste.jpg"
 img:

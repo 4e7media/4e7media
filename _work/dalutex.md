@@ -1,5 +1,5 @@
 ---
-layout: detail
+layout: work-detail
 title: dalutex
 tnimg: "/v1560169545/20-thumbnail-dalutex.jpg"
 img:

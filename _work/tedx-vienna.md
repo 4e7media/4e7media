@@ -1,5 +1,5 @@
 ---
-layout: detail
+layout: work-detail
 title: tedx-vienna
 tnimg: "/v1560168983/8-thumbnail-tedx.jpg"
 img:

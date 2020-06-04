@@ -13,7 +13,7 @@
             {% assign offset = forloop.index0 | times: 8 %}
       <div class="inner-cont">
         {% for post in sorted limit:8 offset:offset %}
-            <a class="img-cont w-img new" href="{{ post.url }}" >
+            <a class="img-cont w-img new worklink" href="{{ post.url }}" >
                 <!--<p class="mobile mobile-title">{{ post.title}}</p>-->
                 <div class="img-box" style="background-image: url('{{site.cloud_host}}{{ post.tnimg }}');"></div>
                 <div class="hover-cont desktop">

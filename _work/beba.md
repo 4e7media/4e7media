@@ -1,5 +1,5 @@
 ---
-layout: detail
+layout: work-detail
 title: beba
 tnimg: "/v1560524641/beba.png"
 img:
@@ -8,11 +8,11 @@ img:
 video: ''
 date: '2010-1-11'
 vid:
-- video: https://www.youtube.com/embed/QkO0iNg6rdQ
+- video: QkO0iNg6rdQ
   vtn: http://i3.ytimg.com/vi/QkO0iNg6rdQ/maxresdefault.jpg
-- video: https://www.youtube.com/embed/8RhdKsmweoA
+- video: 8RhdKsmweoA
   vtn: http://i3.ytimg.com/vi/8RhdKsmweoA/maxresdefault.jpg
-- video: https://www.youtube.com/embed/inGpXGT1w-M
+- video: inGpXGT1w-M
   vtn: http://i3.ytimg.com/vi/inGpXGT1w-M/maxresdefault.jpg
 
 ---

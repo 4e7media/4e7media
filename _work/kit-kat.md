@@ -1,5 +1,5 @@
 ---
-layout: detail
+layout: work-detail
 title: kit-kat
 tnimg: "/v1560170956/23-thumbnail-kitkat.jpg"
 img:

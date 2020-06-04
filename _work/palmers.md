@@ -1,5 +1,5 @@
 ---
-layout: detail
+layout: work-detail
 title: palmers
 tnimg: "/v1560169160/12-thumbnail-palmers.jpg"
 img:
