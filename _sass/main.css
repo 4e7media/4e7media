@@ -480,9 +480,9 @@ body a {
   height: auto;
 }
 
-#work-1 .desktop,
-#work-2 .desktop,
-#work-3 .desktop, #work-4 .desktop {
+#work-1 img.desktop,
+#work-2 img.desktop,
+#work-3 img.desktop, #work-4 img.desktop {
   margin: 50px 0;
 }
 
