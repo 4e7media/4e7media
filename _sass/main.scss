@@ -60,7 +60,7 @@ body {
   color: #2c2c26;
 
   h3 {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   a {
@@ -277,7 +277,9 @@ body {
 }
 
 #cases,
-#work {
+#work-1,
+#work-2,
+#work-3, #work-4 {
   i {
     position: absolute;
     font-size: 10vh;
@@ -352,11 +354,13 @@ body {
 .owl-stage-outer {
   padding-bottom: 10px;
 }
-#cases .img-cont{
+
+#cases .img-cont {
   &:hover .hover-cont {
     animation: hovereffekt 0.2s ease-out forwards;
   }
 }
+
 .img-cont {
   text-decoration-line: none;
   background-size: cover;
@@ -368,7 +372,7 @@ body {
   height: 26.6vw;
   margin: 0;
 
-  
+
 
   img {
     height: auto;
@@ -384,35 +388,25 @@ body {
     opacity: 0;
   }
 }
-#work h3{
+
+#work-1,
+#work-2,
+#work-3, #work-4 h3 {
   font-weight: 500;
 }
-#work {
+
+#work-1,
+#work-2,
+#work-3, #work-4 {
   .fp-bg {
     background-color: #a2999c;
   }
-  .work-mobile{
-    display: none;
-    flex-wrap: wrap;
-    width: 90%;
-    margin: 10px auto;
-    height: 0;
-    padding-bottom: 157%;
-    overflow: hidden;
-    @media screen and (max-width: 600px){
-      display: flex;
-    }
-  }
-  .work_ph{
-    width: 100%;
-    height: 0;
-    padding-bottom: 50%;
-  }
+
   .less {
     display: none;
   }
 
-  
+
 
   .tn-cont {
     width: 80vw;
@@ -433,19 +427,31 @@ body {
         animation: bg-switch-gr 1s forwards;
       }
     }*/
- 
+
   }
+
   img {
     width: 80vw;
     height: auto;
   }
-  .img-cont{
-    width: 25%;
+  .desktop{
+    margin: 50px 0;
+  }
+  .img-cont {
+    width: 14%;
     height: auto;
     position: relative;
+    flex-grow: 1;
+
     &:hover .hover-cont {
       animation: newworkhover 0.2s ease-out forwards;
     }
+    @media screen and (max-width: 900px) {
+      width: 24%;
+    }
+  }
+  .mobile{
+    margin: 25px 0;
   }
   .work-display {
     display: flex;
@@ -453,26 +459,26 @@ body {
     position: relative;
     width: 100%;
     overflow: hidden;
-    @media screen and (max-width: 600px){
-      display: none;
-    }
+    margin-bottom: 25px;
   }
-  .inner-cont{
+
+  .inner-cont {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    position: absolute;
     top: 0;
   }
-  .img-box{
+
+  .img-box {
     padding-bottom: 100%;
     background-size: cover;
   }
-  .hover-cont{
-    width: 20vw;
-    height: 20vw;
+
+  .hover-cont {
+    width: 100%;
+    height: 100%;
     position: absolute;
-    bottom:0;
+    bottom: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -686,47 +692,57 @@ body {
 .mobile {
   display: none;
 }
-#tele{
-  .tn-cont{
+
+#tele {
+  .tn-cont {
     height: 100vh;
     align-items: center;
     justify-content: center;
     display: flex;
     padding: 0 5vw;
     flex-wrap: wrap;
+
     @media screen and (max-width : 1050px) {
       height: 75vh;
     }
-    
+
   }
-  .tele-link{
+
+  .tele-link {
     width: 31%;
     padding: 1vw;
+
     @media screen and (max-width : 1050px) {
       width: 60%;
     }
-    @media screen and (max-width: 450px){
+
+    @media screen and (max-width: 450px) {
       width: 100%;
     }
   }
-  .tele-title{
-      width: 60vw;
-      margin: 5vh 20vw;
+
+  .tele-title {
+    width: 60vw;
+    margin: 5vh 20vw;
   }
+
   .fp-bg {
     background-color: #a2999c;
   }
-  .tele-img{
+
+  .tele-img {
     display: block;
     margin: 0 auto;
     max-width: 100%;
-    @media screen and (max-width: 600px){
+
+    @media screen and (max-width: 600px) {
       max-width: 80%;
     }
   }
 
 }
-.gallery{
+
+.gallery {
   position: fixed;
   display: none;
   align-items: center;
@@ -736,27 +752,36 @@ body {
   height: 100vh;
   z-index: 9999999999999999999999;
 }
-#work .boxe {
-  width: 80%;
-  max-width: 900px;
-  background-color: rgb(35, 35, 35);
-  .title-box{
-    display: flex;
-    justify-content: space-between;
-    padding: 5px 20px;
-    h3{
-      color: #fff;
-      margin: 0;
-      text-transform: uppercase;
+
+#work-1,
+#work-2,
+#work-3, #work-4 {
+  .boxe {
+    width: 80%;
+    max-width: 900px;
+    background-color: rgb(35, 35, 35);
+
+    .title-box {
+      display: flex;
+      justify-content: space-between;
+      padding: 5px 20px;
+
+      h3 {
+        color: #fff;
+        margin: 0;
+        text-transform: uppercase;
+      }
+
+      i {
+        position: unset;
+        font-size: 24px;
+        color: #fff;
+      }
+
+      button.gal-close {
+        background: transparent;
+        border: none;
+      }
     }
-    i{
-      position: unset;
-      font-size: 24px;
-      color: #fff;
-    }
-    button.gal-close {
-      background: transparent;
-      border: none;
-  }
   }
 }

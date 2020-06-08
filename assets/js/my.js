@@ -38,6 +38,7 @@ $('document').ready(function () {
     showActiveTooltip: false,
     slidesNavigation: false,
     slidesNavPosition: 'bottom',
+    scrollOverflow: true,
     parallax: true,
     parallaxKey: 'NGU3bWVkaWEuY29tX2RBUWNHRnlZV3hzWVhnPTg3TQ==', //see https://goo.gl/xkUmHS
     parallaxOptions: {
@@ -103,7 +104,7 @@ $('document').ready(function () {
           "background": "transparent"
         })
         $("#bgm-btn").addClass('show')
-        fixit()
+        // fixit()
       } else if (destination.index == '6') {
         nav.css('background', "white")
         $("#bgm-btn").css({
@@ -280,14 +281,11 @@ $('document').ready(function () {
     $(".gallery").css("display" , "flex");
     $(".gallery").load(data + ".html")
     $.fn.fullpage.setAllowScrolling(false, 'up, down')
-    active= false;
-    
   })
   $(".gal-close").click(function (e) { 
     e.preventDefault();
     $(".gallery").css("display" , "none");
     $.fn.fullpage.setAllowScrolling(true, 'up, down')
-    active= true;
     $(".gallery").empty();
   });
 
@@ -329,7 +327,7 @@ $('document').ready(function () {
     accessibility: false,
     slidesToShow: 3,
     slidesToScroll: 3,
-    autoplay: true,
+    autoplay: false,
     responsive: [{
         breakpoint: 1024,
         settings: {

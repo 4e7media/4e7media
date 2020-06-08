@@ -498,7 +498,7 @@
     opacity: 0;
   }
   to {
-    height: 20vw;
+    height: 100%;
     opacity: 1;
   }
 }
@@ -509,7 +509,7 @@
     opacity: 0;
   }
   to {
-    height: 20vw;
+    height: 100%;
     opacity: 1;
   }
 }
