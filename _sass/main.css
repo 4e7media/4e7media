@@ -889,17 +889,13 @@ body a {
   z-index: 9999999999999999999999;
 }
 
-#work-1 .boxe,
-#work-2 .boxe,
-#work-3 .boxe, #work-4 .boxe {
+.gallery .boxe {
   width: 80%;
   max-width: 900px;
   background-color: #232323;
 }
 
-#work-1 .boxe .title-box,
-#work-2 .boxe .title-box,
-#work-3 .boxe .title-box, #work-4 .boxe .title-box {
+.gallery .boxe .title-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -909,25 +905,19 @@ body a {
   padding: 5px 20px;
 }
 
-#work-1 .boxe .title-box h3,
-#work-2 .boxe .title-box h3,
-#work-3 .boxe .title-box h3, #work-4 .boxe .title-box h3 {
+.gallery .boxe .title-box h3 {
   color: #fff;
   margin: 0;
   text-transform: uppercase;
 }
 
-#work-1 .boxe .title-box i,
-#work-2 .boxe .title-box i,
-#work-3 .boxe .title-box i, #work-4 .boxe .title-box i {
+.gallery .boxe .title-box i {
   position: unset;
   font-size: 24px;
   color: #fff;
 }
 
-#work-1 .boxe .title-box button.gal-close,
-#work-2 .boxe .title-box button.gal-close,
-#work-3 .boxe .title-box button.gal-close, #work-4 .boxe .title-box button.gal-close {
+.gallery .boxe .title-box button.gal-close {
   background: transparent;
   border: none;
 }

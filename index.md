@@ -5,6 +5,7 @@
 layout: default
 title: 4e7 Media Werbeagentur
 ---
+<div class="gallery"></div>
 <div id="home">
   {% include landingpage.html %}
   {% include campaingns-eye.html %}

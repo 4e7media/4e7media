@@ -40,6 +40,7 @@ $('document').ready(function () {
     slidesNavPosition: 'bottom',
     scrollOverflow: true,
     parallax: true,
+    setScrollingSpeed: 1000,
     parallaxKey: 'NGU3bWVkaWEuY29tX2RBUWNHRnlZV3hzWVhnPTg3TQ==', //see https://goo.gl/xkUmHS
     parallaxOptions: {
       type: 'reveal',
