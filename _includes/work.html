@@ -5,11 +5,10 @@
     <div class="gallery"></div>
     <div class="fp-bg"></div>
     <div class="tn-cont work-cont owl-carousel owl-theme">
-        <img class="desktop" src="../img/work.svg">
-        <img class="mobile" src="https://res.cloudinary.com/media4e7/image/upload/v1560353453/4e7_work_boa1bb.svg">
+        <div class="sec-title white"><h1>WORK</h1><div class="line"></div></div>
         <div class="work-display">
             <div class="inner-cont">
-                {% for post in sorted limit:28 offset:offset %}
+                {% for post in sorted limit:30 offset:offset %}
                 <a class="img-cont w-img new worklink" href="{{ post.url }}">
                     <!--<p class="mobile mobile-title">{{ post.title}}</p>-->
                     <div class="img-box" style="background-image: url('{{site.cloud_host}}{{ post.tnimg }}');"></div>

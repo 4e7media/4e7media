@@ -16,7 +16,7 @@ title: 4e7 Media Werbeagentur
   {% include aboutus.html %}
   <div id="press" class="section">
     <div class="fp-bg"></div>
-    <img class="press-title" src="../img/press-title.svg">
+      <div class="sec-title"><h1>PRESS</h1><div class="line"></div></div>
       <div id="press-gal">
         {% for img in site.data.press.url %}
         <a class="press-link" href="{{site.cloud_host}}{{img}}">

@@ -419,6 +419,7 @@ body {
     height: 100%;
     z-index: 2;
     max-width: 1200px;
+    margin-bottom: 150px;
     /*:hover{
       animation: bg-switch-ye 1s forwards;
     }
@@ -438,10 +439,9 @@ body {
     margin: 50px 0;
   }
   .img-cont {
-    width: 14%;
+    width: 20%;
     height: auto;
     position: relative;
-    flex-grow: 1;
 
     &:hover .hover-cont {
       animation: newworkhover 0.2s ease-out forwards;
@@ -492,7 +492,6 @@ body {
   flex-wrap: wrap;
   background-color: #dbc8a0;
   z-index: 99999999999;
-
   img {
     width: 80%;
     height: auto;
@@ -564,7 +563,9 @@ body {
 #selma {
   top: 0;
   z-index: -10;
-
+  .main-img{
+    top: 18vh;
+  }
   .about_text {
     top: 20vh;
     position: absolute;
@@ -595,12 +596,11 @@ body {
 }
 
 .about_us {
-  width: 60vw;
   z-index: 2;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 0 20vw;
+  padding: 0 10vw;
   background: white;
 
   img {
@@ -608,10 +608,9 @@ body {
   }
 
   .main-img {
-    width: 25vw;
-    height: 45vh;
+    width: 50%;
+    padding-bottom: 50%;
     position: absolute;
-    top: 35vh;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center top;
@@ -696,6 +695,8 @@ body {
 #tele {
   .tn-cont {
     height: 100vh;
+    width: 80vw;
+    margin: 0 auto;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -709,8 +710,9 @@ body {
   }
 
   .tele-link {
-    width: 31%;
+    width: 30%;
     padding: 1vw;
+    flex-grow: 1;
 
     @media screen and (max-width : 1050px) {
       width: 60%;
@@ -783,5 +785,29 @@ body {
         border: none;
       }
     }
+  }
+}
+.sec-title{
+  display: flex;
+  align-items: center;
+  width: 80vw;
+  margin: 0 auto;
+  h1{
+    margin-right: 25px;
+    font-size: 4vw;
+  }
+  .line{
+    height: 1vw;
+    width: 10px;
+    flex-grow: 1;
+    background: #000;
+  }
+}
+.white{
+  h1{
+    color: white;
+  }
+  .line{
+    background-color: white;
   }
 }
