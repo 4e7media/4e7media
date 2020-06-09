@@ -261,9 +261,6 @@
   #plattforms .plattform-box {
     top: 33%;
   }
-  .des-alex {
-    display: none;
-  }
   #alex {
     padding: 0;
   }
@@ -708,19 +705,21 @@
     z-index: 50;
     left: 5vw;
   }
+  .sec-title {
+    height: 50px;
+  }
   .about_us {
     width: 90vw;
     padding: 0 5vw;
+  }
+  .about_us .about-box {
+    height: calc(100vh - 50px);
   }
   .about_us .main-img {
     height: 250px;
     margin-top: 0 !important;
     right: 0;
     top: 10vh;
-  }
-  .about_us .about_text {
-    top: 50vh;
-    position: absolute;
   }
   .about_us .about_text .ab-p {
     margin: 0;
@@ -769,9 +768,6 @@
     display: block;
     left: 0;
     top: 10vh;
-  }
-  #alex .des-alex {
-    display: none !important;
   }
   #alex img {
     width: 90vw;

@@ -299,10 +299,6 @@
     }
 
 
-    .des-alex {
-        display: none;
-    }
-
     #alex {
         padding: 0;
         .about_text{
@@ -808,11 +804,15 @@
         z-index: 50;
         left: 5vw;
     }
-
+    .sec-title{
+        height: 50px;
+        }
     .about_us {
         width: 90vw;
         padding: 0 5vw;
-
+        .about-box{
+            height: calc(100vh - 50px);
+        }
         .main-img {
             height: 250px;
             margin-top: 0 !important;
@@ -821,9 +821,6 @@
         }
 
         .about_text {
-            
-            top: 50vh;
-            position: absolute;
 
             .ab-p {
                 margin: 0;
@@ -879,10 +876,6 @@
             display: block;
             left: 0;
             top: 10vh;
-        }
-
-        .des-alex {
-            display: none !important;
         }
 
         padding: 0 5vw !important;
