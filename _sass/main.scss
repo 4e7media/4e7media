@@ -103,10 +103,9 @@ body {
   top: 0;
   z-index: 2;
   background-color: white;
-  overflow: hidden;
-
-  .fp-tableCell {
-    overflow: hidden;
+  overflow: hidden;  
+  .fp-scroller{
+    height: 100%;
   }
 
   video {
@@ -550,7 +549,6 @@ body {
   }
 
   .about_text {
-    position: absolute;
     right: 0;
     top: 20vh;
   }
@@ -568,7 +566,6 @@ body {
   }
   .about_text {
     top: 20vh;
-    position: absolute;
   }
 
   .main-img {
@@ -608,12 +605,16 @@ body {
   }
 
   .main-img {
-    width: 50%;
-    padding-bottom: 50%;
-    position: absolute;
+    width: 40%;
+    padding-bottom: 40%;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center top;
+  }
+  .fp-bg{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 
   .about_text {

@@ -114,8 +114,8 @@ body a {
   overflow: hidden;
 }
 
-#landingpage .fp-tableCell {
-  overflow: hidden;
+#landingpage .fp-scroller {
+  height: 100%;
 }
 
 #landingpage video {
@@ -653,7 +653,6 @@ body a {
 }
 
 #alex .about_text {
-  position: absolute;
   right: 0;
   top: 20vh;
 }
@@ -673,7 +672,6 @@ body a {
 
 #selma .about_text {
   top: 20vh;
-  position: absolute;
 }
 
 #selma .main-img {
@@ -719,12 +717,21 @@ body a {
 }
 
 .about_us .main-img {
-  width: 50%;
-  padding-bottom: 50%;
-  position: absolute;
+  width: 40%;
+  padding-bottom: 40%;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center top;
+}
+
+.about_us .fp-bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .about_us .about_text {
