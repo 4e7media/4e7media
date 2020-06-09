@@ -11,32 +11,22 @@ title: 4e7 Media Werbeagentur
   {% include campaingns-eye.html %}
   {% include features.html %}
   {% include casesindex.html %}
-  <div class="finder"></div>
   {% include work.html %}
   {% include plattforms.html %}
   {% include aboutus.html %}
   <div id="press" class="section">
-    <div class="fp-bg"></div>
+    <div class="fp-bg">
       <div class="sec-title"><h1>PRESS</h1><div class="line"></div></div>
-      <div id="press-gal">
+      <div id="press-gallery" style="display:none;">
         {% for img in site.data.press.url %}
-        <a class="press-link" href="{{site.cloud_host}}{{img}}">
-          <img class="press-img"
-            src="{{site.cloud_host}}if_w_gt_h,c_fill,h_180,w_250/if_h_gt_w,c_fill,w_120,h_180/if_h_eq_w,c_fill,w_120,h_180{{img}}">
-        </a>
+          <img alt="press"
+            src="{{site.cloud_host}}{{img}}" 
+            data-image="{{site.cloud_host}}{{img}}"
+				    data-description="{{site.cloud_host}}{{img}}">
         {% endfor %}
       </div>
-    
+    </div>
   </div>
   {% include telescope.html %}
   {% include footer.html %}
 </div>
-<script>
-  $('.press-link').magnificPopup({
-    type: 'image',
-    gallery: {
-      enabled: true
-    }
-    // other options
-  });
-</script>

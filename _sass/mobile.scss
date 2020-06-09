@@ -753,9 +753,17 @@
 
         
     }
-
-    .img-cont {
-        width: 24%;
+    .sec-title{
+        h1{
+            font-size: 8vw;
+        }
+        .line{
+            height: 2vw;
+        }
+    }
+    #cases .img-cont {
+        height: 0;
+        padding-bottom: 100%;
     }
 
     #work,

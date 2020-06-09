@@ -46,6 +46,7 @@ html {
   min-height: 100vh;
   overflow-x: hidden;
   width: 100vw;
+  background: ;
 }
 
 .fp-bg {
@@ -147,12 +148,14 @@ body {
 }
 
 #eye {
+  width: 100vw;
+  margin: 0 auto;
+  padding: 0 20vw;
+  background: white;
   .fp-bg {
     background-color: white;
+    z-index: 1;
   }
-
-  width: 60vw;
-  margin: 0 auto;
 
   img {
     width: 25vw;
@@ -415,10 +418,10 @@ body {
     justify-content: space-evenly;
     height: 0;
     overflow: hidden;
-    height: 100%;
+    height: auto;
     z-index: 2;
     max-width: 1200px;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
     /*:hover{
       animation: bg-switch-ye 1s forwards;
     }
@@ -458,7 +461,6 @@ body {
     position: relative;
     width: 100%;
     overflow: hidden;
-    margin-bottom: 25px;
   }
 
   .inner-cont {
@@ -645,22 +647,16 @@ body {
   flex-direction: column;
   position: relative;
   background-color: #fff;
-
+  .fp-bg{
+    z-index: 1;
+  }
   .big {
     grid-column: auto/ span 2;
   }
 
-  #press-gal {
-    display: grid;
-    grid-template-columns: repeat(8, 120px);
-    grid-auto-rows: 180px;
-    grid-gap: 10px;
-    grid-auto-flow: dense;
+  #press-gallery {
+    width: 80vw;
     margin: 0 auto;
-    height: 560px;
-    width: 1000px;
-    overflow: hidden;
-
     a {
       overflow: hidden;
     }

@@ -253,7 +253,9 @@ $('document').ready(function () {
     }
     rundelay()
   }
-
+  jQuery("#press-gallery").unitegallery({
+    gallery_theme: "tiles"
+  }); 
   $(window).bind('mousewheel', function (event) {
     if (active == true) {
       if (run == false) {
@@ -475,4 +477,18 @@ $(".close-trigger").click(function () {
   $(".wrapper").removeClass("click-tr");
   $(".social-icons").removeClass("social-slide");
   $("#bgm-btn").show();
+});
+
+$(document).ready(function () {
+  jQuery("#press-gallery").unitegallery({
+    gallery_theme: "tiles",
+		tiles_type: "nested",
+    tile_enable_shadow:false,
+	tile_enable_border:true,
+	tiles_space_between_cols:15,
+	tiles_justified_space_between:15,
+	tiles_col_width:235,
+	tile_border_color: "#ffffff",
+	tile_enable_outline:true,
+  }); 
 });

@@ -153,12 +153,15 @@ body a {
 }
 
 #eye {
-  width: 60vw;
+  width: 100vw;
   margin: 0 auto;
+  padding: 0 20vw;
+  background: white;
 }
 
 #eye .fp-bg {
   background-color: white;
+  z-index: 1;
 }
 
 #eye img {
@@ -460,10 +463,10 @@ body a {
           justify-content: space-evenly;
   height: 0;
   overflow: hidden;
-  height: 100%;
+  height: auto;
   z-index: 2;
   max-width: 1200px;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
   /*:hover{
       animation: bg-switch-ye 1s forwards;
     }
@@ -527,7 +530,6 @@ body a {
   position: relative;
   width: 100%;
   overflow: hidden;
-  margin-bottom: 25px;
 }
 
 #work-1 .inner-cont,
@@ -773,25 +775,20 @@ body a {
   background-color: #fff;
 }
 
+#press .fp-bg {
+  z-index: 1;
+}
+
 #press .big {
   grid-column: auto/ span 2;
 }
 
-#press #press-gal {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (120px)[8];
-      grid-template-columns: repeat(8, 120px);
-  grid-auto-rows: 180px;
-  grid-gap: 10px;
-  grid-auto-flow: dense;
+#press #press-gallery {
+  width: 80vw;
   margin: 0 auto;
-  height: 560px;
-  width: 1000px;
-  overflow: hidden;
 }
 
-#press #press-gal a {
+#press #press-gallery a {
   overflow: hidden;
 }
 

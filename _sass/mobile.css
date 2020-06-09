@@ -658,8 +658,15 @@
   #features .feat_cont .fp-slidesContainer {
     width: 800vw !important;
   }
-  .img-cont {
-    width: 24%;
+  .sec-title h1 {
+    font-size: 8vw;
+  }
+  .sec-title .line {
+    height: 2vw;
+  }
+  #cases .img-cont {
+    height: 0;
+    padding-bottom: 100%;
   }
   #work .case-more,
   #cases .case-more {
