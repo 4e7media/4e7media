@@ -599,17 +599,24 @@ body {
   justify-content: space-around;
   padding: 0 10vw;
   background: white;
-
+  .about-box {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 50vh;
+}
   img {
     width: 50%;
   }
 
   .main-img {
-    width: 40%;
-    padding-bottom: 40%;
+    width: 33%;
+    padding-bottom: 33%;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center top;
+    height: 0;
+    margin-top: 30px;
   }
   .fp-bg{
     display: flex;
@@ -692,7 +699,9 @@ body {
 .mobile {
   display: none;
 }
-
+.sec-title{
+  height: 150px;
+}
 #tele {
   .tn-cont {
     height: 100vh;
@@ -703,7 +712,7 @@ body {
     display: flex;
     padding: 0 5vw;
     flex-wrap: wrap;
-
+    height: 60vh;
     @media screen and (max-width : 1050px) {
       height: 75vh;
     }

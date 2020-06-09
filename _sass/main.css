@@ -712,16 +712,28 @@ body a {
   background: white;
 }
 
+.about_us .about-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 50vh;
+}
+
 .about_us img {
   width: 50%;
 }
 
 .about_us .main-img {
-  width: 40%;
-  padding-bottom: 40%;
+  width: 33%;
+  padding-bottom: 33%;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center top;
+  height: 0;
+  margin-top: 30px;
 }
 
 .about_us .fp-bg {
@@ -816,6 +828,10 @@ body a {
   display: none;
 }
 
+.sec-title {
+  height: 150px;
+}
+
 #tele .tn-cont {
   height: 100vh;
   width: 80vw;
@@ -832,6 +848,7 @@ body a {
   padding: 0 5vw;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  height: 60vh;
 }
 
 @media screen and (max-width: 1050px) {
