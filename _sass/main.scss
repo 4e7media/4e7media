@@ -46,7 +46,7 @@ html {
   min-height: 100vh;
   overflow-x: hidden;
   width: 100vw;
-  background: ;
+  background: #a2999c;
 }
 
 .fp-bg {
@@ -699,6 +699,9 @@ body {
   height: 150px;
 }
 #tele {
+  .fp-bg{
+    z-index: 1;
+  }
   .tn-cont {
     height: 100vh;
     width: 80vw;

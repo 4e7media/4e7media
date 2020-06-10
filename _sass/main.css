@@ -54,6 +54,7 @@ html {
   min-height: 100vh;
   overflow-x: hidden;
   width: 100vw;
+  background: #a2999c;
 }
 
 .fp-bg {
@@ -827,6 +828,10 @@ body a {
 
 .sec-title {
   height: 150px;
+}
+
+#tele .fp-bg {
+  z-index: 1;
 }
 
 #tele .tn-cont {
