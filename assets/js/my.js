@@ -332,7 +332,9 @@ $('document').ready(function () {
     accessibility: false,
     slidesToShow: 3,
     slidesToScroll: 3,
-    autoplay: false,
+    autoplay: true,
+    nextArrow: '.next_caro',
+    prevArrow: '.previous_caro',
     responsive: [{
         breakpoint: 1024,
         settings: {
@@ -396,25 +398,26 @@ $('document').ready(function () {
       // instead of a settings object
     ]
   })
+  $('.w-prev').click(function () {
+    $('.work-cont').slick('slickPrev');
+  })
+  $('.w-next').click(function () {
+    $('.work-cont').slick('slickNext');
+  })
+  $('.c-prev').click(function () {
+    $('.cases-cont').slick('slickPrev');
+  })
+  $('.c-next').click(function () {
+    $('.cases-cont').slick('slickNext');
+  })
+  $('.p-prev').click(function () {
+    $('.plattform-box').slick('slickPrev');
+  })
+  $('.p-next').click(function () {
+    $('.plattform-box').slick('slickNext');
+  })
 });
-$('.w-prev').click(function () {
-  $('.work-cont').slick('slickPrev');
-})
-$('.w-next').click(function () {
-  $('.work-cont').slick('slickNext');
-})
-$('.c-prev').click(function () {
-  $('.cases-cont').slick('slickPrev');
-})
-$('.c-next').click(function () {
-  $('.cases-cont').slick('slickNext');
-})
-$('.p-prev').click(function () {
-  $('.plattform-box').slick('slickPrev');
-})
-$('.p-next').click(function () {
-  $('.plattform-box').slick('slickNext');
-})
+
 $(".ab-btn").click(function () {
   $("#about-title").show()
   nav.css('background', "black")
