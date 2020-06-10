@@ -2,6 +2,10 @@
   pointer-events: none;
 }
 
+#home {
+  background: #a2999c;
+}
+
 .owl-dots {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -54,7 +58,6 @@ html {
   min-height: 100vh;
   overflow-x: hidden;
   width: 100vw;
-  background: #a2999c;
 }
 
 .fp-bg {
@@ -66,7 +69,6 @@ body {
   height: 100%;
   margin: 0;
   font-family: Rubik;
-  color: #2c2c26;
 }
 
 body h3 {
@@ -353,6 +355,7 @@ body a {
 
 #cases .fp-bg {
   background-color: #7a9fa7;
+  z-index: 1;
 }
 
 #cases .case-less,
@@ -596,6 +599,10 @@ body a {
   height: auto;
   margin: 0 10%;
   margin-bottom: 5vh;
+}
+
+#plattforms .fp-bg {
+  z-index: 1;
 }
 
 #plattforms .plattform-box {
