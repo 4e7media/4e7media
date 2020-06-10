@@ -254,7 +254,9 @@ $('document').ready(function () {
     rundelay()
   }
   jQuery("#press-gallery").unitegallery({
-    gallery_theme: "tiles"
+    gallery_theme: "tiles",
+    tiles_type: "justified",
+    tiles_min_columns: 7,
   }); 
   $(window).bind('mousewheel', function (event) {
     if (active == true) {
