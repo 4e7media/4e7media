@@ -722,7 +722,7 @@ body a {
   width: 100%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  height: 50vh;
+  height: 75vh;
 }
 
 .about_us img {
