@@ -265,8 +265,8 @@
         }
 
         .hover-cont {
-            padding: 4vh 5%;
-            width: 90%;
+            padding: 4vh 5vw;
+            width: 90vw;
             font-size: 12px;
             height: 100vh;
             justify-content: center;
@@ -369,7 +369,7 @@
     }
 
     #press {
-        width: 480px;
+        width: 100%;
         left: 0;
         margin: 0 auto;
         .press-title {
@@ -442,7 +442,6 @@
 
     #eye {
         display: flex;
-        width: 80vw;
 
         .eye-img {
             width: 50vw;
@@ -740,19 +739,6 @@
         }
 
     }
-    #features .feat_cont {
-        display: none;
-        .fp-controlArrow {
-            display: none;
-        }
-
-        .fp-slidesContainer {
-            width: 800vw !important;
-        }
-
-
-        
-    }
     .sec-title{
         h1{
             font-size: 8vw;
@@ -905,16 +891,10 @@
     }
 
     #press {
-        width: 250px;
         display: flex;
         padding: 0;
         flex-wrap: wrap;
         margin: 0 auto;
-
-        #press-gal {
-            grid-template-columns: repeat(2, 120px);
-            height: 370px;
-        }
 
         .press-title {
             width: 100%;

@@ -238,8 +238,8 @@
             animation: mobilefeathovereffekt 0.2s ease-out forwards;
   }
   #features .feat_cont .feat-box .hover-cont {
-    padding: 4vh 5%;
-    width: 90%;
+    padding: 4vh 5vw;
+    width: 90vw;
     font-size: 12px;
     height: 100vh;
     -webkit-box-pack: center;
@@ -327,7 +327,7 @@
     font-size: 23px;
   }
   #press {
-    width: 480px;
+    width: 100%;
     left: 0;
     margin: 0 auto;
   }
@@ -387,7 +387,6 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 80vw;
   }
   #eye .eye-img {
     width: 50vw;
@@ -649,15 +648,6 @@
     content: "-";
     margin-left: -15px;
   }
-  #features .feat_cont {
-    display: none;
-  }
-  #features .feat_cont .fp-controlArrow {
-    display: none;
-  }
-  #features .feat_cont .fp-slidesContainer {
-    width: 800vw !important;
-  }
   .sec-title h1 {
     font-size: 8vw;
   }
@@ -789,7 +779,6 @@
     width: 90vw;
   }
   #press {
-    width: 250px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -797,11 +786,6 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin: 0 auto;
-  }
-  #press #press-gal {
-    -ms-grid-columns: (120px)[2];
-        grid-template-columns: repeat(2, 120px);
-    height: 370px;
   }
   #press .press-title {
     width: 100%;
