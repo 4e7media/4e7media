@@ -1,6 +1,48 @@
 .click-tr {
   pointer-events: none;
 }
+.fp-controlArrow.fp-prev {
+  left: 0;
+  border: none;
+  width: 2vw;
+  height: 101px;
+  background: url("https://res.cloudinary.com/media4e7/image/upload/v1591961086/arrow_wev8s6.png") no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  transform: rotate(179deg);
+}
+.fp-controlArrow.fp-next {
+  right: 0;
+  border: none;
+  width: 2vw;
+  height: 101px;
+  background: url("https://res.cloudinary.com/media4e7/image/upload/v1591961086/arrow_wev8s6.png") no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+.slide-cont{
+  display: flex;
+  align-items: center;
+}
+.arrow{
+  max-width: 2vw;
+  position: unset!important;
+}
+.c-prev {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  .arrow{
+    transform: rotate(179deg);
+  }
+}
+.c-next {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 #home{
   background: #a2999c;
 }
@@ -333,7 +375,9 @@ body {
     top: 5vh;
     left: 10vw;
   }
-
+  .slide-cont{
+    height: 67vh;
+  }
   .tn-cont {
     width: 80vw;
     height: 26.6vw;
@@ -344,7 +388,6 @@ body {
     color: transparent;
     overflow: hidden;
     padding-bottom: 20px;
-    max-width: 1200px;
 
     p {
       text-align: center;
@@ -813,6 +856,7 @@ body {
     width: 10px;
     flex-grow: 1;
     background: #000;
+    border-radius: 3px;
   }
 }
 .white{

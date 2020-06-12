@@ -2,7 +2,8 @@
     <div class="fp-bg">
     <div class="sec-title white"><h1>CASES</h1><div class="line"></div></div>
     <!--<i class="fas fa-chevron-left slidebtn-o" style="display:none;"></i>-->
-    <div class="fp-controlArrow fp-prev c-prev"></div>
+    <div class="slide-cont">
+    <div class="c-prev"><img class="arrow" src="{{site.cloud_host}}/v1591961086/arrow_wev8s6.png"></div>
     <div class="tn-cont cases-cont owl-carousel owl-theme">
         {% for post in site.cases %}
         <a class="img-cont c-img" href="{{ post.url }}" style="background-image: url('{{site.cloud_host}}{{ post.tnimg }}');">
@@ -13,7 +14,8 @@
         </a>
         {% endfor %}
     </div>
-    <div class="fp-controlArrow fp-next c-next"></div>
+    <div class="c-next"><img class="arrow" src="{{site.cloud_host}}/v1591961086/arrow_wev8s6.png"></div>
+   </div>
     <!--<i class="fas fa-chevron-right slidebtn-c"></i>-->
 </div>
 </div>
