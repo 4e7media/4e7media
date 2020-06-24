@@ -279,17 +279,19 @@ $('document').ready(function () {
       }
     }
   });
-  $(".worklink").click(function (e) {
+  $(".link").click(function (e) {
     e.preventDefault()
     data= $(this).attr("href");
     console.log(data);
     $(".gallery").css("display" , "flex");
+    $(".gallery").css("z-index" , 999);
     $(".gallery").load(data + ".html")
     $.fn.fullpage.setAllowScrolling(false, 'up, down')
   })
   $(".gal-close").click(function (e) { 
     e.preventDefault();
     $(".gallery").css("display" , "none");
+    $(".gallery").css("z-index" , -1);
     $.fn.fullpage.setAllowScrolling(true, 'up, down')
     $(".gallery").empty();
   });
@@ -400,6 +402,8 @@ $(".close-trigger").click(function () {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
+    nextArrow: '.next_caro',
+    prevArrow: '.previous_caro',
     responsive: [{
         breakpoint: 1024,
         settings: {

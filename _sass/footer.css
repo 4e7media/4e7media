@@ -51,8 +51,22 @@
           justify-content: space-between;
 }
 
+@media screen and (max-width: 1100px) {
+  #footer .first_row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 #footer .first_row .touch {
   width: 40%;
+}
+
+@media screen and (max-width: 1100px) {
+  #footer .first_row .touch {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 #footer .first_row .links {
@@ -65,6 +79,14 @@
       -ms-flex-direction: column;
           flex-direction: column;
   right: 20vw;
+}
+
+@media screen and (max-width: 1100px) {
+  #footer .first_row .links {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+  }
 }
 
 #footer .first_row .links a {

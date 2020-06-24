@@ -10,6 +10,9 @@ nav {
     justify-content: space-between;
     margin-bottom: -70px;
     position: absolute;
+    @media screen and (max-width: 1100px){
+        display: none;
+    }
     a {
         color: white;
         text-decoration-line: none;
@@ -60,6 +63,10 @@ nav {
         &:focus {
             outline: none;
         }
+    }
+    @media screen and (max-width: 1100px) {
+        top: 25px;
+        right: 25px;
     }
 }
 

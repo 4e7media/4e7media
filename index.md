@@ -16,7 +16,13 @@ title: 4e7 Media Werbeagentur
   {% include aboutus.html %}
   <div id="press" class="section">
     <div class="fp-bg">
-      <div class="sec-title"><h1>PRESS</h1><div class="line"></div></div>
+    <div class="flex-full-center">
+    <div class="title-box f-t">
+        <div class="sec-title m-r">
+            <h1>PRESS</h1>
+            <div class="line big"></div>
+        </div>
+    </div>
       <div id="press-gallery" style="display:none;">
         {% for img in site.data.press.url %}
           <img alt="press"
@@ -24,7 +30,7 @@ title: 4e7 Media Werbeagentur
             data-image="{{site.cloud_host}}{{img}}"
 				    data-description="{{site.cloud_host}}{{img}}">
         {% endfor %}
-      </div>
+      </div></div>
     </div>
   </div>
   {% include telescope.html %}
