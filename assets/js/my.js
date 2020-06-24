@@ -362,7 +362,7 @@ $(".close-trigger").click(function () {
     accessibility: false,
     slidesToShow: 3,
     slidesToScroll: 3,
-    autoplay: true,
+    autoplay: false,
     nextArrow: '.next_caro',
     prevArrow: '.previous_caro',
     responsive: [{
