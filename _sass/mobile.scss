@@ -442,28 +442,31 @@
 
     #eye {
         display: flex;
-
+        padding: 0 10vw;
+        img{
+            position: unset;
+        }
         .eye-img {
-            width: 50vw;
-            position: absolute;
+            position: unset;
+            width: 100%;
             top: 10vh;
         }
 
         .eye-text {
-            width: 50vw;
-            position: absolute;
+            position: unset;
+            width: 100%;
             top: 23vh;
             left: 30vw;
         }
 
         .eye-links {
-            position: absolute;
+            position: unset;
             top: 10vh;
             right: 0;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            width: 30vw;
+            width: 100%;
 
             a {
                 width: 12vw;
@@ -476,10 +479,10 @@
         }
 
         p {
+            position: unset;
             font-size: 4vw;
-            position: absolute;
             top: 30vh;
-            width: 80vw;
+            width: 100%;
         }
     }
 
@@ -754,7 +757,17 @@
 
     #work,
     #cases {
+        .c-prev{
+            position: absolute;
+            bottom: 20vh;
+            left: 20vw;
 
+        }
+        .c-next{
+            position: absolute;
+            bottom: 20vh;
+            right: 20vw;
+        }
         .case-more {
             display: inline-block;
         }
@@ -770,13 +783,20 @@
             width: 85vw;
             left: 7.5vw;
         }
-
+        .slide-cont{
+            height: 100%;
+            width: 90vw;
+            margin: 0 auto;
+            flex-direction: column;
+            justify-content: center;
+        
+        }
         .tn-cont {
             overflow: hidden;
             padding: 0;
-            width: 100vw;
+            width: 100%;
             height: auto;
-            position: absolute;
+            position: static;
             top: 30vh;
             
             .img-cont .hover-cont {

@@ -23,6 +23,7 @@
 .slide-cont{
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 .arrow{
   max-width: 2vw;
@@ -845,7 +846,7 @@ body {
 .sec-title{
   display: flex;
   align-items: center;
-  width: 80vw;
+  width: 100%;
   margin: 0 auto;
   h1{
     margin-right: 25px;

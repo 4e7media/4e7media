@@ -387,20 +387,24 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding: 0 10vw;
+  }
+  #eye img {
+    position: unset;
   }
   #eye .eye-img {
-    width: 50vw;
-    position: absolute;
+    position: unset;
+    width: 100%;
     top: 10vh;
   }
   #eye .eye-text {
-    width: 50vw;
-    position: absolute;
+    position: unset;
+    width: 100%;
     top: 23vh;
     left: 30vw;
   }
   #eye .eye-links {
-    position: absolute;
+    position: unset;
     top: 10vh;
     right: 0;
     display: -webkit-box;
@@ -411,7 +415,7 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 30vw;
+    width: 100%;
   }
   #eye .eye-links a {
     width: 12vw;
@@ -421,10 +425,10 @@
     height: auto;
   }
   #eye p {
+    position: unset;
     font-size: 4vw;
-    position: absolute;
     top: 30vh;
-    width: 80vw;
+    width: 100%;
   }
   .fixed-p {
     position: fixed;
@@ -658,6 +662,18 @@
     height: 0;
     padding-bottom: 100%;
   }
+  #work .c-prev,
+  #cases .c-prev {
+    position: absolute;
+    bottom: 20vh;
+    left: 20vw;
+  }
+  #work .c-next,
+  #cases .c-next {
+    position: absolute;
+    bottom: 20vh;
+    right: 20vw;
+  }
   #work .case-more,
   #cases .case-more {
     display: inline-block;
@@ -674,13 +690,26 @@
     width: 85vw;
     left: 7.5vw;
   }
+  #work .slide-cont,
+  #cases .slide-cont {
+    height: 100%;
+    width: 90vw;
+    margin: 0 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   #work .tn-cont,
   #cases .tn-cont {
     overflow: hidden;
     padding: 0;
-    width: 100vw;
+    width: 100%;
     height: auto;
-    position: absolute;
+    position: static;
     top: 30vh;
   }
   #work .tn-cont .img-cont .hover-cont,
