@@ -3,11 +3,38 @@ body {
   .invis{
     visibility: hidden;
   }
+  .fp-controlArrow.fp-prev {
+    left: 0;
+    border: none;
+    width: 2vw;
+    height: 3.6vw;
+    background: url("https://res.cloudinary.com/media4e7/image/upload/v1591961086/arrow_wev8s6.png") no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    transform: rotate(179deg);
+  }
+  .fp-controlArrow.fp-next {
+    right: 0;
+    border: none;
+    width: 2vw;
+    height: 3.6vw;
+    background: url("https://res.cloudinary.com/media4e7/image/upload/v1591961086/arrow_wev8s6.png") no-repeat;
+    background-size: contain;
+    cursor: pointer;
+  }
   .hover-cont{
     h3{
       text-transform: uppercase;
       color: #a39a9b;
       text-align: center;
+      margin: 5px auto;
+      font-size: 24px;
+      @media (max-width: 992px){
+        font-size: 16px;
+      }
+      @media (max-width: 576px){
+        font-size: 9px;
+      }
     }
   }
   .fp-bg{
@@ -357,12 +384,25 @@ body {
     position: absolute;
     bottom: 0;
     background-color: #bfd0d4;
+    @media (max-width: 1050px){
+      height: auto;
+      background: rgba(0, 0, 0, 0.6);
+    }
   }
   .slick-track :nth-child(even) .hover-cont {
-    background-color: #e4d6bb !important;
+    background-color: #e4d6bb;
+    @media (max-width: 1050px){
+      height: auto;
+      background: rgba(0, 0, 0, 0.6);
+    }
   }
 }
 #work-1{
+  .sec{
+    @media (max-width: 1050px){
+      display: none;
+    }
+  }
   .fp-bg{
     background-color: #a2999c;
     z-index:-1;
@@ -407,9 +447,17 @@ body {
     overflow: hidden;
     bottom: 0;
     background-color: #bfd0d4;
+    @media (max-width: 1050px){
+      height: auto;
+      background: rgba(0, 0, 0, 0.6);
+    }
   }
   .img-cont:nth-child(even) .hover-cont {
-    background-color: #e4d6bb !important;
+    background-color: #e4d6bb;
+    @media (max-width: 1050px){
+      height: auto;
+      background: rgba(0, 0, 0, 0.6);
+    }
   }
   .img-cont{
     width: 20%;
