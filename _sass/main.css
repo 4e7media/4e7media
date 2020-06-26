@@ -581,12 +581,6 @@ body #eye p {
   }
 }
 
-@media (max-width: 1050px) {
-  #work-1 .sec {
-    display: none;
-  }
-}
-
 #work-1 .fp-bg {
   background-color: #a2999c;
   z-index: -1;

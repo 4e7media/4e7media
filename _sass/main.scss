@@ -411,11 +411,6 @@ body {
   }
 }
 #work-1{
-  .sec{
-    @media (max-width: 1050px){
-      display: none;
-    }
-  }
   .fp-bg{
     background-color: #a2999c;
     z-index:-1;
