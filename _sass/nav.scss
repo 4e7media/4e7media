@@ -95,6 +95,9 @@ nav {
         color: white;
         margin-top: 50px;
         font-size: 35px;
+        @media screen and (max-width: 576px){
+            font-size: 20px;
+        }
     }
     .bgm-txt {
         opacity: 0;
@@ -103,9 +106,12 @@ nav {
         display: flex;
         opacity: 0;
         width: 40%;
-        margin: 0 30%;
+        margin: 0 auto;
         margin-top: 5vh;
         justify-content: space-around;
+        @media screen and (max-width: 576px){
+            width: 70%;
+        }
         .social-icon img {
             width: 50%;
         }

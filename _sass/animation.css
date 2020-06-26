@@ -375,7 +375,6 @@
   }
   to {
     opacity: 1;
-    margin-right: 10vh;
   }
 }
 
@@ -386,7 +385,6 @@
   }
   to {
     opacity: 1;
-    margin-right: 10vh;
   }
 }
 
@@ -492,7 +490,7 @@
   }
 }
 
-@-webkit-keyframes newworkhover {
+@-webkit-keyframes newhover {
   from {
     height: 0;
     opacity: 0;
@@ -503,7 +501,7 @@
   }
 }
 
-@keyframes newworkhover {
+@keyframes newhover {
   from {
     height: 0;
     opacity: 0;

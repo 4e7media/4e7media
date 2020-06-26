@@ -139,6 +139,12 @@ nav :nth-child(2) {
   font-size: 35px;
 }
 
+@media screen and (max-width: 576px) {
+  #menu a {
+    font-size: 20px;
+  }
+}
+
 #menu .bgm-txt {
   opacity: 0;
 }
@@ -149,10 +155,16 @@ nav :nth-child(2) {
   display: flex;
   opacity: 0;
   width: 40%;
-  margin: 0 30%;
+  margin: 0 auto;
   margin-top: 5vh;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+@media screen and (max-width: 576px) {
+  #menu .social-icons {
+    width: 70%;
+  }
 }
 
 #menu .social-icons .social-icon img {

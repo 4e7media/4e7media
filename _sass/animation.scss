@@ -52,7 +52,7 @@
 }
 @keyframes socialslide{
     from{opacity: 0; margin-top: 15vh;}
-    to{opacity: 1; margin-right: 10vh;}
+    to{opacity: 1;}
 }
 @keyframes mobilebgmshow{
     from{opacity: 0; top: -3vw;}
@@ -74,7 +74,7 @@
     from{margin-left:-60vw}
     to{margin-left:-120vw}
 }
-@keyframes newworkhover {
+@keyframes newhover {
     from{height: 0; opacity: 0;}
     to{height: 100%; opacity: 1;}
 }

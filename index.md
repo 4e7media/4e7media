@@ -14,25 +14,7 @@ title: 4e7 Media Werbeagentur
   {% include work.html %}
   {% include plattforms.html %}
   {% include aboutus.html %}
-  <div id="press" class="section">
-    <div class="fp-bg">
-    <div class="flex-full-center">
-    <div class="title-box f-t">
-        <div class="sec-title m-r">
-            <h1>PRESS</h1>
-            <div class="line big"></div>
-        </div>
-    </div>
-      <div id="press-gallery" style="display:none;">
-        {% for img in site.data.press.url %}
-          <img alt="press"
-            src="{{site.cloud_host}}{{img}}" 
-            data-image="{{site.cloud_host}}{{img}}"
-				    data-description="{{site.cloud_host}}{{img}}">
-        {% endfor %}
-      </div></div>
-    </div>
-  </div>
+  {% include press.html %}
   {% include telescope.html %}
   {% include footer.html %}
 </div>
