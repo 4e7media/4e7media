@@ -1,41 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head><script type='text/javascript' src='/assets/unitegallery/js/unitegallery.min.js'></script> 
-		
-		<link rel='stylesheet' href='/assets/unitegallery/css/unite-gallery.css' type='text/css' /> 
-		<script type='text/javascript' src='/assets/unitegallery/themes/default/ug-theme-default.js'></script> 
-		<link rel='stylesheet' href='/assets/unitegallery/themes/default/ug-theme-default.css' type='text/css' /> </head> 
-<body>
-<div class="boxe">
-    <div class="title-box"><h3>{{ page.title }}</h3><button class="gal-close"><i class="fas fa-times"></button></i></div>
-    
-    <div id="gallery" style="display:none;">
-        {% for vid in page.vid %}
-        <img alt="Youtube Without Images"
-        data-type="youtube"
-        data-videoid="{{vid.video}}"
-        data-description="Youtube video description">
-            {% endfor %}
-		{% for pic in page.img %}
-        <img src="{{site.cloud_host}}{{pic}}">
 
-        {% endfor %}
+<head>
+    <script type='text/javascript' src='/assets/unitegallery/js/unitegallery.min.js'></script>
+
+    <link rel='stylesheet' href='/assets/unitegallery/css/unite-gallery.css' type='text/css' />
+    <script type='text/javascript' src='/assets/unitegallery/themes/default/ug-theme-default.js'></script>
+    <link rel='stylesheet' href='/assets/unitegallery/themes/default/ug-theme-default.css' type='text/css' />
+</head>
+
+<body>
+    <div class="boxe">
+        <div class="title-box">
+            <h3>{{ page.title }}</h3><button class="gal-close"><i class="fas fa-times"></button></i>
+        </div>
+
+        <div id="gallery" style="display:none;">
+            {% for vid in page.vid %}
+            <div data-type="youtube" data-videoid="{{vid.video}}"
+                data-description="Youtube video description"></div>
+            {% endfor %}
+            {% for vid in page.cvid %}
+            <div data-type="html5video"
+					 data-image="{{vid.vtn}}"
+					 data-videomp4="{{vid.video}}"
+			    	 data-title="Birds"
+			    	 data-description="html5 video description"></div>
+            {% endfor %}
+            {% for pic in page.img %}
+            <img src="{{site.cloud_host}}{{pic}}">
+
+            {% endfor %}
+        </div>
     </div>
-</div>
-<script type="text/javascript"> 
-			
-    jQuery(document).ready(function(){ 
-        jQuery("#gallery").unitegallery({
-            slider_scale_mode: "fit",
-        }); 
-    }); 
-    $(".gal-close").click(function (e) { 
-    e.preventDefault();
-    $(".gallery").css("display" , "none");
-    $.fn.fullpage.setAllowScrolling(true, 'up, down')
-    active= true;
-    $(".gallery").empty();
-  });
-</script>
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            jQuery("#gallery").unitegallery({
+                slider_scale_mode: "fit",
+            });
+        });
+        $(".gal-close").click(function (e) {
+            e.preventDefault();
+            $(".gallery").css("display", "none");
+            $.fn.fullpage.setAllowScrolling(true, 'up, down')
+            active = true;
+            $(".gallery").empty();
+        });
+    </script>
 </body>
+
 </html>

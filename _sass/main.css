@@ -2,6 +2,22 @@ body {
   font-family: Rubik;
 }
 
+body .load {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 999999999999999999999999;
+}
+
+body .load img {
+  width: 100%;
+  height: auto;
+}
+
+body .wrapper {
+  visibility: hidden;
+}
+
 body .invis {
   visibility: hidden;
 }
@@ -79,7 +95,7 @@ body .gallery {
 }
 
 body .gallery .boxe {
-  width: 50%;
+  width: 80%;
   max-width: 900px;
 }
 

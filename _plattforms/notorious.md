@@ -1,5 +1,5 @@
 ---
-layout: plat
+layout: work-detail
 title: notorious
 tnimg: "/v1560106507/Notorious-patformJPG.jpg"
 img:
@@ -18,7 +18,7 @@ img:
 - "/v1560954608/Screenshot%202019-05-27%20at%2017.07.03.png"
 - "/v1560954610/Screenshot%202019-06-18%20at%2019.23.14.png"
 video: ''
-vid:
+cvid:
 - video: https://res.cloudinary.com/media4e7/video/upload/v1560845596/Notorious_MASTER_V3_4_xdrndw.mp4
   vtn: https://res.cloudinary.com/media4e7/image/upload/v1560957483/image001_4_ws9aff.png
 - video: https://www.youtube.com/embed/1dBNI0nmx1s

@@ -1,5 +1,18 @@
 body {
   font-family: Rubik;
+  .load{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 999999999999999999999999;
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+  .wrapper{
+    visibility: hidden;
+  }
   .invis{
     visibility: hidden;
   }
@@ -57,7 +70,7 @@ body {
     align-items: center;
     background: rgba(0, 0, 0, 0.6);
     .boxe {
-      width: 50%;
+      width: 80%;
       max-width: 900px;
       @media (max-width: 576px){
         width: 80%;

@@ -1,5 +1,5 @@
 ---
-layout: plat
+layout: work-detail
 title: trendsylvania
 tnimg: "/v1560106191/trendsylvania-platform.jpg"
 img:
@@ -27,7 +27,7 @@ img:
 - "/v1560106245/online-trendsylvania-desktop2-1000.jpg"
 video: ''
 vid:
-- video: https://www.youtube.com/embed/1dBNI0nmx1s
+- video: 1dBNI0nmx1s
   vtn: http://i3.ytimg.com/vi/1dBNI0nmx1s/hqdefault.jpg
 
 ---

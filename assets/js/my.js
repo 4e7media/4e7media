@@ -1,7 +1,4 @@
 $('document').ready(function () {
-  console.log(screen.width);
-  console.log(screen.height);
-
   var z_i = 99
   var n_i = 0;
   var under = false;
@@ -303,7 +300,7 @@ $('document').ready(function () {
     data = $(this).attr("href");
     console.log(data);
     $(".gallery").css("display", "flex");
-    $(".gallery").css("z-index", 999);
+    $(".gallery").css("z-index", 999); 
     $(".gallery").load(data + ".html")
     $.fn.fullpage.setAllowScrolling(false, 'up, down')
   });
