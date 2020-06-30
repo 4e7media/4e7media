@@ -293,7 +293,8 @@ body {
         background: url("https://res.cloudinary.com/media4e7/image/upload/v1560779600/4e7-auge_jrc6jl.jpg");
         background-size: cover;
         @media screen and (max-width: 576px){
-          display: block
+          display: block;
+          height: 25vh;
         }
       }
       .eye-links {
@@ -339,13 +340,50 @@ body {
   .fp-bg{
     z-index: -1;
   }
+  .f-one{
+    background: url('https://res.cloudinary.com/media4e7/image/upload/v1559997739/advertising_z1cedf.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media(max-width: 576px){
+      background: url('https://res.cloudinary.com/media4e7/image/upload/v1561545277/advertising_mobile_f5a8gh.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;;
+    }
+    
+  }
+  .f-two{
+    background: url('https://res.cloudinary.com/media4e7/image/upload/v1559997738/branded-entertainment_xdxrnf.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media(max-width: 576px){
+      background: url('https://res.cloudinary.com/media4e7/image/upload/v1561545531/branded_entertainment-mobile_mnxzaw.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;;
+    }
+  }
+  .f-tree{
+    background: url('https://res.cloudinary.com/media4e7/image/upload/v1559997738/branded-publishing_wob1m5.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media(max-width: 576px){
+      background: url('https://res.cloudinary.com/media4e7/image/upload/v1561545276/branded_publishing-mobile_eftijk.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;;
+    }
+  }
+  .f-four{
+    background: url('https://res.cloudinary.com/media4e7/image/upload/v1560344740/social-media-m-anagement2_wbvww1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media(max-width: 576px){
+      background: url('https://res.cloudinary.com/media4e7/image/upload/v1561545531/branded_entertainment-mobile_mnxzaw.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;;
+    }
+  }
   .flex-full-center{
     background: rgba(0, 0, 0, 0.6);
     z-index: 99;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
     width: 100%;
   }
   .content-cont{
@@ -444,7 +482,7 @@ body {
     top: 0;
     margin: 200px auto;
     @media screen and(max-width: 576px){
-      margin: 80px auto 0px;
+      margin: 60px auto 0px;
     }
   }
 
@@ -520,7 +558,7 @@ body {
       }
       @media screen and (max-width: 576px){
         width: 100%;
-        height: 30vh;
+        height: 25vh;
         
       }
     }
@@ -540,6 +578,12 @@ body {
     @media screen and (max-width: 992px){
       flex-direction: column-reverse;
     }
+    .main-img{
+      @media (max-width: 576px){
+      margin-top: 25px;
+    }
+    }
+    
   }
 }
 #press{

@@ -35,7 +35,6 @@ $('document').ready(function () {
     navigationTooltips: ['Landingpage', 'Campaigne', 'Medien', 'What we do', 'Cases', 'Work', 'Platforms', 'Alex', 'Selma', 'Press', 'Find Us'],
     showActiveTooltip: false,
     slidesNavigation: false,
-    slidesNavPosition: 'bottom',
     scrollOverflow: true,
     parallax: true,
     setScrollingSpeed: 1000,
