@@ -37,7 +37,7 @@ function UGTheme_video(){
 			strippanel_padding_bottom: 0,
 			strippanel_padding_left: 0,
 			strippanel_padding_right: 0,
-			strippanel_vertical_type:true
+			strippanel_vertical_type:false
 	};
 		
 	
@@ -190,7 +190,7 @@ function UGTheme_video(){
 	function setHtmlThumb(objThumbWrapper, objItem){
 
 		var showDesc = true;
-		var showIcon = false;
+		var showIcon = true;
 		
 		switch(g_options.theme_skin){
 			case "right-title-only":
@@ -203,17 +203,12 @@ function UGTheme_video(){
 		
 		var html = "<div class='ug-thumb-inner'>";
 
-		if(showIcon == true){
+
 			html += "<div class='ug-thumb-icon' style='background-image:url(\""+objItem.urlThumb+"\")'></div>";
 			html += "<div class='ug-thumb-right'>";
-		}
 			
-		html += "<div class='ug-thumb-title'>" + objItem.title + "</div>";
 		
-		if(showDesc == true)
-			html += "<div class='ug-thumb-desc'>" + objItem.description + "</div>";
 		
-		if(showIcon == true)
 			html += "</div>";	//thumb right end
 		
 		html += "</div>";

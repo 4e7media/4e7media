@@ -5,6 +5,8 @@
 
 .ug-videoskin-bottom-text .ug-strip-panel{
 	background-color:#232323;
+	width: auto;
+	height: 10vw;
 }
 
 /* ----- Thumb Wrapper ------- */
@@ -15,7 +17,9 @@
 	width:200px;
 	height:80px;
 	cursor:pointer;
-  	text-align:left;
+	text-align:left;
+	width: 10vw!important;
+    height: 7vw!important;
 }
 
 
@@ -36,11 +40,12 @@
 }
 
 /* ----- Thumb Inner data ------- */
-
+.ug-gallery-wrapper .ug-thumbs-strip{
+	height: 10vw!important;
+	width: auto!important;
+}
 .ug-videoskin-bottom-text .ug-thumb-inner{
-	padding-top:15px;
-	padding-left:15px;
-	padding-right:5px;
+	height: 100%!important;
 }
 
 .ug-videoskin-bottom-text .ug-thumb-title{

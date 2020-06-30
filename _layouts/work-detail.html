@@ -5,8 +5,8 @@
     <script type='text/javascript' src='/assets/unitegallery/js/unitegallery.min.js'></script>
 
     <link rel='stylesheet' href='/assets/unitegallery/css/unite-gallery.css' type='text/css' />
-    <script type='text/javascript' src='/assets/unitegallery/themes/default/ug-theme-default.js'></script>
-    <link rel='stylesheet' href='/assets/unitegallery/themes/default/ug-theme-default.css' type='text/css' />
+    <script type='text/javascript' src='/assets/unitegallery/themes/grid/ug-theme-grid.js'></script>
+    <link rel='stylesheet' href='/assets/unitegallery/themes/grid/' type='text/css' />
 </head>
 
 <body>
@@ -17,13 +17,17 @@
 
         <div id="gallery" style="display:none;">
             {% for vid in page.vid %}
-            <div data-type="youtube" data-videoid="{{vid.video}}"
-                data-description="Youtube video description"></div>
+            <img alt="Youtube With Images"
+			 data-type="youtube"
+			 src="{{vid.vtn}}"
+			 data-image="{{vid.vtn}}"		 
+			 data-videoid="{{vid.video}}">
             {% endfor %}
             {% for vid in page.cvid %}
             <div data-type="html5video"
 					 data-image="{{vid.vtn}}"
-					 data-videomp4="{{vid.video}}"
+                     data-videomp4="{{vid.video}}"
+                     data-thumb= "{{vid.vtn}}"
 			    	 data-title="Birds"
 			    	 data-description="html5 video description"></div>
             {% endfor %}
@@ -37,6 +41,8 @@
         jQuery(document).ready(function () {
             jQuery("#gallery").unitegallery({
                 slider_scale_mode: "fit",
+                gallery_theme: "grid",
+				theme_panel_position: "bottom"
             });
         });
         $(".gal-close").click(function (e) {
