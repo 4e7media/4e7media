@@ -482,7 +482,7 @@ body {
     top: 0;
     margin: 200px auto;
     @media screen and(max-width: 576px){
-      margin: 60px auto 0px;
+      margin: 0px auto;
     }
   }
 
@@ -596,9 +596,21 @@ body {
       display: none!important;
     }
   }
+  .fp-bg{
+    @media (max-width: 576px){
+      z-index: -1;
+    }
+  }
+  .m-g-display{
+    width: 70%;
+    height: 70vh;
+    margin: 80px auto;
+    overflow: scroll;
+    overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch;
+  }
   #m-press-gallery {
-    width: 80%!important;
-    margin: 150px auto;
+    width: 100%;
 }
 }
 #press-mobile{

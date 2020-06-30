@@ -14,12 +14,15 @@
                     data-description="{{site.cloud_host}}{{img}}">
                 {% endfor %}
             </div>
-            <div id="m-press-gallery" style="display:none;">
-                {% for img in site.data.press.url %}
-                <img alt="press" src="{{site.cloud_host}}{{img}}" data-image="{{site.cloud_host}}{{img}}"
-                    data-description="{{site.cloud_host}}{{img}}">
-                {% endfor %}
-            </div>
+
+        </div>
+    </div>
+    <div class="m-g-display">
+        <div id="m-press-gallery" style="display:none;">
+            {% for img in site.data.press.url %}
+            <img alt="press" src="{{site.cloud_host}}{{img}}" data-image="{{site.cloud_host}}{{img}}"
+                data-description="{{site.cloud_host}}{{img}}">
+            {% endfor %}
         </div>
     </div>
 </div>
