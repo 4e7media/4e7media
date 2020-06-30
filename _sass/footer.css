@@ -131,16 +131,16 @@
   color: white;
 }
 
-#footer .second_row .link {
+#footer .second_row .i-link {
   margin-left: 20px;
 }
 
 @media screen and (max-width: 576px) {
-  #footer .second_row .link {
+  #footer .second_row .i-link {
     width: 100%;
     margin-left: 0;
   }
-  #footer .second_row .link a {
+  #footer .second_row .i-link a {
     margin: 0 auto;
   }
 }
