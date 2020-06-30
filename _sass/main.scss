@@ -346,6 +346,7 @@ body {
     top: 0;
     right: 0;
     left: 0;
+    width: 100%;
   }
   .content-cont{
     width: 50%;
@@ -420,9 +421,13 @@ body {
   }
   .flex-full-center{
     z-index: 99;
+    
   }
   .work-cont{
     height: auto;
+    @media (max-width: 576px){
+      height: 100vh;
+    }
   }
   .work-display {
     display: flex;

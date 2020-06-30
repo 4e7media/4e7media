@@ -10,7 +10,7 @@
         </div>
         <div class="work-display">
             <div class="inner-cont">
-                {% for post in sorted limit:30 offset:offset %}
+                {% for post in sorted limit:28 offset:offset %}
                 <a class="img-cont w-img new link" href="{{ post.url }}">
                     <!--<p class="mobile mobile-title">{{ post.title}}</p>-->
                     <div class="img-box" style="background-image: url('{{site.cloud_host}}{{ post.tnimg }}');"></div>

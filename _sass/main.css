@@ -483,6 +483,7 @@ body #eye p {
   top: 0;
   right: 0;
   left: 0;
+  width: 100%;
 }
 
 #features .content-cont {
@@ -595,6 +596,12 @@ body #eye p {
 
 #work-1 .work-cont {
   height: auto;
+}
+
+@media (max-width: 576px) {
+  #work-1 .work-cont {
+    height: 100vh;
+  }
 }
 
 #work-1 .work-display {
