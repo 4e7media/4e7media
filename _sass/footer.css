@@ -58,6 +58,12 @@
   }
 }
 
+@media screen and (max-width: 576px) {
+  #footer .first_row {
+    padding: 60px 20vw 40px;
+  }
+}
+
 #footer .first_row .touch {
   width: 40%;
 }
@@ -117,6 +123,7 @@
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    position: unset;
   }
 }
 
