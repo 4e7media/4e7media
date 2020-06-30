@@ -21,155 +21,305 @@ $('document').ready(function () {
   } else {
     $("div").remove(".feat_cont");
   }
-
-  $('#home').fullpage({
-    licenseKey: '65CF5AD2-DC6F4574-B7CBF278-BB170808',
-    autoScrolling: true,
-    scrollHorizontally: true,
-    //Navigation
-    menu: '#menu',
-    lockAnchors: false,
-    anchors: ['lp', 'campaigne', 'medien', 'wwd', 'case', 'works', 'platforms', 'ab-alex', 'ab-selma', 'presses', 'footers'],
-    navigation: true,
-    navigationPosition: 'right',
-    navigationTooltips: ['Landingpage', 'Campaigne', 'Medien', 'What we do', 'Cases', 'Work', 'Platforms', 'Alex', 'Selma', 'Press', 'Find Us'],
-    showActiveTooltip: false,
-    slidesNavigation: false,
-    scrollOverflow: true,
-    parallax: true,
-    setScrollingSpeed: 1000,
-    responsiveWidth: 576,
-    parallaxKey: 'NGU3bWVkaWEuY29tX2RBUWNHRnlZV3hzWVhnPTg3TQ==', //see https://goo.gl/xkUmHS
-    parallaxOptions: {
-      type: 'reveal',
-      percentage: 100,
-      property: 'transition'
-    },
-    onLeave: function (origin, destination, direction) {
-      if (origin.index == '7' && destination.index != '8') {
-        $("#about-title").hide()
-        $("#bgm-btn").css({
-          "background": "transparent"
-        })
-      } else if (origin.index == '8' && destination.index != '7') {
-        $("#about-title").hide()
-      } else if (origin.index == '5') {
-        $.fn.fullpage.setAllowScrolling(true, 'down, up');
-        console.log("allowScroll");
-      }
-    },
-
-    afterLoad: function (origin, destination, direction) {
-      var nav = $("#fp-nav ul li a span")
-      console.log("after load indexÖ", destination.index)
-      if (destination.index == '1') {
-        nav.css('background', "black")
-        $("#bgm-btn").css({
-          'color': "black",
-          "background": "transparent"
-        })
-        $("#bgm-btn").addClass('show')
-        active = false;
-        $.fn.fullpage.setAllowScrolling(true, 'down, up');
-      } else if (destination.index == '2') {
-        nav.css('background', "black")
-        $("#bgm-btn").css({
-          'color': "black",
-          "background": "transparent"
-        })
-        $("#bgm-btn").addClass('show')
-        active = false;
-        $.fn.fullpage.setAllowScrolling(true, 'down, up');
-      } else if (destination.index == '3') {
-        nav.css('background', "white")
-        $("#bgm-btn").css({
-          'color': "white",
-          "background": "transparent"
-        })
-        $("#bgm-btn").addClass('show')
-        active = false;
-      } else if (destination.index == '4') {
-        nav.css('background', "white")
-        $("#bgm-btn").css({
-          'color': "white",
-          "background": "transparent"
-        })
-        $("#bgm-btn").addClass('show')
-        active = false;
-      } else if (destination.index == '5') {
-        nav.css('background', "white")
-        $("#bgm-btn").css({
-          'color': "white",
-          "background": "transparent"
-        })
-        $("#bgm-btn").addClass('show')
-        $("#bgm-btn").addClass('show')
-        if (screen.width > screen.height) {
-          $(".sec").removeClass("invis")
-          $(".first").addClass("invis")
-          
-        }else{
-          $(".z-set").css("z-index", "2")
+  if (screen.width < 576) {
+    $('#home').fullpage({
+      licenseKey: '65CF5AD2-DC6F4574-B7CBF278-BB170808',
+      autoScrolling: true,
+      scrollHorizontally: true,
+      //Navigation
+      menu: '#menu',
+      lockAnchors: false,
+      anchors: ['lp', 'campaigne', 'medien', 'wwd', 'case', 'works', 'platforms', 'ab-alex', 'ab-selma', 'presses', 'footers'],
+      navigation: true,
+      navigationPosition: 'right',
+      navigationTooltips: ['Landingpage', 'Campaigne', 'Medien', 'What we do', 'Cases', 'Work', 'Platforms', 'Alex', 'Selma', 'Press', 'Find Us'],
+      showActiveTooltip: false,
+      slidesNavigation: false,
+      scrollOverflow: false,
+      parallax: true,
+      setScrollingSpeed: 1000,
+      parallaxKey: 'NGU3bWVkaWEuY29tX2RBUWNHRnlZV3hzWVhnPTg3TQ==', //see https://goo.gl/xkUmHS
+      parallaxOptions: {
+        type: 'reveal',
+        percentage: 100,
+        property: 'transition'
+      },
+      onLeave: function (origin, destination, direction) {
+        if (origin.index == '7' && destination.index != '8') {
+          $("#about-title").hide()
+          $("#bgm-btn").css({
+            "background": "transparent"
+          })
+        } else if (origin.index == '8' && destination.index != '7') {
+          $("#about-title").hide()
+        } else if (origin.index == '5') {
+          $.fn.fullpage.setAllowScrolling(true, 'down, up');
+          console.log("allowScroll");
         }
-      } else if (destination.index == '6') {
-        nav.css('background', "white")
-        $("#bgm-btn").css({
-          'color': "white",
-          "background": "transparent"
-        })
-        $("#bgm-btn").addClass('show')
-        under = true;
-        active = false;
-      } else if (destination.index == '7') {
-        $("#about-title").show()
-        nav.css('background', "black")
-        $("#bgm-btn").css({
-          'color': "black",
-          "background": "white"
-        })
-        $("#bgm-btn").addClass('black')
-        under = true;
-        active = false;
-      } else if (destination.index == '8') {
-        $("#about-title").show()
-        nav.css('background', "black")
-        $("#bgm-btn").css({
-          'color': "black",
-          "background": "white"
-        })
-        $("#bgm-btn").addClass('black')
-
-        under = true;
-        active = false;
-      } else if (destination.index == '9') {
-        nav.css('background', "black")
-        $("#bgm-btn").css({
-          'color': "black",
-          "background": "transparent"
-        })
-        $("#bgm-btn").addClass('black')
-        under = true;
-        active = false;
-      } else if (destination.index == '10') {
-        nav.css('background', "white")
-        $("#bgm-btn").css({
-          'color': "white",
-          "background": "transparent"
-        })
-        $("#bgm-btn").addClass('show')
-        under = true;
-        active = false;
-      } else if (destination.index == '0') {
-        nav.css('background', "white")
-        $("#bgm-btn").css({
-          'color': "white",
-          "background": "transparent"
-        })
-        $("#bgm-btn").removeClass('show')
-
-      }
-    },
-  });
+      },
+  
+      afterLoad: function (origin, destination, direction) {
+        var nav = $("#fp-nav ul li a span")
+        console.log("after load indexÖ", destination.index)
+        if (destination.index == '1') {
+          nav.css('background', "black")
+          $("#bgm-btn").css({
+            'color': "black",
+            "background": "transparent"
+          })
+          $("#bgm-btn").addClass('show')
+          active = false;
+          $.fn.fullpage.setAllowScrolling(true, 'down, up');
+        } else if (destination.index == '2') {
+          nav.css('background', "black")
+          $("#bgm-btn").css({
+            'color': "black",
+            "background": "transparent"
+          })
+          $("#bgm-btn").addClass('show')
+          active = false;
+          $.fn.fullpage.setAllowScrolling(true, 'down, up');
+        } else if (destination.index == '3') {
+          nav.css('background', "white")
+          $("#bgm-btn").css({
+            'color': "white",
+            "background": "transparent"
+          })
+          $("#bgm-btn").addClass('show')
+          active = false;
+        } else if (destination.index == '4') {
+          nav.css('background', "white")
+          $("#bgm-btn").css({
+            'color': "white",
+            "background": "transparent"
+          })
+          $("#bgm-btn").addClass('show')
+          active = false;
+        } else if (destination.index == '5') {
+          nav.css('background', "white")
+          $("#bgm-btn").css({
+            'color': "white",
+            "background": "transparent"
+          })
+          $("#bgm-btn").addClass('show')
+          $("#bgm-btn").addClass('show')
+          if (screen.width > screen.height) {
+            $(".sec").removeClass("invis")
+            $(".first").addClass("invis")
+            
+          }else{
+            $(".z-set").css("z-index", "2")
+          }
+        } else if (destination.index == '6') {
+          nav.css('background', "white")
+          $("#bgm-btn").css({
+            'color': "white",
+            "background": "transparent"
+          })
+          $("#bgm-btn").addClass('show')
+          under = true;
+          active = false;
+        } else if (destination.index == '7') {
+          $("#about-title").show()
+          nav.css('background', "black")
+          $("#bgm-btn").css({
+            'color': "black",
+            "background": "white"
+          })
+          $("#bgm-btn").addClass('black')
+          under = true;
+          active = false;
+        } else if (destination.index == '8') {
+          $("#about-title").show()
+          nav.css('background', "black")
+          $("#bgm-btn").css({
+            'color': "black",
+            "background": "white"
+          })
+          $("#bgm-btn").addClass('black')
+  
+          under = true;
+          active = false;
+        } else if (destination.index == '9') {
+          nav.css('background', "black")
+          $("#bgm-btn").css({
+            'color': "black",
+            "background": "transparent"
+          })
+          $("#bgm-btn").addClass('black')
+          under = true;
+          active = false;
+        } else if (destination.index == '10') {
+          nav.css('background', "white")
+          $("#bgm-btn").css({
+            'color': "white",
+            "background": "transparent"
+          })
+          $("#bgm-btn").addClass('show')
+          under = true;
+          active = false;
+        } else if (destination.index == '0') {
+          nav.css('background', "white")
+          $("#bgm-btn").css({
+            'color': "white",
+            "background": "transparent"
+          })
+          $("#bgm-btn").removeClass('show')
+  
+        }
+      },
+    });
+    
+  }else{
+    $('#home').fullpage({
+      licenseKey: '65CF5AD2-DC6F4574-B7CBF278-BB170808',
+      autoScrolling: true,
+      scrollHorizontally: true,
+      //Navigation
+      menu: '#menu',
+      lockAnchors: false,
+      anchors: ['lp', 'campaigne', 'medien', 'wwd', 'case', 'works', 'platforms', 'ab-alex', 'ab-selma', 'presses', 'footers'],
+      navigation: true,
+      navigationPosition: 'right',
+      navigationTooltips: ['Landingpage', 'Campaigne', 'Medien', 'What we do', 'Cases', 'Work', 'Platforms', 'Alex', 'Selma', 'Press', 'Find Us'],
+      showActiveTooltip: false,
+      slidesNavigation: false,
+      scrollOverflow: true,
+      parallax: true,
+      setScrollingSpeed: 1000,
+      parallaxKey: 'NGU3bWVkaWEuY29tX2RBUWNHRnlZV3hzWVhnPTg3TQ==', //see https://goo.gl/xkUmHS
+      parallaxOptions: {
+        type: 'reveal',
+        percentage: 100,
+        property: 'transition'
+      },
+      onLeave: function (origin, destination, direction) {
+        if (origin.index == '7' && destination.index != '8') {
+          $("#about-title").hide()
+          $("#bgm-btn").css({
+            "background": "transparent"
+          })
+        } else if (origin.index == '8' && destination.index != '7') {
+          $("#about-title").hide()
+        } else if (origin.index == '5') {
+          $.fn.fullpage.setAllowScrolling(true, 'down, up');
+          console.log("allowScroll");
+        }
+      },
+  
+      afterLoad: function (origin, destination, direction) {
+        var nav = $("#fp-nav ul li a span")
+        console.log("after load indexÖ", destination.index)
+        if (destination.index == '1') {
+          nav.css('background', "black")
+          $("#bgm-btn").css({
+            'color': "black",
+            "background": "transparent"
+          })
+          $("#bgm-btn").addClass('show')
+          active = false;
+          $.fn.fullpage.setAllowScrolling(true, 'down, up');
+        } else if (destination.index == '2') {
+          nav.css('background', "black")
+          $("#bgm-btn").css({
+            'color': "black",
+            "background": "transparent"
+          })
+          $("#bgm-btn").addClass('show')
+          active = false;
+          $.fn.fullpage.setAllowScrolling(true, 'down, up');
+        } else if (destination.index == '3') {
+          nav.css('background', "white")
+          $("#bgm-btn").css({
+            'color': "white",
+            "background": "transparent"
+          })
+          $("#bgm-btn").addClass('show')
+          active = false;
+        } else if (destination.index == '4') {
+          nav.css('background', "white")
+          $("#bgm-btn").css({
+            'color': "white",
+            "background": "transparent"
+          })
+          $("#bgm-btn").addClass('show')
+          active = false;
+        } else if (destination.index == '5') {
+          nav.css('background', "white")
+          $("#bgm-btn").css({
+            'color': "white",
+            "background": "transparent"
+          })
+          $("#bgm-btn").addClass('show')
+          $("#bgm-btn").addClass('show')
+          if (screen.width > screen.height) {
+            $(".sec").removeClass("invis")
+            $(".first").addClass("invis")
+            
+          }else{
+            $(".z-set").css("z-index", "2")
+          }
+        } else if (destination.index == '6') {
+          nav.css('background', "white")
+          $("#bgm-btn").css({
+            'color': "white",
+            "background": "transparent"
+          })
+          $("#bgm-btn").addClass('show')
+          under = true;
+          active = false;
+        } else if (destination.index == '7') {
+          $("#about-title").show()
+          nav.css('background', "black")
+          $("#bgm-btn").css({
+            'color': "black",
+            "background": "white"
+          })
+          $("#bgm-btn").addClass('black')
+          under = true;
+          active = false;
+        } else if (destination.index == '8') {
+          $("#about-title").show()
+          nav.css('background', "black")
+          $("#bgm-btn").css({
+            'color': "black",
+            "background": "white"
+          })
+          $("#bgm-btn").addClass('black')
+  
+          under = true;
+          active = false;
+        } else if (destination.index == '9') {
+          nav.css('background', "black")
+          $("#bgm-btn").css({
+            'color': "black",
+            "background": "transparent"
+          })
+          $("#bgm-btn").addClass('black')
+          under = true;
+          active = false;
+        } else if (destination.index == '10') {
+          nav.css('background', "white")
+          $("#bgm-btn").css({
+            'color': "white",
+            "background": "transparent"
+          })
+          $("#bgm-btn").addClass('show')
+          under = true;
+          active = false;
+        } else if (destination.index == '0') {
+          nav.css('background', "white")
+          $("#bgm-btn").css({
+            'color': "white",
+            "background": "transparent"
+          })
+          $("#bgm-btn").removeClass('show')
+  
+        }
+      },
+    });
+  }
+  
   $(".mfp-close").click(function () {
     Location.reload()
 
