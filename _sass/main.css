@@ -268,7 +268,7 @@ body .prev, body .next {
 @media screen and (max-width: 576px) {
   body .prev, body .next {
     position: absolute;
-    bottom: 20%;
+    bottom: 15%;
     width: 5%;
     right: 20%;
   }
@@ -687,6 +687,7 @@ body #eye p {
 
 @media screen and (max-width: 576px) {
   #work-1 .inner-cont {
+    width: 70%;
     margin: 0px auto;
   }
 }
