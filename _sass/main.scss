@@ -489,6 +489,9 @@ body {
     flex-wrap: wrap;
     top: 0;
     margin: 200px auto;
+    @media screen and (max-width: 1100px) {
+      margin: 0 auto;
+    }
     @media screen and(max-width: 576px){
       width: 70%;
       margin: 0px auto;
@@ -542,17 +545,18 @@ body {
   }
 }
 .about_us{
+  .flex-full-center{
+    height: 85vh;
+    margin-top: 15vh;
+    min-height: unset;
+  }
   .about-box{
     width: 80%;
     display: flex;
     justify-content: space-between;
     max-width: 1200px;
-    @media screen and (max-width: 1285px) {
-      margin-top: 100px;
-    }
     @media screen and (max-width: 1100px) {
       flex-wrap: wrap;
-      margin-top: 120px;
     }
     @media screen and (max-width: 576px){
       width: 70%;

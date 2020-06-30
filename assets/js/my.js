@@ -21,7 +21,7 @@ $('document').ready(function () {
   } else {
     $("div").remove(".feat_cont");
   }
-  if (screen.width < 576) {
+  if (screen.width < 1100) {
     $('#home').fullpage({
       licenseKey: '65CF5AD2-DC6F4574-B7CBF278-BB170808',
       autoScrolling: true,
