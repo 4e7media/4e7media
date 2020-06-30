@@ -833,12 +833,6 @@ body #eye p {
   }
 }
 
-@media (max-width: 576px) {
-  #selma .about-box .main-img {
-    margin-top: 25px;
-  }
-}
-
 #press #press-gallery {
   width: 80% !important;
 }
