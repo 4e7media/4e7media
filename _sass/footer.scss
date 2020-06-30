@@ -51,6 +51,7 @@
                 text-align: center;
                 margin-top: 50px;
               }
+              
             a {
                 width: 100%;
                 color: white;
@@ -66,14 +67,27 @@
         color: #ffff;
         position: absolute;
         bottom: 10px;
+        @media screen and (max-width: 576px){
+            flex-direction: column-reverse;
+          }
         a {
             color: white;
         }
         .link {
             margin-left: 20px;
+            @media screen and (max-width: 576px){
+                width: 100%;
+                margin-left: 0;
+                a{
+                    margin: 0 auto;
+                }
+            }
         }
         .social_footer {
             margin: 5px 4vw;
+            @media screen and (max-width: 576px){
+              width: 100%;
+            }
             a {
                 color: white;
                 img {
@@ -85,12 +99,19 @@
         p {
             width: 40%;
             margin-top: 8px;
+            @media screen and (max-width: 576px){
+                width: 100%;
+                text-align: center;
+            }
         }
         div {
             width: 25%;
             margin-top: 12px;
             display: flex;
-            justify-content: space-between
+            justify-content: space-between;
+            @media screen and (max-width: 576px){
+                width: 100%;
+            }
         }
     }
 }
