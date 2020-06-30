@@ -10,13 +10,18 @@ body {
       height: auto;
     }
   }
+  .section{
+    @media(max-width: 576px){
+      overflow: hidden;
+    }
+  }
   .wrapper{
     visibility: hidden;
   }
   .invis{
     visibility: hidden;
     @media(max-width: 576px){
-      display: none;
+      display: none!important;
     }
   }
   .fp-controlArrow.fp-prev {
