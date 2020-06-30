@@ -22,6 +22,12 @@ body .invis {
   visibility: hidden;
 }
 
+@media (max-width: 576px) {
+  body .invis {
+    display: none;
+  }
+}
+
 body .fp-controlArrow.fp-prev {
   left: 0;
   border: none;
@@ -839,12 +845,6 @@ body #eye p {
 @media screen and (max-width: 992px) {
   #press #press-gallery {
     display: none !important;
-  }
-}
-
-@media (max-width: 576px) {
-  #press .fp-bg {
-    z-index: -1;
   }
 }
 

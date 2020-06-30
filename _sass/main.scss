@@ -15,6 +15,9 @@ body {
   }
   .invis{
     visibility: hidden;
+    @media(max-width: 576px){
+      display: none;
+    }
   }
   .fp-controlArrow.fp-prev {
     left: 0;
