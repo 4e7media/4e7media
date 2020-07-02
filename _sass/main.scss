@@ -612,6 +612,11 @@ body {
     overflow: scroll;
     overflow-scrolling: touch;
     -webkit-overflow-scrolling: touch;
+    display: none;
+    @media screen and (max-width: 576px){
+      display: block;
+      
+    }
   }
   #m-press-gallery {
     width: 100%;

@@ -861,6 +861,13 @@ body #eye p {
   overflow: scroll;
   overflow-scrolling: touch;
   -webkit-overflow-scrolling: touch;
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  #press .m-g-display {
+    display: block;
+  }
 }
 
 #press #m-press-gallery {
