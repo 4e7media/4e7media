@@ -840,6 +840,7 @@ body #eye p {
 
 #press #press-gallery {
   width: 80% !important;
+  max-width: unset !important;
 }
 
 @media screen and (max-width: 1600px) {
