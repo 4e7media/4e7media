@@ -225,7 +225,7 @@ body .title-box .sec-title h1 {
 
 @media screen and (max-width: 576px) {
   body .title-box .sec-title h1 {
-    font-size: 40px;
+    font-size: 30px;
   }
 }
 
@@ -380,8 +380,20 @@ body #campaigns img.camp-img {
   max-width: 80%;
 }
 
+@media screen and (max-width: 576px) {
+  body #campaigns img.camp-img {
+    display: none;
+  }
+}
+
 body #campaigns .mcamp-img {
   display: none;
+}
+
+@media screen and (max-width: 576px) {
+  body #campaigns .mcamp-img {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 576px) {
