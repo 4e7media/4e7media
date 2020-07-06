@@ -203,7 +203,7 @@ body .title-box .sec-title h3 {
 
 @media screen and (max-width: 576px) {
   body .title-box .sec-title h3 {
-    font-size: 14px;
+    font-size: 22px;
   }
 }
 
@@ -303,6 +303,7 @@ body .title-box.f-t {
 @media screen and (max-width: 576px) {
   body .title-box.f-t {
     top: 15px;
+    padding: 0 15% 0 7.5%;
   }
 }
 
@@ -383,6 +384,14 @@ body #campaigns .mcamp-img {
   display: none;
 }
 
+@media screen and (max-width: 576px) {
+  body #eye .flex-full-center {
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+  }
+}
+
 body #eye .cont {
   width: 60%;
   margin: 0 auto;
@@ -391,6 +400,12 @@ body #eye .cont {
 @media screen and (max-width: 1100px) {
   body #eye .cont {
     width: 80%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  body #eye .cont {
+    margin-top: 25px;
   }
 }
 
@@ -665,7 +680,9 @@ body #eye p {
 
 @media (max-width: 576px) {
   #work-1 .work-cont {
-    height: 100vh;
+    height: 90vh;
+    margin-top: 10vh;
+    min-height: unset;
   }
 }
 
