@@ -523,7 +523,6 @@ $('document').ready(function () {
            }
        }
    });*/
-
   $('.cases-cont').slick({
     infinite: true,
     row: 1,
@@ -549,12 +548,8 @@ $('document').ready(function () {
         }
       },
       {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          row: 1,
-        }
+        breakpoint: 576,
+        settings: "unslick"
       }
       // You can unslick at a given breakpoint now by adding:
       // settings: "unslick"
@@ -586,12 +581,8 @@ $('document').ready(function () {
         }
       },
       {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          row: 1,
-        }
+        breakpoint: 576,
+        settings: "unslick"
       }
       // You can unslick at a given breakpoint now by adding:
       // settings: "unslick"

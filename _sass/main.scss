@@ -181,6 +181,7 @@ body {
     width: 1%;
     margin-left: 50px;
     @media screen and (max-width: 576px){
+      display: none;
       position: absolute;
       bottom: 15%;
       width: 5%;
@@ -434,6 +435,7 @@ body {
     }
   }
 }
+
 #cases, #plattforms{
   .fp-bg{
     background-color: #7a9fa7;
@@ -441,13 +443,19 @@ body {
    
   .tn-cont{
     width: 70%;
+    @media screen and (max-width: 576px){
+      width: 80%;
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
   .img-cont{
     width: 14vw;
     height: 23vw;
     position: relative;
     @media screen and (max-width: 576px){
-      height: 65vw;
+      width: 40vw!important;
+      height: 29vw;
     }
   }
   
@@ -474,6 +482,32 @@ body {
       background: rgba(0, 0, 0, 0.6);
     }
   }
+  .plattform-box .img-cont{
+    @media screen and (max-width: 576px){
+      height: 40vw;
+    }
+  }
+}
+#cases .flex-full-center{
+  @media screen and (max-width: 576px){
+    height: 86vh;
+    margin-top: 10vh;
+    min-height: unset;
+  }
+  .cases-cont{
+    @media screen and (max-width: 576px){
+      height: 100%;
+    }
+  }
+  .img-cont{
+    width: 14vw;
+    height: 23vw;
+    position: relative;
+    @media screen and (max-width: 576px){
+      width: auto;
+      height: 20%;
+    }
+  }
 }
 #work-1{
   .fp-bg{
@@ -487,8 +521,8 @@ body {
   .work-cont{
     height: auto;
     @media (max-width: 576px){
-      height: 90vh;
-      margin-top: 10vh;
+      height: 93vh;
+      margin-top: 7vh;
       min-height: unset;
     }
   }
@@ -566,6 +600,12 @@ body {
     height: 85vh;
     margin-top: 15vh;
     min-height: unset;
+    @media (max-width: 576px){
+      height: 90vh;
+      margin-top: 10vh;
+      min-height: unset;
+      align-items: baseline;
+    }
   }
   .about-box{
     width: 80%;
@@ -625,8 +665,7 @@ body {
   }
   .m-g-display{
     width: 70%;
-    height: 70vh;
-    margin: 80px auto;
+    max-height: 80vh;
     overflow: scroll;
     overflow-scrolling: touch;
     -webkit-overflow-scrolling: touch;
