@@ -445,7 +445,8 @@ $('document').ready(function () {
       }
     }
   });
-  $(".link").click(function (e) {
+  setTimeout(() => {
+    $(".link").click(function (e) {
     e.preventDefault()
     data = $(this).attr("href");
     console.log(data);
@@ -453,7 +454,9 @@ $('document').ready(function () {
     $(".gallery").css("z-index", 999); 
     $(".gallery").load(data + ".html")
     $.fn.fullpage.setAllowScrolling(false, 'up, down')
-  });
+  }); 
+  }, 1000);
+ 
   $(".gal-close").click(function (e) {
     e.preventDefault();
     $(".gallery").css("display", "none");
