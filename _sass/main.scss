@@ -1,5 +1,8 @@
 body {
   font-family: Rubik;
+  .ug-textpanel{
+    display: none!important;
+  }
   .load{
     width: 100vw;
     height: 100vh;
@@ -178,8 +181,10 @@ body {
     }
   }
   .prev, .next{
-    width: 1%;
+    width: 2vw;
     margin-left: 50px;
+    position: absolute;
+    right: 50px;
     @media screen and (max-width: 576px){
       display: none;
       position: absolute;
@@ -197,7 +202,7 @@ body {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
     right: unset;
-    left: 20%;
+    left: 50px;
   }
   .title-box.f-t{
     width: 80%;
@@ -442,7 +447,7 @@ body {
   }
    
   .tn-cont{
-    width: 70%;
+    width: 80%;
     @media screen and (max-width: 576px){
       width: 80%;
       display: flex;
@@ -451,7 +456,7 @@ body {
   }
   .img-cont{
     width: 14vw;
-    height: 23vw;
+    height: 25vw;
     position: relative;
     @media screen and (max-width: 576px){
       width: 40vw!important;
@@ -501,7 +506,7 @@ body {
   }
   .img-cont{
     width: 14vw;
-    height: 23vw;
+    height: 25vw;
     position: relative;
     @media screen and (max-width: 576px){
       width: auto;
@@ -653,12 +658,14 @@ body {
   }
 }
 #press{
+  .flex-full-center{
+    height: 85vh;
+    margin-top: 15vh;
+    min-height: unset;
+  }
   #press-gallery{
     width: 80%!important;
     max-width: unset!important;
-    @media screen and (max-width: 1600px) {
-      margin-top: 30px;
-    }
     @media screen and (max-width: 992px){
       display: none!important;
     }

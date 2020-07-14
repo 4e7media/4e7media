@@ -411,10 +411,11 @@ $('document').ready(function () {
   }
   if (screen.width > 996) {
     jQuery("#press-gallery").unitegallery({
-      gallery_theme: "tiles",
-      tiles_type: "justified",
-      tiles_min_columns: 7,
-      gallery_width: 1200,
+      gallery_theme: "grid",
+      theme_panel_position: "right",
+      slider_scale_mode: "fit",
+      slider_scale_mode_media: "fit",	
+      slider_textpanel_always_on: false,	
     });
   }else{
     jQuery("#m-press-gallery").unitegallery({
