@@ -936,6 +936,13 @@ body #eye p {
   min-height: unset;
 }
 
+@media screen and (max-width: 576px) {
+  #press .flex-full-center {
+    height: 90vh;
+    margin-top: 10vh;
+  }
+}
+
 #press #press-gallery {
   width: 80% !important;
   max-width: unset !important;

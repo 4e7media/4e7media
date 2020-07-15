@@ -662,6 +662,11 @@ body {
     height: 85vh;
     margin-top: 15vh;
     min-height: unset;
+    @media screen and (max-width: 576px){
+      height: 90vh;
+      margin-top: 10vh;
+      
+    }
   }
   #press-gallery{
     width: 80%!important;
