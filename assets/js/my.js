@@ -415,7 +415,7 @@ $('document').ready(function () {
       theme_panel_position: "right",
       slider_scale_mode: "fit",
       slider_scale_mode_media: "fit",	
-      slider_textpanel_always_on: false,	
+      slider_textpanel_always_on: false,
     });
   }else{
     jQuery("#m-press-gallery").unitegallery({
