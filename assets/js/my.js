@@ -178,7 +178,7 @@ $('document').ready(function () {
       //Navigation
       menu: '#menu',
       lockAnchors: false,
-      anchors: ['lp', 'campaigne', 'medien', 'wwd', 'case', 'works', 'platforms', 'ab-alex', 'ab-selma', 'presses', 'footers'],
+      anchors: ['lp', 'campaigne', 'medien', 'wwd', 'case', 'works', 'platforms', 'ab-alex', 'ab-selma', 'press', 'footers'],
       navigation: true,
       navigationPosition: 'right',
       navigationTooltips: ['Landingpage', 'Campaigne', 'Medien', 'What we do', 'Cases', 'Work', 'Platforms', 'Alex', 'Selma', 'Press', 'Find Us'],
