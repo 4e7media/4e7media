@@ -384,7 +384,7 @@ body #campaigns .fp-bg {
 }
 
 body #campaigns img.camp-img {
-  max-width: 80%;
+  width: 60%;
 }
 
 @media screen and (max-width: 576px) {
