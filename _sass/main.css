@@ -930,32 +930,32 @@ body #eye p {
   }
 }
 
-#press .flex-full-center {
+#press-sc .flex-full-center {
   height: 85vh;
   margin-top: 15vh;
   min-height: unset;
 }
 
 @media screen and (max-width: 576px) {
-  #press .flex-full-center {
+  #press-sc .flex-full-center {
     height: 90vh;
     margin-top: 10vh;
   }
 }
 
-#press #press-gallery {
+#press-sc #press-gallery {
   width: 80% !important;
   max-width: unset !important;
   max-height: 75%;
 }
 
 @media screen and (max-width: 992px) {
-  #press #press-gallery {
+  #press-sc #press-gallery {
     display: none !important;
   }
 }
 
-#press .m-g-display {
+#press-sc .m-g-display {
   width: 70%;
   max-height: 80vh;
   overflow: scroll;
@@ -965,12 +965,12 @@ body #eye p {
 }
 
 @media screen and (max-width: 576px) {
-  #press .m-g-display {
+  #press-sc .m-g-display {
     display: block;
   }
 }
 
-#press #m-press-gallery {
+#press-sc #m-press-gallery {
   width: 100%;
 }
 
