@@ -379,26 +379,26 @@ body #landingpage .fp-bg {
   background-position: bottom;
 }
 
-body #campaigns .fp-bg {
+body #campaign .fp-bg {
   background-color: #D4A692;
 }
 
-body #campaigns img.camp-img {
+body #campaign img.camp-img {
   width: 73%;
 }
 
 @media screen and (max-width: 576px) {
-  body #campaigns img.camp-img {
+  body #campaign img.camp-img {
     display: none;
   }
 }
 
-body #campaigns .mcamp-img {
+body #campaign .mcamp-img {
   display: none;
 }
 
 @media screen and (max-width: 576px) {
-  body #campaigns .mcamp-img {
+  body #campaign .mcamp-img {
     display: block;
   }
 }
