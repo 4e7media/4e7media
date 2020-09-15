@@ -250,7 +250,7 @@ body {
     min-height: 100vh;
     justify-content: center;
     align-items: center;
-    z-index: 4;
+    z-index: 5;
   }
 
   .flexbox {
@@ -268,7 +268,7 @@ body {
   #campaign {
     .fp-bg {
       background-color: #D4A692;
-    }
+    } 
     img.camp-img {
       width: 73%;
       @media screen and (max-width: 576px){
