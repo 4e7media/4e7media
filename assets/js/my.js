@@ -29,10 +29,10 @@ $('document').ready(function () {
       //Navigation
       menu: '#menu',
       lockAnchors: false,
-      anchors: ['lp', 'campaigne', 'medien', 'wwd', 'case', 'works', 'platforms', 'ab-alex', 'ab-selma', 'presses', 'footers'],
+      anchors: ['lp', 'campaigns', 'medien', 'wwd', 'case', 'works', 'platforms', 'ab-alex', 'ab-selma', 'presses', 'footers'],
       navigation: true,
       navigationPosition: 'right',
-      navigationTooltips: ['Landingpage', 'Campaigne', 'Medien', 'What we do', 'Cases', 'Work', 'Platforms', 'Alex', 'Selma', 'Press', 'Find Us'],
+      navigationTooltips: ['Landingpage', 'Campaigns', 'Medien', 'What we do', 'Cases', 'Work', 'Platforms', 'Alex', 'Selma', 'Press', 'Find Us'],
       showActiveTooltip: false,
       slidesNavigation: false,
       scrollOverflow: false,
