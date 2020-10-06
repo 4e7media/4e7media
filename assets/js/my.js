@@ -637,18 +637,4 @@ $(window).on("load", function () {
 });
 var $wp = $(window).width() * 0.7
 var $hp = $(window).height()
-$(window).on('load', function () {
-  $(".wrapper").css("visibility", "visible")
-  $(".load").hide()
-  if ($hp >= $wp) {
-    $('.bgvideo').css({
-      'height': '100vh',
-      'width': 'auto'
-    })
-  } else {
-    $('.bgvideo').css({
-      'height': 'auto',
-      'width': '100vw'
-    })
-  }
-});
+

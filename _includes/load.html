@@ -1,0 +1,54 @@
+<div class="load">
+    <svg xmlns="http://www.w3.org/2000/svg" id="Ebene_1" data-name="Ebene 1" viewBox="0 0 296.76 103.69" class="lines">
+        <defs>
+            <style>
+                .cls-1 {
+                    fill: none;
+                    stroke: #000;
+                    stroke-miterlimit: 10;
+                    stroke-width: 2px;
+                }
+            </style>
+        </defs>
+        <title>407logo</title>
+        <g>
+            <path class="cls-1"
+                d="M82.73,18.57H61L3.81,89.78v9H61v18.82H82.73V98.82H95.22V84.89H82.73Zm-21.21,25q-.2,2.55-.2,7.5V84.89H28.23L53.86,52.46c1.67-2.18,3.21-4.42,4.62-6.7a58.87,58.87,0,0,0,3.65-6.83A45.5,45.5,0,0,0,61.52,43.62Z"
+                transform="translate(-2.81 -17.57)" />
+            <path class="cls-1"
+                d="M152.81,18.57q-20.59,0-32.24,13.46T108.93,69.35q0,24.18,11.56,37.54t32.32,13.37q20.61,0,32.2-13.47t11.6-37.44q0-24.19-11.48-37.49T152.81,18.57ZM167,93.8q-4.87,8.37-14.36,8.37-9.24,0-14.19-8.44t-5-24.25q0-16,5-24.45t14.35-8.44q9.33,0,14.2,8.3t4.86,24.32Q171.87,85.43,167,93.8Z"
+                transform="translate(-2.81 -17.57)" />
+            <path class="cls-1"
+                d="M 211.08 2.94 211.08 19.42 264.53 19.42 217.08 100.08 242.47 100.08 295.75 9.11 295.75 2.94 211.08 2.94z" />
+        </g>
+    </svg>
+</div>
+<script src="/assets/js/anime.min.js"></script>
+<script>
+    anime({
+        targets: '.load .lines path',
+        strokeDashoffset: [anime.setDashoffset, 0],
+        easing: 'easeInSine',
+        duration: 2000,
+        delay: function (el, i) {
+            return i * 250
+        },
+        direction: 'alternate',
+        loop: true
+    });
+    $(window).on('load', function () {
+        $(".wrapper").css("visibility", "visible")
+        $(".load").hide()
+        if ($hp >= $wp) {
+            $('.bgvideo').css({
+                'height': '100vh',
+                'width': 'auto'
+            })
+        } else {
+            $('.bgvideo').css({
+                'height': 'auto',
+                'width': '100vw'
+            })
+        }
+    });
+</script>

@@ -11,10 +11,19 @@ body .load {
   height: 100vh;
   position: fixed;
   z-index: 999999999999999999999999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-body .load img {
-  width: 100%;
+body .load svg {
+  width: 30%;
   height: auto;
 }
 
