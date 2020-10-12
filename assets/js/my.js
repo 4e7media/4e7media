@@ -187,7 +187,7 @@ $('document').ready(function () {
       scrollOverflow: true,
       parallax: true,
       setScrollingSpeed: 1000,
-      parallaxKey: 'NGU3bWVkaWEuY29tX2RBUWNHRnlZV3hzWVhnPTg3TQ==', //see https://goo.gl/xkUmHS
+      parallaxKey: 'NDA3Lm1lZGlhX1lBV2NHRnlZV3hzWVhnPXZoMw==', //see https://goo.gl/xkUmHS
       parallaxOptions: {
         type: 'reveal',
         percentage: 100,
