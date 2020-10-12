@@ -12,6 +12,13 @@ body {
       width: 100%;
       height: auto;
     }
+    h1{
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      bottom: 25px;
+      left: 0;
+    }
   }
   .section{
     @media(max-width: 576px){
