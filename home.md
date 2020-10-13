@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: default
-title: 4e7 Media Werbeagentur
+title: 407 Werbeagentur
 ---
 <div id="home">
   {% include landingpage.html %}
