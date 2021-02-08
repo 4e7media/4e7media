@@ -89,6 +89,11 @@ body .hover-cont h3 {
   }
 }
 
+body .logo {
+  max-width: 200px;
+  width: 10vw;
+}
+
 body .fp-bg {
   z-index: 2;
 }
