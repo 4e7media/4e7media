@@ -36,6 +36,8 @@ img:
 video: ''
 date: '2010-1-4'
 vid:
+- video: https://youtu.be/vgxBrGDzPjI
+  vtn: https://res.cloudinary.com/media4e7/image/upload/v1614014738/humanic_zwla1e.png
 - video: Ys_TnDvtkS0
   vtn: http://i3.ytimg.com/vi/Ys_TnDvtkS0/maxresdefault.jpg
 - video: 6D9ObSy-qck
