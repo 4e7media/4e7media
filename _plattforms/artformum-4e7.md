@@ -1,6 +1,6 @@
 ---
 layout: work-detail
-title: artforum 4e8
+title: artforum 4e7
 tnimg: "/v1560106335/thumbnail-artforum4e7-2.jpg"
 img:
 - "/v1560106364/14-art_forum_4e7-shot2.jpg"
