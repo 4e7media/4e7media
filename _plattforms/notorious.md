@@ -28,7 +28,7 @@ cvid:
 - video: https://www.youtube.com/embed/uOlitTf4jnc
   vtn: http://i3.ytimg.com/vi/uOlitTf4jnc/maxresdefault.jpg
 vid:
-- video: ''
-  vtn: ''
+- video: JjUYmvF9aTs
+  vtn: https://res.cloudinary.com/media4e7/image/upload/v1628597360/notorious-intro_w2vhm8.png
 
 ---
