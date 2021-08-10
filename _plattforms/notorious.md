@@ -1,6 +1,6 @@
 ---
 layout: work-detail
-title: notorious
+title: notorious-mag
 tnimg: "/v1560106507/Notorious-patformJPG.jpg"
 img:
 - "/v1560957856/Notorious-desktop-mockup.jpg"
@@ -27,5 +27,6 @@ cvid:
   vtn: http://i3.ytimg.com/vi/4aLS8RfH4OE/maxresdefault.jpg
 - video: https://www.youtube.com/embed/uOlitTf4jnc
   vtn: http://i3.ytimg.com/vi/uOlitTf4jnc/maxresdefault.jpg
+vid: []
 
 ---
