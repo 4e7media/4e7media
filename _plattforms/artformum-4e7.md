@@ -1,7 +1,6 @@
 ---
-#test
 layout: work-detail
-title: artforum 4e7
+title: artforum 4e8
 tnimg: "/v1560106335/thumbnail-artforum4e7-2.jpg"
 img:
 - "/v1560106364/14-art_forum_4e7-shot2.jpg"
@@ -24,7 +23,8 @@ vid:
   vtn: http://i3.ytimg.com/vi/oLCjk-vRvUI/maxresdefault.jpg
 - video: NdmVcUjfytY
   vtn: http://i3.ytimg.com/vi/NdmVcUjfytY/maxresdefault.jpg
-cvid: 
+cvid:
 - video: https://res.cloudinary.com/media4e7/video/upload/v1560845514/Isa_Ess_xml8e2.mp4
   vtn: https://res.cloudinary.com/media4e7/image/upload/v1560850903/Isa_Ess_xml8e2-jpg_pvvkvl.jpg
+
 ---
