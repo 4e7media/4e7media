@@ -3,38 +3,15 @@ layout: default
 ---
 <div id="impressum">
 <h2>IMPRESSUM</h2>
+<p>Firmawortlaut: Notorious Media UG</p>
 <p>Unternehmensgegenstand<br>
 <br>
-Werbeagentur, Event-Marketer<br>
-UID-Nummer<br>
+Publishing<br>
+Firmensitz:<br>
 <br>
-ATU69367758<br>
-Firmenbuchnummer<br>
+Schellingstr. 109a, 80798 München – Germany<br>
+Kontaktdaten:<br>
 <br>
-FN 428965g<br>
-Firmenbuchgericht<br>
-<br>
-Handelsgericht Wien<br>
-Firmensitz<br>
-<br>
-Sitz in politischer Gemeinde Wien<br>
-Volle geografische Anschrift<br>
-<br>
-Marokkanergasse, 7 - 1030 - Wien<br>
-Kontaktdaten (Tel, Fax, E-Mail)<br>
-<br>
-Tel: +43 0676/9330517<br>
-<br>
-E-Mail: office@4e7media.com<br>
-Mitgliedschaften bei der Wirtschaftskammerorganisation<br>
-<br>
-Mitglied der WKÖ Wien; Mtgl. Nr. 866642<br>
-<br>
-Fachorganisation 703 Werbung und Marktkommunikation im Bereich Wien Anwendbare Rechtsvorschriften und Zugang dazu Berufsrecht: Gewerbeordnung: www.ris.bka.gv.at<br>
-Aufsichtsbehörde/Gewerbebehörde<br>
-<br>
-Magistratisches Bezirksamt f.d. 1.Bez. Wien<br>
-Angaben zur Online-Streitbeilegung<br>
-<br>
-Verbraucher haben die Möglichkeit, Beschwerden an die Online-Streitbeilegungsplattform der EU zu richten:http://ec.europa.eu/odr. Sie können allfällige Beschwerde auch an die<br>oben angegebene E-Mail-Adresse richten.</p>
-</div>
+Tel: +43 664 7637128<br>
+
+
